@@ -6,33 +6,6 @@ Light Blue: #CEEFF2;
 
 */
 
-/*background: linear-gradient(270deg, #e6f7f8, #b5e4e8, #e6f6f7);
-background-size: 600% 600%;*/
-/*-webkit-animation: Gradient 25s ease infinite;
--moz-animation: Gradient 25s ease infinite;
--o-animation: Gradient 25s ease infinite;
-animation: Gradient 25s ease infinite;*/
-
-@-webkit-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-o-keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes Gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 
 .wordOne, .wordTwo {
 	font-weight: 700;
@@ -173,8 +146,8 @@ input {
 }
 
 body {
-background: url(../img/circlebackground.svg) no-repeat;
-background-size: 1313px 750px;
+background: url('../img/circlebackground.svg') no-repeat center center fixed; 
+background-size: cover;
 overflow: hidden;
 }
 

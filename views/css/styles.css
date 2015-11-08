@@ -52,9 +52,15 @@ animation: Gradient 25s ease infinite;*/
 	display: inline-block;
 }
 
-.wordOne, .captionOne, .msgOne, .date, .location {
+.wordOne, .captionOne, .msgOne, .location {
 	font-family: "Avenir";
 	color: #0BA7B5;
+}
+
+.date{
+	font-family: "Avenir";
+	font-size: 25px;
+	color: black;
 }
 
 .wordTwo, .captionTwo, .msgTwo, input {
@@ -153,7 +159,7 @@ input {
 }
 
 .msg {
-	margin-top: 7%;
+	margin-top: 5%;
 }
 
 body {
@@ -182,11 +188,9 @@ animation: Gradient 25s ease infinite;*/
 	}
 
 	input{
-		width:300px;
+		width:300px;'
+		margin-top:10px;
 	}
-
-
-
 }
 
 @media only screen and (max-width : 480px) {
@@ -195,23 +199,22 @@ animation: Gradient 25s ease infinite;*/
 	}
 	input{
 		width:250px;
+		margin-top:20px;
 	}
-
-
-
 }
 
 @media only screen and (max-width : 320px) {
 	.wordTwo{
 		margin-top: 40px;
 	}
-	
 	input{
 		width:200px;
+		margin-top:30px;
 	}
-
-	
-
 }
 
+.dateDiv{
+	margin-top:20px;
+	color: white;
+}
 

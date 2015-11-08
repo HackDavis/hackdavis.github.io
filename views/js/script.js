@@ -13,11 +13,9 @@ function submitClicked() {
 	        	console.log(result);
 	        }
 		});
-		$("#msg").text('Thanks for submitting!');
 	}
 	else {
 		$("#msg").text('This email isn\'t valid.');
-		//console.log("email is not valid");
 	}
 }
 

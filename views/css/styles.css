@@ -60,7 +60,17 @@ animation: Gradient 25s ease infinite;*/
 .date{
 	font-family: "Avenir";
 	font-size: 25px;
-	color: black;
+	color: #0BA7B5;
+}
+
+.UCD{
+	font-family: "Avenir";
+	font-size: 25px;
+	color:#C4A81D; ;
+}
+
+a{
+	color: #0BA7B5;
 }
 
 .wordTwo, .captionTwo, .msgTwo, input {
@@ -68,7 +78,7 @@ animation: Gradient 25s ease infinite;*/
 	color: #C4A81D;
 }
 
-.title, .caption, .msg, .input, .date, .location, .symbols {
+.title, .caption, .msg, .input, .date, .location, .symbols, .UCD {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -159,7 +169,7 @@ input {
 }
 
 .msg {
-	margin-top: 5%;
+	margin-top: 3%;
 }
 
 body {
@@ -223,7 +233,8 @@ animation: Gradient 25s ease infinite;*/
 }
 
 .dateDiv{
-	margin-top:20px;
+	margin-top:40px;
 	color: white;
 }
+
 

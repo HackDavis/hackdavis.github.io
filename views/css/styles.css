@@ -186,6 +186,9 @@ animation: Gradient 25s ease infinite;*/
 	.wordTwo{
 		margin-top: 40px;
 	}
+	.wordOne, .wordTwo {
+		font-size: 110px;
+	}
 
 	input{
 		width:300px;'
@@ -197,6 +200,9 @@ animation: Gradient 25s ease infinite;*/
 	.wordTwo{
 		margin-top: 40px;
 	}
+	.wordOne, .wordTwo {
+		font-size: 100px;
+	}
 	input{
 		width:250px;
 		margin-top:20px;
@@ -206,6 +212,9 @@ animation: Gradient 25s ease infinite;*/
 @media only screen and (max-width : 320px) {
 	.wordTwo{
 		margin-top: 40px;
+	}
+	.wordOne, .wordTwo {
+		font-size: 95px;
 	}
 	input{
 		width:200px;

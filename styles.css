@@ -24,7 +24,7 @@ Light Blue: #CEEFF2;
 	display: inline-block;
 }
 
-.wordOne, .captionOne, .msgOne {
+.wordOne, .captionOne, .msgOne, .date, .location {
 	font-family: "Avenir";
 	color: #0BA7B5;
 }
@@ -34,10 +34,17 @@ Light Blue: #CEEFF2;
 	color: #C4A81D;
 }
 
-.title, .caption, .msg, .input{
+.title, .caption, .msg, .input, .date, .location, .symbols {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+.title {
+	margin-top: 10%;
+	line-height: 40px;
+	text-shadow: 2px 2px black;
+
 }
 
 ::-webkit-input-placeholder {
@@ -59,24 +66,30 @@ Light Blue: #CEEFF2;
 .submit {
 	width: 80px;
 	height: 35px;
+	line-height: 35px;
 	background-color: #C4A81D;
 	font-family: "Avenir";
 	color: white;
-	position: absolute;
+	position: relative;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	border-radius: 0px 30px 30px 0px;
+	border: 1px solid #0BA7B5;
+	border-left: 0px;
+	transition: all .2s ease-out;
+	margin-right: 0px;
 }
 
 .submit:hover {
 	background-color: white;
 	transition: all .2s ease-in;
 	cursor: pointer;
+	color: #C4A81D;
 }
 
 input, .submit {
 	display: inline-block;
-	border: 1px solid #0BA7B5;
+	margin-left: -4px;
 }
 
 input {
@@ -84,6 +97,7 @@ input {
 	height: 35px;
 	padding-left: 20px;
 	border: 1px solid #0BA7B5;
+	border-right: 0px;
 	color: #0BA7B5;
 	font-size: 15px;
 	outline: none;
@@ -91,6 +105,32 @@ input {
 	border-radius: 30px 0px 0px 30px;
 }
 
+.input {
+	margin-top: 1%;
+}
+
+.symbols {
+	display: inline-block;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.symbols img {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.footer {
+	margin-top: 5%;
+}
+
+.msg {
+	margin-top: 7%;
+}
+
 body {
 	background-color: #CEEFF2;
 }
+
+
+

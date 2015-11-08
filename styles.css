@@ -1,0 +1,96 @@
+/* COLORS 
+
+Turquoise: #0BA7B5;
+Gold: #C4A81D;
+Light Blue: #CEEFF2;
+
+*/
+
+.wordOne, .wordTwo {
+	font-weight: 700;
+	font-size: 120px;
+	display: inline-block;
+}
+
+.captionOne, .captionTwo {
+	font-weight: 500;
+	font-size: 25px;
+	display: inline-block;
+}
+
+.msgOne, .msgTwo {
+	font-weight: 500;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.wordOne, .captionOne, .msgOne {
+	font-family: "Avenir";
+	color: #0BA7B5;
+}
+
+.wordTwo, .captionTwo, .msgTwo, input {
+	font-family: "Avenir";
+	color: #C4A81D;
+}
+
+.title, .caption, .msg, .input{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+::-webkit-input-placeholder {
+   color: #0BA7B5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #0BA7B5;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #0BA7B5;  
+}
+
+:-ms-input-placeholder {  
+   color: #0BA7B5;  
+}
+
+.submit {
+	width: 80px;
+	height: 35px;
+	background-color: #C4A81D;
+	font-family: "Avenir";
+	color: white;
+	position: absolute;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-radius: 0px 30px 30px 0px;
+}
+
+.submit:hover {
+	background-color: white;
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+
+input, .submit {
+	display: inline-block;
+	border: 1px solid #0BA7B5;
+}
+
+input {
+	width: 400px;
+	height: 35px;
+	padding-left: 20px;
+	border: 1px solid #0BA7B5;
+	color: #0BA7B5;
+	font-size: 15px;
+	outline: none;
+	position: relative;
+	border-radius: 30px 0px 0px 30px;
+}
+
+body {
+	background-color: #CEEFF2;
+}

@@ -1,0 +1,217 @@
+/* COLORS 
+
+Turquoise: #0BA7B5;
+Gold: #C4A81D;
+Light Blue: #CEEFF2;
+
+*/
+
+/*background: linear-gradient(270deg, #e6f7f8, #b5e4e8, #e6f6f7);
+background-size: 600% 600%;*/
+/*-webkit-animation: Gradient 25s ease infinite;
+-moz-animation: Gradient 25s ease infinite;
+-o-animation: Gradient 25s ease infinite;
+animation: Gradient 25s ease infinite;*/
+
+@-webkit-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.wordOne, .wordTwo {
+	font-weight: 700;
+	font-size: 120px;
+	display: inline-block;
+}
+
+.captionOne, .captionTwo {
+	font-weight: 500;
+	font-size: 25px;
+	display: inline-block;
+}
+
+.msgOne, .msgTwo {
+	font-weight: 500;
+	font-size: 15px;
+	display: inline-block;
+}
+
+.wordOne, .captionOne, .msgOne, .date, .location {
+	font-family: "Avenir";
+	color: #0BA7B5;
+}
+
+.wordTwo, .captionTwo, .msgTwo, input {
+	font-family: "Avenir";
+	color: #C4A81D;
+}
+
+.title, .caption, .msg, .input, .date, .location, .symbols {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.title {
+	margin-top: 10%;
+	line-height: 40px;
+	text-shadow: 2px 2px black;
+
+}
+
+::-webkit-input-placeholder {
+   color: #0BA7B5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #0BA7B5;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #0BA7B5;  
+}
+
+:-ms-input-placeholder {  
+   color: #0BA7B5;  
+}
+
+.submit {
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	background-color: #C4A81D;
+	font-family: "Avenir";
+	color: white;
+	position: relative;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-radius: 0px 30px 30px 0px;
+	border: 1px solid #0BA7B5;
+	border-left: 0px;
+	transition: all .2s ease-out;
+	margin-right: 0px;
+}
+
+.submit:hover {
+	background-color: white;
+	transition: all .2s ease-in;
+	cursor: pointer;
+	color: #C4A81D;
+}
+
+input, .submit {
+	display: inline-block;
+	margin-left: -4px;
+}
+
+input {
+	width: 400px;
+	height: 35px;
+	padding-left: 20px;
+	border: 1px solid #0BA7B5;
+	border-right: 0px;
+	color: #0BA7B5;
+	font-size: 15px;
+	outline: none;
+	position: relative;
+	border-radius: 30px 0px 0px 30px;
+}
+
+.input {
+	margin-top: 1%;
+}
+
+.symbols {
+	display: inline-block;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.symbols img {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.footer {
+	margin-top: 5%;
+}
+
+.msg {
+	margin-top: 7%;
+}
+
+body {
+background-color: #CEEFF2;
+	/*background: linear-gradient(270deg, #e6f7f8, #b5e4e8, #e6f6f7);
+background-size: 600% 600%;
+-webkit-animation: Gradient 25s ease infinite;
+-moz-animation: Gradient 25s ease infinite;
+-o-animation: Gradient 25s ease infinite;
+animation: Gradient 25s ease infinite;*/
+/*background: url("bg_1.png");
+*/}
+
+
+@media only screen and (max-width : 1200px) {
+	
+​
+}
+​
+@media only screen and (max-width : 979px) {
+​
+}
+​
+@media only screen and (max-width : 767px) {
+	.wordTwo{
+		margin-top: 40px;
+	}
+​
+	input{
+		width:300px;
+	}
+​
+​
+​
+}
+​
+@media only screen and (max-width : 480px) {
+	.wordTwo{
+		margin-top: 40px;
+	}
+	input{
+		width:250px;
+	}
+}
+​
+@media only screen and (max-width : 320px) {
+	.wordTwo{
+		margin-top: 40px;
+	}
+	g
+	input{
+		width:200px;
+	}
+​
+	
+​
+}
+​
+
+
+

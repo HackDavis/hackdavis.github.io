@@ -167,5 +167,51 @@ animation: Gradient 25s ease infinite;*/
 /*background: url("bg_1.png");
 */}
 
+@media only screen and (max-width : 1200px) {
+	
+
+}
+
+@media only screen and (max-width : 979px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+	.wordTwo{
+		margin-top: 40px;
+	}
+
+	input{
+		width:300px;
+	}
+
+
+
+}
+
+@media only screen and (max-width : 480px) {
+	.wordTwo{
+		margin-top: 40px;
+	}
+	input{
+		width:250px;
+	}
+
+
+
+}
+
+@media only screen and (max-width : 320px) {
+	.wordTwo{
+		margin-top: 40px;
+	}
+	
+	input{
+		width:200px;
+	}
+
+	
+
+}
 
 

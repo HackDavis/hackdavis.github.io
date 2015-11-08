@@ -173,15 +173,10 @@ input {
 }
 
 body {
-background-color: #CEEFF2;
-	/*background: linear-gradient(270deg, #e6f7f8, #b5e4e8, #e6f6f7);
-background-size: 600% 600%;
--webkit-animation: Gradient 25s ease infinite;
--moz-animation: Gradient 25s ease infinite;
--o-animation: Gradient 25s ease infinite;
-animation: Gradient 25s ease infinite;*/
-/*background: url("bg_1.png");
-*/}
+background: url(../img/circlebackground.svg) no-repeat;
+background-size: 1313px 750px;
+overflow: hidden;
+}
 
 @media only screen and (max-width : 1200px) {
 	

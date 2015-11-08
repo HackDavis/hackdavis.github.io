@@ -146,9 +146,9 @@ input {
 }
 
 body {
-background: url('../img/circlebackground.svg') no-repeat center center fixed; 
+background: url('../img/circlebackground.svg') no-repeat center center; 
 background-size: cover;
-overflow: hidden;
+background-color: #CEEFF2;
 }
 
 @media only screen and (max-width : 1200px) {

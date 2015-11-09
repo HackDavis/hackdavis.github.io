@@ -1,15 +1,17 @@
 <head>
-	<link rel="stylesheet" type="text/css" href="css/styles2.css">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> HackDavis | April 29th to May 1st at UC Davis</title>
 
+	<!--Fonts-->
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<!--Javascript-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
 	<script type="text/javascript" src="firefly/jquery.firefly-0.3.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
@@ -21,19 +23,37 @@
 		});
 	});
 	</script>
-
-
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
 	<div id="landing">
 		<div id="title"> HackDavis </div>
 		<div> April 29 - May 1, 2016 <b>@</b> UC Davis</div>
 
-		<p id="msg">Stay in the loop: </p>
+		<div id="txt">
+			<p id="msg">UC Davis's first 36-hour collegiate hackathon dedicated to social good.</p>
+
+			<div id="signupdiv">
+				<p id="msg">Applications will open Spring 2016.<br> Send us your email to stay in the loop.</p>
+				<center><input class="grabEmail" id="email"></input><button class="butt" id="email" onclick="submitEmail();">Go</button></center>
+			</div>
+
+			<div id="thankyou">
+				<p>Thanks for your interest!</p>
+			</div>
+
+			<div id="sponsorsdiv">
+				<p id="msg">Interested in sponsoring us?<br> Shoot us an email at <a href="mailto:sponsors@hackdavis.io">sponsors@hackdavis.io</a>.</p>
+			</div>
+
+		</div>
 
 		<div id="inputbox">
-			<input id="inp" spellcheck="false" type="text" placeholder="yourname@ucdavis.edu">
-			<button id="submit" onclick="submitClicked()">Submit</div>
-			</div>
+			<button class="butt" id="sponsors" onclick="showSponsor();">Sponsor</button>
+			<button class="butt" id="signup" onclick="showSignUp();">Sign Up</button>
 		</div>
-	</body>
+
+	</div> <!--Landing-->
+
+</body>

@@ -1,48 +1,65 @@
-<!DOCTYPE html>
-<html>
 <head>
-	<meta name="google-site-verification" content="IsYPb591ojAGn2Ns7QSlQEFQ05nwp6bHeSJ0jIMnbs8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> HackDavis | April 29th to May 1st at UC Davis</title>
+
+	<!--Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>HackDavis</title>
+
+	<!--Favicon-->
+	<link rel="icon" 
+	      type="image/png" 
+	      href="favicon.png">
+
+	<!--Javascript-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$.firefly({
+			color: '#fff',
+			minPixel: 1,
+			maxPixel: 3,
+			total : 65,
+		});
+	});
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
+
 <body>
+	<div id="landing">
+		<div id="title"> HackDavis </div>
+		<div> April 29 - May 1, 2016 <b>@</b> UC Davis</div>
 
-	<div class="title"> 
-		<div class="wordOne"> Hack </div>
-		<div class="wordTwo"> Davis </div>
-	</div>
-	<div class="caption"> 
-		<div class="captionOne"> code for </div>
-		<div class="captionTwo"> social good </div>
-	</div>
+		<div id="txt">
+			<p id="msg">UC Davis's first 36-hour collegiate hackathon dedicated to social good.</p>
 
-	<div class="dateDiv">
-		<div class="date">4/29 - 5/1 @ UC Davis</div>
-	</div>
+			<div id="signupdiv">
+				<p id="msg">Applications will open Spring 2016.<br> Send us your email to stay in the loop.</p>
+				<center><input class="grabEmail" placeholder="Email Address" id="email"></input><button class="butt" id="email" onclick="submitClicked();">Go</button></center>
+			</div>
 
-	<div class="msg">
-		<div class="msgOne"> Sign up if you're interested in </div> 
-		<div class="msgTwo"> making a difference. </div>
-	</div>
+			<div id="thankyou">
+				<p>Thanks for your interest!</p>
+			</div>
 
-	<div class="input">
-		<input id="inp" class="emailInput" spellcheck="false" placeholder="Email Address">
-		<div class="submit" onclick="submitClicked()">Submit </div>
-	</div>
+			<div id="sponsorsdiv">
+				<p id="msg">Interested in sponsoring us?<br> Shoot us an email at <a href="mailto:sponsor@hackdavis.io">sponsor@hackdavis.io</a>.</p>
+			</div>
 
-	<div class="symbols">
-		<img src="img/heart.jpg" height="90px" width="90px">
-		<img src="img/tree.jpg" height="90px" width="90px">
-		<img src="img/book.jpg" height="90px" width="90px">
-	</div>
+		</div>
 
-	<div class="footer">
-		<div class="location">Interested in sponsoring? Email us at <a href="mailto:sponsors@hackdavis.io">sponsors@hackdavis.io</a> 
-</div>
-	</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+		<div id="inputbox">
+			<button class="butt" id="sponsors" onclick="showSponsor();">Sponsor</button>
+			<a href="https://hackdavis.typeform.com/to/QJhdZS" target="_blank"><button class="butt" id="signup">Sign Up</button></a>
+		</div>
+
+	</div> <!--Landing-->
+
 </body>
-</html>

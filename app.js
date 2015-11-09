@@ -1,3 +1,4 @@
+
 var fs = require("fs"),
 	express = require("express"),
 	Firebase = require("firebase");
@@ -9,13 +10,9 @@ app.use(express.static(__dirname + "/views")); //use static files in ROOT/public
 
 var myFirebaseRef = new Firebase("https://hackdavis.firebaseio.com/");
 
-var port = Number(process.env.PORT || 3000);
-
-app.listen(port);
-
-// app.listen(port, "localhost", function(){
-// 	console.log('HackDavis listening at %s:%s...', "localhost", "3000");
-// });
+app.listen("3000", "localhost", function(){
+	console.log('HackDavis listening at %s:%s...', "localhost", "3000");
+});
 
 //ROUTES
 

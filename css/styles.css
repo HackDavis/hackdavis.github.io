@@ -137,6 +137,7 @@ a:hover {
 }
 
 body {
+	margin: 0px;
 	background: url("../img/flight.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;

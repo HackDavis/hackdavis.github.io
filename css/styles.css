@@ -60,18 +60,35 @@
 
 #landing {
 	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+
 	align-items: center;
+	-webkit-align-items: center;
+
 	justify-content: center;
+	-webkit-justify-content: center;
+
 	flex-direction: column;
+	-webkit-flex-direction: column;
+
 	width:100vw;
 	height: 100vh;
 }
 
 #inputbox {
 	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	
 	align-items: center;
+	-webkit-align-items: center;
+
 	justify-content: center;
+	-webkit-justify-content: center;
+
 	flex-direction: row;
+	-webkit-flex-direction: row;
 }
 
 #signupdiv {
@@ -89,11 +106,19 @@
 #txt {
 	width: 400px;
 	max-width: 400px;
-	display: flex;
 	padding:5px;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	
 	align-items: center;
+	-webkit-align-items: center;
+
 	justify-content: center;
+	-webkit-justify-content: center;
+
 	flex-direction: row;
+	-webkit-flex-direction: row;
 }
 
 a {

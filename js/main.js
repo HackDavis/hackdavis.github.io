@@ -46,16 +46,16 @@ function showSignUp() {
 
 function showSponsor() {
 	if($('#msg').css('display') == 'block'){ 
-		$( "#msg" ).fadeOut( 500, function() {
-			$( "#sponsorsdiv" ).fadeIn( 500, function() {});
+		$( "#msg" ).fadeOut(400, function() {
+			$( "#sponsorsdiv" ).fadeIn( 400, function() {});
 		});
 	} else if ($('#signupdiv').css('display') == 'block') {
-		$( "#signupdiv" ).fadeOut( 500, function() {
-			$( "#sponsorsdiv" ).fadeIn( 500, function() {});
+		$( "#signupdiv" ).fadeOut(400, function() {
+			$( "#sponsorsdiv" ).fadeIn( 400, function() {});
 		});
 	} else if ($('#thankyou').css('display') == 'block') {
-		$( "#thankyou" ).fadeOut( 500, function() {
-			$( "#sponsorsdiv" ).fadeIn( 500, function() {});
+		$( "#thankyou" ).fadeOut( 400, function() {
+			$( "#sponsorsdiv" ).fadeIn( 400, function() {});
 		});
 	}
 }

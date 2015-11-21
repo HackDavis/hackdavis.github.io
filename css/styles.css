@@ -26,6 +26,7 @@
 .butt:hover {
 	background-color: #3755D7;
 	color: white;
+	cursor: pointer;
 }
 
 .butt#email {
@@ -154,4 +155,11 @@ body {
 		width:300px;
 	}
 /* STYLES GO HERE */
+
+
+/* FAQ Section */
+
+#faq {
+	width: 100%;
+	height: 500px;
 }

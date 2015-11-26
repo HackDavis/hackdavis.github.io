@@ -1,0 +1,171 @@
+/* COLOR PALETTE */
+
+/* 
+	Green: #60AD57;
+	Blue: #00ACD0;
+	Gray: #BABABA;
+*/
+
+/* TOP */
+
+body {
+	margin: 0;
+}
+
+.top {
+	height: 0px;
+}
+
+.nav {
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	display: inline-block;
+}
+
+.icon {
+	position: relative;
+	display: inline;
+	margin: 10px 0px 0px 10px;
+	cursor: pointer;
+	transform: translate(30px);
+}
+
+.section {
+	position: relative;
+	display: inline;
+	margin: 20px 20px 0px 20px;
+	cursor: pointer;
+	float: right;
+	transform: translate(-30px);
+	font-family: "Verdana";
+	font-weight: 800;
+	color: gray;
+
+}
+
+#logo {
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	transform: translate(0, 50px);
+}
+
+#date-place {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	transform: translate(0, 60px);
+	font-family: "Verdana";
+	font-weight: 800;
+	color: #00ACD0;
+}
+
+#caption {
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	text-align: center;
+	transform: translate(0, 80px);
+	font-family: "Verdana";
+	color: gray;
+}
+
+.clickable {
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	transform: translate(0, 110px);
+}
+
+.button {
+	display: inline-block;
+	margin: 0 20px 0 20px;
+	border: 2px #60AD57 solid;
+	border-radius: 1000px;
+	width: 150px;
+	height: 30px;
+	font-family: "Verdana";
+	color: #60AD57;
+	cursor: pointer;
+	position: relative;
+	padding-top: 10px;
+	transition: all 200ms ease-out;
+}
+
+/*.button a {
+	text-decoration: none;
+	color: #60AD57;
+}*/
+
+.button:hover {
+	background-color: #60AD57;
+	color: white;
+	transition: all 200ms ease-in;
+}
+
+/*.button a:hover {
+	color: white;
+	transition: all 200ms ease-in;
+}
+*/
+
+#sponsor, #signup {
+	display: inline-block;
+	margin: 0 30px 0 30px;
+	font-family: "Verdana";
+	color: #60AD57;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 800;
+	cursor: pointer;
+
+}
+
+.useless-bar {
+	height: 20px;
+	width: 100%;
+	position: absolute;
+	display: inline-block;
+	background-color: #00ACD0;
+	transform: translate(0, -10px);
+}
+
+/* FAQ */
+
+.faq {
+	width: 100%;
+	background-color: transparent;
+	position: absolute;
+}
+
+#faq-title {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-family: "Verdana";
+}
+
+.col {
+	width: 600px;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	position: relative;
+}
+
+.card {
+	color: white;
+	font-family: "Verdana";
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.card .ques {
+	font-weight: 600;
+}

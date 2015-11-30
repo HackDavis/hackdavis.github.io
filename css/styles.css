@@ -10,7 +10,7 @@
 
 body {
 	margin: 0;
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 
 }
 
@@ -34,7 +34,7 @@ body {
 	cursor: pointer;
 	float: right;
 	transform: translate(-30px);
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 	font-weight: 800;
 	color: gray;
 
@@ -53,7 +53,7 @@ body {
 	width: 100%;
 	text-align: center;
 	transform: translate(0, 60px);
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 	font-weight: 800;
 	color: #00ACD0;
 }
@@ -64,7 +64,7 @@ body {
 	width: 300px;
 	text-align: center;
 	transform: translate(0, 80px);
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 	color: gray;
 }
 
@@ -83,7 +83,7 @@ body {
 	border-radius: 1000px;
 	width: 150px;
 	height: 30px;
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 	color: #60AD57;
 	cursor: pointer;
 	position: relative;
@@ -111,7 +111,7 @@ body {
 #sponsor, #signup {
 	display: inline-block;
 	margin: 0 30px 0 30px;
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 	color: #60AD57;
 	cursor: pointer;
 	font-size: 20px;
@@ -143,7 +143,7 @@ body {
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 20px;
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 }
 
 .col {
@@ -156,7 +156,7 @@ body {
 
 .card {
 	color: white;
-	font-family: "Verdana";
+	font-family: "Avenir", serif;
 	width: 80%;
 	margin: 0 auto;
 	padding-top: 20px;

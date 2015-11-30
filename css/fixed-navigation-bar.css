@@ -9,6 +9,16 @@
   background-color: #FFFFFF;
 }
 
+.nav-logo{
+  position: absolute;
+  left: 0;
+  max-height: 30px;
+  width: auto;
+  left: 2em;
+  top: 0.7em;
+  z-index: 3
+}
+
 /* The element at the top of the page right after the fixed navigation bar
    MUST have sufficient top margin or else it will be covered by the bar */
 .content {

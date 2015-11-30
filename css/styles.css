@@ -10,18 +10,14 @@
 
 body {
 	margin: 0;
+	font-family: "Verdana";
+
 }
 
 .top {
 	height: 0px;
 }
 
-.nav {
-	height: 60px;
-	width: 100%;
-	position: absolute;
-	display: inline-block;
-}
 
 .icon {
 	position: relative;

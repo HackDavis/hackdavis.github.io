@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url('Avenir.ttc'); /* IE9 Compat Modes */
+}
 
 body {
 	margin: 0 0 0 0;

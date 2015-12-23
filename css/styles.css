@@ -153,6 +153,10 @@ body {
     transition: all 200ms ease-in;
 }
 
+.upper-slant {
+	height: 275px;
+}
+
 #landscape {
 	width: 100%;
 	position: absolute;
@@ -169,8 +173,8 @@ a {
 .faq {
 	clear:both;
 	background-color: #00ACCB;
-	height: 450px;
-	transform: translate(0, 275px);
+	height: 350px;
+	position: relative;
 }
 
 #faq-title {
@@ -209,22 +213,36 @@ a {
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
-	transform: translate(0, 125px);
 }
 
-@media screen and (min-width: 1050px) {
+.lower-slant {
+	clear: both;
+	position: relative;
+	height: 200px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
 	.faq {
-		transform: translate(0, 275px);
-		height: 375px;
+		height: 450px;
 	}
 
-	#bottom-bikes {
-		transform: translate(0, 225px);
+	.lower-slant {
+		height: 150px;
 	}
 }
 
+@media screen and (max-width: 750px) {
+	.faq {
+		height: 550px;
+		transform: translate(0, 75px);
+	}
 
-@media screen and (max-width: 500px) {
+	.lower-slant {
+		height: 175px;
+	}
+
 	#date-place {
 		font-size: 17px;
 	}
@@ -262,11 +280,6 @@ a {
 		margin: 0 0 10px 0;
 		border-radius: 0;
 		width: 60%;
-	}
-
-	.faq {
-		transform: translate(0, 350px);
-		height: 650px;
 	}
 
 	.col {
@@ -277,73 +290,16 @@ a {
 		font-size: 15px;
 		text-align: justify;
 	}
-
-	#bottom-bikes {
-		transform: translate(0, 75px);
-
-	}
 }
 
 
-
-@media screen and (max-width: 700px) and (min-width: 500px) {
-
-	#date-place {
-		font-size: 17px;
-	}
-
-	.nav {
-		width: 250px;
-		text-align: center;
-		margin: 0 auto;
-		transform: translate(-30px);
-	}
-
-	#logo {
-		height: 150px;
-		width: 150px;
-	}
-
-	#title {
-		font-size: 40px;
-		padding-top: 5px;
-	}
-
-	#hack {
-		padding-right: 5px;
-	}
-
-	#caption {
-		font-size: 22px;
-	}
-
-	#date-place {
-		font-size: 15px;
-	}
-
-	.button {
-		margin: 0 0 10px 0;
-		border-radius: 0;
-		width: 60%;
-	}
+@media screen and (max-width: 500px) {
 
 	.faq {
-		transform: translate(0, 350px);
-		height: 550px;
+		height: 650px;
 	}
 
-	.col {
-		width: 100%;
-	}
-
-	.card {
-		font-size: 15px;
-	}
-
-	#bottom-bikes {
-		transform: translate(0, 100px);
-
+	.lower-slant {
+		height: 150px;
 	}
 }
-
-

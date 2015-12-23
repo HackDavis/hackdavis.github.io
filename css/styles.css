@@ -1,3 +1,11 @@
+/* COLOR PALETTE */
+
+/* 
+	Green: #60AD57;
+	Blue: #00ACD0;
+	Gray: #BABABA;
+*/
+
 @font-face {
   font-family: 'Avenir';
   src: url('Avenir.ttc'); /* IE9 Compat Modes */
@@ -156,6 +164,52 @@ a {
 	text-decoration: none;
 }
 
+/* FAQ */
+
+.faq {
+	clear:both;
+	background-color: #00ACCB;
+	height: 300px;
+	transform: translate(0, 100%);
+}
+
+#faq-title {
+	color: white;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-family: "Verdana";
+}
+
+.col {
+	width: 50%;
+	display: inline-block;
+	float: left;
+	margin: 0 auto;
+	position: relative;
+}
+
+.card {
+	color: white;
+	font-family: "Verdana";
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.card .ques {
+	font-weight: 600;
+}
+
+#bottom-bikes {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	transform: translate(0, 200px);
+}
+
 @media screen and (max-width: 700px) {
 
 	#date-place {
@@ -196,6 +250,16 @@ a {
 		border-radius: 0;
 		width: 60%;
 	}
+
+	.faq {
+		transform: translate(0, 355px);
+		height: 500px;
+	}
+
+	.col {
+		width: 100%;
+	}
 }
+
 
 

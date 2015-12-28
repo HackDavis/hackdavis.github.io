@@ -61,6 +61,7 @@ section {
 
 .Splash {
 	height: 90vh;
+	top: 0px;
 }
 
 #logo {
@@ -314,18 +315,7 @@ a {
 	}
 }
 
-
-
-
 @media screen and (max-width: 750px) {
-	/*.faq {
-		height: 550px;
-		transform: translate(0, 75px);
-	}
-
-	.lower-slant {
-		height: 175px;
-	}*/
 
 	#date-place {
 		font-size: 17px;
@@ -375,17 +365,3 @@ a {
 		text-align: justify;
 	}
 }
-
-
-/*@media screen and (max-width: 500px) {
-
-	.faq {
-		height: 650px;
-		transform: translate(0, 25px);
-
-	}
-
-	.lower-slant {
-		height: 150px;
-	}
-}*/

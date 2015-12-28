@@ -65,7 +65,7 @@ section {
 }
 
 #logo {
-	position: absolute;
+	position: relative;
 	margin: 0 auto;
 	display: block;
 	transform: translate(0, 30px);
@@ -316,6 +316,14 @@ a {
 }
 
 @media screen and (max-width: 750px) {
+
+	.FAQ {
+		
+			-webkit-transform: translate(0, -30px);
+		    -moz-transform: translate(0, -30px);
+		    -o-transform: translate(0, -30px);
+		    transform: translate(0, -30px);
+	}
 
 	#date-place {
 		font-size: 17px;

@@ -61,8 +61,8 @@ section {
 
 .Splash {
 	height: 90vh;
-	top: 0px;
-}
+/*	top: 0;
+*/}
 
 #logo {
 	position: relative;
@@ -199,12 +199,6 @@ a {
 }
 
 
-/*.faq {
-	background-color: #00ACCB;
-	height: 350px;
-	position: absolute;
-}*/
-
 #faq-title {
 	color: white;
 	margin: 0 auto;
@@ -242,19 +236,6 @@ a {
 	z-index: 1;
 }
 
-/*.lower-slant {
-	clear: both;
-	position: relative;
-	height: 200px;
-}*/
-
-/*#bottom-bikes {
-	width: 100%;
-	position: absolute;
-	bottom: 0px;
-	z-index: 1;
-}*/
-
 /* Footer */
 
 .Footer {
@@ -279,9 +260,15 @@ a {
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 	.FAQ {
 		height: 70vh;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.FAQ {
+		height: 75vh;
 	}
 }
 
@@ -291,21 +278,21 @@ a {
 	}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 575px) {
 	.FAQ {
 		height: 90vh;
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 	.FAQ {
 		height: 100vh;
 	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
 	.FAQ {
-		height: 110vh;
+		height: 115vh;
 	}
 }
 

@@ -317,14 +317,6 @@ a {
 
 @media screen and (max-width: 750px) {
 
-	.FAQ {
-
-			-webkit-transform: translate(0, -60px);
-		    -moz-transform: translate(0, -60px);
-		    -o-transform: translate(0, -60px);
-		    transform: translate(0, -60px);
-	}
-
 	#date-place {
 		font-size: 17px;
 	}

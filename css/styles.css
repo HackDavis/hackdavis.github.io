@@ -7,8 +7,8 @@
 */
 
 @font-face {
-  font-family: 'Avenir';
-  src: url('Avenir.ttc'); /* IE9 Compat Modes */
+  font-family: 'Pier Regular';
+  src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
 }
 
 /* GENERAL */
@@ -70,10 +70,9 @@ section {
 	display: block;
 	transform: translate(0, 30px);
 
-	-webkit-transform: translate(0, 30px);
-    -moz-transform: translate(0, 30px);
-    -o-transform: translate(0, 30px);
-	transform: translate(0, 30px);
+	-webkit-transform: translate(0, 10px);
+    -moz-transform: translate(0, 40px);
+    -o-transform: translate(0, 40px);
 }
 
 #title {
@@ -194,9 +193,8 @@ a {
 /* FAQ */
 
 .FAQ {
-	height: 50vh;
+	height: 55vh;
 	background-color: #00ACD0;
-	position: absolute;
 }
 
 
@@ -240,7 +238,13 @@ a {
 /* Footer */
 
 .Footer {
-	height: 50vh;
+	transform: translate(0, 100px);
+	height: 25vh;
+	background-color: #00ACD0;
+}
+
+.footer-content {
+
 }
 
 /* MEDIA QUERIES */
@@ -304,10 +308,6 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-
-	.FAQ {
-		transform: translate(0, -60px);
-	}
 
 	#date-place {
 		font-size: 17px;

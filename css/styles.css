@@ -65,7 +65,7 @@ section {
 }
 
 #logo {
-	position: relative;
+	position: absolute;
 	margin: 0 auto;
 	display: block;
 	transform: translate(0, 30px);

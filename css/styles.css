@@ -196,6 +196,7 @@ a {
 .FAQ {
 	height: 50vh;
 	background-color: #00ACD0;
+	position: absolute;
 }
 
 

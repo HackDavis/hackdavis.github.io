@@ -320,9 +320,9 @@ a {
 	.FAQ {
 
 			-webkit-transform: translate(0, -60px);
-		    -moz-transform: translate(0, -30px);
-		    -o-transform: translate(0, -30px);
-		    transform: translate(0, -30px);
+		    -moz-transform: translate(0, -60px);
+		    -o-transform: translate(0, -60px);
+		    transform: translate(0, -60px);
 	}
 
 	#date-place {

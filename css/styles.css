@@ -11,9 +11,15 @@
   src: url('Avenir.ttc'); /* IE9 Compat Modes */
 }
 
+/* GENERAL */
+
 body {
 	margin: 0 0 0 0;
 	overflow-x: hidden;
+}
+
+section {
+	display: block;
 }
 
 .landing {
@@ -29,6 +35,16 @@ body {
     background-size: cover;
 }
 
+.Page {
+	width: 100%;
+}
+
+/* NAV BAR */
+
+.Header {
+	height: 10vh;
+}
+
 .icon {
 	position: relative;
 	display: inline;
@@ -39,6 +55,12 @@ body {
     -moz-transform: translate(30px);
     -o-transform: translate(30px);
 	transform: translate(30px);
+}
+
+/* SPLASH */
+
+.Splash {
+	height: 90vh;
 }
 
 #logo {
@@ -170,12 +192,17 @@ a {
 
 /* FAQ */
 
-.faq {
-	clear:both;
+.FAQ {
+	height: 50vh;
+	background-color: #00ACD0;
+}
+
+
+/*.faq {
 	background-color: #00ACCB;
 	height: 350px;
-	position: relative;
-}
+	position: absolute;
+}*/
 
 #faq-title {
 	color: white;
@@ -205,25 +232,37 @@ a {
 
 .card .ques {
 	font-weight: 600;
-
 }
 
 #bottom-bikes {
 	width: 100%;
-	position: absolute;
-	bottom: 0;
+	position: relative;
+	top: 0;
 	z-index: 1;
 }
 
-.lower-slant {
+/*.lower-slant {
 	clear: both;
 	position: relative;
 	height: 200px;
+}*/
+
+/*#bottom-bikes {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	z-index: 1;
+}*/
+
+/* Footer */
+
+.Footer {
+	height: 50vh;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
 	.faq {
 		height: 450px;
 	}
@@ -231,17 +270,62 @@ a {
 	.lower-slant {
 		height: 150px;
 	}
+}*/
+
+@media screen and (max-width: 1050px) {
+	.FAQ {
+		height: 60vh;
+	}
 }
 
+@media screen and (max-width: 800px) {
+	.FAQ {
+		height: 70vh;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.FAQ {
+		height: 80vh;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.FAQ {
+		height: 90vh;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.FAQ {
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.FAQ {
+		height: 110vh;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.FAQ {
+		height: 130vh;
+	}
+}
+
+
+
+
 @media screen and (max-width: 750px) {
-	.faq {
+	/*.faq {
 		height: 550px;
 		transform: translate(0, 75px);
 	}
 
 	.lower-slant {
 		height: 175px;
-	}
+	}*/
 
 	#date-place {
 		font-size: 17px;
@@ -293,13 +377,15 @@ a {
 }
 
 
-@media screen and (max-width: 500px) {
+/*@media screen and (max-width: 500px) {
 
 	.faq {
 		height: 650px;
+		transform: translate(0, 25px);
+
 	}
 
 	.lower-slant {
 		height: 150px;
 	}
-}
+}*/

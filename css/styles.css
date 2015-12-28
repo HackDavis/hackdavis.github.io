@@ -305,6 +305,10 @@ a {
 
 @media screen and (max-width: 750px) {
 
+	.FAQ {
+		transform: translate(0, -60px);
+	}
+
 	#date-place {
 		font-size: 17px;
 	}

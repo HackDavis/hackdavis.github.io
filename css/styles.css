@@ -2,13 +2,19 @@
 
 /* 
 	Green: #60AD57;
-	Blue: #00ACD0;
+	Blue: #00accb;
 	Gray: #BABABA;
+	Dark Gray: #545554;
 */
 
 @font-face {
   font-family: 'Pier Regular';
   src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Pier Bold';
+  src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
 }
 
 /* GENERAL */
@@ -93,8 +99,9 @@ section {
 }
 
 #hack {
-	font-weight: 300;
 
+/*	font-family: , Geneva, sans-serif;
+*/	font-weight: 300;
 	-webkit-transform: translate(10px);
     -moz-transform: translate(10px);
     -o-transform: translate(10px);
@@ -102,7 +109,9 @@ section {
 }
 
 #davis {
-	font-weight: 900;
+
+/*	font-family: Pier Bold, Geneva, sans-serif;
+*/	font-weight: 900;
 	transform: translate(-5px);
 
 	-webkit-transform: translate(-5px);
@@ -190,21 +199,61 @@ a {
 	text-decoration: none;
 }
 
+/* About */
+
+.About {
+	height: 75vh;
+	background-color: #00accb;
+}
+
+#about-title {
+	color: white;
+	font-weight: 900;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 50px;
+	font-family: "Avenir";
+}
+
+#about-description {
+	color: white;
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+	font-size: 15px;
+	margin-bottom: 20px;
+	font-family: "Avenir";
+}
+
+.about-icons {
+	height: 20vh;
+	cursor: pointer;
+	text-align: center;
+}
+
+.track-icon {
+	display: inline-block;
+	margin: 20px 10px 0px 10px;
+	transform: translate(-1vh);
+}
+
+
 /* FAQ */
 
 .FAQ {
 	height: 55vh;
-	background-color: #00ACD0;
+	background-color: white;
 }
 
-
 #faq-title {
-	color: white;
+	color: #00accb;
+	font-weight: 900;
 	margin: 0 auto;
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 20px;
-	font-family: "Verdana";
+	font-family: "Avenir";
 }
 
 .col {
@@ -216,16 +265,26 @@ a {
 }
 
 .card {
-	color: white;
-	font-family: "Verdana";
-	width: 80%;
+	color: #545554;
+	font-family: "Avenir";
+	width: 70%;
 	margin: 0 auto;
 	padding-top: 20px;
+	font-size: 15px;
 	text-align: justify;
+}
+
+.left {
+	transform: translate(10%);
+}
+
+.right {
+	transform: translate(-10%);
 }
 
 .card .ques {
 	font-weight: 600;
+	font-size: 20px;
 }
 
 #bottom-bikes {
@@ -248,16 +307,6 @@ a {
 }
 
 /* MEDIA QUERIES */
-
-/*@media screen and (max-width: 1000px) {
-	.faq {
-		height: 450px;
-	}
-
-	.lower-slant {
-		height: 150px;
-	}
-}*/
 
 @media screen and (max-width: 1050px) {
 	.FAQ {
@@ -287,10 +336,28 @@ a {
 	.FAQ {
 		height: 90vh;
 	}
+
+	#about-description {
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 500px) {
 	.FAQ {
+		height: 100vh;
+	}
+
+	#about-title {
+		font-size: 25px;
+	}
+
+	#faq-title {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.About {
 		height: 100vh;
 	}
 }
@@ -299,13 +366,28 @@ a {
 	.FAQ {
 		height: 115vh;
 	}
+
+	.About {
+		height: 120vh;
+	}
 }
 
 @media screen and (max-width: 350px) {
 	.FAQ {
 		height: 130vh;
 	}
+
+	.About {
+		height: 130vh;
+	}
 }
+
+@media screen and (max-width: 350px) {
+	.About {
+		height: 150vh;
+	}
+}
+
 
 @media screen and (max-width: 750px) {
 
@@ -355,5 +437,13 @@ a {
 	.card {
 		font-size: 15px;
 		text-align: justify;
+	}
+
+	.left {
+		transform: translate(0);
+	}
+
+	.right {
+		transform: translate(0);
 	}
 }

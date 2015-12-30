@@ -74,10 +74,10 @@ section {
 	margin: 0 auto;
 	display: block;
 
-	-webkit-transform: translate(0, 20px);
-    -moz-transform: translate(0, 20px);
-    -o-transform: translate(0, 20px);
-    transform: translate(0, 20px);
+	-webkit-transform: translate(0, 15px);
+    -moz-transform: translate(0, 15px);
+    -o-transform: translate(0, 15px);
+    transform: translate(0, 15px);
 
 }
 

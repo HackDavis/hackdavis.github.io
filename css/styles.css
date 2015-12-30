@@ -67,18 +67,18 @@ section {
 
 .Splash {
 	height: 90vh;
-/*	top: 0;
-*/}
+}
 
 #logo {
 	position: relative;
 	margin: 0 auto;
 	display: block;
-	transform: translate(0, 30px);
 
-	-webkit-transform: translate(0, 10px);
-    -moz-transform: translate(0, 40px);
-    -o-transform: translate(0, 40px);
+	-webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+
 }
 
 #title {
@@ -86,7 +86,7 @@ section {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
-	font-family: Avenir, Geneva, sans-serif;
+	font-family: Avenir, Pier Regular, sans-serif;
 	font-size: 60px;
 	color: #00ACD0;
 	z-index: 999;
@@ -100,8 +100,8 @@ section {
 
 #hack {
 
-/*	font-family: , Geneva, sans-serif;
-*/	font-weight: 300;
+	font-weight: 300;
+
 	-webkit-transform: translate(10px);
     -moz-transform: translate(10px);
     -o-transform: translate(10px);
@@ -110,9 +110,7 @@ section {
 
 #davis {
 
-/*	font-family: Pier Bold, Geneva, sans-serif;
-*/	font-weight: 900;
-	transform: translate(-5px);
+	font-weight: 900;
 
 	-webkit-transform: translate(-5px);
     -moz-transform: translate(-5px);
@@ -125,7 +123,7 @@ section {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
-	font-family: Avenir, Geneva, sans-serif;
+	font-family: Avenir, Pier Regular, sans-serif;
 	font-size: 33px;
 	color: #BABABA;
 	line-height: 10px;
@@ -139,7 +137,7 @@ section {
 	font-size: 17px;
 	text-align: center;
 	padding-top: 30px;
-	font-family: "Avenir";
+	font-family: Avenir, Pier Regular, sans-serif;
 	font-weight: 800;
 	color: #00ACD0;
 	z-index: 999;
@@ -161,7 +159,7 @@ section {
 	border-radius: 1000px;
 	width: 150px;
 	height: 30px;
-	font-family: "Avenir";
+	font-family: Avenir, Pier Regular, sans-serif;
 	font-size: 17px;
 	color: #60AD57;
 	cursor: pointer;
@@ -182,6 +180,7 @@ section {
     -moz-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
+
 }
 
 .upper-slant {
@@ -213,7 +212,7 @@ a {
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 50px;
-	font-family: "Avenir";
+	font-family: Avenir, Pier Regular, sans-serif;
 }
 
 #about-description {
@@ -223,7 +222,7 @@ a {
 	text-align: center;
 	font-size: 15px;
 	margin-bottom: 20px;
-	font-family: "Avenir";
+	font-family: Avenir, Pier Regular, sans-serif;
 }
 
 .about-icons {
@@ -234,7 +233,11 @@ a {
 .track-icon {
 	display: inline-block;
 	margin: 20px 10px 0px 10px;
-	transform: translate(-1vh);
+
+	-webkit-transform: translate(-1vh);
+    -moz-transform: translate(-1vh);
+    -o-transform: translate(-1vh);
+    transform: translate(-1vh);
 }
 
 
@@ -252,7 +255,7 @@ a {
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 20px;
-	font-family: "Avenir";
+	font-family: Avenir, Pier Regular, sans-serif;
 }
 
 .col {
@@ -265,7 +268,7 @@ a {
 
 .card {
 	color: #545554;
-	font-family: "Avenir";
+	font-family: Avenir, Pier Regular, sans-serif;
 	width: 70%;
 	margin: 0 auto;
 	padding-top: 20px;
@@ -275,10 +278,16 @@ a {
 
 .left {
 	transform: translate(10%);
+	-webkit-transform: translate(10%);
+    -moz-transform: translate(10%);
+    -o-transform: translate(10%);
 }
 
 .right {
 	transform: translate(-10%);
+	-webkit-transform: translate(-10%);
+    -moz-transform: translate(-10%);
+    -o-transform: translate(-10%);
 }
 
 .card .ques {

@@ -303,6 +303,13 @@ a {
 	z-index: 1;
 }
 
+#green-slant {
+	-webkit-transform: translate(0, 5px);
+    -moz-transform: translate(0, 5px);
+    -o-transform: translate(0, 5px);
+    transform: translate(0, 5px);
+}
+
 /* Footer */
 
 .Footer {

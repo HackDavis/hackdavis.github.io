@@ -497,6 +497,10 @@ a {
 	.About {
 		height: 100vh;
 	}
+
+	#title {
+		margin-top: 10px;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -524,7 +528,6 @@ a {
 		height: 150vh;
 	}
 }
-
 
 @media screen and (max-width: 750px) {
 

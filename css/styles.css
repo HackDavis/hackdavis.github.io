@@ -78,7 +78,8 @@ section {
 .navItem {
 	float: right;
 	text-align: center;
-	font-family: "Pier Bold";
+	font-family: Avenir, Pier Bold, sans-serif;
+	font-weight: 800;
 	color: gray;
 	height: 60px;
 	transition: all .2s ease-out;
@@ -103,7 +104,7 @@ section {
 }
 
 #clickHome, #clickAbout, #clickFaq, #clickSponsors {
-	transform: translate(0px, 7px);
+	transform: translate(0px, 2px);
 
 	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
@@ -297,6 +298,10 @@ a {
 	font-family: Avenir, Pier Regular, sans-serif;
 }
 
+#sponsorship-message {
+	font-size: 25px;
+}
+
 .about-icons {
 	height: 20vh;
 	text-align: center;
@@ -366,14 +371,7 @@ a {
 	font-size: 20px;
 }
 
-#bottom-bikes {
-	width: 100%;
-	position: relative;
-	top: 0;
-	z-index: 1;
-}
-
-#green-slant {
+#green-upper {
 	-webkit-transform: translate(0, 5px);
     -moz-transform: translate(0, 5px);
     -o-transform: translate(0, 5px);
@@ -389,9 +387,34 @@ a {
 /* Footer */
 
 .Footer {
-	height: 20vh;
+	height: 10vh;
 }
 
+#footer-logo, #footer-message {
+	display: inline-block;
+}
+
+#footer-logo {
+	padding-bottom: 30px;
+	padding-left: 30px;
+}
+
+#footer-message {
+	float: right;
+	padding-top: 20px;
+	padding-right: 30px;
+	font-size: 15px;
+	color: gray;
+	font-family: Avenir, Pier Bold, sans-serif;
+
+}
+
+#msg-1, #msg-2 {
+	display: inline-block;
+}
+
+#heart {
+}
 
 /* MEDIA QUERIES */
 

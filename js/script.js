@@ -5,14 +5,16 @@ $(document).ready(function() {
         var scrollTop = $(window).scrollTop();
               
         var el = document.getElementById("line");
-
+        var nav = document.getElementById("nav");
 
         if (scrollTop > stickyNavTop) { 
             $('.nav').addClass('sticky');
-            el.style.opacity = 1.0
+            el.style.opacity = 1.0;
+            nav.style.background = "rgba(255, 255, 255, .95)";
         } else {
             $('.nav').removeClass('sticky'); 
-            el.style.opacity = 0.0
+            el.style.opacity = 0.0;
+            nav.style.background = "rgba(255, 255, 255, 1)";
         }
     };
      

@@ -113,7 +113,7 @@ section {
 }
 
 #clickHome {
-	width: 90px;
+	width: 80px;
 }
 
 #clickAbout {
@@ -300,6 +300,7 @@ a {
 
 #sponsorship-message {
 	font-size: 25px;
+	width: 100%;
 }
 
 .about-icons {
@@ -406,7 +407,6 @@ a {
 	font-size: 15px;
 	color: gray;
 	font-family: Avenir, Pier Bold, sans-serif;
-
 }
 
 #msg-1, #msg-2 {
@@ -434,11 +434,38 @@ a {
 	.FAQ {
 		height: 75vh;
 	}
+
+	.navItem {
+		display: none;
+	}
+
+	.sticky {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 675px) {
 	.FAQ {
 		height: 80vh;
+	}
+
+	#footer-logo {
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		text-align: center;
+		display: block;
+	}
+
+	#footer-message {
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 20px;
+		padding-right: 0px;
+		float: none;
+		text-align: center;
+		display: block;
 	}
 }
 

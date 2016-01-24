@@ -27,7 +27,6 @@ $(document).ready(function() {
 
 $(document).ready(function (){
     $("#clickSponsors").click(function (){
-        console.log($(".FAQ").offset().top);
             $('html, body').animate({
                 scrollTop: $(".Sponsorship").offset().top - 120
             }, 500);

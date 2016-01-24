@@ -103,9 +103,14 @@ section {
     transition: all .2s ease-in;
 }
 
-#clickHome, #clickAbout, #clickFaq, #clickSponsors {
-	transform: translate(0px, 2px);
+.navItem > p {
+	-webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -o-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+}
 
+#clickHome, #clickAbout, #clickFaq, #clickSponsors {
 	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */

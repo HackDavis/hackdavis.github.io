@@ -83,12 +83,11 @@ section {
 
 .icon:hover {
 	opacity: .7;
-	
+
 	-webkit-transition: all .1s ease-in;
     -moz-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
     transition: all .1s ease-in;
-
 }
 
 .navItem {
@@ -459,6 +458,11 @@ a {
     transform: translateY(10%);
 }
 
+/*#nest-logo:hover {
+	background-image: url('../img/sponsorship/nest-logo.png');
+	background-size: 350px;
+}*/
+
 /*#google {
 	margin-top: 50px;
 	height: 150px;
@@ -473,6 +477,8 @@ a {
     -o-transform: translateY(15%);
     transform: translateY(15%);*/
 }
+
+
 
 #ucd-gsm {
 	margin-top: 50px;

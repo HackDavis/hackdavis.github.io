@@ -1,4 +1,4 @@
-a /* COLOR PALETTE */
+/* COLOR PALETTE */
 
 /* 
 	Green: #60AD57;
@@ -388,9 +388,63 @@ a {
 }
 
 /* Sponsorship */
+
 .Sponsorship {
-	height: 40vh;
-	background-color: #60AD57;
+	height: 110vh;
+	background-color: #60AD57; 
+
+}
+
+.sponsor-card {
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+	cursor: pointer;
+	transition: all .1s ease-in;
+	box-shadow: 2px 2px 2px 2px #30562b;
+	opacity: 0.85;
+}
+
+.sponsor-card:hover {
+	opacity: 1;
+	transition: all .1s ease-out;
+}
+
+.sponsor-logo {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+
+}
+
+#nest {
+	height: 200px;
+	width: 400px;
+}
+
+#nest-logo {
+	transform: translateY(10%);
+}
+
+#google {
+	margin-top: 50px;
+	height: 150px;
+	width: 400px;
+}
+
+#google-logo {
+	transform: translateY(15%);
+}
+
+#ucd-gsm {
+	margin-top: 50px;
+	height: 100px;
+	width: 450px;
+}
+
+#ucd-gsm-logo {
+	transform: translateY(20%);
 }
 
 /* Footer */
@@ -419,9 +473,6 @@ a {
 
 #msg-1, #msg-2 {
 	display: inline-block;
-}
-
-#heart {
 }
 
 /* MEDIA QUERIES */

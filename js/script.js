@@ -28,7 +28,7 @@ $(document).ready(function() {
 $(document).ready(function (){
     $("#clickSponsors").click(function (){
             $('html, body').animate({
-                scrollTop: $(".Sponsorship").offset().top - 120
+                scrollTop: $(".Sponsorship").offset().top - 80
             }, 500);
     });
     $("#clickFaq").click(function (){
@@ -38,7 +38,7 @@ $(document).ready(function (){
     });
     $("#clickAbout").click(function (){
             $('html, body').animate({
-                scrollTop: $(".About").offset().top - 120
+                scrollTop: $(".About").offset().top - 80
             }, 500);
     });
     $("#clickHome").click(function (){

@@ -390,7 +390,7 @@ a {
 /* Sponsorship */
 
 .Sponsorship {
-	height: 110vh;
+	height: 120vh;
 	background-color: #60AD57; 
 
 }
@@ -549,6 +549,14 @@ a {
 
 	#faq-title {
 		font-size: 25px;
+	}
+
+/*	.sponsor-card {
+		width: 100%;
+	}*/
+
+	.Sponsorship {
+		display: none;
 	}
 }
 

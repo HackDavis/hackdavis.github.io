@@ -1,4 +1,4 @@
- /* COLOR PALETTE */
+a /* COLOR PALETTE */
 
 /* 
 	Green: #60AD57;
@@ -290,6 +290,9 @@ a {
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 50px;
+	/*	Temporary solution-begin */
+	padding-top: 60px;
+	/*	Temporary solution-end*/
 	font-family: Avenir, Pier Regular, sans-serif;
 }
 

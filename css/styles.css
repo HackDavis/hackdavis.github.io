@@ -68,11 +68,27 @@ section {
 	display: inline;
 	margin: 10px 0px 0px 10px;
 	cursor: pointer;
+	opacity: 1;
+
+	-webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
 
 	-webkit-transform: translate(30px);
     -moz-transform: translate(30px);
     -o-transform: translate(30px);
 	transform: translate(30px);
+}
+
+.icon:hover {
+	opacity: .7;
+	
+	-webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+
 }
 
 .navItem {
@@ -394,11 +410,11 @@ a {
 /* Sponsorship */
 
 .Sponsorship {
-	height: 120vh;
+	height: 100vh;
 	background-color: #60AD57; 
 }
 
-.sponsor-card {
+/*.sponsor-card {
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
@@ -414,16 +430,16 @@ a {
     -moz-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
     transition: all .1s ease-in;
-}
+}*/
 
-.sponsor-card:hover {
+/*.sponsor-card:hover {
 	opacity: 1;
 
 	-webkit-transition: all .1s ease-out;
     -moz-transition: all .1s ease-out;
     -o-transition: all .1s ease-out;
     transition: all .1s ease-out;
-}
+}*/
 
 .sponsor-logo {
 	margin-left: auto;
@@ -431,11 +447,11 @@ a {
 	display: block;
 }
 
-#nest {
+/*#nest {
 	height: 200px;
 	width: 400px;
 }
-
+*/
 #nest-logo {
 	-webkit-transform: translateY(10%);
     -moz-transform: translateY(10%);
@@ -443,17 +459,19 @@ a {
     transform: translateY(10%);
 }
 
-#google {
+/*#google {
 	margin-top: 50px;
 	height: 150px;
 	width: 400px;
-}
+}*/
 
 #google-logo {
+	margin-top: 75px;
+/*
 	-webkit-transform: translateY(15%);
     -moz-transform: translateY(15%);
     -o-transform: translateY(15%);
-    transform: translateY(15%);
+    transform: translateY(15%);*/
 }
 
 #ucd-gsm {

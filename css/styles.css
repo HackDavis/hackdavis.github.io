@@ -409,36 +409,9 @@ a {
 /* Sponsorship */
 
 .Sponsorship {
-	height: 100vh;
+	height: 80vh;
 	background-color: #60AD57; 
 }
-
-/*.sponsor-card {
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
-	vertical-align: middle;
-	cursor: pointer;
-	opacity: 0.85;
-
-	-moz-box-shadow:    2px 2px 2px 2px #30562b;
-  	-webkit-box-shadow: 2px 2px 2px 2px #30562b;
-  	box-shadow:         2px 2px 3px 2px #30562b;
-
-	-webkit-transition: all .1s ease-in;
-    -moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    transition: all .1s ease-in;
-}*/
-
-/*.sponsor-card:hover {
-	opacity: 1;
-
-	-webkit-transition: all .1s ease-out;
-    -moz-transition: all .1s ease-out;
-    -o-transition: all .1s ease-out;
-    transition: all .1s ease-out;
-}*/
 
 .sponsor-logo {
 	margin-left: auto;
@@ -446,39 +419,16 @@ a {
 	display: block;
 }
 
-/*#nest {
-	height: 200px;
-	width: 400px;
-}
-*/
 #nest-logo {
 	-webkit-transform: translateY(10%);
     -moz-transform: translateY(10%);
     -o-transform: translateY(10%);
-    transform: translateY(10%);
+    transform: translate(15px, 10%);
 }
-
-/*#nest-logo:hover {
-	background-image: url('../img/sponsorship/nest-logo.png');
-	background-size: 350px;
-}*/
-
-/*#google {
-	margin-top: 50px;
-	height: 150px;
-	width: 400px;
-}*/
 
 #google-logo {
 	margin-top: 75px;
-/*
-	-webkit-transform: translateY(15%);
-    -moz-transform: translateY(15%);
-    -o-transform: translateY(15%);
-    transform: translateY(15%);*/
 }
-
-
 
 #ucd-gsm {
 	margin-top: 50px;

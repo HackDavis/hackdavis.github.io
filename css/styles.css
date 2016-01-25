@@ -82,7 +82,11 @@ section {
 	font-weight: 800;
 	color: gray;
 	height: 60px;
-	transition: all .2s ease-out;
+
+	-webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
 
 	-webkit-transform: translate(-30px);
     -moz-transform: translate(-30px);
@@ -95,7 +99,6 @@ section {
 	cursor: pointer;
 	color: white;
 	background-color: #00accb;
-	transition: all .2s ease-in;
 
 	-webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
@@ -362,17 +365,18 @@ a {
 }
 
 .left {
-	transform: translate(10%);
 	-webkit-transform: translate(10%);
     -moz-transform: translate(10%);
     -o-transform: translate(10%);
+    transform: translate(10%);
+
 }
 
 .right {
-	transform: translate(-10%);
 	-webkit-transform: translate(-10%);
     -moz-transform: translate(-10%);
     -o-transform: translate(-10%);
+    transform: translate(-10%);
 }
 
 .card .ques {
@@ -392,7 +396,6 @@ a {
 .Sponsorship {
 	height: 120vh;
 	background-color: #60AD57; 
-
 }
 
 .sponsor-card {
@@ -401,21 +404,31 @@ a {
 	margin-right: auto;
 	vertical-align: middle;
 	cursor: pointer;
-	transition: all .1s ease-in;
-	box-shadow: 2px 2px 2px 2px #30562b;
 	opacity: 0.85;
+
+	-moz-box-shadow:    2px 2px 2px 2px #30562b;
+  	-webkit-box-shadow: 2px 2px 2px 2px #30562b;
+  	box-shadow:         2px 2px 3px 2px #30562b;
+
+	-webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
 .sponsor-card:hover {
 	opacity: 1;
-	transition: all .1s ease-out;
+
+	-webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
 }
 
 .sponsor-logo {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-
 }
 
 #nest {
@@ -424,7 +437,10 @@ a {
 }
 
 #nest-logo {
-	transform: translateY(10%);
+	-webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -o-transform: translateY(10%);
+    transform: translateY(10%);
 }
 
 #google {
@@ -434,7 +450,10 @@ a {
 }
 
 #google-logo {
-	transform: translateY(15%);
+	-webkit-transform: translateY(15%);
+    -moz-transform: translateY(15%);
+    -o-transform: translateY(15%);
+    transform: translateY(15%);
 }
 
 #ucd-gsm {
@@ -444,7 +463,10 @@ a {
 }
 
 #ucd-gsm-logo {
-	transform: translateY(20%);
+	-webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transform: translateY(20%);
 }
 
 /* Footer */

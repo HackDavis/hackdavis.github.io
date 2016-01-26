@@ -317,9 +317,9 @@ a {
 #about-description, #sponsorship-message {
 	color: white;
 	margin: 0 auto;
-	width: 550px;
+	width: 500px;
 	text-align: center;
-	font-size: 17.5px;
+	font-size: 15px;
 	margin-bottom: 20px;
 	font-family: Avenir, Pier Regular, sans-serif;
 }

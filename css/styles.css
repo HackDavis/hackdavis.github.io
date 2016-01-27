@@ -7,6 +7,8 @@
 	Dark Gray: #545554;
 */
 
+/* FONTS */
+
 @font-face {
   font-family: 'Pier Regular';
   src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
@@ -17,7 +19,7 @@
   src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
 }
 
-/* GENERAL */
+/* GENERAL LAYOUT */
 
 body {
 	margin: 0 0 0 0;
@@ -157,6 +159,7 @@ section {
     top: 0;
     z-index: 9999;
     border-top: 0;
+    box-shadow: 0px 1px 5px gray;
 }
 
 /* SPLASH */
@@ -276,7 +279,6 @@ section {
     -moz-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
-
 }
 
 .upper-slant {
@@ -308,9 +310,7 @@ a {
 	text-align: center;
 	font-size: 30px;
 	margin-bottom: 50px;
-	/*	Temporary solution-begin */
 	padding-top: 60px;
-	/*	Temporary solution-end*/
 	font-family: Avenir, Pier Regular, sans-serif;
 }
 
@@ -377,6 +377,7 @@ a {
 	padding-top: 20px;
 	font-size: 15px;
 	text-align: justify;
+	height: 250px;
 }
 
 .left {
@@ -430,10 +431,8 @@ a {
 	margin-top: 75px;
 }
 
-#ucd-gsm {
-	margin-top: 50px;
-	height: 100px;
-	width: 450px;
+#ucd-gsm-logo {
+	margin-top: 25px;
 }
 
 #ucd-gsm-logo {
@@ -477,6 +476,10 @@ a {
 	.FAQ {
 		height: 60vh;
 	}
+
+	.card {
+		height: 300px;
+	}
 }
 
 @media screen and (max-width: 850px) {
@@ -486,6 +489,7 @@ a {
 }
 
 @media screen and (max-width: 750px) {
+
 	.FAQ {
 		height: 75vh;
 	}
@@ -496,6 +500,63 @@ a {
 
 	.sticky {
 		display: none;
+	}
+
+	#date-place {
+		font-size: 17px;
+	}
+
+	.nav {
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+		transform: translate(-30px);
+	}
+
+	#logo {
+		height: 150px;
+		width: 150px;
+	}
+
+	#title {
+		font-size: 40px;
+		padding-top: 5px;
+	}
+
+	#hack {
+		padding-right: 5px;
+	}
+
+	#caption {
+		font-size: 22px;
+	}
+
+	#date-place {
+		font-size: 15px;
+	}
+
+	.button {
+		margin: 0 0 10px 0;
+		border-radius: 0;
+		width: 60%;
+	}
+
+	.col {
+		width: 100%;
+	}
+
+	.card {
+		font-size: 15px;
+		text-align: justify;
+		height: auto;
+	}
+
+	.left {
+		transform: translate(0);
+	}
+
+	.right {
+		transform: translate(0);
 	}
 }
 
@@ -585,64 +646,5 @@ a {
 @media screen and (max-width: 350px) {
 	.About {
 		height: 150vh;
-	}
-}
-
-@media screen and (max-width: 750px) {
-
-	#date-place {
-		font-size: 17px;
-	}
-
-	.nav {
-		width: 250px;
-		text-align: center;
-		margin: 0 auto;
-		transform: translate(-30px);
-	}
-
-	#logo {
-		height: 150px;
-		width: 150px;
-	}
-
-	#title {
-		font-size: 40px;
-		padding-top: 5px;
-	}
-
-	#hack {
-		padding-right: 5px;
-	}
-
-	#caption {
-		font-size: 22px;
-	}
-
-	#date-place {
-		font-size: 15px;
-	}
-
-	.button {
-		margin: 0 0 10px 0;
-		border-radius: 0;
-		width: 60%;
-	}
-
-	.col {
-		width: 100%;
-	}
-
-	.card {
-		font-size: 15px;
-		text-align: justify;
-	}
-
-	.left {
-		transform: translate(0);
-	}
-
-	.right {
-		transform: translate(0);
 	}
 }

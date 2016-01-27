@@ -440,10 +440,6 @@ a {
 	align-items: center;
 }
 
-.sponsor-logo {
-
-}
-
 #nest-logo {
 	-webkit-transform: translateY(10%);
     -moz-transform: translateY(10%);
@@ -631,10 +627,10 @@ a {
 	#faq-title {
 		font-size: 25px;
 	}
-/*
+
 	.Sponsorship {
 		display: none;
-	}*/
+	}
 }
 
 @media screen and (max-width: 430px) {

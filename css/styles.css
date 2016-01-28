@@ -440,10 +440,10 @@ a {
 	align-items: center;
 }
 
-#nest-logo {
-	-webkit-transform: translateY(10%);
-    -moz-transform: translateY(10%);
-    -o-transform: translateY(10%);
+#nst-l {
+	-webkit-transform: translateY(15px, 10%);
+    -moz-transform: translateY(15px, 10%);
+    -o-transform: translateY(15px, 10%);
     transform: translate(15px, 10%);
 }
 
@@ -451,7 +451,7 @@ a {
 	margin-top: 100px;
 }
 
-#soylent-logo {
+#sylnt-l {
 	margin-left: 50px;
 }
 
@@ -459,7 +459,7 @@ a {
 	margin-top: 100px;
 }
 
-#ucd-gsm-logo {
+#ucd-gsm-l {
 	-webkit-transform: translateY(20%);
     -moz-transform: translateY(20%);
     -o-transform: translateY(20%);

@@ -415,6 +415,7 @@ a {
 }
 
 .sponsorship-content {
+	max-width: 100vw;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
 	display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -440,30 +441,42 @@ a {
 	align-items: center;
 }
 
-#nst-l {
-	-webkit-transform: translateY(15px, 10%);
-    -moz-transform: translateY(15px, 10%);
-    -o-transform: translateY(15px, 10%);
-    transform: translate(15px, 10%);
+.sponsor {
+	padding: 25px;
 }
 
-.medium-tier {
-	margin-top: 100px;
-}
+.tier {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 
-#sylnt-l {
-	margin-left: 50px;
-}
+	-webkit-box-flex-direction: row;
+	-moz-box-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 
-.small-tier {
-	margin-top: 100px;
-}
+	-webkit-box-justify-content: center;
+	-moz-box-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
 
-#ucd-gsm-l {
-	-webkit-transform: translateY(20%);
-    -moz-transform: translateY(20%);
-    -o-transform: translateY(20%);
-    transform: translateY(20%);
+	-webkit-box-align-items: center;
+	-moz-box-align-items: center;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+	align-items: center;
+
+	-webkit-box-flex-wrap: wrap;
+	-moz-box-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+	padding:10px;
 }
 
 /* Footer */

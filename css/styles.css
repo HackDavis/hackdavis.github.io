@@ -402,23 +402,11 @@ a {
 	font-family: Avenir, Pier Regular, sans-serif;
 	width: 450px;
 	height: auto;
-	padding: 25px;
+	padding: 20px;
 	font-size: 15px;
-}
-
-.left {
-	-webkit-transform: translate(10%);
-  -moz-transform: translate(10%);
-  -o-transform: translate(10%);
-  transform: translate(10%);
-
-}
-
-.right {
-	-webkit-transform: translate(-10%);
-    -moz-transform: translate(-10%);
-    -o-transform: translate(-10%);
-    transform: translate(-10%);
+	text-align: justify;
+	margin-left: 10px;
+	margin-right:10px;
 }
 
 .card .ques {

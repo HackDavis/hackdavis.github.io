@@ -16,11 +16,6 @@
 
 @font-face {
   font-family: 'Pier Bold';
-  src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
-}
-
-/* GENERAL LAYOUT */
-
 body {
 	margin: 0 0 0 0;
 	overflow-x: hidden;

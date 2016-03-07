@@ -455,22 +455,31 @@ a {
 }
 
 .sponsorm {
-	padding: 25px;
-	max-width:100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+
 	height: 100px;
 	width: auto;
 }
 
 .sponsors {
-	padding: 25px;
-	max-width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
 	height: 50px;
 	width: auto;
 }
 
 .sponsorxs {
-	padding: 25px;
-	max-width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
 	height: 40px;
 	width: auto;
 }
@@ -544,6 +553,7 @@ a {
 	.card {
 		height: 300px;
 	}
+
 }
 
 
@@ -664,6 +674,36 @@ a {
 	#title {
 		margin-top: 10px;
 	}
+
+		.sponsorm {
+		height: auto;
+		max-width: 100%;
+		width: 300px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sponsors {
+		height: auto;
+		max-width: 100%;
+		width: 250px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sponsorxs {
+		height: auto;
+		max-width: 100%;
+		width: 250px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -671,17 +711,71 @@ a {
 	.About {
 		height: 120vh;
 	}
-}
 
-@media screen and (max-width: 350px) {
+	.sponsorm {
+		height: auto;
+		max-width: 100%;
+		width: 255px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
 
-	.About {
-		height: 130vh;
+	.sponsors {
+		height: auto;
+		max-width: 100%;
+		width: 200px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sponsorxs {
+		height: auto;
+		max-width: 100%;
+		width: 200px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
+
 
 @media screen and (max-width: 350px) {
 	.About {
 		height: 150vh;
+	}
+
+	.sponsorm {
+		height: auto;
+		max-width: 100%;
+		width: 225px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sponsors {
+		height: auto;
+		max-width: 100%;
+		width: 175px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.sponsorxs {
+		height: auto;
+		max-width: 100%;
+		width: 175px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }

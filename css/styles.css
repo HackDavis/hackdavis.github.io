@@ -516,6 +516,7 @@ a {
 	flex-wrap: wrap;
 
 	padding:10px;
+	max-width: 90%;
 }
 
 /* Footer */

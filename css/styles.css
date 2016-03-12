@@ -129,6 +129,8 @@ section {
 	position: absolute;
 	margin-top: 7px;
 	margin-left: 30px;
+	width: 45px;
+	display: inline-block;
 }
 
 #hackdavis {
@@ -137,16 +139,13 @@ section {
 	font-family: Avenir, Pier Bold, sans-serif;
 	font-weight: 800;
 	color: gray;
+	width: 50px;
 	height: 60px;
+	display: inline-block;
 
-	-webkit-transition: all .2s ease-out;
-    -moz-transition: all .2s ease-out;
-    -o-transition: all .2s ease-out;
-    transition: all .2s ease-out;
-
-	-webkit-transform: translate(30px);
-    -moz-transform: translate(30px);
-    -o-transform: translate(30px);
+	-webkit-transform: translate(80px);
+    -moz-transform: translate(80px);
+    -o-transform: translate(80px);
 	transform: translate(80px);
 }
 

@@ -6,14 +6,17 @@ $(document).ready(function() {
               
         var el = document.getElementById("line");
         var nav = document.getElementById("nav");
+        var brand = document.getElementById("brand")
 
         if (scrollTop > stickyNavTop) { 
             $('.nav').addClass('sticky');
             el.style.opacity = 1.0;
+            brand.style.opacity = 1.0;
             nav.style.background = "rgba(255, 255, 255, .95)";
         } else {
             $('.nav').removeClass('sticky'); 
             el.style.opacity = 0.0;
+            brand.style.opacity = 0.0;
             nav.style.background = "rgba(255, 255, 255, 1)";
         }
     };

@@ -171,7 +171,7 @@ section {
     transform: translate(0px, 2px);
 }
 
-#clickHome, #clickAbout, #clickFaq, #clickSponsors {
+#clickHome, #clickAbout, #clickFaq, #clickSchedule, #clickSponsors {
 	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */
@@ -189,6 +189,11 @@ section {
 #clickFaq {
 	width: 70px;
 }
+
+#clickSchedule {
+	width: 120px;
+}
+
 #clickSponsors {
 	width: 120px;
 }
@@ -344,7 +349,7 @@ a {
 	background-color: #00accb;
 }
 
-#about-title, #sponsorship-title {
+#about-title, #sponsorship-title, #schedule-title {
 	color: white;
 	font-weight: 900;
 	margin: 0 auto;
@@ -462,10 +467,92 @@ a {
     transform: translate(0, 5px);
 }
 
+/* Schedule */
+
+.Schedule {
+	background-color: #60AD57;
+	margin: 0 auto;
+	text-align: center; 
+	font-family: Avenir, Pier Regular, sans-serif;
+	color: white;
+}
+
+.schedule-content {
+	width: 100%;
+}
+
+.day {
+	display: inline-block;
+	width: 30vh;
+	height: 80vh;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.day-title {
+	font-size: 20px;
+}
+
+.sunday {
+	letter-spacing: 2.5px;
+}
+
+.day-date {
+	font-size: 45px;
+	padding-bottom: 20px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+#event {
+	height: 40px;
+	width: 240px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#time, #details {
+	display: inline-block;
+}
+
+#time {
+	font-size: 30px;
+	font-weight: 600;
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+#details {
+	width: 200px;
+	float: left;
+}
+
+#event-title, #event-msg {
+	float: left;
+	width: 200px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+#event-title {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 25px;
+}
+
+#event-msg {
+	font-size: 12px;
+	line-height: 1px;
+}
+
 /* Sponsorship */
 
 .Sponsorship {
-	background-color: #60AD57; 
+	background-color: #545554; 
 }
 
 .sponsorship-content {

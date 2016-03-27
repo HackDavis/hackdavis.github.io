@@ -34,6 +34,11 @@ $(document).ready(function (){
                 scrollTop: $(".Sponsorship").offset().top - 80
             }, 500);
     });
+    $("#clickSchedule").click(function (){
+            $('html, body').animate({
+                scrollTop: $(".Schedule").offset().top - 70
+            }, 500);
+    });
     $("#clickFaq").click(function (){
             $('html, body').animate({
                 scrollTop: $(".FAQ").offset().top - 120

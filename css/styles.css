@@ -331,7 +331,7 @@ section {
 	height: 275px;
 }
 
-#landscape {
+#landscape{
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
@@ -559,12 +559,15 @@ a {
 }
 
 #gray-upper {
-	position: absolute;
+/*	position: absolute;
+*/	bottom: 0;
+	width: 100%;
+	z-index: 99999;
 
 	-webkit-transform: translate(0, 5px);
     -moz-transform: translate(0, 5px);
     -o-transform: translate(0, 5px);
-    transform: translate(0, -300px);
+    transform: translate(0, -150px);
 }
 
 #gray-lower {
@@ -576,6 +579,7 @@ a {
 .Sponsorship {
 	background-color: #545554; 
 	z-index: 9999;
+	transform: translateY(-200px);
 }
 
 .sponsorship-content {
@@ -820,6 +824,13 @@ a {
 		text-align: center;
 		display: block;
 	}
+
+/*	#gray-upper {
+		-webkit-transform: translate(0, -100px);
+	    -moz-transform: translate(0, -100px);
+	    -o-transform: translate(0, -100px);
+	    transform: translate(0, -100px);
+	}*/
 }
 
 @media screen and (max-width: 575px) {
@@ -846,6 +857,13 @@ a {
 	#faq-title {
 		font-size: 25px;
 	}
+
+/*	#gray-upper {
+		-webkit-transform: translate(0, 5px);
+	    -moz-transform: translate(0, 5px);
+	    -o-transform: translate(0, 5px);
+	    transform: translate(0, -50px);
+	}*/
 
 }
 

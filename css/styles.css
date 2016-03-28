@@ -480,7 +480,7 @@ a {
 
 .schedule-content {
 	width: 100%;
-	height: 100vh;
+	height: 120vh;
 }
 
 .day {
@@ -516,14 +516,20 @@ a {
 	padding-bottom: 20px;
 }
 
+#event > p {
+	position: absolute;
+	transform: translate(10px, -10px);
+}
+
 #time, #details {
 	display: inline-block;
 }
 
 #time {
-	font-size: 30px;
-	font-weight: 600;
+	font-size: 35px;
+	font-weight: 800;
 	width: 40px;
+	line-height: 40px;
 	height: 40px;
 	float: left;
 }
@@ -541,33 +547,35 @@ a {
 }
 
 #event-title {
-	font-weight: 600;
-	font-size: 12px;
+	font-weight: 800;
+	font-size: 16px;
 	line-height: 25px;
 }
 
 #event-msg {
-	font-size: 12px;
+	font-weight: 100;
+	font-size: 14px;
 	line-height: 1px;
 }
 
 #gray-upper {
 	position: absolute;
+
 	-webkit-transform: translate(0, 5px);
     -moz-transform: translate(0, 5px);
     -o-transform: translate(0, 5px);
-    transform: translate(0, -120px);
+    transform: translate(0, -300px);
 }
 
 #gray-lower {
 	transform: translate(0, -5px);
 }
 
-
 /* Sponsorship */
 
 .Sponsorship {
 	background-color: #545554; 
+	z-index: 9999;
 }
 
 .sponsorship-content {

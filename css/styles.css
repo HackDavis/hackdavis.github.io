@@ -519,6 +519,10 @@ a {
 
 #event > p {
 	position: absolute;
+
+	-webkit-transform: translate(10px, -10px);
+    -moz-transform: translate(10px, -10px);
+    -o-transform: translate(10px, -10px);
 	transform: translate(10px, -10px);
 }
 
@@ -565,9 +569,9 @@ a {
 	width: 100%;
 	z-index: 99999;
 
-	-webkit-transform: translate(0, 5px);
-    -moz-transform: translate(0, 5px);
-    -o-transform: translate(0, 5px);
+	-webkit-transform: translate(0, -150px);
+    -moz-transform: translate(0, -150px);
+    -o-transform: translate(0, -150px);
     transform: translate(0, -150px);
 }
 
@@ -577,9 +581,9 @@ a {
 	width: 100%;
 	z-index: 99999;
 
-	-webkit-transform: translate(0, 5px);
-    -moz-transform: translate(0, 5px);
-    -o-transform: translate(0, 5px);
+	-webkit-transform: translate(0, -150px);
+    -moz-transform: translate(0, -150px);
+    -o-transform: translate(0, -150px);
     transform: translate(0, -150px);
 }
 
@@ -588,7 +592,11 @@ a {
 .Sponsorship {
 	background-color: #545554; 
 	z-index: 9999;
-	transform: translateY(-200px);
+
+	-webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+    transform: translateY(-200px);
 }
 
 .sponsorship-content {
@@ -687,6 +695,10 @@ a {
 	height: 200px;
 	width: 100%;
 	background-color: #545554;
+
+	-webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
 	transform: translateY(-200px);
 	position: absolute;
 }
@@ -773,6 +785,10 @@ a {
 		width: 250px;
 		text-align: center;
 		margin: 0 auto;
+
+		-webkit-transform: translate(-30px);
+	    -moz-transform: translate(-30px);
+	    -o-transform: translate(-30px);
 		transform: translate(-30px);
 	}
 
@@ -815,10 +831,16 @@ a {
 	}
 
 	.left {
+		-webkit-transform: translate(0);
+	    -moz-transform: translate(0);
+	    -o-transform: translate(0);
 		transform: translate(0);
 	}
 
 	.right {
+		-webkit-transform: translate(0);
+	    -moz-transform: translate(0);
+	    -o-transform: translate(0);
 		transform: translate(0);
 	}
 }

@@ -636,6 +636,10 @@ a {
 	width: auto;
 }
 
+#pws {
+	height: 80px;
+}
+
 .sponsors {
 	padding-top: 25px;
 	padding-bottom: 25px;

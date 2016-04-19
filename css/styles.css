@@ -846,6 +846,10 @@ a {
 		font-size: 15px;
 	}
 
+	.clickable {
+		font-size: 15px;
+	}
+
 	.button {
 		margin: 0 0 10px 0;
 		border-radius: 0;

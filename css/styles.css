@@ -296,6 +296,10 @@ section {
 	text-align: center;
 	padding-top: 25px;
 	z-index: 999;
+	font-family: Avenir, Pier Regular, sans-serif;
+	font-size: 17px;
+	font-weight: 800;
+	color: #60AD57;
 }
 
 .button {

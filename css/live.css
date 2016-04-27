@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Pier Regular';
+  src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Pier Bold';
+  src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
+}
+
+#title {
+	color: gray;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: Pier Bold, Avenir, sans-serif;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#bluebar {
+	height: 7px;
+	width: 200px;
+	background-color: #00accb;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+#yellowbar {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #F1C83A;
+}

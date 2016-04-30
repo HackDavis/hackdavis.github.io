@@ -3,13 +3,69 @@
 <head>
 	<title>HackDavis Live 2016</title>
 	<link rel="stylesheet" type="text/css" href="../css/live.css">
-
+	<script type="text/javascript" src="../js/live.js" ></script>
 </head>
 <body>
 	<div id="yellowbar"></div>
-
-	<div id="title"> TRAVEL REIMBURSEMENT </div>
+	<div id="title"> WELCOME TO HACKDAVIS LIVE </div>
 	<div id="bluebar"></div>
 
+	<div id="left-col">
+		<div id="countdown">
+			<div id="cd-title"> countdown </div>
+			<div id="cd-box"> 
+				<div class="time-ele"> 
+					<p id="days"> 0 </p> 
+					<p id="label"> days </p> 
+				</div>
+				<div class="time-ele"> 
+					<p id="hours"> 0 </p> 
+					<p id="label"> hours </p> 
+				</div>
+				<div class="time-ele"> 
+					<p id="min"> 0 </p> 
+					<p id="label"> min </p> 
+				</div>
+				<div class="time-ele"> 
+					<p id="sec"> 0 </p> 
+					<p id="label"> sec </p> 
+				</div>
+			</div>
+		</div>
+		<div id="more">
+			<div id="more-title"> more </div>
+			<div id="more-box"> 
+				<div class="link-ele">
+					<img src="../img/symbols/api_symbol.png" height="50px">
+					<p id="label"> <a href="api.html"> APIs </a> </p>
+				</div>
+				<div class="link-ele">
+					<img src="../img/symbols/hardware_symbol.png" height="50px">
+					<p id="label"> <a href="api.html"> hardware </a> </p>
+				</div>
+				<div class="link-ele">
+					<img src="../img/symbols/prize_symbol.png" height="50px">
+					<p id="label"> <a href="api.html"> prizes </a> </p>
+				</div>
+				<div class="link-ele">
+					<img id="ws-symbol" src="../img/symbols/workshop_symbol.png" height="50px">
+					<p id="label"> <a href="api.html"> workshops </a> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="right-col">
+		<div id="anouncement">
+			<div id="an-title"> live feed </div>
+			<div id="an-box">
+				<a class="twitter-timeline" href="https://twitter.com/HackDavis2016" data-widget-id="726498483243388928">Tweets by @HackDavis2016</a>
+			</div>
+		</div>
+	</div>
+
+<!-- 	<div id="footer">
+	</div> -->
+
 </body>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </html>

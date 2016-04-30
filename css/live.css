@@ -8,6 +8,12 @@
   src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
 }
 
+body {
+	margin: 0 0 0 0;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 #title {
 	color: gray;
 	font-size: 30px;
@@ -34,3 +40,154 @@
 	height: 100%;
 	background-color: #F1C83A;
 }
+
+#countdown, #more, #anouncement {
+	position: relative;
+}
+
+#cd-box {
+	height: 200px;
+	width: 600px;
+	margin-left: 100px;
+	margin-top: 75px;
+	border: 2px solid #F1C83A;
+}
+
+#cd-title {
+	position: absolute;
+	color: white;
+	background-color: #F1C83A;
+	font-size: 30px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	padding: 2px 5px 2px 5px;
+	margin-left: 120px;
+	margin-top: -15px;
+}
+
+.time-ele {
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+	display: inline-block;
+	width: 24%;
+	height: 200px;
+	padding-top: 35px;
+}
+
+#days, #hours, #min, #sec {
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 90px;
+}
+
+.time-ele > p {
+	position: relative;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+}
+
+#more-box {
+	height: 200px;
+	width: 600px;
+	margin-left: 100px;
+	margin-top: 46px;
+	border: 2px solid #F1C83A;
+}
+
+#more-title {
+	position: absolute;
+	color: white;
+	background-color: #F1C83A;
+	font-size: 30px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	padding: 2px 5px 2px 5px;
+	margin-left: 120px;
+	margin-top: -15px;
+}
+
+#an-box {
+	height: 450px;
+	width: 400px;
+	margin-right: 100px;
+	margin-top: 75px;
+	border: 2px solid #F1C83A;
+}
+
+#an-title {
+	position: absolute;
+	color: white;
+	background-color: #F1C83A;
+	font-size: 30px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	padding: 2px 5px 2px 5px;
+	margin-left: 250px;
+	margin-top: -15px;
+}
+
+.twitter-timeline {
+	padding-top: 20px;
+}
+
+#left-col {
+	float: left;
+}
+
+#right-col {
+	float: right;
+}
+
+#left-col, #right-col {
+	display: inline-block;
+}
+
+.link-ele {
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+	display: inline-block;
+	width: 24%;
+	height: 200px;
+	padding-top: 60px;
+}
+
+.link-ele > p > a {
+	text-decoration: none;
+	position: relative;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+}
+
+.link-ele > p > a:hover {
+  color: #00accb;
+}
+
+.link-ele > p > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F1C83A;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.link-ele > p > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#ws-symbol {
+	transform: translate(0, 10px);
+}
+

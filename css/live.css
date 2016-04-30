@@ -41,6 +41,11 @@ body {
 	background-color: #F1C83A;
 }
 
+#yellowbar > img {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
 #countdown, #more, #anouncement {
 	position: relative;
 }
@@ -147,7 +152,7 @@ body {
 	text-align: center;
 	color: gray;
 	display: inline-block;
-	width: 24%;
+	width: 19%;
 	height: 200px;
 	padding-top: 60px;
 }
@@ -156,7 +161,7 @@ body {
 	text-decoration: none;
 	position: relative;
 	font-family: Pier Regular, Avenir, sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	margin: 0 auto;
 	text-align: center;
 	color: gray;
@@ -189,5 +194,9 @@ body {
 
 #ws-symbol {
 	transform: translate(0, 10px);
+}
+
+#dp-symbol {
+	transform: translate(0, -5px);
 }
 

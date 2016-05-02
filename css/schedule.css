@@ -68,7 +68,7 @@ body {
 	text-align: justify;
 }
 
-@media screen and (max-width: 525px) {
+/*@media screen and (max-width: 525px) {
 
 	body {
 		margin: 0 0 0 0;
@@ -102,7 +102,7 @@ body {
 		text-align: left;
 	}
 
-}
+}*/
 
 .flexbox-container {
 	display: -ms-flex;

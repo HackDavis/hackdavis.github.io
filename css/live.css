@@ -187,12 +187,20 @@ body {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+	 -moz-transition: all 0.3s ease-in-out 0s;
+	 -o-transition: all 0.3s ease-in-out 0s;
+	 transition: all 0.3s ease-in-out 0s;
 }
 
 .link-ele > p > a:hover:before {
   visibility: visible;
+
+  -ms-transform: scaleX(1);
   -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
   transform: scaleX(1);
 }
 
@@ -216,6 +224,11 @@ body {
 	margin-bottom: 25px;
 	display: block;
 	z-index: 999999;
+	
+	-ms-transform: translate(0, 45px);
+	-webkit-transform: translate(0, 45px);
+	-moz-transform: translate(0, 45px);
+	-o-transform: translate(0, 45px);
 	transform: translate(0, 45px);
 }
 
@@ -241,6 +254,10 @@ body {
 	text-align: center;
 	display: none;
 
+	-ms-transform: translate(0, 45px);
+	-webkit-transform: translate(0, 45px);
+	-moz-transform: translate(0, 45px);
+	-o-transform: translate(0, 45px);
 	transform: translate(0, 45px);
 }
 

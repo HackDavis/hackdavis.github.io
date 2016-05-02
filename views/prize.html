@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HackDavis Prizes </title>
+	<link rel="stylesheet" type="text/css" href="../css/grid.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="../js/grid.js"></script>
+	<script type="text/javascript" src="../js/live.js" ></script>
+</head>
+<body>
+	<div id="yellowbar">
+		<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
+		<a href="live.html">
+			<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
+		</a>
+
+		<div class="label" id="api-label"> APIs </div>
+		<a href="api.html">
+			<img id="api" src="../img/symbols/api_white.png" height="30px">
+		</a>
+
+		<div class="label" id="hardware-label"> hardware </div>
+		<a href="hardware.html">
+			<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
+		</a>
+
+		<div class="label" id="prize-label"> prizes </div>
+		<a href="prize.html">
+			<img id="prize" src="../img/symbols/prize_white.png" height="30px">
+		</a>
+		
+		<div class="label" id="workshop-label"> tech talks </div>
+		<a href="schedule.html">
+			<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
+		</a>
+
+		<div class="label" id="devpost-label"> devpost </div>
+		<a href="http://hackdavis.devpost.com">
+			<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
+		</a>
+	</div>
+	<div id="title"> PRIZES </div>
+	<div id="bluebar"></div>
+
+	<div class="grid"> </div>
+
+</body>
+<script>
+	var prizes = [
+	{
+		"name": "Top 5 Hacks",
+		"id": "prize-1",
+		"heading": "5 winners",
+		"desc": "TBD"
+	},
+	{
+		"name": "Most Technically Challenging",
+		"id": "prize-2",
+		"heading": "1 winner - $900 cash value",
+		"desc": "Nexus Players + Parrot Mini Drones for each team member"
+	},
+	{
+		"name": "Most Impactful",
+		"id": "prize-3",
+		"heading": "1 winner - $800 cash value",
+		"desc": "Apple iPad Mini 2s for each team member"
+	},
+	{
+		"name": "Most Creative",
+		"id": "prize-4",
+		"heading": "1 winner - $400 cash value",
+		"desc": "GoPro Heroes for each team member"
+	},
+	{
+		"name": "Best Health & Wellness Nonprofit Hack",
+		"id": "prize-5",
+		"heading": "1 winner",
+		"desc": "Summer internship opportunity at New Story Inc + 1 year of Github Silver"
+	},
+	{
+		"name": "Best Education Nonprofit Hack",
+		"id": "prize-6",
+		"heading": "1 winner",
+		"desc": "Summer internship opportunity at Teach for America + 1 year of Github Silver"
+	},
+	{
+		"name": "Best Environment Nonprofit Hack",
+		"id": "prize-7",
+		"heading": "1 winner",
+		"desc": "Summer internship opportunity at Revolv + 1 year of Github Silver"
+	},
+	{
+		"name": "Best Use of Touch Hardware",
+		"id": "prize-8",
+		"heading": "1 winner - $1,300 cash value",
+		"desc": "$1,300 to the winning team for best use of touch hardware using Synaptics hardware/software. Sponsored by Synaptics"
+	},
+	{
+		"name": "Best Use of Fingerprint Hardware",
+		"id": "prize-9",
+		"heading": "1 winner - $1,300 cash value",
+		"desc": "$1,300 to the winning team for best use of fingerprint hardware using Synaptics hardware/software. Sponsored by Synaptics"
+	},
+	{
+		"name": "Most Innovative Hack",
+		"id": "prize-10",
+		"heading": "1 winner - $500 cash value",
+		"desc": "Pioneer Summit Convention Tickets for the team ($500 value) + GSV Labs Mentoring sessions"
+	},
+	{
+		"name": "Best Use of IBM Technology",
+		"id": "prize-11",
+		"heading": "1 winner - $240 cash value",
+		"desc": "Raspberry PI 3 Starter Kits for the team"
+	},
+	{
+		"name": "Best Use of Cisco Technology",
+		"id": "prize-12",
+		"heading": "1 winner - $1,400 cash value",
+		"desc": "OSVR (Open Source Virtual Reality) Hacker Dev Kit for each team member"
+	},
+	{
+		"name": "Best Prevention of Online Harrassment Hack",
+		"id": "prize-13",
+		"heading": "1 winner - $500 cash value",
+		"desc": "Fossil Q Reveler Black Leather Activity Bands for each team member"
+	},
+	]
+
+	populateGrid(prizes)
+</script>
+</html>

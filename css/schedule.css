@@ -34,8 +34,8 @@ body {
 }
 
 .datetitle {
-	color: #5D5D5D;
-	font-size: 35px;
+	color: gray;
+	font-size: 25px;
 	font-weight: 700;
 	font-family: Pier Bold, Avenir, sans-serif;
 }
@@ -121,7 +121,53 @@ body {
 
 .card {
 	border-width: 5px;
-	margin-bottom: 50px;
-	padding:1.5rem;
- 	box-shadow:0 1px 5px 3px #F1C83A;
+	margin-bottom: 20px;
+/*	padding: 1.5rem;
+*/	border: 2px solid #F1C83A;
+	height: 100px;
+/* 	box-shadow:0 1px 5px 3px #F1C83A;
+*/}
+
+.card > h3 {
+	font-family: Pier Bold, Avenir, sans-serif;
+	color: gray;
+	font-size: 20px;
+	margin-left: 20px;
 }
+
+.card > p {
+	font-family: Pier Regular, Avenir, sans-serif;
+	color: #00accb;
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+.label {
+	width: 80px;
+	height: 30px;
+	background-color: #F1C83A;
+	position: absolute;
+	margin-left: 50px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	color: white;
+	margin: 0 auto;
+	margin-left: 50px;
+	line-height: 35px;
+	text-align: center;
+	display: none;
+
+	transform: translate(0, 45px);
+}
+
+#yellowbar > a > img{
+	margin: auto;
+	margin-bottom: 25px;
+	display: block;
+	z-index: 999999;
+	transform: translate(0, 45px);
+}
+
+#yellowbar > a > img:hover {
+	cursor: pointer;
+}
+

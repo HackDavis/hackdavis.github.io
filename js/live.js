@@ -36,3 +36,16 @@ function CountDownTimer(dt)
 
     timer = setInterval(showRemaining, 1000);
 }
+
+$(document).ready(function() {
+    $("#yellowbar>a>img").hover(
+        function () {
+            $("#" + this.id + "-label").show();
+          }, 
+          function () {
+            $("#" + this.id + "-label").hide();
+          }
+    );
+});
+
+

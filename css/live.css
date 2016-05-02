@@ -34,11 +34,11 @@ body {
 #yellowbar {
 	width: 50px;
 	height: 50px;
-	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	background-color: #F1C83A;
+	position: fixed;
 }
 
 #yellowbar > img {
@@ -48,6 +48,10 @@ body {
 
 #countdown, #more, #anouncement {
 	position: relative;
+}
+
+#countdown {
+	z-index: -9999;
 }
 
 #cd-box {
@@ -192,10 +196,6 @@ body {
   transform: scaleX(1);
 }
 
-#ws-symbol {
-	transform: translate(0, 10px);
-}
-
 .flexbox-container {
 	display: -ms-flex;
 	display: -webkit-flex;
@@ -210,3 +210,40 @@ body {
 .flexbox-container > div:first-child {
 	margin-right: 20px;
 }
+
+#yellowbar > a > img{
+	margin: auto;
+	margin-bottom: 25px;
+	display: block;
+	z-index: 999999;
+	transform: translate(0, 45px);
+}
+
+#yellowbar > a > img:hover {
+	cursor: pointer;
+}
+
+#yellowbar > img:first-child {
+/*	padding-top: 100px;
+*/}
+
+.label {
+	width: 80px;
+	height: 30px;
+	background-color: #F1C83A;
+	position: absolute;
+	margin-left: 50px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	color: white;
+	margin: 0 auto;
+	margin-left: 50px;
+	line-height: 35px;
+	text-align: center;
+	display: none;
+
+	transform: translate(0, 45px);
+}
+
+#logo {
+/*	bottom: 0;
+*/}

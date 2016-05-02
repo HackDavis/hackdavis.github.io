@@ -1,0 +1,137 @@
+/* COLOR PALETTE */
+
+/* 
+	Green: #60AD57;
+	Blue: #00accb;
+	Gray: #BABABA;
+	Dark Gray: #545554;
+	Yellow: #F1C83A;
+*/
+
+@font-face {
+  font-family: 'Pier Regular';
+  src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Pier Bold';
+  src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
+}
+
+#title {
+	color: gray;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: Pier Bold, Avenir, sans-serif;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#yellowbar {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #F1C83A;
+}
+
+#bluebar {
+	height: 7px;
+	width: 200px;
+	background-color: #00accb;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+.grid-item {
+	background-color: white;
+	position: relative;
+	width: 300px;
+	height: 250px;
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	border: 2px solid #F1C83A;
+
+	z-index: -9999;
+}
+
+.grid-title {
+	color: gray;
+	font-family: Pier Bold, Avenir, sans-serif;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 85%;
+	height: 40px;
+	position: absolute;
+	line-height: 20px;
+}
+
+.grid-heading {
+	color: #00accb;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 15px;
+	margin-top: 80px;
+	margin-left: 20px;
+	position: absolute;
+
+}
+
+.grid-desc {
+	color: gray;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 15px;
+	margin-top: 120px;
+	margin-left: 20px;
+	width: 90%;
+	height: 100px;
+	position: absolute;
+
+}
+
+.grid {
+	margin-left: 100px;
+	margin-top: 75px;
+}
+
+/*#prize-2-title, #prize-5-title, #prize-6-title, #prize-7-title, #prize-8-title, #prize-9-title, #prize-10-title, #prize-11-title, #prize-12-title, #prize-13-title {
+	font-size: 20px;
+}*/
+
+#yellowbar > a > img{
+	margin: auto;
+	margin-bottom: 25px;
+	display: block;
+	z-index: 999999;
+	transform: translate(0, 45px);
+}
+
+#yellowbar > a > img:hover {
+	cursor: pointer;
+}
+
+#yellowbar > img:first-child {
+/*	padding-top: 100px;
+*/}
+
+.label {
+	width: 80px;
+	height: 30px;
+	background-color: #F1C83A;
+	position: absolute;
+	margin-left: 50px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	color: white;
+	margin: 0 auto;
+	margin-left: 50px;
+	line-height: 35px;
+	text-align: center;
+	display: none;
+	z-index: 999999;
+
+	transform: translate(0, 45px);
+}
+

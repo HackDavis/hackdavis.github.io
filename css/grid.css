@@ -193,15 +193,11 @@
 	}
 
 	.grid-title {
-		color: gray;
-		font-family: Pier Bold, Avenir, sans-serif;
-		font-size: 20px;
-		margin-top: 20px;
-		margin-left: 20px;
-		width: 85%;
-		height: 40px;
-		position: absolute;
-		line-height: 20px;
+		text-align: left;
+	}
+
+	.grid-desc {
+		text-align: left;
 	}
 
 	.label {

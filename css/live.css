@@ -261,6 +261,138 @@ body {
 	transform: translate(0, 45px);
 }
 
-#logo {
-/*	bottom: 0;
-*/}
+@media screen and (max-width: 525px) {
+
+	body {
+		margin: 0 0 0 0;
+		z-index: -9999;
+		overflow-x: hidden;
+		background-color: white;
+	}
+
+	#yellowbar {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		margin-bottom: 50px;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#title {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#bluebar {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#content {
+		margin: 0 auto;
+		margin-top: 50px;
+		text-align: center;
+		width: 90%;
+	}
+
+	ul {
+		text-align: left;
+	}
+
+	.grid {
+		margin: 0 auto;
+		margin-top: 75px;
+		text-align: center;
+	}
+
+	.grid-item { 
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.grid-title {
+		text-align: left;
+	}
+
+	.grid-desc {
+		text-align: left;
+	}
+
+	.label {
+		display: none !important;
+	}
+
+	/*	#yellowbar > a > img {
+			margin-left: 8%;
+			display: inline-block;
+			transform: translate(0, 0);
+			position: relative;
+			z-index: 999;
+			display: none;
+		}*/
+
+	/*	img#logo {
+			transform: translate(0, 5px) !important;
+		}*/
+
+	#container {
+		position: absolute;
+		z-index: 99999;
+		background-color: white;
+		width: 100%;
+		height: 100%;
+	}
+
+	#hamburger {
+		display: block;
+		position: absolute;
+		top: 0;
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#hamburger:hover {
+		cursor: pointer;
+	}
+
+	#menu {
+		display: block;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		list-style-type: none;
+		padding-left:0; 
+		width: 40%;
+		margin-top: 0;
+		height: 100%;
+		position: fixed;
+		z-index: -9999;
+		background-color: #F1C83A;
+		padding-top: 10px;
+	}
+
+	#menu > a {
+		width: 100%;
+		height: 40px;
+		background-color: #F1C83A;
+		text-decoration: none;
+	}
+
+	#menu > a > li{
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: white;
+		font-size: 15px;
+		padding-left: 10px;
+		line-height: 50px;
+		background-color: #F1C83A;
+	}
+}
+
+
+
+

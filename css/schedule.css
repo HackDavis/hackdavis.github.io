@@ -116,8 +116,8 @@ body {
 }
 
 .flexbox-container > div:first-child {
-	margin-right: 20px;
-}
+/*	margin-right: 20px;
+*/}
 
 .card {
 	border-width: 5px;
@@ -176,6 +176,33 @@ body {
 	display: none;
 }
 
+@media screen and (max-width: 1050px) {
+	.card {
+		width: 300px;
+	}
+
+	.card > h3 {
+		font-size: 15px;
+	}
+
+	.card > p {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#content {
+/*		margin: 0 auto;
+		text-align: center;*/
+	}
+
+	#container {
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		display: inline-block;
+	}
+}
 
 @media screen and (max-width: 525px) {
 

@@ -261,6 +261,10 @@ body {
 	transform: translate(0, 45px);
 }
 
+#hamburger, #menu {
+	display: none;
+}
+
 @media screen and (max-width: 525px) {
 
 	body {

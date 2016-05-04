@@ -289,6 +289,16 @@ section {
 	z-index: 999;
 }
 
+#date-place > a {
+	text-decoration: underline;
+	color: #00ACD0;
+
+}
+
+#date-place > a:hover {
+	color: #BABABA;
+}
+
 .clickable {
 	height: 60px;
 	width: 100%;

@@ -84,15 +84,20 @@
 			if (open == false){
 				$("#menu").css("opacity", 1);
 				$("#container").animate({left: '40%'});
-				$("#container").css("overflow-y", "hidden");
-				$("#container").css("overflow-x", "hidden");
+				$("#container").css("position", "fixed");
+
+				// $("#container").css("overflow-y", "hidden");
+				// $("#container").css("overflow-x", "hidden");
 				open = true;
 			}
 			else {
 				$("#container").animate({left: '0%'});
-				setTimeout(function() { $("#menu").css("opacity", 0); }, 2000);
-				$("#container").css("overflow-y", "auto");
-				$("#container").css("overflow-x", "auto");
+				setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+
+				$("#container").css("position", "absolute");
+
+				// $("#container").css("overflow-y", "auto");
+				// $("#container").css("overflow-x", "auto");
 				open = false;
 			}
 

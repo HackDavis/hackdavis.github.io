@@ -241,7 +241,7 @@
 	#menu {
 		display: block;
 		opacity: 0;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		list-style-type: none;
 		padding-left:0; 
@@ -269,6 +269,8 @@
 		line-height: 50px;
 		background-color: #F1C83A;
 	}
+
+
 }
 /*
 @media screen and (max-width: 375px) {

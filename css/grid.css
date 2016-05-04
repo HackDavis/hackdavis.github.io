@@ -239,7 +239,7 @@
 	}
 
 	#menu {
-		display: block;
+		display: none;
 		position: absolute;
 		top: 0;
 		list-style-type: none;

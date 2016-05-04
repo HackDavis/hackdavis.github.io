@@ -82,11 +82,13 @@
 		$(".menu-closed").click(function(){
 
 			if (open == false){
+				$("#menu").show()
 				$("#container").animate({left: '40%'});
 				open = true;
 			}
 			else {
 				$("#container").animate({left: '0%'});
+				setTimeout(function() { $("#menu").hide() }, 2000);
 				open = false;
 			}
 

@@ -239,7 +239,8 @@
 	}
 
 	#menu {
-		display: none;
+		display: block;
+		opacity: 0;
 		position: absolute;
 		top: 0;
 		list-style-type: none;

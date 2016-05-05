@@ -265,7 +265,7 @@ body {
 	display: none;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1225px) {
 
 	#right-col {
 		width: 100%;
@@ -284,8 +284,6 @@ body {
 
 }
 
-
-
 @media screen and (max-width: 800px) {
 
 	#left-col, #right-col {
@@ -293,7 +291,6 @@ body {
 		margin: 0 auto;
 		text-align: center;
 		padding-right: 0px;
-
 	}
 
 	#cd-box , #more-box, #an-box {
@@ -322,7 +319,7 @@ body {
 		font-size: 40px;
 	}
 
-	#cd-title, #more-title {
+	#cd-title, #more-title, #an-title {
 		margin-left: 10%;
 	}
 }

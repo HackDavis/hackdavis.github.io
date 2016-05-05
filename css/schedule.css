@@ -152,6 +152,95 @@ body {
 
 @media screen and (max-width: 525px) {
 
+	body {
+		margin: 0 0 0 0;
+		z-index: -9999;
+		overflow-x: hidden;
+		background-color: white;
+	}
+
+	#yellowbar {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		margin-bottom: 50px;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#title {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#bluebar {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.label {
+		display: none !important;
+	}
+
+	#container {
+		position: absolute;
+		z-index: 99999;
+		background-color: white;
+		width: 100%;
+		height: 100%;
+	}
+
+	#hamburger {
+		display: block;
+		position: absolute;
+		top: 0;
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#hamburger:hover {
+		cursor: pointer;
+	}
+
+	#menu {
+		display: block;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		list-style-type: none;
+		padding-left:0; 
+		width: 40%;
+		margin-top: 0;
+		height: 100%;
+		position: fixed;
+		z-index: -9999;
+		background-color: #F1C83A;
+		padding-top: 10px;
+	}
+
+	#menu > a {
+		width: 100%;
+		height: 40px;
+		background-color: #F1C83A;
+		text-decoration: none;
+	}
+
+	#menu > a > li{
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: white;
+		font-size: 15px;
+		padding-left: 10px;
+		line-height: 50px;
+		background-color: #F1C83A;
+	}
+
+	ul {
+		text-align: left;
+	}
+
 	.card {
 		border-width: 5px;
 		margin-bottom: 20px;

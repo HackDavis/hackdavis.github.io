@@ -453,6 +453,88 @@ body {
 	}
 }
 
+@media screen and (max-width: 400px) {
+
+	#cd-title, #an-title, #more-title {
+		font-size: 20px;
+	}
+
+	#label > a {
+		font-size: 10px;
+	}
+
+	#days, #hours, #min, #sec {
+		font-size: 30px;
+	}
+
+	#cd-box {
+		height: 100px;
+	}
+
+	#more-box {
+		height: 100px;
+	}
+
+	.link-ele > a > img {
+		height: 20px;
+	}
+
+	.link-ele { 
+		padding-top: 20px;
+	}
+
+	.time-ele > #label {
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	#cd-title, #an-title, #more-title {
+		font-size: 20px;
+	}
+
+	#label > a {
+		font-size: 10px;
+	}
+
+	#days, #hours, #min, #sec {
+		font-size: 20px;
+	}
+
+	#cd-box {
+		height: 100px;
+	}
+
+	#more-box {
+		height: 100px;
+	}
+
+	.link-ele > a > img {
+		height: 15px;
+	}
+
+	.link-ele { 
+		padding-top: 20px;
+	}
+
+	.time-ele > #label {
+		font-size: 10px;
+	}
+
+	.time-ele {
+		width: 15%;
+	}
+
+	.link-ele {
+		margin-right: 5px;
+		width: 17%;
+	}
+
+}
+
+
 
 
 

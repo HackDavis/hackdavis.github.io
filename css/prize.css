@@ -78,6 +78,7 @@
 	height: 40px;
 	position: absolute;
 	line-height: 20px;
+
 }
 
 .grid-heading {
@@ -98,12 +99,17 @@
 	width: 90%;
 	height: 100px;
 	position: absolute;
+	z-index: 9999;
 
 }
 
 .grid {
 	margin-left: 100px;
 	margin-top: 75px;
+	position: absolute;
+
+	z-index: -9999;
+
 }
 
 #yellowbar > a > img{

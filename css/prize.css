@@ -45,6 +45,16 @@
 	margin-top: 10px;
 }
 
+#content {
+	color: gray;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 15px;
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 70%;
+	text-align: justify;
+}
+
 .grid-item {
 	background-color: white;
 	position: relative;

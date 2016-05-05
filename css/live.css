@@ -328,6 +328,10 @@ body {
 	#cd-box , #more-box, #an-box {
 		width: 90%;
 	}
+
+	#tta {
+		font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 525px) {

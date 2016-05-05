@@ -131,24 +131,22 @@
 <script>
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
-	$(document).ready(function() {
 
-		$(".menu-closed").click(function(){
+	$(".menu-closed").click(function(){
 
-			if (open == false){
-				$("#menu").css("opacity", 1);
-				$("#container").animate({left: '40%'});
-				$("#container").css("position", "fixed");
-				open = true;
-			}
-			else {
-				$("#container").animate({left: '0%'});
-				setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
-				$("#container").css("position", "absolute");
-				open = false;
-			}
+		if (open == false){
+			$("#menu").css("opacity", 1);
+			$("#container").animate({left: '40%'});
+			$("#container").css("position", "fixed");
+			open = true;
+		}
+		else {
+			$("#container").animate({left: '0%'});
+			setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+			$("#container").css("position", "absolute");
+			open = false;
+		}
 
-		});
 	});
 
 </script>

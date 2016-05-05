@@ -64,54 +64,28 @@ body {
 	font-size: 15px;
 	margin-left: 100px;
 	margin-top: 50px;
-	width: 70%;
 	text-align: justify;
 }
-
-/*@media screen and (max-width: 525px) {
-
-	body {
-		margin: 0 0 0 0;
-	}
-	#yellowbar {
-		width: 100%;
-		height: 50px;
-		position: relative;
-		margin-bottom: 50px;
-	}
-
-	#title {
-		margin: 0 auto;
-		text-align: center;
-		font-size: 25px;
-	}
-
-	#bluebar {
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	#content {
-		margin: 0 auto;
-		margin-top: 50px;
-		text-align: center;
-		width: 90%;
-	}
-
-	ul {
-		text-align: left;
-	}
-
-}*/
 
 .flexbox-container {
 	display: -ms-flex;
 	display: -webkit-flex;
 	display: flex;
+
+	-webkit-box-flex-direction: row;
+	-moz-box-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-box-flex-wrap: wrap;
+	-moz-box-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .flexbox-container > div {
-	width: 50%;
 	padding: 10px;
 }
 
@@ -122,12 +96,10 @@ body {
 .card {
 	border-width: 5px;
 	margin-bottom: 20px;
-/*	padding: 1.5rem;
-*/	border: 2px solid #F1C83A;
+	border: 2px solid #F1C83A;
 	height: 100px;
 	width: 400px;
-/* 	box-shadow:0 1px 5px 3px #F1C83A;
-*/}
+}
 
 .card > h3 {
 	font-family: Pier Bold, Avenir, sans-serif;
@@ -176,6 +148,171 @@ body {
 	display: none;
 }
 
+/*--------------------------------*/
+
+@media screen and (max-width: 525px) {
+
+	.card {
+		border-width: 5px;
+		margin-bottom: 20px;
+		border: 2px solid #F1C83A;
+		height: 100px;
+		width: 300px !important;
+	}
+
+	.card > h3 {
+		font-family: Pier Bold, Avenir, sans-serif;
+		color: gray;
+		font-size: 17px !important;
+		margin-left: 20px;
+	}
+
+	.card > p {
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: #00accb;
+		font-size: 13px !important;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	#content {
+		color: gray;
+		font-family: Pier Regular, Avenir, sans-serif;
+		font-size: 15px;
+		margin-left: 50px !important;
+		text-align: justify;
+	}
+
+	#bluebar {
+		margin-left: 72px !important;
+	}
+
+	#title {
+		margin: 2px;
+		/*padding-left: 10p;*/
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.card {
+		border-width: 5px;
+		margin-bottom: 20px;
+		padding: 10px;
+		border: 2px solid #F1C83A;
+		height: 100px;
+		width: 200px !important;
+	}
+
+	.card > h3 {
+		font-family: Pier Bold, Avenir, sans-serif;
+		color: gray;
+		font-size: 17px !important;
+		margin-left: 10px;
+	}
+
+	.card > p {
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: #00accb;
+		font-size: 13px !important;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+
+	#content {
+		color: gray;
+		font-family: Pier Regular, Avenir, sans-serif;
+		font-size: 15px;
+		margin-left: 50px !important;
+		text-align: justify;
+	}
+
+	#bluebar {
+		margin-left: 72px !important;
+	}
+
+	#title {
+		margin: 2px;
+		/*padding-left: 10p;*/
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.card {
+		border-width: 5px;
+		margin-bottom: 20px;
+		padding: 10px;
+		border: 2px solid #F1C83A;
+		height: 100px;
+		width: 250px !important;
+	}
+
+	.card > h3 {
+		font-family: Pier Bold, Avenir, sans-serif;
+		color: gray;
+		font-size: 17px !important;
+		margin-left: 10px;
+	}
+
+	.card > p {
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: #00accb;
+		font-size: 13px !important;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+
+	#content {
+		color: gray;
+		font-family: Pier Regular, Avenir, sans-serif;
+		font-size: 20px;
+		margin-left: 50px !important;
+		text-align: justify;
+	}
+
+	#bluebar {
+		margin-left: 110px !important;
+	}
+
+	#title {
+		margin: 2px;
+		/*padding-left: 10p;*/
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.card {
+		border-width: 5px;
+		margin-bottom: 20px;
+		padding: 10px;
+		border: 2px solid #F1C83A;
+		height: 100px;
+		width: 300px !important;
+	}
+
+	.card > h3 {
+		font-family: Pier Bold, Avenir, sans-serif;
+		color: gray;
+		font-size: 17px !important;
+		margin-left: 10px;
+	}
+
+	.card > p {
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: #00accb;
+		font-size: 13px !important;
+		margin-left: 10px;
+	}
+}
+
+
+
+/*
 @media screen and (max-width: 1050px) {
 	.card {
 		width: 300px;
@@ -192,8 +329,8 @@ body {
 
 @media screen and (max-width: 800px) {
 	#content {
-/*		margin: 0 auto;
-		text-align: center;*/
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	#container {
@@ -266,7 +403,7 @@ body {
 
 	.label {
 		display: none !important;
-	}
+	}*/
 
 	/*	#yellowbar > a > img {
 			margin-left: 8%;
@@ -281,7 +418,7 @@ body {
 			transform: translate(0, 5px) !important;
 		}*/
 
-	#container {
+	/*#container {
 		position: absolute;
 		z-index: 99999;
 		background-color: white;
@@ -335,4 +472,4 @@ body {
 		background-color: #F1C83A;
 	}
 }
-
+*/

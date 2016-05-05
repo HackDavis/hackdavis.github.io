@@ -57,6 +57,7 @@
 				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
 			</a>
 		</div>
+
 		<div id="hamburger" class="menu-closed">
 			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
 			<div class="line" style="height:8px; background-color: white;"> </div>
@@ -64,6 +65,7 @@
 			<div class="line" style="height:8px; background-color: white;"> </div>
 			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
 		</div>
+
 		<div id="title"> WELCOME TO HACKDAVIS LIVE </div>
 		<div id="bluebar"></div>
 
@@ -106,7 +108,7 @@
 					</div>
 					<div class="link-ele">
 						<img src="../img/symbols/workshop_symbol.png" height="40px">
-						<p id="label"> <a href="schedule.html"> tech talks </a> </p>
+						<p id="label"> <a href="schedule.html" style="font-size: 14px;"> tech talks </a> </p>
 					</div>
 					<div class="link-ele">
 						<img src="../img/symbols/devpost_symbol.png" height="35px">
@@ -129,25 +131,25 @@
 <script>
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 
-	$(document).ready(function() {
+	// $(document).ready(function() {
 
-		$(".menu-closed").click(function(){
+	// 	$(".menu-closed").click(function(){
 
-			if (open == false){
-				$("#menu").css("opacity", 1);
-				$("#container").animate({left: '40%'});
-				$("#container").css("position", "fixed");
-				open = true;
-			}
-			else {
-				$("#container").animate({left: '0%'});
-				setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
-				$("#container").css("position", "absolute");
-				open = false;
-			}
+	// 		if (open == false){
+	// 			$("#menu").css("opacity", 1);
+	// 			$("#container").animate({left: '40%'});
+	// 			$("#container").css("position", "fixed");
+	// 			open = true;
+	// 		}
+	// 		else {
+	// 			$("#container").animate({left: '0%'});
+	// 			setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+	// 			$("#container").css("position", "absolute");
+	// 			open = false;
+	// 		}
 
-		});
-	});
+	// 	});
+	// });
 
 </script>
 

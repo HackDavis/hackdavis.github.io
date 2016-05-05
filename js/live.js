@@ -46,6 +46,23 @@ $(document).ready(function() {
             $("#" + this.id + "-label").hide();
           }
     );
+
+    $(".menu-closed").click(function(){
+
+        if (open == false){
+            $("#menu").css("opacity", 1);
+            $("#container").animate({left: '40%'});
+            $("#container").css("position", "fixed");
+            open = true;
+        }
+        else {
+            $("#container").animate({left: '0%'});
+            setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+            $("#container").css("position", "absolute");
+            open = false;
+        }
+
+    });
 });
 
 

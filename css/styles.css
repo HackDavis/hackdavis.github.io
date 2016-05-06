@@ -310,6 +310,7 @@ section {
 	font-size: 17px;
 	font-weight: 800;
 	color: #60AD57;
+	margin: 0 auto;
 }
 
 .button {
@@ -330,6 +331,11 @@ section {
     -moz-transition: all 200ms ease-out;
     -o-transition: all 200ms ease-out;
     transition: all 200ms ease-out;
+}
+
+.button > a {
+	color: #60AD57;
+	z-index: 9999;
 }
 
 .button:hover {

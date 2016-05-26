@@ -326,6 +326,7 @@ section {
 	cursor: pointer;
 	position: relative;
 	padding-top: 8px;
+	font-weight: 100;
 
 	-webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;

@@ -1,0 +1,540 @@
+@font-face {
+  font-family: 'Pier Regular';
+  src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'Pier Bold';
+  src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
+}
+
+body {
+	margin: 0 0 0 0;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+#title {
+	color: gray;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: Pier Bold, Avenir, sans-serif;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#bluebar {
+	height: 7px;
+	width: 200px;
+	background-color: #00accb;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+#yellowbar {
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #F1C83A;
+	position: fixed;
+}
+
+#yellowbar > img {
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+#countdown, #more, #anouncement {
+	position: relative;
+}
+
+#countdown {
+	z-index: -9999;
+}
+
+#cd-box {
+	height: 200px;
+	width: 600px;
+	margin-left: 100px;
+	margin-top: 75px;
+	border: 2px solid #F1C83A;
+}
+
+#cd-title {
+	position: absolute;
+	color: white;
+	background-color: #F1C83A;
+	font-size: 30px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	padding: 2px 5px 2px 5px;
+	margin-left: 120px;
+	margin-top: -15px;
+}
+
+.time-ele {
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+	display: inline-block;
+	width: 24%;
+	height: 200px;
+	padding-top: 35px;
+}
+
+#days, #hours, #min, #sec {
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 90px;
+}
+
+.time-ele > p {
+	position: relative;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+}
+
+#more-box {
+	height: 200px;
+	width: 600px;
+	margin-left: 100px;
+	margin-top: 46px;
+	border: 2px solid #F1C83A;
+}
+
+#more-title {
+	position: absolute;
+	color: white;
+	background-color: #F1C83A;
+	font-size: 30px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	padding: 2px 5px 2px 5px;
+	margin-left: 120px;
+	margin-top: -15px;
+}
+
+#an-box {
+	height: 450px;
+	width: 400px;
+	margin-right: 100px;
+	margin-top: 75px;
+	border: 2px solid #F1C83A;
+}
+
+#an-title {
+	position: absolute;
+	color: white;
+	background-color: #F1C83A;
+	font-size: 30px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	padding: 2px 5px 2px 5px;
+	margin-left: 250px;
+	margin-top: -15px;
+}
+
+.twitter-timeline {
+	padding-top: 20px;
+}
+
+#left-col {
+	float: left;
+}
+
+#right-col {
+	float: right;
+}
+
+#left-col, #right-col {
+	display: inline-block;
+}
+
+.link-ele {
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+	display: inline-block;
+	width: 19%;
+	height: 200px;
+	padding-top: 60px;
+}
+
+.link-ele > p > a {
+	text-decoration: none;
+	position: relative;
+	font-family: Pier Regular, Avenir, sans-serif;
+	font-size: 15px;
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+}
+
+.link-ele > p > a:hover {
+  color: #00accb;
+}
+
+.link-ele > p > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #F1C83A;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+
+  -webkit-transition: all 0.3s ease-in-out 0s;
+	 -moz-transition: all 0.3s ease-in-out 0s;
+	 -o-transition: all 0.3s ease-in-out 0s;
+	 transition: all 0.3s ease-in-out 0s;
+}
+
+.link-ele > p > a:hover:before {
+  visibility: visible;
+
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 20px;
+}
+
+#yellowbar > a > img{
+	margin: auto;
+	margin-bottom: 25px;
+	display: block;
+	z-index: 999999;
+	
+	-ms-transform: translate(0, 45px);
+	-webkit-transform: translate(0, 45px);
+	-moz-transform: translate(0, 45px);
+	-o-transform: translate(0, 45px);
+	transform: translate(0, 45px);
+}
+
+#yellowbar > a > img:hover {
+	cursor: pointer;
+}
+
+#yellowbar > img:first-child {
+/*	padding-top: 100px;
+*/}
+
+.label {
+	width: 80px;
+	height: 30px;
+	background-color: #F1C83A;
+	position: absolute;
+	margin-left: 50px;
+	font-family: Pier Regular, Avenir, sans-serif;
+	color: white;
+	margin: 0 auto;
+	margin-left: 50px;
+	line-height: 35px;
+	text-align: center;
+	display: none;
+
+	-ms-transform: translate(0, 45px);
+	-webkit-transform: translate(0, 45px);
+	-moz-transform: translate(0, 45px);
+	-o-transform: translate(0, 45px);
+	transform: translate(0, 45px);
+}
+
+#hamburger, #menu {
+	display: none;
+}
+
+@media screen and (max-width: 1225px) {
+
+	#right-col {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-right: 50px;
+	}
+
+	#an-box {
+		width: 600px;
+		margin-top: 50px;
+		height: 450px;
+		float: left;
+		margin-left: 150px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+	#left-col, #right-col {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		padding-right: 0px;
+	}
+
+	#cd-box , #more-box, #an-box {
+		margin: 0 auto;
+		text-align: center;
+		width: 70%;
+		margin-top: 50px;
+		padding-right: 0px;
+		height: 125px;
+		float: none;
+	}
+
+	#more-box {
+		height: 175px;
+	}
+
+	#an-box {
+		height: 450px;
+	}
+
+	#anouncement {
+		margin-bottom: 20px;
+	}
+
+	#days, #hours, #min, #sec {
+		font-size: 40px;
+	}
+
+	#cd-title, #more-title, #an-title {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	#cd-box , #more-box, #an-box {
+		width: 90%;
+	}
+
+	#tta {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 525px) {
+
+	body {
+		margin: 0 0 0 0;
+		z-index: -9999;
+		overflow-x: hidden;
+		background-color: white;
+	}
+
+	#yellowbar {
+		width: 100%;
+		height: 50px;
+		position: relative;
+		margin-bottom: 50px;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	#title {
+		margin: 0 auto;
+		text-align: center;
+		font-size: 25px;
+	}
+
+	#bluebar {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#content {
+		margin: 0 auto;
+		margin-top: 50px;
+		text-align: center;
+		width: 90%;
+	}
+
+	ul {
+		text-align: left;
+	}
+
+	.grid {
+		margin: 0 auto;
+		margin-top: 75px;
+		text-align: center;
+	}
+
+	.grid-item { 
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.grid-title {
+		text-align: left;
+	}
+
+	.grid-desc {
+		text-align: left;
+	}
+
+	.label {
+		display: none !important;
+	}
+
+	#container {
+		position: absolute;
+		z-index: 99999;
+		background-color: white;
+		width: 100%;
+		height: 100%;
+	}
+
+	#hamburger {
+		display: block;
+		position: absolute;
+		top: 0;
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#hamburger:hover {
+		cursor: pointer;
+	}
+
+	#menu {
+		display: block;
+		opacity: 0;
+		position: fixed;
+		top: 0;
+		list-style-type: none;
+		padding-left:0; 
+		width: 40%;
+		margin-top: 0;
+		height: 100%;
+		position: fixed;
+		z-index: -9999;
+		background-color: #F1C83A;
+		padding-top: 10px;
+	}
+
+	#menu > a {
+		width: 100%;
+		height: 40px;
+		background-color: #F1C83A;
+		text-decoration: none;
+	}
+
+	#menu > a > li{
+		font-family: Pier Regular, Avenir, sans-serif;
+		color: white;
+		font-size: 15px;
+		padding-left: 10px;
+		line-height: 50px;
+		background-color: #F1C83A;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	#cd-title, #an-title, #more-title {
+		font-size: 20px;
+	}
+
+	#label > a {
+		font-size: 10px;
+	}
+
+	#days, #hours, #min, #sec {
+		font-size: 30px;
+	}
+
+	#cd-box {
+		height: 100px;
+	}
+
+	#more-box {
+		height: 100px;
+	}
+
+	.link-ele > a > img {
+		height: 20px;
+	}
+
+	.link-ele { 
+		padding-top: 20px;
+	}
+
+	.time-ele > #label {
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	#cd-title, #an-title, #more-title {
+		font-size: 20px;
+	}
+
+	#label > a {
+		font-size: 10px;
+	}
+
+	#days, #hours, #min, #sec {
+		font-size: 20px;
+	}
+
+	#cd-box {
+		height: 100px;
+	}
+
+	#more-box {
+		height: 100px;
+	}
+
+	.link-ele > a > img {
+		height: 15px;
+	}
+
+	.link-ele { 
+		padding-top: 20px;
+	}
+
+	.time-ele > #label {
+		font-size: 10px;
+	}
+
+	.time-ele {
+		width: 15%;
+	}
+
+	.link-ele {
+		margin-right: 5px;
+		width: 17%;
+	}
+
+}
+
+
+
+
+

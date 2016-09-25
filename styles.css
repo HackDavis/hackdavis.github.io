@@ -280,7 +280,8 @@ body {
 }
 
 
-@media only screen and (min-width: 1028px) {
+/*@media only screen and (min-width: 1028px) {*/
+@media only screen and (min-width: 1280px) {
     .name1 > i {
     	font-size: 15px;
         border-left: 1px solid #29c8cc;

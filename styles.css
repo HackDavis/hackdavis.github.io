@@ -282,6 +282,7 @@ textarea:focus, input:focus{
 /* FAQ */
 
 .faq {
+    padding-top: 150px;
 	top: 200%;
 	position: absolute;
 	width: 100%;
@@ -510,20 +511,26 @@ textarea:focus, input:focus{
 
 /* Sponsorship */
 
-.sponsors {
-	top: 325%;
-	font-family: 'Montserrat', sans-serif;
-	text-decoration: none;
-	position: absolute;
-	display: inline-block;
-	height: auto;
-	width: 100%;
-  	padding-bottom: 5vh;
-    background-size: cover;                  
-    background-repeat: no-repeat;
-    background-position: center center;              /* optional, center the image */
+@media only screen and (max-width: 768px) {
+    .sponsors {
+    }
 }
-
+@media only screen and (min-width: 768px) {
+    .sponsors {
+    	top: 325%;
+    	font-family: 'Montserrat', sans-serif;
+    	text-decoration: none;
+    	position: absolute;
+    	display: inline-block;
+    	height: auto;
+    	width: 100%;
+      	padding-bottom: 5vh;
+        background-size: cover;                  
+        background-repeat: no-repeat;
+        background-position: center center;              /* optional, center the image */
+    }
+}
+    
 .sponsors-category {
   	color: white;
 	width: 100%;
@@ -547,6 +554,7 @@ textarea:focus, input:focus{
 .sponsors-category > span {
 	color: #7815e6;
 }
+
 
 .tier {
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */

@@ -18,6 +18,10 @@
 	src: url("montserrat/Montserrat-Medium.otf") format("opentype");
 }
 
+body {
+	margin 0 0 0 0;
+}
+
 /* NAV BAR */
 
 #nav {
@@ -45,6 +49,8 @@
 	padding-right: 15px;
 	line-height: 50px;
 	letter-spacing: 1px;
+	font-family: 'Montserrat-ExtraLight', sans-serif;
+
 
 	transform: translateX(-20px);
 }
@@ -191,7 +197,7 @@ body {
 
 #sponsor {
 	background-color: #29c8cc;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif;
 	width: 150px;
 	height: 40px;
 	border-radius: 30px;
@@ -203,6 +209,7 @@ body {
 	margin-right: 5px;
 	letter-spacing: 1px;
 	color: white;
+	text-decoration: none;
 }
 
 #email {

@@ -101,7 +101,7 @@ body {
 }
 
 #header {
-    height: 425vh;
+    height: 100vh;
 	background-image: url("img/background.png");
 	background-position: center;
 	background-size: cover;
@@ -113,7 +113,7 @@ body {
 /* LANDING SCREEN */
 
 body {
-	/*background-image: url("img/background.png");*/
+	background-image: url("img/background.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -249,9 +249,7 @@ textarea:focus, input:focus{
 /* ABOUT */
 
 .about {
-	position: absolute;
 	width: 100%;
-	top: 100%;
 	margin: 0 auto;
 	text-align: center;
 	color: white;
@@ -283,8 +281,6 @@ textarea:focus, input:focus{
 
 .faq {
     padding-top: 150px;
-	top: 200%;
-	position: absolute;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
@@ -362,8 +358,7 @@ textarea:focus, input:focus{
 	display: inline-block;
 	height: auto;
 	width: 100%;
-	background-color: transparent;
-    background-repeat: repeat-y;
+    background-color: #fff;
     padding-bottom: 5vh;
 }
 
@@ -511,24 +506,12 @@ textarea:focus, input:focus{
 
 /* Sponsorship */
 
-@media only screen and (max-width: 768px) {
-    .sponsors {
-    }
-}
-@media only screen and (min-width: 768px) {
-    .sponsors {
-    	top: 325%;
-    	font-family: 'Montserrat', sans-serif;
-    	text-decoration: none;
-    	position: absolute;
-    	display: inline-block;
-    	height: auto;
-    	width: 100%;
-      	padding-bottom: 5vh;
-        background-size: cover;                  
-        background-repeat: no-repeat;
-        background-position: center center;              /* optional, center the image */
-    }
+.sponsors {
+  	font-family: 'Montserrat', sans-serif;
+   	text-decoration: none;
+   	height: auto;
+   	width: 100%;
+   	padding-bottom: 5vh;
 }
     
 .sponsors-category {

@@ -137,15 +137,9 @@ body {
 	transform: translateX(5px);
 }
 
-#hack {
-	position: absolute;
-	transform: translateX(-140px);
-}
-
 #davis {
 	font-family: 'Montserrat-Medium', sans-serif;
-	position: absolute;
-	transform: translateX(-10px);
+	transform: translateX(-50px);
 }
 
 #caption {

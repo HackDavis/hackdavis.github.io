@@ -57,6 +57,7 @@ body {
 .navItem > a {
 	color: white;
 	font-family: 'Montserrat-ExtraLight', sans-serif;
+	text-decoration: none;
 	
 	-webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
@@ -118,6 +119,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	overflow-x: hidden;
+	margin: 0 0 0 0;
 }
 
 #logo {

@@ -18,9 +18,6 @@
 	src: url("montserrat/Montserrat-Medium.otf") format("opentype");
 }
 
-body {
-	margin: 0 0 0 0;
-}
 
 /* NAV BAR */
 
@@ -113,12 +110,6 @@ body {
 /* LANDING SCREEN */
 
 body {
-	background-image: url("img/background.png");
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	overflow-x: hidden;
 	margin: 0 0 0 0;
 }
 
@@ -253,6 +244,12 @@ textarea:focus, input:focus{
 	margin: 0 auto;
 	text-align: center;
 	color: white;
+	background-image: url("img/background.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 #about-heart {
@@ -285,6 +282,12 @@ textarea:focus, input:focus{
 	margin: 0 auto;
 	text-align: center;
 	color: white;
+	background-image: url("img/background.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 #faq-title {
@@ -360,6 +363,7 @@ textarea:focus, input:focus{
 	width: 100%;
     background-color: #fff;
     padding-bottom: 5vh;
+
 }
 
 .stories-title {
@@ -512,6 +516,13 @@ textarea:focus, input:focus{
    	height: auto;
    	width: 100%;
    	padding-bottom: 5vh;
+
+	background-image: url("img/background.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
 }
     
 .sponsors-category {
@@ -597,4 +608,8 @@ textarea:focus, input:focus{
 .margin-top-20 { margin-top: 2.0em; }
 .margin-top-25 { margin-top: 2.5em; }
 .margin-top-30 { margin-top: 3.0em; }
+
+a:link {
+    color: #bbb;
+}
 

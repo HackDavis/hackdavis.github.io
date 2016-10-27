@@ -508,9 +508,9 @@ textarea:focus, input:focus{
 	margin-left: 50%;
 }
 
-/* Sponsorship */
+/* ponsorship */
 
-.sponsors {
+.ponsors {
   	font-family: 'Montserrat', sans-serif;
    	text-decoration: none;
    	height: auto;
@@ -525,7 +525,7 @@ textarea:focus, input:focus{
 	overflow-x: hidden;
 }
     
-.sponsors-category {
+.ponsors-category {
   	color: white;
 	width: 100%;
 	margin: 0 auto;
@@ -545,7 +545,7 @@ textarea:focus, input:focus{
 	margin-bottom: 50px;
 }
 
-.sponsors-category > span {
+.ponsors-category > span {
 	color: #7815e6;
 }
 

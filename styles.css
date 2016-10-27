@@ -613,3 +613,40 @@ a:link {
     color: #bbb;
 }
 
+footer#footer{
+	background-image: url("img/background.png");
+	background-size: cover;
+    width: 100vw;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	border-bottom: 1px solid white;
+	color: #ffffff;
+	padding: 20px 0 15px 0;
+}
+footer#footer .fnav{ vertical-align: middle;}
+ul.footer-social li{
+	display: inline-block;
+	margin-right: 10px;
+}
+footer#footer p{
+	font-size: 12px;
+	margin-top: 10px;
+}
+#footer i.fa {
+	height: 30px;
+	width: 30px;
+	border: 2px solid #8c8c8c;
+	font-size: 20px;
+	padding: 4px 5px;
+	border-radius: 50%;
+	color: #8c8c8c;
+	transition: all 0.5s;
+}
+#footer i.fa:hover{
+	background: #65adf5; /*footer hovering*/
+	border-color: #afd2e9;
+	color: #ffffff;
+
+}
+

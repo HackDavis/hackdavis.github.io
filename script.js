@@ -1,7 +1,7 @@
 $(document).ready(function (){
     $("#clickSponsors > a").click(function (){
         $('html, body').animate({
-            scrollTop: $(".sponsors").offset().top
+            scrollTop: $(".ponsors").offset().top
         }, 500);
     });
 

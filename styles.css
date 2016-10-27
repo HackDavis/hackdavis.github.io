@@ -619,10 +619,9 @@ footer#footer{
     width: 100vw;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	overflow-x: hidden;
-	border-bottom: 1px solid white;
 	color: #ffffff;
 	padding: 20px 0 15px 0;
+    margin-top: 15px;
 }
 footer#footer .fnav{ vertical-align: middle;}
 ul.footer-social li{
@@ -647,6 +646,5 @@ footer#footer p{
 	background: #65adf5; /*footer hovering*/
 	border-color: #afd2e9;
 	color: #ffffff;
-
 }
 

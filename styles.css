@@ -160,6 +160,18 @@ body {
 	color: white;
 }
 
+#info {
+	position: absolute;
+	top: 72%;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Montserrat-ExtraLight', sans-serif;
+	font-size: 15px;
+	margin-top: 15px;
+	color: white;
+}
+
 #buttons {
 	width: 100%;
 	margin: 0 auto;

@@ -623,7 +623,10 @@ textarea:focus, input:focus{
 .margin-top-30 { margin-top: 3.0em; }
 
 a:link {
-    color: #bbb;
+	color: #000;
+	opacity: .8;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 footer#footer{
@@ -660,4 +663,6 @@ footer#footer p{
 	border-color: #afd2e9;
 	color: #ffffff;
 }
+
+
 

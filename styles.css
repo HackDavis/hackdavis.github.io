@@ -628,7 +628,6 @@ textarea:focus, input:focus{
 
 a:link {
 	color: #000;
-	/*opacity: .8;*/
 	cursor: pointer;
 	text-decoration: none;
 }

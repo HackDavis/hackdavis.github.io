@@ -602,17 +602,19 @@ textarea:focus, input:focus{
 }
 
 .tier > a {
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 50px;
 }
 
 .tier > img {
 	width: auto;
 }
 
-.tier-2 > img {
+/*.tier-2 > img {
 	padding-left: 10px;
 	padding-right: 10px;
-}
+}*/
 
 .article-row {
 	margin-top: 50px;

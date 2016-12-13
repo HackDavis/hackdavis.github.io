@@ -601,6 +601,10 @@ textarea:focus, input:focus{
 
 }
 
+.tier > a {
+	padding-right: 20px;
+}
+
 .tier > img {
 	width: auto;
 }
@@ -624,7 +628,7 @@ textarea:focus, input:focus{
 
 a:link {
 	color: #000;
-	opacity: .8;
+	/*opacity: .8;*/
 	cursor: pointer;
 	text-decoration: none;
 }

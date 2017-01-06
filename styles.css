@@ -277,6 +277,7 @@ textarea:focus, input:focus{
 	margin-bottom: 50px;
 }
 
+
 #about-content {
 	font-family: 'Montserrat-ExtraLight', sans-serif;
 	font-size: 15px;
@@ -285,6 +286,12 @@ textarea:focus, input:focus{
 	text-align: justify;
 	margin-top: 20px;
 	line-height: 2em;
+}
+
+@media only screen and (max-width: 1028px) {
+    #about-content {
+        width: 80%;
+    }
 }
 
 /* FAQ */

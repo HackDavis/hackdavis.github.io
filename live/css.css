@@ -1,0 +1,47 @@
+
+body {
+	margin: 0 0 0 0;
+	overflow-x: hidden;
+	background-image: url("img/background.png");
+}
+
+#logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	height: 250px;
+	margin-top: -180px;
+	margin-left: -125px;
+}
+nav {
+    background: transparent;
+}
+div.main {
+    margin-top: 5vh;
+    min-height: 80vh;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-style: solid;
+    border-color: #fff;
+}
+div.title {
+
+}
+img.title-img {
+    width: 5vw;
+    height: 5vw;
+}
+div.outerdiv {
+}
+div#div1 {
+    margin-left: 5vw;
+}
+div.innerdiv {
+    border-style: solid;
+    border-color: #fff;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    max-width: 15vw;
+}

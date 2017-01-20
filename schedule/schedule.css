@@ -9,13 +9,13 @@
 */
 
 @font-face {
-  font-family: 'Pier Regular';
-  src: url('../fonts/pier-regular.otf'); /* IE9 Compat Modes */
+    font-family: Montserrat-ExtraLight;
+    src: url("../montserrat/Montserrat-ExtraLight.otf") format("opentype");
 }
 
 @font-face {
-  font-family: 'Pier Bold';
-  src: url('../fonts/pier-bold.otf'); /* IE9 Compat Modes */
+    font-family: Montserrat-Medium;
+    src: url("../montserrat/Montserrat-Medium.otf") format("opentype");
 }
 
 body {
@@ -38,16 +38,6 @@ body {
 	font-size: 25px;
 	font-weight: 700;
 	font-family: Pier Bold, Avenir, sans-serif;
-}
-
-#yellowbar {
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	background-color: #F1C83A;
 }
 
 #bluebar {
@@ -96,10 +86,16 @@ body {
 .card {
 	border-width: 5px;
 	margin-bottom: 20px;
-	border: 2px solid #F1C83A;
-	height: auto;
+/*	border: 2px solid #F1C83A;
+*/	height: auto;
 	padding-right: 15px;
 	width: 400px;
+
+	border: 2px solid transparent;
+	  -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+	  border-image-slice: 1;
 }
 
 .card > h3 {

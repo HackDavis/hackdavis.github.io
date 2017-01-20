@@ -265,12 +265,27 @@ textarea:focus, input:focus{
 	overflow-x: hidden;
 }
 
+.schedule {
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+	background-image: url(img/background.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-x: hidden;
+	padding-top: 100px;
+	padding-top: 50px;
+
+}
+
 #about-heart {
 	width: 10%;
 	margin-top: 100px;
 }
 
-#about-title, #faq-title {
+#about-title, #faq-title, #schedule-title {
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size: 30px;
 	margin-top: 20px;
@@ -283,6 +298,7 @@ textarea:focus, input:focus{
 	font-size: 15px;
 	width: 50%;
 	margin: 0 auto;
+	margin-bottom: 100px;
 	text-align: justify;
 	margin-top: 20px;
 	line-height: 2em;
@@ -292,6 +308,76 @@ textarea:focus, input:focus{
     #about-content {
         width: 80%;
     }
+}
+
+#schedule-title {
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+/* SCHEDULE */
+
+.small-circle {
+	width:50px !important;
+	height:50px !important;
+	margin:0 auto !important;
+	text-align: center !important;
+	transform: translate(-26px);
+}
+
+.timeline-image {
+	/*border: none !important;*/
+	border: 5px #29c8cc solid !important;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 40px;
+}
+
+.circle-label {
+	color: #29c8cc;
+	font-size: 190%;
+	font-family: 'Montserrat-ExtraLight', sans-serif;
+	/*padding-left: 10px;*/
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+.date {
+	font-family: 'Montserrat-Medium', sans-serif;
+	font-size: 150%;
+}
+
+li.timeline-panel {
+	padding-left: 0px !important;
+	margin: 0 auto !important;
+	text-align: center !important;
+}
+
+.timeline-time {
+	color:white;
+	margin:0 auto;
+	text-align: center;
+	padding-right: 100px;
+}
+
+.timeline-descr {
+	float: right; 
+	text-align: left;
+}
+
+.panel-right {
+	float:right !important; 
+	text-align: left !important;
+	padding-left: 0px !important;
+	margin-right: 50px !important;
+}
+
+.panel-left {
+	padding-right: 0px !important;
+	margin-left: 50px !important;
 }
 
 /* FAQ */

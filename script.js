@@ -11,6 +11,12 @@ $(document).ready(function (){
         }, 500);
     });
 
+    $("#clickSchedule > a").click(function (){
+        $('html, body').animate({
+            scrollTop: $(".schedule").offset().top
+        }, 500);
+    });
+
     $("#clickAbout > a").click(function (){
         $('html, body').animate({
             scrollTop: $(".about").offset().top

@@ -23,6 +23,25 @@ body {
 	margin-top: 50px;
 }
 
+#page-title, #live {
+	display: inline-block;
+	float: left;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
+	color: white;
+	line-height: 50px;
+	font-size: 35px;
+	padding-left: 100px;
+
+	transform: translate(0px, 50px);
+	-ms-transform: translate(0px, 50px); /* IE 9 */
+	-webkit-transform: translate(0px, 50px); /* Chrome, Safari, Opera */
+}
+
+#live {
+	padding-left: 10px;
+	font-family: 'Montserrat-Medium', sans-serif !important;
+}
+
 #bluebar {
 	height: 7px;
 	width: 200px;
@@ -65,7 +84,7 @@ body {
 	color: white;
 	background-color: #257ecc;	
 	font-size: 30px;
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	padding: 2px 5px 2px 5px;
 	margin-left: 120px;
 	margin-top: -15px;
@@ -82,13 +101,13 @@ body {
 }
 
 #days, #hours, #min, #sec {
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	font-size: 90px;
 }
 
 .time-ele > p {
 	position: relative;
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	font-size: 20px;
 	margin: 0 auto;
 	text-align: center;
@@ -113,7 +132,7 @@ body {
 	color: white;
 	background-color: #257ecc;	
 	font-size: 30px;
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	padding: 2px 5px 2px 5px;
 	margin-left: 120px;
 	margin-top: -15px;
@@ -138,7 +157,7 @@ body {
 	color: white;
 	background-color: #257ecc;	
 	font-size: 30px;
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	padding: 2px 5px 2px 5px;
 	margin-left: 250px;
 	margin-top: -15px;
@@ -174,7 +193,7 @@ body {
 .link-ele > p > a {
 	text-decoration: none;
 	position: relative;
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	font-size: 15px;
 	margin: 0 auto;
 	text-align: center;
@@ -252,7 +271,7 @@ body {
 	background-color: #F1C83A;
 	position: absolute;
 	margin-left: 50px;
-	font-family: Pier Regular, Avenir, sans-serif;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	color: white;
 	margin: 0 auto;
 	margin-left: 50px;

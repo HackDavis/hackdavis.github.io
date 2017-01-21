@@ -43,3 +43,22 @@
 	background:-ms-linear-gradient(left, #29c8cc 0%, #257ecc 25%,#7815e6 100%);
 	background:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#29c8cc), color-stop(25%,#257ecc),color-stop(100%,#7815e6));
 }
+
+#page-title, #live {
+	display: inline-block;
+	float: left;
+	font-family: 'Montserrat-ExtraLight', sans-serif !important;
+	color: white;
+	line-height: 50px;
+	font-size: 35px;
+	padding-left: 100px;
+
+	transform: translate(0px, 50px);
+	-ms-transform: translate(0px, 50px); /* IE 9 */
+	-webkit-transform: translate(0px, 50px); /* Chrome, Safari, Opera */
+}
+
+#live {
+	padding-left: 10px;
+	font-family: 'Montserrat-Medium', sans-serif !important;
+}

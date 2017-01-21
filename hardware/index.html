@@ -3,6 +3,8 @@
 <head>
 	<title>HackDavis Hardware</title>
 	<link rel="stylesheet" type="text/css" href="hardware.css">
+	<link rel="stylesheet" type="text/css" href="../live/navbar.css">
+
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
 	<script type="text/javascript" src="../live/live.js" ></script>
@@ -29,35 +31,25 @@
 	<div id="container">
 
 		<div id="yellowbar">
-			<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
-			<a href="../live">
-				<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
-			</a>
-
-			<div class="label" id="api-label"> APIs </div>
-			<a href="../api">
-				<img id="api" src="../img/symbols/api_white.png" height="30px">
-			</a>
-
-			<div class="label" id="hardware-label"> hardware </div>
-			<a href="../hardware">
-				<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
-			</a>
-
-			<div class="label" id="prize-label"> prizes </div>
-			<a href="../prize">
-				<img id="prize" src="../img/symbols/prize_white.png" height="30px">
-			</a>
-			
-			<div class="label" id="workshop-label"> tech talks </div>
-			<a href="../schedule">
-				<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
-			</a>
+			<div id="page-title"> HACKDAVIS </div> <div id="live"> HARDWARE </div>
 
 			<div class="label" id="devpost-label"> devpost </div>
-			<a href="http://hackdavis.devpost.com">
-				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
-			</a>
+			<a class="navItem" href="http://hackdavis.devpost.com"> DEVPOST </a>
+
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a class="navItem" href="../schedule"> WORKSHOPS </a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a class="navItem" href="../prize"> PRIZES </a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a class="navItem" href="../hardware"> HARDWARE </a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a class="navItem" href="../api"> APIs </a>
+
+			<div class="label" id="logo-label"> LIVE </div>
+			<a class="navItem" href="../live"> LIVE </a>
 		</div>
 
 		<div id="hamburger" class="menu-closed">
@@ -67,9 +59,6 @@
 			<div class="line" style="height:8px; background-color: white;"> </div>
 			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
 		</div>
-		
-		<div id="title"> HARDWARE </div>
-		<div id="bluebar"></div>
 
 		<div id="content">
 			To check out a hardware item, first visit <a href="http://hardware.mlh.io/events/hackdavis" target='_blank'> hardware.mlh.io/events/hackdavis </a> and sign in or create an account at the top right of the page. Once you have done that, create and submit a request for the hardware you would like to borrow during the event. Finally, go up to the MLH Hardware Lab located at Meeting Room 2. You will be able to rent out any piece of hardware from the lab by exchanging your government ID, and when you return the hardware at the end of the hackathon, your ID will be given back to you. <br><br> Here's what you can check out from the lab:

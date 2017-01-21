@@ -17,8 +17,6 @@ html, body {
 	font-family: 'Montserrat-ExtraLight', sans-serif !important;
 	text-decoration: none;
 
-
-
 	transform: translate(-20px, 50px);
 	-ms-transform: translate(-20px, 50px); /* IE 9 */
 	-webkit-transform: translate(-20px, 50px); /* Chrome, Safari, Opera */
@@ -37,6 +35,7 @@ html, body {
 	height: 100px;
 	background-color: #F1C83A;
 	position: fixed;
+	z-index: 9999;
 
 /*	margin: 0 auto;
 	text-align: center;*/
@@ -71,3 +70,4 @@ html, body {
 #menu, #menu > a > li {
 	background-color: #29c8cc;
 }
+

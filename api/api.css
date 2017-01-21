@@ -61,6 +61,7 @@
 	  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
 	  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
 	  border-image-slice: 1;
+    border-color: #ff0000 #0000ff;
 
 	z-index: -9999;
 }

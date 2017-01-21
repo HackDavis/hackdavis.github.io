@@ -37,9 +37,6 @@ html, body {
 	position: fixed;
 	z-index: 9999;
 
-/*	margin: 0 auto;
-	text-align: center;*/
-
 	background:-moz-linear-gradient(left, #29c8cc 0%, #257ecc 25%,#7815e6 100%);
 	background:linear-gradient(left, #29c8cc 0%, #257ecc 25%,#7815e6 100%);
 	background:-webkit-linear-gradient(left, #29c8cc 0%, #257ecc 25%,#7815e6 100%);

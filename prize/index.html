@@ -88,117 +88,99 @@
 
 		});
 	});
+  var prizes = [
+    {
+        "id": "prize0",
+        "name": "Best Health Hack\n",
+        "desc": "Fitbits for each team member\n",
+        "heading": "1 winner - $360 cash value\n"
+    },
+    {
+        "id": "prize1",
+        "name": "Best Environmental Hack\n",
+        "desc": "Drones for each team member\n",
+        "heading": "1 winner - $400 cash value\n"
+    },
+    {
+        "id": "prize2",
+        "name": "Best Educational Hack\n",
+        "desc": "Fire tablets for each team member + Tour / Personal Info Session with GSV CEO\n",
+        "heading": "1 winner - $200 cash value\n"
+    },
+    {
+        "id": "prize3",
+        "name": "Most Technically Challenging \n",
+        "desc": "1st place: 4 smart watches; 2nd / 3rd place: Swag bags - Sponsored by Google\n",
+        "heading": "1 winner - $400 cash value\n"
+    },
+    {
+        "id": "prize4",
+        "name": "Best use of ServiceNow API \n",
+        "desc": "iPads for each team member - Sponsored by ServiceNow\n",
+        "heading": "1 winner - $680 cash value\n"
+    },
+    {
+        "id": "prize5",
+        "name": "Best use of ArcGIS Developer Platform \n",
+        "desc": "$500 among the winning team - sponsored by Esri\n",
+        "heading": "1 winner - $0 cash value\n"
+    },
+    {
+        "id": "prize6",
+        "name": "Best use of Amazon Alexa Voice \n",
+        "desc": "Amazon Echoes for each team member - Sponsored by Amazon Alexa\n",
+        "heading": "1 winner - $720 cash value\n"
+    },
+    {
+        "id": "prize7",
+        "name": "Best use of OSISoft\u2019s API \n",
+        "desc": "$1000 for top 3 teams - sponsored by OSISoft\n",
+        "heading": "1 winner - $1,000 cash value\n"
+    },
+    {
+        "id": "prize8",
+        "name": "Best Mobile App \n",
+        "desc": "Admission into summer academy of MakeSchool - sponsored by MakeSchool\n",
+        "heading": "2 winners - $500 cash value\n"
+    },
+    {
+        "id": "prize9",
+        "name": "Best use of Wolfram\u2019s API \n",
+        "desc": "Full access to Wolfram Development Platform - sponsored by Wolfram Alpha\n",
+        "heading": "1 winner - $255 cash value\n"
+    },
+    {
+        "id": "prize10",
+        "name": "Best Use of IBM Watson \n",
+        "desc": "Raspberry PI 3 Starter Kits for the team - Sponsored by IBM\n",
+        "heading": "1 winner - $240 cash value\n"
+    },
+    {
+        "id": "prize11",
+        "name": "Best Domain Name from Domain.com \n",
+        "desc": "Domain.com swag bags for each team member - sponsored by MLH\n",
+        "heading": "1 winner - $50 cash value\n"
+    },
+    {
+        "id": "prize12",
+        "name": "Best Hack Against Online Harassment \n",
+        "desc": "Hack Harassment Battery Packs for each team member - sponsored by MLH\n",
+        "heading": "1 winner - $0 cash value\n"
+    },
+    {
+        "id": "prize13",
+        "name": "Best Use of AWS \n",
+        "desc": "$400 in AWS credit for the team - sponsored by MLH\n",
+        "heading": "1 winner - $400 cash value\n"
+    },
+    {
+        "id": "prize14",
+        "name": "Particle Prize \n",
+        "desc": "1st Place get an Electron + Asset Tracker + swag; 2nd Place gets Maker kit + Asset Tracker + swag; 3rd Place gets 3 Photon Kits + swag - sponsored by Particle\n",
+        "heading": "1 winner - $700 cash value\n"
+    }
+]
 
-	var prizes = [
-	{
-		"name": "Most Technically Challenging",
-		"id": "prize-2",
-		"heading": "1 winner",
-		"desc": "Nexus Players + Parrot Mini Drones for each team member"
-	},
-	{
-		"name": "Most Impactful",
-		"id": "prize-3",
-		"heading": "1 winner",
-		"desc": "Apple iPad Mini 2s for each team member"
-	},
-	{
-		"name": "Most Creative",
-		"id": "prize-4",
-		"heading": "1 winner",
-		"desc": "GoPro Heroes for each team member"
-	},
-	{
-		"name": "Best Health & Wellness Nonprofit Hack",
-		"id": "prize-5",
-		"heading": "1 winner",
-		"desc": "Summer internship opportunity at New Story Inc + 1 year of Github Silver. Read their challenge <a href='../challenges'>here</a>. <br><br>Sponsored by New Story Inc"
-	},
-	{
-		"name": "Best Education Nonprofit Hack",
-		"id": "prize-6",
-		"heading": "1 winner",
-		"desc": "1 year of Github Silver. Read their challenge <a href='../challenges'>here</a>. <br><br>Sponsored by Teach for America"
-	},
-	{
-		"name": "Best Environment Nonprofit Hack",
-		"id": "prize-7",
-		"heading": "1 winner",
-		"desc": "Summer internship opportunity at Re-volv + 1 year of Github Silver. Read their challenge <a href='../challenges'>here</a>. <br><br>Sponsored by Re-volv"
-	},
-	{
-		"name": "Best Use of Touch Hardware",
-		"id": "prize-8",
-		"heading": "1 winner",
-		"desc": "$1,300 to the winning team for best use of touch hardware using Synaptics hardware/software. <br><br>Sponsored by Synaptics"
-	},
-	{
-		"name": "Best Use of Fingerprint Hardware",
-		"id": "prize-9",
-		"heading": "1 winner",
-		"desc": "$1,300 to the winning team for best use of fingerprint hardware using Synaptics hardware/software. <br><br>Sponsored by Synaptics"
-	},
-	{
-		"name": "Best User Voice Experience with Amazon Alexa",
-		"id": "prize-10",
-		"heading": "1 winner",
-		"desc": "Amazon Echoes to the winning team and Amazon Taps for runner up. <br><br>Sponsored by Amazon"
-	},
-	{
-		"name": "Most Innovative Hack",
-		"id": "prize-10",
-		"heading": "1 winner",
-		"desc": "Pioneer Summit Convention Tickets for the team ($500 value) + GSV Labs Mentoring sessions<br><br>Sponsored by GSV Labs."
-	},
-	{
-		"name": "Best Use of Watson Cognitive API",
-		"id": "prize-11",
-		"heading": "1 winner",
-		"desc": "Raspberry PI 3 Starter Kits for the team<br><br>Sponsored by IBM."
-	},
-	{
-		"name": "Best Use of Cisco Spark",
-		"id": "prize-12",
-		"heading": "1 winner",
-		"desc": "OSVR (Open Source Virtual Reality) Hacker Dev Kit for each team member<br><br>Sponsored by Cisco."
-	},
-	{
-		"name": "Best Hack Harassment Solution",
-		"id": "prize-13",
-		"heading": "1 winner",
-		"desc": "Fossil Q Reveler Black Leather Activity Bands for each team member.<br><br>Sponsored by HackHarassment."
-	},
-	{
-		"name": "Best Beginner Hack",
-		"id": "prize-18",
-		"heading": "1 winner",
-		"desc": "Dell Venue Tablets for the team. At least half the team must be first time hackers.<br><br>Sponsored by MLH."
-	},
-	{
-		"name": "KPCB Challenge Winner",
-		"id": "prize-14",
-		"heading": "1 winner",
-		"desc": "Interviews with the Engineering KPCB Fellows for Summer 2017. You can view <a target='_blank' href=\"http://kpcbfellows.com/challenges\">challenges here</a>.<br><br>Sponsored by KPCB."
-	},
-	{
-		"name": "Best Use of Amazon Web Services",
-		"id": "prize-15",
-		"heading": "1 winner",
-		"desc": "1TB hard drives for each team member<br><br> Sponsored by MLH"
-	},
-	{
-		"name": "Best Domain Name from domain.com",
-		"id": "prize-16",
-		"heading": "1 winner",
-		"desc": "Swag bags with Sparkfun Redboards for each team member<br><br> Sponsored by MLH"
-	},
-	{
-		"name": "Best Developer Tool",
-		"id": "prize-17",
-		"heading": "1 winner",
-		"desc": "Octocat statues for each team member<br><br> Sponsored by MLH"
-	},
-	]
 
 	populateGrid(prizes)
 </script>

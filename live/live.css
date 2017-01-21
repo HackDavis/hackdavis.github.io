@@ -73,10 +73,11 @@ body {
 	/*border: 2px solid transparent;*/
 
 	border: 2px solid transparent;
-	  -moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-	  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
-	  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
-	  border-image-slice: 1;
+	-moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+	border-image-slice: 1;
+    border-color: #ff0000 #0000ff;
 }
 
 #cd-title {
@@ -125,6 +126,7 @@ body {
 	  -webkit-border-image: -webkit-linear-gradient(top, #29c8cc 0%, #257ecc 100%);
 	  border-image: linear-gradient(to bottom, #29c8cc 0%, #257ecc 100%);
 	  border-image-slice: 1;
+    border-color: #ff0000 #0000ff;
 }
 
 #more-title {
@@ -150,6 +152,7 @@ body {
 	  -webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
 	  border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
 	  border-image-slice: 1;
+    border-color: #ff0000 #0000ff;
 }
 
 #an-title {

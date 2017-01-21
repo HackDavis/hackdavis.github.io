@@ -1,0 +1,98 @@
+Devpost Jobs NYC The Commit  Hackathons
+YangVincent ▾
+HackDavis 2017
+Live site 
+Manage hackathon
+Updates
+Discussions
+Managers (4)
+Edit hackathon
+Essentials
+Design
+Hackathon Site
+Submissions
+Jan 21–Jan 22
+Public Voting
+Inactive
+Judging
+Using offline judging
+Prizes
+Jan 22
+Prizes
+
+Winners Announced (mm/dd/yyyy)
+All times are in Pacific Time (US & Canada) (PST)
+On
+
+01/22/2017
+...   —  : 
+Prizes
+Add each of your prizes here. At the end of the hackathon, you will assign each prize to a submission. Prizes can be monetary or non-monetary. For non-US hackathons, contact support@devpost.com to change the currency symbol. If your prize includes cash, please include the cash amount in the “Description” field as well as in the “Cash value” field.
+Edit Remove
+Best Health Hack
+1 winner - $360 cash value
+Fitbits for each team member
+Edit Remove
+Best Environmental Hack
+1 winner - $400 cash value
+Drones for each team member
+Edit Remove
+Best Educational Hack
+1 winner - $200 cash value
+Fire tablets for each team member + Tour / Personal Info Session with GSV CEO
+Edit Remove
+Most Technically Challenging OPT IN
+1 winner - $400 cash value
+1st place: 4 smart watches; 2nd / 3rd place: Swag bags - Sponsored by Google
+Edit Remove
+Best use of ServiceNow API OPT IN
+1 winner - $680 cash value
+iPads for each team member - Sponsored by ServiceNow
+Edit Remove
+Best use of ArcGIS Developer Platform OPT IN
+1 winner - $0 cash value
+$500 among the winning team - sponsored by Esri
+Edit Remove
+Best use of Amazon Alexa Voice OPT IN
+1 winner - $720 cash value
+Amazon Echoes for each team member - Sponsored by Amazon Alexa
+Edit Remove
+Best use of OSISoft’s API OPT IN
+1 winner - $1,000 cash value
+$1000 for top 3 teams - sponsored by OSISoft
+Edit Remove
+Best Mobile App OPT IN
+2 winners - $500 cash value
+Admission into summer academy of MakeSchool - sponsored by MakeSchool
+Edit Remove
+Best use of Wolfram’s API OPT IN
+1 winner - $255 cash value
+Full access to Wolfram Development Platform - sponsored by Wolfram Alpha
+Edit Remove
+Best Use of IBM Watson OPT IN
+1 winner - $240 cash value
+Raspberry PI 3 Starter Kits for the team - Sponsored by IBM
+Edit Remove
+Best Domain Name from Domain.com OPT IN
+1 winner - $50 cash value
+Domain.com swag bags for each team member - sponsored by MLH
+Edit Remove
+Best Hack Against Online Harassment OPT IN
+1 winner - $0 cash value
+Hack Harassment Battery Packs for each team member - sponsored by MLH
+Edit Remove
+Best Use of AWS OPT IN
+1 winner - $400 cash value
+$400 in AWS credit for the team - sponsored by MLH
+Edit Remove
+Particle Prize OPT IN
+1 winner - $700 cash value
+1st Place get an Electron + Asset Tracker + swag; 2nd Place gets Maker kit + Asset Tracker + swag; 3rd Place gets 3 Photon Kits + swag - sponsored by Particle
+Add Prize
+Save
+Need help with this?
+
+Read more about setting up prizes
+
+Need help? Learn more about managing your hackathon at help.devpost.com or contact us at support@devpost.com.
+

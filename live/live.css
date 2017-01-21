@@ -240,6 +240,8 @@ body {
 	display: -ms-flex;
 	display: -webkit-flex;
 	display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .flexbox-container > div {

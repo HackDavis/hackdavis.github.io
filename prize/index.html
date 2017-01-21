@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HackDavis Prizes </title>
+	<link rel="stylesheet" type="text/css" href="prize.css">
+	<link rel="stylesheet" type="text/css" href="../live/navbar.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="../js/grid.js"></script>
+	<script type="text/javascript" src="../live/live.js" ></script>
+
+	<!-- meta data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Prizes for HackDavis 2016">
+	<meta name="keywords" content="HackDavis, hackdavis, hackathon, hack, davis, UC Davis, University of California, Davis, Computer Science, prizes">
+</head>
+<body>
+	<ul id="menu">
+		<a href="../live"> <li> LIVE </li> </a>
+		<a href="../api"> <li> APIs </li> </a>
+		<a href="../hardware"> <li> HARDWARE </li> </a>
+		<a href="../prize"> <li> PRIZES </li> </a>
+		<a href="../schedule"> <li> TECH TALKS </li> </a>
+		<a href="http://hackdavis.devpost.com"> <li> DEVPOST </li> </a>
+	</ul>
+
+	<div id="container">
+		<div id="yellowbar">
+
+			<div id="page-title"> HACKDAVIS </div> <div id="live"> PRIZES </div>
+
+			<div class="label" id="devpost-label"> devpost </div>
+			<a class="navItem" href="http://hackdavis.devpost.com"> DEVPOST </a>
+
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a class="navItem" href="../schedule"> WORKSHOPS </a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a class="navItem" href="../prize"> PRIZES </a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a class="navItem" href="../hardware"> HARDWARE </a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a class="navItem" href="../api"> APIs </a>
+
+			<div class="label" id="logo-label"> LIVE </div>
+			<a class="navItem" href="../live"> LIVE </a>
+		</div>
+
+		<div id="hamburger" class="menu-closed">
+			<div class="line" style="height:8px; background-color: #29c8cc; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #29c8cc; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #29c8cc; border-radius: 5px;"> </div>
+		</div>
+
+<!-- 		<div id="content"><b>This list is not final!</b> We are still finalizing prizes, but here is what we have so far:</div> -->
+		<div class="grid"> </div>
+	</div>
+
+</body>
+<script>
+
+	var open = false;
+
+	$(document).ready(function() {
+
+		$(".menu-closed").click(function(){
+
+			if (open == false){
+				$("#menu").css("opacity", 1);
+				$("#container").animate({left: '40%'});
+				$("#container").css("position", "fixed");
+
+				open = true;
+			}
+			else {
+				$("#container").animate({left: '0%'});
+				setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+				$("#container").css("position", "absolute");
+
+				open = false;
+			}
+
+		});
+	});
+  var prizes = [
+    {
+        "id": "prize0",
+        "name": "Best Health Hack\n",
+        "desc": "Fitbits for each team member\n",
+        "heading": "1 winner - $360 cash value\n"
+    },
+    {
+        "id": "prize1",
+        "name": "Best Environmental Hack\n",
+        "desc": "Drones for each team member\n",
+        "heading": "1 winner - $400 cash value\n"
+    },
+    {
+        "id": "prize2",
+        "name": "Best Educational Hack\n",
+        "desc": "Fire tablets for each team member + Tour / Personal Info Session with GSV CEO\n",
+        "heading": "1 winner - $200 cash value\n"
+    },
+    {
+        "id": "prize3",
+        "name": "Most Technically Challenging \n",
+        "desc": "1st place: 4 smart watches; 2nd / 3rd place: Swag bags - Sponsored by Google\n",
+        "heading": "1 winner - $400 cash value\n"
+    },
+    {
+        "id": "prize4",
+        "name": "Best use of ServiceNow API \n",
+        "desc": "iPads for each team member - Sponsored by ServiceNow\n",
+        "heading": "1 winner - $680 cash value\n"
+    },
+    {
+        "id": "prize5",
+        "name": "Best use of ArcGIS Developer Platform \n",
+        "desc": "$500 among the winning team - sponsored by Esri\n",
+        "heading": "1 winner - $0 cash value\n"
+    },
+    {
+        "id": "prize6",
+        "name": "Best use of Amazon Alexa Voice \n",
+        "desc": "Amazon Echoes for each team member - Sponsored by Amazon Alexa\n",
+        "heading": "1 winner - $720 cash value\n"
+    },
+    {
+        "id": "prize7",
+        "name": "Best use of OSISoft\u2019s API \n",
+        "desc": "$1000 for top 3 teams - sponsored by OSISoft\n",
+        "heading": "1 winner - $1,000 cash value\n"
+    },
+    {
+        "id": "prize8",
+        "name": "Best Mobile App \n",
+        "desc": "Admission into summer academy of MakeSchool - sponsored by MakeSchool\n",
+        "heading": "2 winners - $500 cash value\n"
+    },
+    {
+        "id": "prize9",
+        "name": "Best use of Wolfram\u2019s API \n",
+        "desc": "Full access to Wolfram Development Platform - sponsored by Wolfram Alpha\n",
+        "heading": "1 winner - $255 cash value\n"
+    },
+    {
+        "id": "prize10",
+        "name": "Best Use of IBM Watson \n",
+        "desc": "Raspberry PI 3 Starter Kits for the team - Sponsored by IBM\n",
+        "heading": "1 winner - $240 cash value\n"
+    },
+    {
+        "id": "prize11",
+        "name": "Best Domain Name from Domain.com \n",
+        "desc": "Domain.com swag bags for each team member - sponsored by MLH\n",
+        "heading": "1 winner - $50 cash value\n"
+    },
+    {
+        "id": "prize12",
+        "name": "Best Hack Against Online Harassment \n",
+        "desc": "Hack Harassment Battery Packs for each team member - sponsored by MLH\n",
+        "heading": "1 winner - $0 cash value\n"
+    },
+    {
+        "id": "prize13",
+        "name": "Best Use of AWS \n",
+        "desc": "$400 in AWS credit for the team - sponsored by MLH\n",
+        "heading": "1 winner - $400 cash value\n"
+    },
+    {
+        "id": "prize14",
+        "name": "Particle Prize \n",
+        "desc": "1st Place get an Electron + Asset Tracker + swag; 2nd Place gets Maker kit + Asset Tracker + swag; 3rd Place gets 3 Photon Kits + swag - sponsored by Particle\n",
+        "heading": "1 winner - $700 cash value\n"
+    }
+]
+
+
+	populateGrid(prizes)
+</script>
+</html>

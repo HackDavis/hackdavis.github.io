@@ -201,7 +201,7 @@ body {
 }
 
 .link-ele > p > a:hover {
-  color: #00accb;
+  /*color: #00accb;*/
 }
 
 .link-ele > p > a:before {
@@ -211,7 +211,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #F1C83A;
+  background-color: #29c8cc;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);

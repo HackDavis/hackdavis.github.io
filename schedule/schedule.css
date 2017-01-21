@@ -220,14 +220,14 @@ body {
 		height: 100%;
 		position: fixed;
 		z-index: -9999;
-		background-color: #F1C83A;
+		/*background-color: #F1C83A;*/
 		padding-top: 10px;
 	}
 
 	#menu > a {
 		width: 100%;
 		height: 40px;
-		background-color: #F1C83A;
+		/*background-color: #F1C83A;*/
 		text-decoration: none;
 	}
 

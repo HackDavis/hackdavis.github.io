@@ -1,0 +1,12 @@
+servicesnow api
+    The API allows applications to integrate general platform management functions, and to automate some business processes.     
+osisoft api
+    PI System and its ability to collect, analyze, visualize and share large amounts of high-fidelity, time-series data from multiple sources to people and systems across all operations. 
+wolfram api
+    Easily add top-of-the-line computational knowledge into your applications with Wolfram|Alpha APIs. 
+arcgis developer platform
+    Bring the power of location to your apps with ArcGIS – a complete geospatial platform for developers. 
+ibm watson
+    IBM Watson is a cognitive system enabling a new partnership between people and computers.
+
+

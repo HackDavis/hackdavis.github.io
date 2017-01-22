@@ -31,7 +31,12 @@ function CountDownTimer(dt)
         document.getElementById('sec').innerHTML += seconds;
     }
 
-    timer = setInterval(showRemaining, 1000);
+    if (document.getElementById('days')
+            && document.getElementById('hours')
+            && document.getElementById('min')
+            && document.getElementById('sec')) {
+        timer = setInterval(showRemaining, 1000);
+    }
 }
 
 $(document).ready(function() {

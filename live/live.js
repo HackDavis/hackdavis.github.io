@@ -41,7 +41,7 @@ function CountDownTimer(dt)
 
 $(document).ready(function() {
 
-    CountDownTimer('01/22/2017 11:17:00 PM');
+    CountDownTimer('01/22/2017 12:17:00 PM');
 
     $("#yellowbar>a>img").hover(
         function () {

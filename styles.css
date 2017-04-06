@@ -802,7 +802,7 @@ padding-right: 10px;
 .margin-top-30 { margin-top: 3.0em; }
 
 a:link {
-    color: #000;
+    /*color: #000;*/
     cursor: pointer;
     text-decoration: none;
 }

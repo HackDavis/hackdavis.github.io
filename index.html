@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>HackDavis | January 2017</title>
+    <title>HackDavis | January 2018</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" media="screen" href="css/particle.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
@@ -25,17 +24,22 @@
      <meta property="og:site_name" content="HackDavis"/>
      <meta property="og:image" content="http://hackdavis.io/img/cover.png" />
      <meta property="og:title" content="HackDavis: Code for Social Good" />
-     <meta property="og:description" content="HackDavis is UC Davis' annual hackathon for students, run by students. In January 2017, over 500 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in California to address the world's most pressing social issues.">
+     <meta property="og:description" content="HackDavis is UC Davis' annual hackathon for students, run by students. In January 2018, over 500 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in California to address the world's most pressing social issues.">
      <meta property="og:url" content="http://hackdavis.io" />
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="agency.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/agency.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/scroll.js"></script>
   </head>
   <body>
     <!-- MLH Trust Badge -->
@@ -50,406 +54,17 @@
       <div class="navItem" id="clickAbout"> <a> ABOUT </a> </div>
       <div class="navItem" id="clickHome"> <a> HOME </a> </div>
     </div>
-
-<div id="particles-js"></div>
-<!-- scripts -->
-<script src="js/particles.js"></script>
-<script src="js/particle.js"></script>
-
-
-    <!--HEADER-->
-    <!--<div id="header">-->
-    <div>
-      <img id="logo" src="img/logo-white.png">
-      <img id="logo" class="ring-logo" src="img/logo-ring-white.png">
-      <img id="logo" class="heart-logo" src="img/logo-heart-white.png">
-      <div id="title">
-        <span id="hack"> HACK </span> 
-        <span id="davis"> DAVIS </span> 
-      </div>
-      <div id="caption"> // CODE FOR SOCIAL GOOD </div>
-      <div id="info"> Jan 21 - 22 @ ARC Pavilion </div>
-      <div id="buttons">
-        <a class="button" id="ponsor" href="https://hackdavis.io/team"> ROLES </a>
-        <a class="button" id="ponsor" target="_blank" href="https://hackdavis.typeform.com/to/jG896g"> APPLY </a>
-      </div>
+    <div id="main" class="bigtext">
+      <div id="D">D</div>
+      <div id="A">A</div>
+      <div id="V">V</div>
+      <div id="I">I</div>
+      <div id="S">S</div>
+      <img class="cloud" id="left-cloud1" src="img/cloud-hi.png">
+      <img class="cloud" id="right-cloud1" src="img/cloud-hi.png">
+      <img class="cloud" id="left-cloud2" src="img/cloud-hi.png">
+      <img class="cloud" id="right-cloud2" src="img/cloud-hi.png">
+      <img class="cloud" id="left-cloud3" src="img/cloud-hi.png">
     </div>
-
-    <div id="about" class="about">
-      <img id="about-heart" src="img/about-graphic.png">
-      <div id="about-title"> What is HackDavis? </div>
-      <div id="about-content">
-        HackDavis is UC Davis' annual hackathon for students, run by students. In January 2017, over 500 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in California to address the world's most pressing social issues. 
-
-        <br> <br>
-
-        There are three main tracks to the hackathon: Environment, Health & Wellness, and Education. With these 3 tracks, we hope to inspire change and cultivate a growing hacker community dedicated to social change at UC Davis.
-      </div>
-    </div>
-
-    <div id="schedule" class="schedule">
-      <div id="schedule-title"> Schedule </div>
-      <div id="schedule-content">
-        <ul class="timeline">
-            <li class="timeline-inverted">
-                <div class="timeline-image">
-                    <img class="img-circle img-responsive" alt="">
-                    <div class="circle-label"> 
-                      <div class="day"> SATURDAY </div> 
-                      <div class="date"> Jan 21 </div> 
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel">
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 9 am</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading">Check-in begins</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> welcome hackers!</p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 11 am</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading">Opening Ceremony</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> hear what the event is about and what our sponsors have in store for you </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 12 pm</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading">Check-in closes / Hacking Begins / Lunch</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> let the hacking commence! thanks to all the sponsors who made this possible </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 7 pm</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading">Dinner </h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> more füd </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" alt="">
-                  <div class="circle-label"> 
-                    <div class="day"> SUNDAY </div> 
-                    <div class="date"> Jan 22 </div> 
-                  </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 8 am</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading">Breakfast </h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> you heard right, it's all free </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 12 pm</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading">Hacking Ends / Lunch </h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> reward yourself for your hard work </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 1 pm</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> Judging / Demos </h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> show off what you've built to other hackers, sponsors, and the hackdavis team! </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-panel"> 
-                <div class="timeline-image small-circle">
-                    <img class="img-circle img-responsive" alt="">
-                </div>
-                <div class="timeline-panel panel-left">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> <br> 3 pm</h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> </p>
-                    </div>
-                </div>
-                <div class="timeline-panel panel-right">
-                    <div class="timeline-heading">
-                        <h4 class="subheading"> Closing Ceremony </h4>
-                    </div>
-                    <div class="timeline-body">
-                        <p class="text-muted"> winners announced </p>
-                    </div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="img-circle img-responsive" alt="">
-                  <div class="circle-label"> 
-                    <div class="date end"> THE END </div> 
-                  </div>
-                </div>
-            </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="faq">
-      <div class="faq-content">
-        <div id="faq-title"> Frequently Asked Questions </div>
-        <div class="col">
-          <div class="card">
-            <p class="ques"> What is a hackathon? </p>
-            <p> A hackathon is where you turn your crazy ideas into real stuff. Hundreds of hackers from across California will gather and build something they're passionate about. You take care of building. We'll take care of you.
-            <br> <br>
-            We will be following MLH's <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code Of Conduct</a>.
-            <p> We participate in Major League Hacking (MLH) as a MLH Member Event. You authorize us to share certain application/registration information for event administration, ranking, MLH administration, pre and post-event informational e-mails, and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy">MLH Privacy Policy</a>.
-            </p>
-          </div>
-          <div class="card">
-            <p class="ques"> Who can attend? </p>
-            <p> HackDavis is open to all majors! As long as you're prepared to learn, brainstorm, and build cool things, we welcome you to join. We will be holding workshops where students can learn how to use new and upcoming tools that assist with web development, mobile development, and more. 
-            </p>
-          </div>
-          <div class="card">
-            <p class="ques"> Why social good? </p>
-            <p>
-            We find that hackathons often don't result with projects as practical solutions to specific societal problems and we're looking to change that. Our goal is to foster a community that uses technology to pave the way for social change. In addition, we will be donating money to participating non-profits.
-            </p>
-          </div>
-          <div class="card">
-            <p class="ques"> What can I build? </p>
-            <p>You can build whatever your heart desires, whether its a web app, mobile app, hardware hack, or an open source tool. Any project under one of the three tracks (health/wellness, education, and environment) is recommended.
-          </div>
-          <div class="card">
-            <p class="ques"> What if I don't have a team or idea? </p>
-            <p>Don't worry, we'll have team forming sessions before the hackathon. We'll make sure you're equipped and ready to go!</p>
-          </div>
-          <div class="card">
-            <p class="ques"> How much does it cost? </p>
-            <p>HackDavis is free for all admitted participants. Don't sweat it! We gotchu for your WiFi, meals, caffeine, swag, and workspace for the entire weekend. Info on travel reimbursements will be released closer to the event date.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //stories -->
-    <div class="ponsors">
-      <p class="ponsors-category"> Sponsors </p>
-      <div class="ponsor-logo diamond center-block">
-        <div class="tier tier-1">
-          <a href="https://servicenow.com" target="_blank"> 
-            <img src="img/company-logos/servicenow.png" style="height:80px" class="img-responsive"/> 
-          </a>
-          <a href="https://ibm.com" target="_blank"> 
-            <img src="img/company-logos/ibm.png" style="height:80px" class="img-responsive"/> 
-          </a>
-        </div>
-        <div class="tier tier-2">
-          <a href="https://developer.amazon.com/alexa" target="_blank"> 
-            <img src="img/company-logos/amazon-alexa.png" style="height:100px;" class="img-responsive"/>
-          </a>
-          <a href="https://www.osisoft.com" target="_blank"> 
-            <img src="img/company-logos/OSIsoftLogo_White.png" style="height:125px;" class="img-responsive"/>
-          </a>
-          <a href="http://www.esri.com/" target="_blank"> 
-            <img src="img/company-logos/esri.png" style="height:75px;" class="img-responsive"/>
-          </a>
-          <a href="http://drakontasconsulting.com/" target="_blank"> 
-            <img src="img/company-logos/drakontas.png" style="height:100px;" class="img-responsive"/>
-          </a>
-          <a href="https://www.makeschool.com/" target="_blank"> 
-            <img src="img/company-logos/makeschool.png" style="height:150px;padding-left:50px;padding-right:50px;" class="img-responsive"/>
-          </a>
-          <a href="https://rapidapi.com" target="_blank"> 
-            <img src="img/company-logos/rapid-api.png" style="height:125px;" class="img-responsive"/>
-          </a>
-          <a href="https://google.com" target="_blank"> 
-            <img src="img/company-logos/google.png" style="height:75px;" class="img-responsive"/>
-          </a>
-        </div>
-        <div class="tier tier-2">
-          <a href="http://citris-uc.org/" target="_blank"> 
-            <img src="img/company-logos/citris.png" style="height:125px;" class="img-responsive"/>
-          </a>
-          <a href="https://www.facebook.com/" target="_blank"> 
-            <img src="img/company-logos/facebook.png" style="height:50px;" class="img-responsive"/>
-          </a>
-          <a href="https://namecheap.com" target="_blank"> 
-            <img src="img/company-logos/namecheap.png" style="height:70px;" class="img-responsive"/>
-          </a>
-        </div>
-        <div class="tier tier-2">
-          <a href="http://www.genability.com/" target="_blank"> 
-            <img src="img/company-logos/genability.png" style="height:100px;" class="img-responsive"/>
-          </a>
-          <a href="https://zillow.com" target="_blank"> 
-            <img src="img/company-logos/zillow.png" style="height:40px;" class="img-responsive"/>
-          </a>
-          <a href="http://ctrlcollective.com/#new-intro" target="_blank"> 
-            <img src="img/company-logos/ctrl.png" style="height:60px;" class="img-responsive"/>
-          </a>
-          <a href="http://www.zeus.aiorobotics.com/" target="_blank"> 
-            <img src="img/company-logos/robotics.png" style="height:80px;" class="img-responsive"/>
-          </a>
-          <a href="http://mandtvr.com/" target="_blank"> 
-            <img src="img/company-logos/mandtvr.png" style="height:30px;" class="img-responsive"/>
-          </a>
-        </div>
-        <div class="tier tier-2">
-          <a href="https://www.splunk.com" target="_blank"> 
-            <img src="img/company-logos/splunk_white.png" style="height:40px;" class="img-responsive"/>
-          </a>
-          <a href="https://www.github.com" target="_blank"> 
-            <img src="img/company-logos/github-logo.png" style="height:40px;" class="img-responsive"/>
-          </a>
-          <a href="http://www.wolframalpha.com" target="_blank"> 
-            <img src="img/company-logos/wolfram.png" style="height:70px;" class="img-responsive"/>
-          </a>
-          <a href="http://www.clifbar.com" target="_blank"> 
-            <img src="img/company-logos/clif-bar.png" style="height:80px;" class="img-responsive"/>
-          </a>
-        </div>
-      </div> <!-- //ponsor-logo diamond -->
-      <p class="ponsors-category"> Partners </p>
-        <div class="tier tier-2">
-          <a href="https://mlh.io" target="_blank"> 
-            <img src="img/company-logos/mlh-logo-white.png" style="height:80px;" class="img-responsive"/>
-          </a>
-          <a href="http://engineering.ucdavis.edu" target="_blank"> 
-            <img src="img/company-logos/collegeofengineering_white.png" style="height:40px;" class="img-responsive"/>
-          </a>
-          <a href="https://swe.engineering.ucdavis.edu" target="_blank"> 
-            <img src="img/company-logos/swe-logo.png" style="height:90px;" class="img-responsive"/>
-          </a>
-          <a href="http://www.cs.ucdavis.edu" target="_blank"> 
-            <img src="img/company-logos/CSDavis.png" style="height:60px;" class="img-responsive"/>
-          </a>
-          <a href="http://moringaforlife.com/moringa-projects/" target="_blank"> 
-            <img src="img/company-logos/moringa.png" style="height:120px; padding-bottom: 50px;" class="img-responsive"/>
-          </a>
-        </div>
-      <p class="ponsors-category"> Non-profits </p>
-        <div class="tier tier-2" style="color:white;">
-          <a href="http://www.gamersgift.org/" target="_blank"> 
-            <img src="img/company-logos/gamer-gift.png" style="height:80px;" class="img-responsive"/>
-          </a>
-          <a href="http://www.communitywatercenter.org/" target="_blank"> 
-            <img src="img/company-logos/CWC.png" style="height:80px;" class="img-responsive"/>
-          </a>
-          <a href="http://northerncaliforniaeducationfoundation.com" target="_blank"> 
-            <img src="img/company-logos/norcal-edu-foundation.png" style="height:100px;" class="img-responsive"/>
-          </a>
-        </div>
-    </div>
-
-    <footer id="footer" style="position: absolute;">
-      <div class="container">
-        <div class="pull-left fnav">
-        </div>
-        <div class="pull-right fnav">
-          <ul class="footer-social">
-            <li><a target="_blank" href="https://www.facebook.com/HackDavis/"><i class="fa fa-facebook"></i></a></li>
-            <li><a target="_blank" href="https://twitter.com/hack_davis"><i class="fa fa-twitter"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
   </body>
 </html>

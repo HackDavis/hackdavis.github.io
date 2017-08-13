@@ -1,0 +1,96 @@
+#nav {
+    height: 50px;
+    width: 100%;
+
+    background: transparent;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}
+.cloud {
+    position: absolute;
+}
+#left-cloud1 {
+    top: 100px;
+    left: 8vw;
+    height: auto;
+    width:20vw;
+}
+#right-cloud1 {
+    top: 1em;
+    right: 8vw;
+    height: auto;
+    width:20vw;
+}
+#left-cloud2 {
+    top: 1.5em;
+    left: 8vw;
+    height: auto;
+    width:20vw;
+}
+#right-cloud2 {
+    top: 2em;
+    right: 8vw;
+    height: auto;
+    width:20vw;
+}
+#left-cloud3 {
+    top: 3em;
+    left: 8vw;
+    height: auto;
+    width:20vw;
+}
+body {
+    background: linear-gradient(lightblue, cornflowerblue);
+}
+#main {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+#animation-container {
+    position: fixed;
+}
+.navItem {
+    float: right;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: white;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat-ExtraLight', sans-serif;
+
+    transform: translateX(-20px);
+    -ms-transform: translateX(-20px); /* IE 9 */
+    -webkit-transform: translateX(-20px); /* Chrome, Safari, Opera */
+}
+
+.bigtext{
+    font-size: 500px;
+}
+
+.navItem > a {
+    color: white;
+    font-family: 'Montserrat-ExtraLight', sans-serif;
+    text-decoration: none;
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.navItem > a:hover {
+    color: white;
+    opacity: .5;
+    cursor: pointer;
+    text-decoration: none;
+
+}

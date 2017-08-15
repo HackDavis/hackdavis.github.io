@@ -15,31 +15,61 @@
 }
 #left-cloud1 {
     top: 100px;
-    left: 8vw;
-    height: auto;
-    width:20vw;
-}
-#right-cloud1 {
-    top: 1em;
-    right: 8vw;
+    left: 5vw;
     height: auto;
     width:20vw;
 }
 #left-cloud2 {
     top: 1.5em;
-    left: 8vw;
+    left: 16vw;
     height: auto;
-    width:20vw;
-}
-#right-cloud2 {
-    top: 2em;
-    right: 8vw;
-    height: auto;
-    width:20vw;
+    width:15vw;
 }
 #left-cloud3 {
     top: 3em;
-    left: 8vw;
+    left: 1.3vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud4 {
+    top: 4.1em;
+    left: 5.1vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud5 {
+    top: 5.5em;
+    left: 7vw;
+    height: auto;
+    width:15vw;
+}
+#left-cloud6 {
+    top: 1em;
+    left: 3vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud7 {
+    top: 2em;
+    left: 4vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud8 {
+    top: 3em;
+    left: 1vw;
+    height: auto;
+    width:15vw;
+}
+#left-cloud9 {
+    top: 4em;
+    left: 2.5vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud10 {
+    top: 5em;
+    left: 10vw;
     height: auto;
     width:20vw;
 }
@@ -50,6 +80,7 @@ body {
     text-align: center;
     margin-top: 50px;
     position: relative;
+    overflow-x: hidden;
 }
 #animation-container {
     position: fixed;

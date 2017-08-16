@@ -1,6 +1,8 @@
 #nav {
     height: 50px;
-    width: 100%;
+    width: 95%; /*Changed width from 100% to 95% and added top property to be left of the button*/
+    top: 25px;
+    z-index: 5; /*Above the clouds*/
 
     background: transparent;
     background-position: center;
@@ -8,7 +10,27 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
-    border-bottom: 2px solid white;
+    position: fixed;
+}
+#hamburger-menu {
+  color: grey;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  float: right;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 10;
+}
+#mlh-trust-badge {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  max-width: 100px;
+  width: 10%;
+  min-width: 60px;
+  display: block;
 }
 .cloud {
     position: absolute;

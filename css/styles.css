@@ -1,16 +1,23 @@
 #nav {
-    height: 50px;
-    width: 95%; /*Changed width from 100% to 95% and added top property to be left of the button*/
-    top: 25px;
+    height: auto;
+    width: 100%; /*Changed width from 100% to 95% and added top property to be left of the button*/
     z-index: 5; /*Above the clouds*/
 
-    background: transparent;
+    background: whitesmoke;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
     position: fixed;
+}
+#nav .collapsing {
+    -o-transition-property: width;    
+    -webkit-transition-property: width;    
+    transition-property: width;
+}
+#nav .collapse.show {
+    opacity: 100;
 }
 #hamburger-menu {
   color: grey;
@@ -112,14 +119,17 @@ body {
     text-align: center;
     font-weight: 400;
     font-size: 15px;
-    color: white;
     height: 50px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     line-height: 50px;
     letter-spacing: 1px;
     font-family: 'Montserrat-ExtraLight', sans-serif;
 
+    z-index: 6;
+    transition: all ease-in 0.5s;
     transform: translateX(-20px);
     -ms-transform: translateX(-20px); /* IE 9 */
     -webkit-transform: translateX(-20px); /* Chrome, Safari, Opera */
@@ -130,7 +140,7 @@ body {
 }
 
 .navItem > a {
-    color: white;
+    color: black;
     font-family: 'Montserrat-ExtraLight', sans-serif;
     text-decoration: none;
 

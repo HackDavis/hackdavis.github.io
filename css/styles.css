@@ -151,7 +151,7 @@ body {
 }
 
 .navItem > a:hover {
-    color: white;
+    color: lightseagreen;
     opacity: .5;
     cursor: pointer;
     text-decoration: none;

@@ -1,26 +1,26 @@
 #nav {
-    height: 50px;
-    width: 95%; /*Changed width from 100% to 95% and added top property to be left of the button*/
-    top: 25px;
-    z-index: 5; /*Above the clouds*/
+  height: 50px;
+  width: 100%; /*left of button*/
+  top: 25px;
+  z-index: 5; /*Above the clouds*/
 
-    background: transparent;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    position: fixed;
+  background: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  position: fixed;
+  display: none;
 }
 #hamburger-menu {
-  color: grey;
   background-color: transparent;
-  border: none;
-  font-size: 30px;
+  outline: none;
   float: right;
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 25px;
+  right: 25px;
+  z-index: 10;
 }
 #mlh-trust-badge {
   position: absolute;
@@ -118,14 +118,11 @@ body {
     line-height: 50px;
     letter-spacing: 1px;
     font-family: 'Montserrat-ExtraLight', sans-serif;
+    display: none;
 
     transform: translateX(-20px);
     -ms-transform: translateX(-20px); /* IE 9 */
     -webkit-transform: translateX(-20px); /* Chrome, Safari, Opera */
-}
-
-.bigtext{
-    font-size: 500px;
 }
 
 .navItem > a {
@@ -144,5 +141,12 @@ body {
     opacity: .5;
     cursor: pointer;
     text-decoration: none;
+}
 
+.navItem:nth-child(1){
+  padding-right: 75px;
+}
+
+.bigtext{
+    font-size: 500px;
 }

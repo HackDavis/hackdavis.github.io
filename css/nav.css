@@ -48,7 +48,7 @@
 }
 @media (min-width: 1600px) {
     .navItem > a {
-        letter-spacing: 8px;        
+        letter-spacing: 7px;        
     }
 }
 .navItem > a:hover {

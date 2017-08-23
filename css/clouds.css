@@ -1,0 +1,63 @@
+.cloud {
+    position: absolute;
+}
+#left-cloud1 {
+    top: 100px;
+    left: 5vw;
+    height: auto;
+    width:20vw;
+}
+#left-cloud2 {
+    top: 1.5em;
+    left: 16vw;
+    height: auto;
+    width:15vw;
+}
+#left-cloud3 {
+    top: 3em;
+    left: 1.3vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud4 {
+    top: 4.1em;
+    left: 5.1vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud5 {
+    top: 5.5em;
+    left: 7vw;
+    height: auto;
+    width:15vw;
+}
+#left-cloud6 {
+    top: 1em;
+    left: 3vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud7 {
+    top: 2em;
+    left: 4vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud8 {
+    top: 3em;
+    left: 1vw;
+    height: auto;
+    width:15vw;
+}
+#left-cloud9 {
+    top: 4em;
+    left: 2.5vw;
+    height: auto;
+    width:10vw;
+}
+#left-cloud10 {
+    top: 5em;
+    left: 10vw;
+    height: auto;
+    width:20vw;
+}

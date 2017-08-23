@@ -1,17 +1,17 @@
 #nav {
-  height: 50px;
-  width: 100%; /*left of button*/
-  top: 25px;
-  z-index: 5; /*Above the clouds*/
+    height: auto;
+    width: 100%;
+    z-index: 5;
+    top:0px;
 
-  background: transparent;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  overflow: hidden;
-  position: fixed;
-  display: none;
+    background: rgba(240, 248, 255, 0.75);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    position: fixed;
+    display: none;
 }
 #hamburger-menu {
   background-color: transparent;
@@ -29,7 +29,6 @@
   max-width: 100px;
   width: 10%;
   min-width: 60px;
-  display: block;
 }
 .cloud {
     position: absolute;
@@ -111,22 +110,25 @@ body {
     text-align: center;
     font-weight: 400;
     font-size: 15px;
-    color: white;
     height: 50px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     line-height: 50px;
     letter-spacing: 1px;
     font-family: 'Montserrat-ExtraLight', sans-serif;
     display: none;
 
+    z-index: 6;
+    transition: all ease-in 0.5s;
     transform: translateX(-20px);
     -ms-transform: translateX(-20px); /* IE 9 */
     -webkit-transform: translateX(-20px); /* Chrome, Safari, Opera */
 }
 
 .navItem > a {
-    color: white;
+    color: black;
     font-family: 'Montserrat-ExtraLight', sans-serif;
     text-decoration: none;
 
@@ -137,14 +139,14 @@ body {
 }
 
 .navItem > a:hover {
-    color: white;
+    color: lightseagreen;
     opacity: .5;
     cursor: pointer;
     text-decoration: none;
 }
 
 .navItem:nth-child(1){
-  padding-right: 75px;
+  padding-right: 80px;
 }
 
 .bigtext{

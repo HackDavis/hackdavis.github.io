@@ -8,12 +8,12 @@ hamburger.on("click", function(e) {
   let children = $("#nav").children();
   let length = children.length;
   let element;
+
   (function fade(i) {
-     setTimeout(function () {
-       active ? element = children[length - i] : element = children[i - 1];
-       $(element).fadeToggle("slow");
-       if (--i) fade(i);  //Decrement
-       else hamburger.removeAttr('disabled'); //Reenable when animation is finished
-     }, 25)
+    active ? element = children[length - i] : element = children[i - 1];
+    $(element).fadeToggle(15, function(){
+      if (--i) fade(i);  //Decrement
+      else hamburger.removeAttr('disabled'); //Reenable when animation is finished
+    });
    })(length);
 });

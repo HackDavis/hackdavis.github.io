@@ -41,7 +41,16 @@
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-
+@media (min-width: 1300px) {
+    .navItem > a {
+        letter-spacing: 5px;        
+    }
+}
+@media (min-width: 1600px) {
+    .navItem > a {
+        letter-spacing: 8px;        
+    }
+}
 .navItem > a:hover {
     color: lightseagreen;
     opacity: .5;

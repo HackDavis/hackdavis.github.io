@@ -1,16 +1,5 @@
-#nav {
-    height: auto;
-    width: 100%;
-    z-index: 5;
-    top:0px;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
-    position: fixed;
-}
+@import './nav.css';
+@import './clouds.css';
 #hamburger-menu {
   background-color: transparent;
   outline: none;
@@ -28,69 +17,6 @@
   width: 10%;
   min-width: 60px;
 }
-.cloud {
-    position: absolute;
-}
-#left-cloud1 {
-    top: 100px;
-    left: 5vw;
-    height: auto;
-    width:20vw;
-}
-#left-cloud2 {
-    top: 1.5em;
-    left: 16vw;
-    height: auto;
-    width:15vw;
-}
-#left-cloud3 {
-    top: 3em;
-    left: 1.3vw;
-    height: auto;
-    width:10vw;
-}
-#left-cloud4 {
-    top: 4.1em;
-    left: 5.1vw;
-    height: auto;
-    width:10vw;
-}
-#left-cloud5 {
-    top: 5.5em;
-    left: 7vw;
-    height: auto;
-    width:15vw;
-}
-#left-cloud6 {
-    top: 1em;
-    left: 3vw;
-    height: auto;
-    width:10vw;
-}
-#left-cloud7 {
-    top: 2em;
-    left: 4vw;
-    height: auto;
-    width:10vw;
-}
-#left-cloud8 {
-    top: 3em;
-    left: 1vw;
-    height: auto;
-    width:15vw;
-}
-#left-cloud9 {
-    top: 4em;
-    left: 2.5vw;
-    height: auto;
-    width:10vw;
-}
-#left-cloud10 {
-    top: 5em;
-    left: 10vw;
-    height: auto;
-    width:20vw;
-}
 body {
     background: linear-gradient(lightblue, cornflowerblue);
 }
@@ -100,53 +26,6 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-#animation-container {
-    position: fixed;
-}
-.navItem {
-    float: right;
-    text-align: center;
-    font-weight: 400;
-    font-size: 15px;
-    height: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    line-height: 50px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat-ExtraLight', sans-serif;
-    display: none;
-
-    z-index: 6;
-    transition: all ease-in 0.5s;
-    transform: translateX(-20px);
-    -ms-transform: translateX(-20px); /* IE 9 */
-    -webkit-transform: translateX(-20px); /* Chrome, Safari, Opera */
-}
-
-.navItem > a {
-    color: black;
-    font-family: 'Montserrat-ExtraLight', sans-serif;
-    text-decoration: none;
-
-    -webkit-transition: all .2s ease-in;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-
-.navItem > a:hover {
-    color: lightseagreen;
-    opacity: .5;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.navItem:nth-child(1){
-  padding-right: 80px;
-}
-
 .bigtext{
     font-size: 500px;
 }

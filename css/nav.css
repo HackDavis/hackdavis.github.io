@@ -1,0 +1,55 @@
+#nav {
+    height: auto;
+    width: 100%;
+    z-index: 5;
+    top:0px;
+
+    overflow: hidden;
+    position: fixed;
+    display: none;
+}
+
+/* div that contains the <a> navigation links */
+.navItem {
+    float: right;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat-ExtraLight', sans-serif;
+    display: none;
+
+    z-index: 6;
+    transition: all ease-in 0.5s;
+    transform: translateX(-20px);
+    -ms-transform: translateX(-20px); /* IE 9 */
+    -webkit-transform: translateX(-20px); /* Chrome, Safari, Opera */
+}
+
+.navItem > a {
+    color: black;
+    font-family: 'Montserrat-ExtraLight', sans-serif;
+    text-decoration: none;
+
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.navItem > a:hover {
+    color: lightseagreen;
+    opacity: .5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navItem:nth-child(1){
+  padding-right: 80px;
+}

@@ -1,4 +1,5 @@
 $(function() {
+    // in milliseconds
     const slow = 1000000;
     const fast = slow / 10;
     const slower = slow / 2;

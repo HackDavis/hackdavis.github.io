@@ -15,13 +15,8 @@
     font-weight: 400;
     font-size: 23px;
     height: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
-    line-height: 50px;
-    letter-spacing: 3px;
-    font-family: 'Concert One', cursive;
     display: none;
 
     z-index: 6;
@@ -36,19 +31,27 @@
     font-family: 'Concert One', cursive;
     text-decoration: none;
 
+    /* use em's to calculate line spacing from the font-size set on .navItem class
+    This will improve responsiveness, I have calculated these values from the existing values in px on the .navItem class */
+    letter-spacing: 0.16em;
+    padding-left: 0.6em;
+    padding-right: 0.6em; 
+    line-height: 50px;    
+
     -webkit-transition: all .2s ease-in;
     -moz-transition: all .2s ease-in;
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
-@media (min-width: 1300px) {
-    .navItem > a {
-        letter-spacing: 5px;        
+/* lowers font size on small screens */
+@media (max-width: 1200px) {
+    .navItem > a { 
+        font-size: 18px;
     }
 }
 @media (min-width: 1600px) {
-    .navItem > a {
-        letter-spacing: 7px;        
+    .navItem > a { 
+        font-size: 28px;
     }
 }
 .navItem > a:hover {

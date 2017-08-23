@@ -104,6 +104,7 @@ body {
 #animation-container {
     position: fixed;
 }
+/* div that contains the <a> navigation links */
 .navItem {
     float: right;
     text-align: center;

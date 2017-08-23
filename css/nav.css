@@ -13,15 +13,15 @@
     float: right;
     text-align: center;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 23px;
     height: 50px;
     padding-left: 15px;
     padding-right: 15px;
     margin-top: 25px;
     margin-bottom: 25px;
     line-height: 50px;
-    letter-spacing: 1px;
-    font-family: 'Montserrat-ExtraLight', sans-serif;
+    letter-spacing: 3px;
+    font-family: 'Concert One', cursive;
     display: none;
 
     z-index: 6;
@@ -32,8 +32,8 @@
 }
 
 .navItem > a {
-    color: black;
-    font-family: 'Montserrat-ExtraLight', sans-serif;
+    color: #607D8B;
+    font-family: 'Concert One', cursive;
     text-decoration: none;
 
     -webkit-transition: all .2s ease-in;

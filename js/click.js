@@ -11,7 +11,7 @@ hamburger.on("click", function(e) {
 
   (function fade(i) {
     active ? element = children[length - i] : element = children[i - 1];
-    $(element).fadeToggle(15, function(){
+    $(element).fadeToggle(25, function(){
       if (--i) fade(i);  //Decrement
       else hamburger.removeAttr('disabled'); //Reenable when animation is finished
     });

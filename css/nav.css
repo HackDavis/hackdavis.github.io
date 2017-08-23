@@ -33,9 +33,9 @@
 
     /* use em's to calculate line spacing from the font-size set on .navItem class
     This will improve responsiveness, I have calculated these values from the existing values in px on the .navItem class */
-    letter-spacing: 0.16em;
-    padding-left: 0.6em;
-    padding-right: 0.6em; 
+    letter-spacing: 0.13em;
+    padding-left: 0.67em;
+    padding-right: 0.67em; 
     line-height: 50px;    
 
     -webkit-transition: all .2s ease-in;

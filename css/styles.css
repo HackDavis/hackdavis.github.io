@@ -4,14 +4,12 @@
     z-index: 5;
     top:0px;
 
-    background: rgba(240, 248, 255, 0.75);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
     position: fixed;
-    display: none;
 }
 #hamburger-menu {
   background-color: transparent;
@@ -24,7 +22,7 @@
 }
 #mlh-trust-badge {
   position: absolute;
-  top: 50px;
+  top: 0px;
   left: 50px;
   max-width: 100px;
   width: 10%;

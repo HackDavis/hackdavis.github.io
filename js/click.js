@@ -1,4 +1,4 @@
-let hamburger = $("#hamburger-menu");
+const hamburger = $("#hamburger-menu");
 let active = false;
 
 hamburger.on("click", function(e) {
@@ -11,10 +11,9 @@ hamburger.on("click", function(e) {
   (function fade(i) {
      setTimeout(function () {
        active ? element = children[length - i] : element = children[i - 1];
-       $(element).fadeToggle("fast");
+       $(element).fadeToggle("slow");
        if (--i) fade(i);  //Decrement
        else hamburger.removeAttr('disabled'); //Reenable when animation is finished
      }, 25)
    })(length);
-  $("#nav").fadeToggle();
 });

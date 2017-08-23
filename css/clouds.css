@@ -1,5 +1,6 @@
 .cloud {
     position: absolute;
+    z-index: -1;
 }
 #left-cloud1 {
     top: 100px;

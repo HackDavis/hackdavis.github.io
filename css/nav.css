@@ -4,10 +4,6 @@
     z-index: 5;
     top:0px;
 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: hidden;
     position: fixed;
     display: none;

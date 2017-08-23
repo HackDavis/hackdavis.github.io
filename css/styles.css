@@ -26,9 +26,6 @@ body {
     position: relative;
     overflow-x: hidden;
 }
-#animation-container {
-    position: fixed;
-}
 .bigtext{
     font-size: 500px;
 }

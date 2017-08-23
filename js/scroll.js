@@ -15,16 +15,16 @@ $(function() {
     var leftcloud9 = $("#left-cloud9");
     var leftcloud10 = $("#left-cloud10");
     
-    leftcloud1.velocity({left: (Number(leftcloud1.css("left").slice(0, -2)) + 3000) + "px"}, {duration: slow, easing:"linear"});
-    leftcloud2.velocity({left: (Number(leftcloud2.css("left").slice(0, -2)) + 3000) + "px"}, {duration: slower, easing:"linear"});
-    leftcloud3.velocity({left: (Number(leftcloud3.css("left").slice(0, -2)) + 3000) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud4.velocity({left: (Number(leftcloud4.css("left").slice(0, -2)) + 3000) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud5.velocity({left: (Number(leftcloud5.css("left").slice(0, -2)) + 3000) + "px"}, {duration: slower, easing:"linear"});
-    leftcloud6.velocity({left: (Number(leftcloud6.css("left").slice(0, -2)) + 3000) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud7.velocity({left: (Number(leftcloud7.css("left").slice(0, -2)) + 3000) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud8.velocity({left: (Number(leftcloud8.css("left").slice(0, -2)) + 3000) + "px"}, {duration: slower, easing:"linear"});
-    leftcloud9.velocity({left: (Number(leftcloud9.css("left").slice(0, -2)) + 3000) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud10.velocity({left: (Number(leftcloud10.css("left").slice(0, -2)) + 3000) + "px"}, {duration: slow, easing:"linear"});    
+    leftcloud1.velocity({left: (Number(leftcloud2.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slow, easing:"linear"});
+    leftcloud2.velocity({left: (Number(leftcloud2.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slower, easing:"linear"});
+    leftcloud3.velocity({left: (Number(leftcloud3.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
+    leftcloud4.velocity({left: (Number(leftcloud4.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
+    leftcloud5.velocity({left: (Number(leftcloud5.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slower, easing:"linear"});
+    leftcloud6.velocity({left: (Number(leftcloud6.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
+    leftcloud7.velocity({left: (Number(leftcloud7.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
+    leftcloud8.velocity({left: (Number(leftcloud8.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slower, easing:"linear"});
+    leftcloud9.velocity({left: (Number(leftcloud9.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
+    leftcloud10.velocity({left: (Number(leftcloud10.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slow, easing:"linear"});    
     /*var controller = new ScrollMagic.Controller();
     var poofLeftCloud = new ScrollMagic.Scene({
         offset:0,

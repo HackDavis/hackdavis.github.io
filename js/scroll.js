@@ -3,7 +3,11 @@ $(function() {
     const slow = 1000000;
     const fast = slow / 10;
     const slower = slow / 2;
-
+    function animate() {
+        this.css("left", this.start);
+        this.velocity({left: (Number(this.start.slice(0, -2)) + window.innerWidth) + "px"}, {duration: this.duration, easing:"linear", complete: animate.bind(this)});
+        this.start = -this.width() + "px";
+    }
     var leftcloud1 = $("#left-cloud1");
     var leftcloud2 = $("#left-cloud2");
     var leftcloud3 = $("#left-cloud3");
@@ -14,17 +18,40 @@ $(function() {
     var leftcloud8 = $("#left-cloud8");
     var leftcloud9 = $("#left-cloud9");
     var leftcloud10 = $("#left-cloud10");
+
+    leftcloud1.duration = slow;
+    leftcloud2.duration = slower;
+    leftcloud3.duration = fast;
+    leftcloud4.duration = fast;
+    leftcloud5.duration = slower;
+    leftcloud6.duration = fast;
+    leftcloud7.duration = fast;
+    leftcloud8.duration = slower;
+    leftcloud9.duration = fast;
+    leftcloud10.duration = slow;
+
+    leftcloud1.start = leftcloud1.css("left");
+    leftcloud2.start = leftcloud2.css("left");
+    leftcloud3.start = leftcloud3.css("left");
+    leftcloud4.start = leftcloud4.css("left");
+    leftcloud5.start = leftcloud5.css("left");
+    leftcloud6.start = leftcloud6.css("left");
+    leftcloud7.start = leftcloud7.css("left");
+    leftcloud8.start = leftcloud8.css("left");
+    leftcloud9.start = leftcloud9.css("left");
+    leftcloud10.start = leftcloud10.css("left");
     
-    leftcloud1.velocity({left: (Number(leftcloud2.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slow, easing:"linear"});
-    leftcloud2.velocity({left: (Number(leftcloud2.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slower, easing:"linear"});
-    leftcloud3.velocity({left: (Number(leftcloud3.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud4.velocity({left: (Number(leftcloud4.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud5.velocity({left: (Number(leftcloud5.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slower, easing:"linear"});
-    leftcloud6.velocity({left: (Number(leftcloud6.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud7.velocity({left: (Number(leftcloud7.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud8.velocity({left: (Number(leftcloud8.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slower, easing:"linear"});
-    leftcloud9.velocity({left: (Number(leftcloud9.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: fast, easing:"linear"});
-    leftcloud10.velocity({left: (Number(leftcloud10.css("left").slice(0, -2)) + window.innerWidth) + "px"}, {duration: slow, easing:"linear"});    
+    animate.call(leftcloud1);
+    animate.call(leftcloud2);
+    animate.call(leftcloud3);
+    animate.call(leftcloud4);
+    animate.call(leftcloud5);
+    animate.call(leftcloud6);
+    animate.call(leftcloud7);
+    animate.call(leftcloud8);
+    animate.call(leftcloud9);
+    animate.call(leftcloud10);
+    
     /*var controller = new ScrollMagic.Controller();
     var poofLeftCloud = new ScrollMagic.Scene({
         offset:0,

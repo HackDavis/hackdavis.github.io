@@ -3,7 +3,8 @@
     width: 100%;
     z-index: 5;
     top:0px;
-
+    min-height: 100px;
+    
     overflow: hidden;
     position: fixed;
 }

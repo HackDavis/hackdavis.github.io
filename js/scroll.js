@@ -1,59 +1,80 @@
 $(function() {
     // in milliseconds
+    var controller = new ScrollMagic.Controller();
+    var guyFloadLeft = new ScrollMagic.Scene({
+        offset:0,
+        duration: window.innerWidth * 30 / 100
+    })
+    .setTween("#balloon", {left: window.innerWidth * 20 / 100 + "px", top: window.innerHeight * 0 / 100 + "px"})
+    .addTo(controller);
     const slow = 1000000;
     const fast = slow / 10;
     const slower = slow / 2;
     function animate() {
         this.css("left", this.start);
-        this.velocity({left: (Number(this.start.slice(0, -2)) + window.innerWidth) + "px"}, {duration: this.duration, easing:"linear", complete: animate.bind(this)});
+        this.velocity({left: (Number(this.start.slice(0, -2)) + window.innerWidth + this.width()) + "px"}, {duration: this.duration, easing:"linear", complete: animate.bind(this)});
         this.start = -this.width() + "px";
     }
-    var leftcloud1 = $("#left-cloud1");
-    var leftcloud2 = $("#left-cloud2");
-    var leftcloud3 = $("#left-cloud3");
-    var leftcloud4 = $("#left-cloud4");
-    var leftcloud5 = $("#left-cloud5");
-    var leftcloud6 = $("#left-cloud6");
-    var leftcloud7 = $("#left-cloud7");
-    var leftcloud8 = $("#left-cloud8");
-    var leftcloud9 = $("#left-cloud9");
-    var leftcloud10 = $("#left-cloud10");
+    var cloud1 = $("#cloud1");
+    var cloud2 = $("#cloud2");
+    var cloud3 = $("#cloud3");
+    var cloud4 = $("#cloud4");
+    var cloud5 = $("#cloud5");
+    var cloud6 = $("#cloud6");
+    var cloud7 = $("#cloud7");
+    var cloud8 = $("#cloud8");
+    var cloud9 = $("#cloud9");
+    var cloud10 = $("#cloud10");
+    var cloud10 = $("#cloud11");
+    var cloud10 = $("#cloud12");
+    var cloud10 = $("#cloud13");
+    var cloud10 = $("#cloud14");
 
-    leftcloud1.duration = slow;
-    leftcloud2.duration = slower;
-    leftcloud3.duration = fast;
-    leftcloud4.duration = fast;
-    leftcloud5.duration = slower;
-    leftcloud6.duration = fast;
-    leftcloud7.duration = fast;
-    leftcloud8.duration = slower;
-    leftcloud9.duration = fast;
-    leftcloud10.duration = slow;
+    cloud1.duration = slow;
+    cloud2.duration = slower;
+    cloud3.duration = fast;
+    cloud4.duration = fast;
+    cloud5.duration = slower;
+    cloud6.duration = fast;
+    cloud7.duration = fast;
+    cloud8.duration = slower;
+    cloud9.duration = fast;
+    cloud10.duration = slow;
+    cloud11.duration = slow;
+    cloud12.duration = slow;
+    cloud13.duration = slow;
+    cloud14.duration = slow;
 
-    leftcloud1.start = leftcloud1.css("left");
-    leftcloud2.start = leftcloud2.css("left");
-    leftcloud3.start = leftcloud3.css("left");
-    leftcloud4.start = leftcloud4.css("left");
-    leftcloud5.start = leftcloud5.css("left");
-    leftcloud6.start = leftcloud6.css("left");
-    leftcloud7.start = leftcloud7.css("left");
-    leftcloud8.start = leftcloud8.css("left");
-    leftcloud9.start = leftcloud9.css("left");
-    leftcloud10.start = leftcloud10.css("left");
+    cloud1.start = cloud1.css("left");
+    cloud2.start = cloud2.css("left");
+    cloud3.start = cloud3.css("left");
+    cloud4.start = cloud4.css("left");
+    cloud5.start = cloud5.css("left");
+    cloud6.start = cloud6.css("left");
+    cloud7.start = cloud7.css("left");
+    cloud8.start = cloud8.css("left");
+    cloud9.start = cloud9.css("left");
+    cloud10.start = cloud10.css("left");
+    cloud11.start = cloud10.css("left");
+    cloud12.start = cloud10.css("left");
+    cloud13.start = cloud10.css("left");
+    cloud14.start = cloud10.css("left");
     
-    animate.call(leftcloud1);
-    animate.call(leftcloud2);
-    animate.call(leftcloud3);
-    animate.call(leftcloud4);
-    animate.call(leftcloud5);
-    animate.call(leftcloud6);
-    animate.call(leftcloud7);
-    animate.call(leftcloud8);
-    animate.call(leftcloud9);
-    animate.call(leftcloud10);
-    
-    /*var controller = new ScrollMagic.Controller();
-    var poofLeftCloud = new ScrollMagic.Scene({
+    animate.call(cloud1);
+    animate.call(cloud2);
+    animate.call(cloud3);
+    animate.call(cloud4);
+    animate.call(cloud5);
+    animate.call(cloud6);
+    animate.call(cloud7);
+    animate.call(cloud8);
+    animate.call(cloud9);
+    animate.call(cloud10);
+    animate.call(cloud11);
+    animate.call(cloud12);
+    animate.call(cloud13);
+    animate.call(cloud14);
+    /*var poofLeftCloud = new ScrollMagic.Scene({
         offset:0,
         duration: 150
     })

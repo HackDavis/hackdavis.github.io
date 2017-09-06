@@ -44,7 +44,22 @@
     -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
+.navItem > a:hover {
+    color: lightseagreen;
+    opacity: .5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navItem:nth-child(1){
+  padding-right: 80px;
+}
 /* lowers font size on small screens */
+@media (max-width: 700px) {
+    .navItem {
+        font-size: 12px;
+    }
+}
 @media (max-width: 1200px) {
     .navItem > a { 
         font-size: 18px;
@@ -55,13 +70,28 @@
         font-size: 28px;
     }
 }
-.navItem > a:hover {
-    color: lightseagreen;
-    opacity: .5;
-    cursor: pointer;
-    text-decoration: none;
+@media (max-width: 850px) {
+     #nav {
+         height: 100%;
+         width: 50%;
+         right: 0px;         
+     }
+     .navItem {
+         text-align: right;
+         height: auto;
+         float: none;
+         margin-top: 20px;
+         margin-bottom: 20px;
+     }
+     .navItem:nth-child(1){
+        padding-right: 0px;
+        margin-top: 100px;
+      }
 }
-
-.navItem:nth-child(1){
-  padding-right: 80px;
+@media(max-height: 520px) and (max-width: 850px) {
+    .navItem {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 15px;
+    }
 }

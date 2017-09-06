@@ -85,10 +85,10 @@ $(function() {
     var cloud8 = $("#cloud8");
     var cloud9 = $("#cloud9");
     var cloud10 = $("#cloud10");
-    var cloud10 = $("#cloud11");
-    var cloud10 = $("#cloud12");
-    var cloud10 = $("#cloud13");
-    var cloud10 = $("#cloud14");
+    var cloud11 = $("#cloud11");
+    var cloud12 = $("#cloud12");
+    var cloud13 = $("#cloud13");
+    var cloud14 = $("#cloud14");
 
     cloud1.duration = slow;
     cloud2.duration = slower;

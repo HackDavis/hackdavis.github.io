@@ -65,7 +65,7 @@ $(function() {
     .setTween("#balloon", {left: window.innerWidth * 65 / 100 + "px", top: 0 * balloonEM + "px"})
     .addTo(controller);*/
 
-    const slow = 1000000;
+    const slow = 800000;
     const fast = slow / 10;
     const slower = slow / 2;
 

@@ -93,16 +93,16 @@ $(function() {
     cloud1.duration = slow;
     cloud2.duration = slower;
     cloud3.duration = fast;
-    cloud4.duration = fast;
+    cloud4.duration = slow;
     cloud5.duration = slower;
     cloud6.duration = fast;
-    cloud7.duration = fast;
+    cloud7.duration = slow;
     cloud8.duration = slower;
     cloud9.duration = fast;
     cloud10.duration = slow;
-    cloud11.duration = slow;
+    cloud11.duration = fast;
     cloud12.duration = slow;
-    cloud13.duration = slow;
+    cloud13.duration = fast;
     cloud14.duration = slow;
 
     cloud1.start = cloud1.position().left + "px";

@@ -1,5 +1,15 @@
 @import './nav.css';
 @import './clouds.css';
+@font-face {
+    font-family: 'Futura Standard';
+    font-weight: normal;
+    src: url('fonts/futura/FuturaStd-Book.otf');
+}
+@font-face {
+    font-family: 'Futura Standard';
+    font-weight: bold;
+    src: url('fonts/futura/FuturaStd-Heavy.otf');
+}
 #hamburger-menu {
   background-color: transparent;
   outline: none;
@@ -10,38 +20,49 @@
   z-index: 10000;
 }
 #mlh-trust-badge {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 50px;
   max-width: 100px;
   width: 10%;
   min-width: 60px;
+  z-index: 1000;
 }
 body {
     background: linear-gradient(#f3f3f3, #9fccd1);
     overflow-x: hidden;
 }
 #main {
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
     height: 248.35vw;
+    font-size: 20px;
 }
-
+@media (max-width: 1400px) {
+    #main {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1000px) {
+    #main {
+        font-size: 12px;
+    }
+}
 #balloon {
-    width: 40em;
-    left: 40%;
+    width: 20em;
+    left: 30%;
+    margin-left: -10em;
     height: auto;
     position: fixed;
     z-index: 1;
-    top: -10em;
+    top: -15em;
 }
 /*aspect ratio 2.4835*/
 #isodavis {
-    top: -200px;
-    left: 0px;
+    margin-top: 10em;
+    margin-left: 0px;
     width: 100%;
     height: auto;
-    position: absolute;
 }
 #plane {
     width: 40em;

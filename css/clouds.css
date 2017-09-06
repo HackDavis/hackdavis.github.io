@@ -3,73 +3,103 @@
     z-index: -1;
     opacity: 0.5;
 }
+.mirrorX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
 #cloud1 {
-    top: 100px;
+    top: 5em;
     left: 5vw;
     height: auto;
     width:20vw;
     min-width: 350px;
 }
 #cloud2 {
-    top: 1.5em;
-    left: 16vw;
+    top: 17em;
+    left: 30vw;
     height: auto;
-    width:15vw;
-    min-width: 250px;
+    width:5vw;
 }
 #cloud3 {
-    top: 3em;
-    left: 1.3vw;
+    top: 20em;
+    left: 75vw;
     height: auto;
     width:10vw;
     min-width: 150px;
 }
 #cloud4 {
-    top: 4.1em;
-    left: 5.1vw;
+    top: 25em;
+    left: 65vw;
     height: auto;
-    width:10vw;
+    width:15vw;
     min-width: 150px;
 }
 #cloud5 {
-    top: 5.5em;
-    left: 7vw;
+    top: 50em;
+    left: 60vw;
     height: auto;
-    width:15vw;
-    min-width: 250px;
+    width:8vw;
 }
 #cloud6 {
-    top: 1em;
-    left: 3vw;
+    top: 70em;
+    left: 70vw;
     height: auto;
-    width:10vw;
+    width:15vw;
     min-width: 150px;
 }
 #cloud7 {
-    top: 2em;
-    left: 4vw;
+    top: 80em;
+    left: 30vw;
     height: auto;
-    width:10vw;
+    width: 10vw;
     min-width: 150px;
 }
 #cloud8 {
-    top: 3em;
-    left: 1vw;
-    height: auto;
-    width:15vw;
-    min-width:250px;
-}
-#cloud9 {
-    top: 4em;
-    left: 2.5vw;
+    top: 82em;
+    left: 15vw;
     height: auto;
     width:10vw;
     min-width: 150px;
 }
+
+#cloud9 {
+    top: 87em;
+    left: 90vw;
+    height: auto;
+    width:5vw;
+}
+
 #cloud10 {
-    top: 5em;
+    top: 95em;
+    left: 20vw;
+    height: auto;
+    width:5vw;
+    min-width: 150px;
+}
+
+#cloud11 {
+    top: 110em;
+    left: 80vw;
+    height: auto;
+    width:15vw;
+}
+#cloud12 {
+    top: 115em;
+    left: 85vw;
+    height: auto;
+    width:10vw;
+}
+#cloud13 {
+    top: 130em;
     left: 10vw;
     height: auto;
-    width:20vw;
-    min-width: 350px;
+    width:15vw;
+}
+#cloud14 {
+    top: 140em;
+    left: 20vw;
+    height: auto;
+    width:10vw;
 }

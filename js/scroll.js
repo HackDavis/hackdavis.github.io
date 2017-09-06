@@ -1,20 +1,80 @@
 $(function() {
     // in milliseconds
+    function addShadow() {
+        $("#balloon").attr("src", "img/hotairballoon_wshadow.svg");
+    }
+    function removeShadow() {
+        $("#balloon").attr("src", "img/hotairballoon.svg");        
+    }
+    let balloonEM = parseInt($("#balloon").parent().css("font-size"), 10);
     var controller = new ScrollMagic.Controller();
-    var guyFloadLeft = new ScrollMagic.Scene({
-        offset:0,
+    let guyFloatLeft = new ScrollMagic.Scene({
+        offset: 0,
+        duration: window.innerWidth * 80 / 100
+    })
+    .setTween("#balloon", {top: -5 * balloonEM + "px", ease: Linear.easeNone, left: window.innerWidth * 25 / 100 + "px"})
+    .addTo(controller);
+
+    let guyFloatRight = new ScrollMagic.Scene({
+        offset: window.innerWidth * 100 / 100,
+        duration: window.innerWidth * 120 / 100
+    })
+    .setTween("#balloon", {top: 5 * balloonEM + "px", ease: Linear.easeNone, left: window.innerWidth * 35 / 100 + "px"})
+    .addTo(controller);
+
+    let hoverA = new ScrollMagic.Scene({
+        offset: window.innerWidth * 30 / 100,
+        duration: window.innerWidth * 20 / 100
+    })
+    .addTo(controller);
+    hoverA.on("enter", addShadow);
+    hoverA.on("leave", removeShadow);
+
+    let hoverRoad = new ScrollMagic.Scene({
+        offset: window.innerWidth * 85 / 100,
+        duration: window.innerWidth * 20 / 100
+    })
+    .addTo(controller);
+    hoverRoad.on("enter", addShadow);
+    hoverRoad.on("leave", removeShadow);
+    /*let guyFloatLeft = new ScrollMagic.Scene({
+        offset:window.innerWidth * 5 / 100,
         duration: window.innerWidth * 30 / 100
     })
-    .setTween("#balloon", {left: window.innerWidth * 20 / 100 + "px", top: window.innerHeight * 0 / 100 + "px"})
+    .setTween("#balloon", {left: window.innerWidth * 35 / 100 + "px", top: -25 * balloonEM + "px"})
     .addTo(controller);
+
+    let guyFloatRight = new ScrollMagic.Scene({
+        offset:window.innerWidth * 40 / 100,
+        duration: window.innerWidth * 30 / 100
+    })
+    .setTween("#balloon", {left: window.innerWidth * 50 / 100 + "px", top: -15 * balloonEM + "px"})
+    .addTo(controller);
+
+    let guyFloatLeft2 = new ScrollMagic.Scene({
+        offset:window.innerWidth * 65 / 100,
+        duration: window.innerWidth * 20 / 100
+    })
+    .setTween("#balloon", {left: window.innerWidth * 35 / 100 + "px", top: -10 * balloonEM + "px"})
+    .addTo(controller);
+
+    let guyFloatRight2 = new ScrollMagic.Scene({
+        offset:window.innerWidth * 85 / 100,
+        duration: window.innerWidth * 20 / 100
+    })
+    .setTween("#balloon", {left: window.innerWidth * 65 / 100 + "px", top: 0 * balloonEM + "px"})
+    .addTo(controller);*/
+
     const slow = 1000000;
     const fast = slow / 10;
     const slower = slow / 2;
+
     function animate() {
         this.css("left", this.start);
         this.velocity({left: (Number(this.start.slice(0, -2)) + window.innerWidth + this.width()) + "px"}, {duration: this.duration, easing:"linear", complete: animate.bind(this)});
         this.start = -this.width() + "px";
     }
+
     var cloud1 = $("#cloud1");
     var cloud2 = $("#cloud2");
     var cloud3 = $("#cloud3");
@@ -45,20 +105,20 @@ $(function() {
     cloud13.duration = slow;
     cloud14.duration = slow;
 
-    cloud1.start = cloud1.css("left");
-    cloud2.start = cloud2.css("left");
-    cloud3.start = cloud3.css("left");
-    cloud4.start = cloud4.css("left");
-    cloud5.start = cloud5.css("left");
-    cloud6.start = cloud6.css("left");
-    cloud7.start = cloud7.css("left");
-    cloud8.start = cloud8.css("left");
-    cloud9.start = cloud9.css("left");
-    cloud10.start = cloud10.css("left");
-    cloud11.start = cloud10.css("left");
-    cloud12.start = cloud10.css("left");
-    cloud13.start = cloud10.css("left");
-    cloud14.start = cloud10.css("left");
+    cloud1.start = cloud1.position().left + "px";
+    cloud2.start = cloud2.position().left + "px";
+    cloud3.start = cloud3.position().left + "px";
+    cloud4.start = cloud4.position().left + "px";
+    cloud5.start = cloud5.position().left + "px";
+    cloud6.start = cloud6.position().left + "px";
+    cloud7.start = cloud7.position().left + "px";
+    cloud8.start = cloud8.position().left + "px";
+    cloud9.start = cloud9.position().left + "px";
+    cloud10.start = cloud10.position().left + "px";
+    cloud11.start = cloud10.position().left + "px";
+    cloud12.start = cloud10.position().left + "px";
+    cloud13.start = cloud10.position().left + "px";
+    cloud14.start = cloud10.position().left + "px";
     
     animate.call(cloud1);
     animate.call(cloud2);

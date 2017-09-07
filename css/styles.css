@@ -37,6 +37,7 @@ body {
     width: 100%;
     height: 248.35vw;
     font-size: 20px;
+    position: relative;
 }
 @media (max-width: 1400px) {
     #main {
@@ -66,12 +67,22 @@ body {
 }
 #plane {
     width: 40em;
-    right: -20em;
+    right: -15em;
     top: 54vw;
     height: auto;
-    clip-path: inset(30% 0 25% 0);
     position: absolute;
     transition: all 0.5s ease-in;
+}
+#plane > img {
+    width: inherit;
+    position: absolute;
+}
+#plane > h1 {
+    display: inline-block;
+    right: 5em;
+    top: 3em;
+    transform: rotate(-15deg);
+    position: absolute;
 }
 #plane:hover {
     right: 0em;

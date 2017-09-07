@@ -6,8 +6,11 @@ $(function() {
     function removeShadow() {
         $("#balloon").attr("src", "img/hotairballoon.svg");        
     }
+
     let balloonEM = parseInt($("#balloon").parent().css("font-size"), 10);
+
     var controller = new ScrollMagic.Controller();
+
     let guyFloatLeft = new ScrollMagic.Scene({
         offset: 0,
         duration: window.innerWidth * 80 / 100
@@ -22,11 +25,13 @@ $(function() {
     .setTween("#balloon", {top: 5 * balloonEM + "px", ease: Linear.easeNone, left: window.innerWidth * 35 / 100 + "px"})
     .addTo(controller);
 
+    //logic to add shadow to balloon when it hovers over a letter
     let hoverA = new ScrollMagic.Scene({
-        offset: window.innerWidth * 30 / 100,
-        duration: window.innerWidth * 20 / 100
+        offset: window.innerWidth * 35 / 100,
+        duration: window.innerWidth * 15 / 100
     })
     .addTo(controller);
+
     hoverA.on("enter", addShadow);
     hoverA.on("leave", removeShadow);
 
@@ -65,6 +70,7 @@ $(function() {
     .setTween("#balloon", {left: window.innerWidth * 65 / 100 + "px", top: 0 * balloonEM + "px"})
     .addTo(controller);*/
 
+    //logic to animate clouds moving from left to right
     const slow = 800000;
     const fast = slow / 10;
     const slower = slow / 2;
@@ -134,6 +140,8 @@ $(function() {
     animate.call(cloud12);
     animate.call(cloud13);
     animate.call(cloud14);
+    
+    //clouds move out of the way when users scroll
     /*var poofLeftCloud = new ScrollMagic.Scene({
         offset:0,
         duration: 150
@@ -164,4 +172,20 @@ $(function() {
     })
     .setTween("#left-cloud3", {left: "-200px"})
     .addTo(controller);*/
+
+    $("#clickSponsors").click(function() {
+
+    });
+    $("#clickFAQ").click(function() {
+
+    });
+    $("#clickSchedule").click(function() {
+
+    });
+    $("#clickAbout").click(function(){
+
+    });
+    $("#clickHome").click(function(){
+
+    });
 });

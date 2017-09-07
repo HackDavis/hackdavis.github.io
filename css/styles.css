@@ -3,12 +3,12 @@
 @font-face {
     font-family: 'Futura Standard';
     font-weight: normal;
-    src: url('fonts/futura/FuturaStd-Book.otf');
+    src: url('../fonts/futura/FuturaStd-Book.otf');
 }
 @font-face {
     font-family: 'Futura Standard';
     font-weight: bold;
-    src: url('fonts/futura/FuturaStd-Heavy.otf');
+    src: url('../fonts/futura/FuturaStd-Heavy.otf');
 }
 #hamburger-menu {
   background-color: transparent;

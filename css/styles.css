@@ -65,7 +65,8 @@ body {
     transform: scale(1.1, 1.1);
     -moz-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
     -webkit-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
-    filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));    
+    filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));   
+    cursor: pointer; 
 }
 /*aspect ratio 2.4835*/
 #isodavis {

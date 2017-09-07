@@ -31,7 +31,7 @@
 body {
     background: linear-gradient(#f3f3f3, #9fccd1);
     overflow-x: hidden;
-    font-family: 'Futura Standard';  
+    font-family: 'Futura Standard';
 }
 #main {
     overflow: hidden;
@@ -88,3 +88,37 @@ body {
 #plane:hover {
     right: 0em;
 }
+
+.textbox > p {
+  position: absolute;
+  width: 340px;
+  height: auto;
+}
+
+#text1 > p {
+  top: 25em;
+  left: 5em;
+}
+
+#text2 > p {
+  top: 35em;
+  right: 5em;
+}
+
+#text3 > p {
+  top: 70em;
+  left: 5em;
+  width:375px;
+}
+
+/*
+#FAQ {
+  position: absolute;
+  width: 15px;
+  height: auto;
+  font-size: 25px;
+  bottom: 69.0696969em;
+  right: 9.5em;
+  font-weight: bold;
+}
+*/

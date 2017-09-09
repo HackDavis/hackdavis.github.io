@@ -9,6 +9,28 @@
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1)
 }
+
+#sponsor-cloud {
+    position: absolute;
+    width: 300px;
+    bottom: 80vh;
+    right: 300px;
+    height: auto;
+    min-height: 100px;
+}
+#sponsor-cloud > img {
+    position: absolute;
+    width: inherit;
+}
+#sponsor-cloud > h1 {
+    position: absolute;
+    display: inline-block;
+    color:white;
+    top: 2.5em;
+    left: 2em;
+    font-size: 30px;
+}
+
 #cloud1 {
     top: 5em;
     left: 5vw;

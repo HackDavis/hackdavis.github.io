@@ -1,0 +1,140 @@
+@import './nav.css';
+@import './clouds.css';
+@font-face {
+    font-family: 'Futura Standard';
+    font-weight: normal;
+    src: url('../fonts/futura/FuturaStd-Book.otf');
+}
+@font-face {
+    font-family: 'Futura Standard';
+    font-weight: bold;
+    src: url('../fonts/futura/FuturaStd-Heavy.otf');
+}
+#hamburger-menu {
+  background-color: transparent;
+  outline: none;
+  float: right;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 10000;
+}
+#mlh-trust-badge {
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  max-width: 100px;
+  width: 10%;
+  min-width: 60px;
+  z-index: 1000;
+}
+body {
+    background: linear-gradient(#f3f3f3, #9fccd1);
+    overflow-x: hidden;
+    font-family: 'Futura Standard';
+}
+#main {
+    overflow: hidden;
+    width: 100%;
+    height: 248.35vw;
+    font-size: 20px;
+    position: relative;
+}
+@media (max-width: 1400px) {
+    #main {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1000px) {
+    #main {
+        font-size: 12px;
+    }
+}
+#balloon {
+    width: 20em;
+    left: 30%;
+    margin-left: -10em;
+    height: auto;
+    position: fixed;
+    z-index: 10;
+    top: -15em;
+    transition: transform 0.3s ease-in,
+                filter 0.3s ease-in;
+}
+#balloon:hover {
+    transform: scale(1.1, 1.1);
+    -moz-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+    -webkit-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+    filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+    cursor: pointer;
+}
+
+/*aspect ratio 2.4835*/
+#isodavis {
+    margin-top: 10em;
+    margin-left: 0px;
+    width: 100%;
+    height: auto;
+}
+#plane {
+    width: 40em;
+    right: -15em;
+    top: 54vw;
+    height: auto;
+    position: absolute;
+    transition: all 0.5s ease-in;
+}
+#plane > img {
+    width: inherit;
+    position: absolute;
+}
+#plane > h1 {
+    display: inline-block;
+    right: 5em;
+    top: 3em;
+    transform: rotate(-15deg);
+    position: absolute;
+}
+#plane:hover {
+    right: 0em;
+}
+
+.textbox > p {
+  position: absolute;
+  width: 340px;
+  height: auto;
+}
+/*
+Queries for paragraphs
+@media (max-width: ) {
+
+}
+*/
+#text1 > p {
+  top: 25em;
+  left: 5em;
+}
+
+#text2 > p {
+  top: 35em;
+  right: 5em;
+}
+
+#text3 > p {
+  top: 70em;
+  left: 5em;
+  width:375px;
+}
+
+#sponsor-list {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  bottom: 450px;
+  right: 201px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}

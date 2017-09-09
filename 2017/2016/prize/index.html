@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HackDavis Prizes </title>
+	<link rel="stylesheet" type="text/css" href="prize.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../js/grid.js"></script>
+	<script type="text/javascript" src="../live.js" ></script>
+
+	<!-- meta data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Prizes for HackDavis 2016">
+	<meta name="keywords" content="HackDavis, hackdavis, hackathon, hack, davis, UC Davis, University of California, Davis, Computer Science, prizes">
+</head>
+<body>
+	<ul id="menu">
+		<a href="../"> <li> LIVE </li> </a>
+		<a href="../api"> <li> APIs </li> </a>
+		<a href="../hardware"> <li> HARDWARE </li> </a>
+		<a href="../prize"> <li> PRIZES </li> </a>
+		<a href="../schedule"> <li> TECH TALKS </li> </a>
+		<a href="http://hackdavis.devpost.com"> <li> DEVPOST </li> </a>
+	</ul>
+
+	<div id="container">
+		<div id="yellowbar">
+			<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
+			<a href="../">
+				<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
+			</a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a href="../api">
+				<img id="api" src="../img/symbols/api_white.png" height="30px">
+			</a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a href="../hardware">
+				<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
+			</a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a href="../prize">
+				<img id="prize" src="../img/symbols/prize_white.png" height="30px">
+			</a>
+			
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a href="../schedule">
+				<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
+			</a>
+
+			<div class="label" id="devpost-label"> devpost </div>
+			<a href="http://hackdavis.devpost.com">
+				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
+			</a>
+		</div>
+
+		<div id="hamburger" class="menu-closed">
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+		</div>
+
+		<div id="title"> PRIZES</div>
+		<div id="bluebar"></div>
+<!-- 		<div id="content"><b>This list is not final!</b> We are still finalizing prizes, but here is what we have so far:</div> -->
+		<div class="grid"> </div>
+	</div>
+
+</body>
+<script>
+
+	var open = false;
+
+	$(document).ready(function() {
+
+		$(".menu-closed").click(function(){
+
+			if (open == false){
+				$("#menu").css("opacity", 1);
+				$("#container").animate({left: '40%'});
+				$("#container").css("position", "fixed");
+
+				open = true;
+			}
+			else {
+				$("#container").animate({left: '0%'});
+				setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+				$("#container").css("position", "absolute");
+
+				open = false;
+			}
+
+		});
+	});
+
+	var prizes = [
+	{
+		"name": "Most Technically Challenging",
+		"id": "prize-2",
+		"heading": "1 winner",
+		"desc": "Nexus Players + Parrot Mini Drones for each team member"
+	},
+	{
+		"name": "Most Impactful",
+		"id": "prize-3",
+		"heading": "1 winner",
+		"desc": "Apple iPad Mini 2s for each team member"
+	},
+	{
+		"name": "Most Creative",
+		"id": "prize-4",
+		"heading": "1 winner",
+		"desc": "GoPro Heroes for each team member"
+	},
+	{
+		"name": "Best Health & Wellness Nonprofit Hack",
+		"id": "prize-5",
+		"heading": "1 winner",
+		"desc": "Summer internship opportunity at New Story Inc + 1 year of Github Silver. Read their challenge <a href='../challenges'>here</a>. <br><br>Sponsored by New Story Inc"
+	},
+	{
+		"name": "Best Education Nonprofit Hack",
+		"id": "prize-6",
+		"heading": "1 winner",
+		"desc": "1 year of Github Silver. Read their challenge <a href='../challenges'>here</a>. <br><br>Sponsored by Teach for America"
+	},
+	{
+		"name": "Best Environment Nonprofit Hack",
+		"id": "prize-7",
+		"heading": "1 winner",
+		"desc": "Summer internship opportunity at Re-volv + 1 year of Github Silver. Read their challenge <a href='../challenges'>here</a>. <br><br>Sponsored by Re-volv"
+	},
+	{
+		"name": "Best Use of Touch Hardware",
+		"id": "prize-8",
+		"heading": "1 winner",
+		"desc": "$1,300 to the winning team for best use of touch hardware using Synaptics hardware/software. <br><br>Sponsored by Synaptics"
+	},
+	{
+		"name": "Best Use of Fingerprint Hardware",
+		"id": "prize-9",
+		"heading": "1 winner",
+		"desc": "$1,300 to the winning team for best use of fingerprint hardware using Synaptics hardware/software. <br><br>Sponsored by Synaptics"
+	},
+	{
+		"name": "Best User Voice Experience with Amazon Alexa",
+		"id": "prize-10",
+		"heading": "1 winner",
+		"desc": "Amazon Echoes to the winning team and Amazon Taps for runner up. <br><br>Sponsored by Amazon"
+	},
+	{
+		"name": "Most Innovative Hack",
+		"id": "prize-10",
+		"heading": "1 winner",
+		"desc": "Pioneer Summit Convention Tickets for the team ($500 value) + GSV Labs Mentoring sessions<br><br>Sponsored by GSV Labs."
+	},
+	{
+		"name": "Best Use of Watson Cognitive API",
+		"id": "prize-11",
+		"heading": "1 winner",
+		"desc": "Raspberry PI 3 Starter Kits for the team<br><br>Sponsored by IBM."
+	},
+	{
+		"name": "Best Use of Cisco Spark",
+		"id": "prize-12",
+		"heading": "1 winner",
+		"desc": "OSVR (Open Source Virtual Reality) Hacker Dev Kit for each team member<br><br>Sponsored by Cisco."
+	},
+	{
+		"name": "Best Hack Harassment Solution",
+		"id": "prize-13",
+		"heading": "1 winner",
+		"desc": "Fossil Q Reveler Black Leather Activity Bands for each team member.<br><br>Sponsored by HackHarassment."
+	},
+	{
+		"name": "Best Beginner Hack",
+		"id": "prize-18",
+		"heading": "1 winner",
+		"desc": "Dell Venue Tablets for the team. At least half the team must be first time hackers.<br><br>Sponsored by MLH."
+	},
+	{
+		"name": "KPCB Challenge Winner",
+		"id": "prize-14",
+		"heading": "1 winner",
+		"desc": "Interviews with the Engineering KPCB Fellows for Summer 2017. You can view <a target='_blank' href=\"http://kpcbfellows.com/challenges\">challenges here</a>.<br><br>Sponsored by KPCB."
+	},
+	{
+		"name": "Best Use of Amazon Web Services",
+		"id": "prize-15",
+		"heading": "1 winner",
+		"desc": "1TB hard drives for each team member<br><br> Sponsored by MLH"
+	},
+	{
+		"name": "Best Domain Name from domain.com",
+		"id": "prize-16",
+		"heading": "1 winner",
+		"desc": "Swag bags with Sparkfun Redboards for each team member<br><br> Sponsored by MLH"
+	},
+	{
+		"name": "Best Developer Tool",
+		"id": "prize-17",
+		"heading": "1 winner",
+		"desc": "Octocat statues for each team member<br><br> Sponsored by MLH"
+	},
+	]
+
+	populateGrid(prizes)
+</script>
+</html>

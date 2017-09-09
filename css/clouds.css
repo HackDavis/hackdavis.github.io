@@ -1,0 +1,127 @@
+.cloud {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+.mirrorX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1)
+}
+
+#sponsor-cloud {
+    position: absolute;
+    width: 300px;
+    bottom: 80vh;
+    right: 300px;
+    height: auto;
+    min-height: 100px;
+}
+#sponsor-cloud > img {
+    position: absolute;
+    width: inherit;
+}
+#sponsor-cloud > h1 {
+    position: absolute;
+    display: inline-block;
+    color:white;
+    top: 2.5em;
+    left: 2em;
+    font-size: 30px;
+}
+
+#cloud1 {
+    top: 5em;
+    left: 5vw;
+    height: auto;
+    width:20vw;
+    min-width: 350px;
+}
+#cloud2 {
+    top: 17em;
+    left: 30vw;
+    height: auto;
+    width:5vw;
+}
+#cloud3 {
+    top: 20em;
+    left: 75vw;
+    height: auto;
+    width:10vw;
+    min-width: 150px;
+}
+#cloud4 {
+    top: 25em;
+    left: 65vw;
+    height: auto;
+    width:15vw;
+    min-width: 150px;
+}
+#cloud5 {
+    top: 50em;
+    left: 60vw;
+    height: auto;
+    width:8vw;
+}
+#cloud6 {
+    top: 70em;
+    left: 70vw;
+    height: auto;
+    width:15vw;
+    min-width: 150px;
+}
+#cloud7 {
+    top: 80em;
+    left: 30vw;
+    height: auto;
+    width: 10vw;
+    min-width: 150px;
+}
+#cloud8 {
+    top: 82em;
+    left: 15vw;
+    height: auto;
+    width:10vw;
+    min-width: 150px;
+}
+
+#cloud9 {
+    top: 87em;
+    left: 90vw;
+    height: auto;
+    width:5vw;
+}
+
+#cloud10 {
+    top: 95em;
+    left: 20vw;
+    height: auto;
+    width:5vw;
+    min-width: 150px;
+}
+
+#cloud11 {
+    top: 110em;
+    left: 80vw;
+    height: auto;
+    width:15vw;
+}
+#cloud12 {
+    top: 115em;
+    left: 85vw;
+    height: auto;
+    width:10vw;
+}
+#cloud13 {
+    top: 130em;
+    left: 10vw;
+    height: auto;
+    width:15vw;
+}
+#cloud14 {
+    top: 140em;
+    left: 20vw;
+    height: auto;
+    width:10vw;
+}

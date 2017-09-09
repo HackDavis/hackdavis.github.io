@@ -94,6 +94,7 @@ body {
     top: 3em;
     transform: rotate(-15deg);
     position: absolute;
+    font-size: 1.8em;
 }
 #plane:hover {
     right: 0em;

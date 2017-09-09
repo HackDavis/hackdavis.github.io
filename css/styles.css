@@ -102,7 +102,7 @@ body {
 
 .textbox > p {
   position: absolute;
-  width: 340px;
+  width: 16em;
   height: auto;
 }
 /*
@@ -112,19 +112,19 @@ Queries for paragraphs
 }
 */
 #text1 > p {
-  top: 25em;
+  top: 30vw;
   left: 5em;
 }
 
 #text2 > p {
-  top: 35em;
+  top: 50vw;
   right: 5em;
 }
 
 #text3 > p {
-  top: 70em;
+  top: 88vw;
   left: 5em;
-  width:375px;
+  width:20em;
 }
 
 #sponsor-list {

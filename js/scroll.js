@@ -4,7 +4,7 @@ $(function() {
         $("#balloon").attr("src", "img/hotairballoon_wshadow.svg");
     }
     function removeShadow() {
-        $("#balloon").attr("src", "img/hotairballoon.svg");        
+        $("#balloon").attr("src", "img/hotairballoon.svg");
     }
 
     let balloonEM = parseInt($("#balloon").parent().css("font-size"), 10);
@@ -125,7 +125,7 @@ $(function() {
     cloud12.start = cloud10.position().left + "px";
     cloud13.start = cloud10.position().left + "px";
     cloud14.start = cloud10.position().left + "px";
-    
+
     animate.call(cloud1);
     animate.call(cloud2);
     animate.call(cloud3);
@@ -140,7 +140,7 @@ $(function() {
     animate.call(cloud12);
     animate.call(cloud13);
     animate.call(cloud14);
-    
+
     //clouds move out of the way when users scroll
     /*var poofLeftCloud = new ScrollMagic.Scene({
         offset:0,
@@ -179,11 +179,16 @@ $(function() {
 
     });
     $("#clickSchedule").click(function() {
-        $("#plane").velocity("scroll", {duration: 1000, easing:"easeInOutCubic"});                
+        $("#plane").velocity("scroll", {duration: 1000, easing:"easeInOutCubic"});
     });
     $("#clickAbout").click(function(){
+      $("body").velocity("scroll", {duration: 1000, easing:"easeInOutCubic"});
+      removeHash();
     });
-    $("#clickHome").click(function(){
-        $("body").velocity("scroll", {duration: 1000, easing:"easeInOutCubic"});      
-    });
+
+
+    //Gets rid of fragment identifier
+    function removeHash() {
+      history.pushState("", document.title, window.location.pathname + window.location.search);
+    }
 });

@@ -15,14 +15,14 @@ $(function() {
         offset: 0,
         duration: window.innerWidth * 80 / 100
     })
-    .setTween("#balloon", {top: -5 * balloonEM + "px", ease: Sine.easeOut, left: window.innerWidth * 25 / 100 + "px"})
+    .setTween("#balloon-container", {top: -5 * balloonEM + "px", ease: Sine.easeOut, left: window.innerWidth * 25 / 100 + "px"})
     .addTo(controller);
 
     let guyFloatRight = new ScrollMagic.Scene({
         offset: window.innerWidth * 100 / 100,
         duration: window.innerWidth * 120 / 100
     })
-    .setTween("#balloon", {top: 5 * balloonEM + "px", ease: Sine.easeInOut, left: window.innerWidth * 35 / 100 + "px"})
+    .setTween("#balloon-container", {top: 5 * balloonEM + "px", ease: Sine.easeInOut, left: window.innerWidth * 35 / 100 + "px"})
     .addTo(controller);
 
     //logic to add shadow to balloon when it hovers over a letter

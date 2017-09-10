@@ -52,14 +52,22 @@ body {
 }
 #balloon {
     width: 20em;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-in,
+                filter 0.3s ease-in;
+}
+#balloon-container {
+    width: auto;
     left: 30%;
     margin-left: -10em;
     height: auto;
     position: fixed;
     z-index: 10;
-    top: -15em;
-    transition: transform 0.3s ease-in,
-                filter 0.3s ease-in;
+    top: -15em; 
 }
 #balloon:hover {
     transform: scale(1.1, 1.1);
@@ -138,4 +146,57 @@ Queries for paragraphs
 .logo {
   width: 200px;
   height: auto;
+}
+.bubble
+{
+    position: absolute;
+    left: 15em;
+    top: 25em;
+    display: block;
+    width: 10em;
+    height: 5em;
+    line-height: 4.3em;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    border: #7F7F7F solid 4px;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    visibility: hidden;
+}
+#balloon:hover + .bubble {
+    opacity: 1;
+    visibility: visible;
+}
+.bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 30px 25px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-top: -25px;
+    left: -30px;
+    top: 50%;
+}
+
+.bubble:before
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 28px 33px 28px 0;
+    border-color: transparent #7F7F7F;
+    display: block;
+    width: 0;
+    z-index: 0;
+    margin-top: -28px;
+    left: -37px;
+    top: 50%;
 }

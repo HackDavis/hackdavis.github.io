@@ -1,12 +1,12 @@
 #nav {
     height: 75px;
     width: 100%;
-    z-index: 5;
     top: 0px;
     min-height: 50px;
     background: linear-gradient(to right, #494a86, #244a53);
     position: fixed;
     border-radius: 0;
+    z-index: 1000;
 }
 
 #nav-title {

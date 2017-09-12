@@ -15,6 +15,10 @@ body {
     overflow-x: hidden;
     font-family: 'Futura Standard';
 }
+
+#mlh-trust-badge {
+    z-index: 1000;
+}
 #main {
     overflow: hidden;
     width: 100%;

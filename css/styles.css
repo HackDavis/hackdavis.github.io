@@ -45,31 +45,31 @@ img[src="img/whitehdlogo.png"] {
     left: 50%;
     margin-left: -15vw;
     top: 40%;
-    z-index: 5;
     margin-top: -15vw;
 }
 img[src="img/backgroundsky.svg"] {
     width: 100%;
 }
+img[src="img/roadcowshills.svg"] {
+    top: 0;
+}
 img[src="img/cowandsquirrel.svg"] {
-    bottom: 0px;
-    z-index: 10;
-    margin-bottom: -100vh;
+    top: 0;
 }
 img[src="img/mountains.svg"] {
-    bottom: 20%;
+    top: 0;
 }
 img[src="img/sunset_rise.svg"] {
-    top: 10%;
+    top: 0;
 }
 img[src="img/tree layer1.svg"] {
-    bottom: 10%;
+    top: 0;
 }
 img[src="img/tree layer2.svg"] {
-    bottom: 5%;
+    top: 0;
 }
 img[src="img/tree layer3.svg"] {
-    bottom: 0;
+    top: 0;
 }
 @media (max-width: 1400px) {
     #main {

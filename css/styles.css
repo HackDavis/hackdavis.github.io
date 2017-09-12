@@ -32,14 +32,15 @@ section {
 section:first-child {
     margin-top: 75px;
 }
-img[src="img/clouds.svg"] {
+.img-absolute {
     position: absolute;
+}
+img[src="img/clouds.svg"] {
     width:60%;
 }
 img[src="img/whitehdlogo.png"] {
     width:30vw;
     height: 30vw;
-    position: absolute;
     left: 50%;
     margin-left: -15vw;
     top: 40%;
@@ -47,34 +48,27 @@ img[src="img/whitehdlogo.png"] {
     margin-top: -15vw;
 }
 img[src="img/backgroundsky.svg"] {
-    position: absolute;
     height: 100%;
 }
 img[src="img/cowandsquirrel.svg"] {
-    position: absolute;
     bottom: 0px;
     z-index: 10;
     margin-bottom: -100vh;
 }
 img[src="img/mountains.svg"] {
     bottom: 20%;
-    position: absolute;
 }
 img[src="img/sunset_rise.svg"] {
     top: 10%;
-    position: absolute;
 }
 img[src="img/tree layer1.svg"] {
     bottom: 10%;
-    position: absolute;
 }
 img[src="img/tree layer2.svg"] {
     bottom: 5%;
-    position: absolute;
 }
 img[src="img/tree layer3.svg"] {
     bottom: 0;
-    position: absolute;
 }
 @media (max-width: 1400px) {
     #main {

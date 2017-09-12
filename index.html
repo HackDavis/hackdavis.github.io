@@ -48,12 +48,12 @@
     <!-- Main Content Container -->
     <div id="main">
       <section>
-        <img class="img-fluid img-absolute z-10" src="img/whitehdlogo.png">
-        <img class="img-fluid img-absolute z-0" src="img/backgroundsky.svg">
-        <img class="img-fluid img-absolute z-2" src="img/clouds.svg">
-        <img class="img-fluid img-absolute z-1" src="img/mountains top.svg">        
-        <img class="img-fluid img-absolute z-2" src="img/roadcowshills.svg">
-        <img class="img-fluid img-absolute z-3" src="img/cowandsquirrel.svg">
+        <img class="img-fluid img-absolute z-10" src="img/logowhitewebsite.png">
+        <object class="img-absolute z-0" type="image/svg+xml" data="img/backgroundsky.svg"></object>
+        <object class="img-absolute z-1" type="image/svg+xml" data="img/clouds.svg"></object>
+        <object class="img-absolute z-2" type="image/svg+xml" data="img/mountains top.svg"></object>
+        <object class="img-absolute z-3" type="image/svg+xml" data="img/roadcowshills.svg"></object>      
+        <object class="img-absolute z-4" type="image/svg+xml" data="img/cowandsquirrel.svg"></object>
       </section>
       <div>
         <h1>What is HackDavis?</h1>
@@ -61,23 +61,33 @@
         <p>Dope</p>
       </div>
       <section>
-        <img class="img-fluid img-absolute z-8" src="img/soilcave1.svg">
-        <img class="img-fluid img-absolute z-9" src="img/cave2.svg">
-        <img class="img-fluid img-absolute z-10" src="img/cave3.svg">
-        <img class="img-fluid img-absolute z-5" src="img/mountains.svg">        
-        <img class="img-fluid img-absolute z-6" src="img/mountain 1.svg">
-        <img class="img-fluid img-absolute z-7" src="img/mountain 3.svg">
-        <img class="img-fluid img-absolute z-4" src="img/sunsetbottom.png">
-        <img class="img-fluid img-absolute z-11" src="img/tree layer1.svg">
-        <img class="img-fluid img-absolute z-12" src="img/tree layer2.svg">
-        <img class="img-fluid img-absolute z-13" src="img/tree layer3.svg">
+        <img class="img-absolute z-8" src="img/soilcave1.svg">
+        <img class="img-absolute z-9" src="img/cave2.svg">
+        <img class="img-absolute z-10" src="img/cave3.svg">
+        <img class="img-absolute z-5" src="img/mountains.svg">        
+        <img class="img-absolute z-6" src="img/mountain 1.svg">
+        <img class="img-absolute z-7" src="img/mountain 3.svg">
+        <img class="img-absolute z-4" src="img/sunsetbottom.png">
+        <img class="img-absolute z-11" src="img/tree layer1.svg">
+        <img class="img-absolute z-12" src="img/tree layer2.svg">
+        <img class="img-absolute z-13" src="img/tree layer3.svg">
       </section>
       <footer>
-        <img class="img-fluid img-absolute z-14" src="img/footer.svg">
+        <img class="img-absolute z-14" src="img/footer.svg">
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $("object").each(function(){
+          this.addEventListener("load", function(){
+            let drawing = this.contentDocument;
+            drawing.querySelector("svg").setAttribute("preserveAspectRatio", "none");
+          });
+        })
+      })
+    </script>
   </body>
 </html>

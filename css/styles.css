@@ -1,4 +1,5 @@
 @import "./nav.css";
+@import "./z-index.css";
 
 @font-face {
     font-family: 'Futura Standard';
@@ -48,7 +49,7 @@ img[src="img/whitehdlogo.png"] {
     margin-top: -15vw;
 }
 img[src="img/backgroundsky.svg"] {
-    height: 100%;
+    width: 100%;
 }
 img[src="img/cowandsquirrel.svg"] {
     bottom: 0px;

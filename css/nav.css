@@ -1,0 +1,72 @@
+#nav {
+    height: 75px;
+    width: 100%;
+    z-index: 5;
+    top: 0px;
+    min-height: 50px;
+    background: linear-gradient(to right, #494a86, #244a53);
+    position: fixed;
+    border-radius: 0;
+}
+
+#nav-title {
+    color: #dcd4d0;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#mlh-trust-badge {
+    position: fixed;
+    margin-top: 75px;
+    left: 125px;
+    width: 10%;
+    min-width: 60px;
+    max-width: 100px;
+    z-index: 10;
+    display: block;
+}
+
+/* div that contains the <a> navigation links */
+.navItem {
+    height: 100%;
+    float: right;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 20;
+}
+
+.navItem:hover {
+    background-color: #5481be;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navItem > a {
+    color: white;
+    font-family: 'Futura Standard';
+    text-decoration: none;
+
+    /* use em's to calculate line spacing from the font-size set on .navItem class
+    This will improve responsiveness, I have calculated these values from the existing values in px on the .navItem class */
+    padding-left: 0.67em;
+    padding-right: 0.67em;
+    line-height: 50px;
+}
+
+.navItem:nth-child(2){
+   margin-right: 20px;
+ }
+
+/* Mobile site */
+@media (max-width: 900px) {
+    #nav {
+      display: none;
+    }
+    #mlh-trust-badge {
+      margin-top: 0;
+      content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
+    }
+}

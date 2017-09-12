@@ -1,3 +1,5 @@
+@import "./nav.css";
+
 @font-face {
     font-family: 'Futura Standard';
     font-weight: normal;
@@ -8,26 +10,8 @@
     font-weight: bold;
     src: url('../fonts/futura/FuturaStd-Heavy.otf');
 }
-#hamburger-menu {
-  background-color: transparent;
-  outline: none;
-  float: right;
-  position: fixed;
-  top: 25px;
-  right: 25px;
-  z-index: 10000;
-}
-#mlh-trust-badge {
-  position: fixed;
-  top: 0px;
-  left: 50px;
-  max-width: 100px;
-  width: 10%;
-  min-width: 60px;
-  z-index: 1000;
-}
+
 body {
-    background: linear-gradient(#f3f3f3, #9fccd1);
     overflow-x: hidden;
     font-family: 'Futura Standard';
 }
@@ -47,155 +31,4 @@ body {
     #main {
         font-size: 12px;
     }
-}
-#balloon {
-    width: 20em;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    transition: transform 0.3s ease-in,
-                filter 0.3s ease-in;
-}
-#balloon-container {
-    width: auto;
-    left: 30%;
-    margin-left: -10em;
-    height: auto;
-    position: fixed;
-    z-index: 10;
-    top: -15em; 
-}
-#balloon:hover {
-    transform: scale(1.1, 1.1);
-    -moz-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
-    -webkit-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
-    filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
-    cursor: pointer;
-}
-
-/*aspect ratio 2.4835*/
-#isodavis {
-    margin-top: 10em;
-    margin-left: 0px;
-    width: 100%;
-    height: auto;
-}
-#plane {
-    width: 40em;
-    right: -15em;
-    top: 54vw;
-    height: auto;
-    position: absolute;
-    transition: all 0.5s ease-in;
-}
-#plane > img {
-    width: inherit;
-    position: absolute;
-}
-#plane > h1 {
-    display: inline-block;
-    right: 5em;
-    top: 3em;
-    transform: rotate(-15deg);
-    position: absolute;
-    font-size: 1.8em;
-}
-#plane:hover {
-    right: 0em;
-}
-
-.textbox > p {
-  position: absolute;
-  width: 16em;
-  height: auto;
-}
-/*
-Queries for paragraphs
-@media (max-width: ) {
-
-}
-*/
-#text1 > p {
-  top: 30vw;
-  left: 5em;
-}
-
-#text2 > p {
-  top: 50vw;
-  right: 5em;
-}
-
-#text3 > p {
-  top: 88vw;
-  left: 5em;
-  width:20em;
-}
-
-#sponsor-list {
-  position: absolute;
-  width: 500px;
-  height: auto;
-  bottom: 450px;
-  right: 201px;
-}
-
-.logo {
-  width: 200px;
-  height: auto;
-}
-.bubble
-{
-    position: absolute;
-    left: 12em;
-    top: 19em;
-    display: block;
-    width: 8em;
-    height: 4em;
-    line-height: 3.5em;
-    padding: 0px;
-    background: #FFFFFF;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    border: #7F7F7F solid 4px;
-    opacity: 0;
-    text-align: center;
-    transition: all 0.3s ease-in;
-    visibility: hidden;
-    font-size: 1.3em;
-}
-#balloon:hover + .bubble {
-    opacity: 1;
-    visibility: visible;
-}
-.bubble:after
-{
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 25px 30px 25px 0;
-    border-color: transparent #FFFFFF;
-    display: block;
-    width: 0;
-    z-index: 1;
-    margin-top: -25px;
-    left: -30px;
-    top: 50%;
-}
-
-.bubble:before
-{
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 28px 33px 28px 0;
-    border-color: transparent #7F7F7F;
-    display: block;
-    width: 0;
-    z-index: 0;
-    margin-top: -28px;
-    left: -37px;
-    top: 50%;
 }

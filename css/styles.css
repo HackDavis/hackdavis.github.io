@@ -117,21 +117,6 @@ Queries for paragraphs
 
 }
 */
-#text1 > p {
-  top: 30vw;
-  left: 5em;
-}
-
-#text2 > p {
-  top: 50vw;
-  right: 5em;
-}
-
-#text3 > p {
-  top: 88vw;
-  left: 5em;
-  width:20em;
-}
 
 #sponsor-list {
   position: absolute;
@@ -144,58 +129,4 @@ Queries for paragraphs
 .logo {
   width: 200px;
   height: auto;
-}
-.bubble
-{
-    position: absolute;
-    left: 12em;
-    top: 19em;
-    display: block;
-    width: 8em;
-    height: 4em;
-    line-height: 3.5em;
-    padding: 0px;
-    background: #FFFFFF;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    border: #7F7F7F solid 4px;
-    opacity: 0;
-    text-align: center;
-    transition: all 0.3s ease-in;
-    visibility: hidden;
-    font-size: 1.3em;
-}
-#balloon:hover + .bubble {
-    opacity: 1;
-    visibility: visible;
-}
-.bubble:after
-{
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 25px 30px 25px 0;
-    border-color: transparent #FFFFFF;
-    display: block;
-    width: 0;
-    z-index: 1;
-    margin-top: -25px;
-    left: -30px;
-    top: 50%;
-}
-
-.bubble:before
-{
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 28px 33px 28px 0;
-    border-color: transparent #7F7F7F;
-    display: block;
-    width: 0;
-    z-index: 0;
-    margin-top: -28px;
-    left: -37px;
-    top: 50%;
 }

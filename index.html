@@ -2,6 +2,18 @@
 <html>
   <head>
     <title>HackDavis | January 2018</title>
+
+    <!-- Meta Information-->
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="HackDavis is UC Davis' annual hackathon for students, run by students.">
+    <meta name="keywords" content="HackDavis, social good, tech, hackathon">
+    <meta name="author" content="HackDavis">
+    <meta property="og:site_name" content="HackDavis"/>
+    <meta property="og:image" content="http://hackdavis.io/img/cover.png" />
+    <meta property="og:title" content="HackDavis: Code for Social Good" />
+    <meta property="og:description" content="HackDavis is UC Davis' annual hackathon for students, run by students. In January 2018, over 500 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in California to address the world's most pressing social issues.">
+    <meta property="og:url" content="http://hackdavis.io" />
+
     <!-- External libraries-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,17 +25,6 @@
     <link rel="manifest" href="favicon/manifest.json">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
-
-    <!-- Meta Information-->
-    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="HackDavis is UC Davis' annual hackathon for students, run by students.">
-     <meta name="keywords" content="HackDavis, social good, tech, hackathon">
-     <meta name="author" content="HackDavis">
-     <meta property="og:site_name" content="HackDavis"/>
-     <meta property="og:image" content="http://hackdavis.io/img/cover.png" />
-     <meta property="og:title" content="HackDavis: Code for Social Good" />
-     <meta property="og:description" content="HackDavis is UC Davis' annual hackathon for students, run by students. In January 2018, over 500 students, hackers, and creatives will come together for 24 hours of hacking. We're providing an environment to bring together the most talented students in California to address the world's most pressing social issues.">
-     <meta property="og:url" content="http://hackdavis.io" />
 
     <!-- User Stlesheets -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -75,18 +76,10 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <script>
-      $(function(){
-        $.stellar();
-        $("object").each(function(){
-          this.addEventListener("load", function(){
-            let drawing = this.contentDocument;
-            drawing.querySelector("svg").setAttribute("preserveAspectRatio", "none");
-          });
-        })
-      })
-    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="js/parallax.js"></script>
   </body>
 </html>

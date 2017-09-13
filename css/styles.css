@@ -44,12 +44,12 @@ object[data="img/clouds.svg"] {
     width:60%;
 }
 img[src="img/logowhitewebsite.png"] {
-    width:30vw;
-    height: 30vw;
+    width:20vw;
+    height: 20vw;
     left: 50%;
-    margin-left: -15vw;
+    margin-left: -10vw;
     top: 40%;
-    margin-top: -15vw;
+    margin-top: -10vw;
     z-index: 5;
 }
 object[data="img/backgroundsky.svg"] {

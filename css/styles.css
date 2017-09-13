@@ -1,5 +1,4 @@
 @import "./nav.css";
-@import "./z-index.css";
 
 @font-face {
     font-family: 'Futura Standard';
@@ -15,10 +14,6 @@
 body {
     overflow-x: hidden;
     font-family: 'Futura Standard';
-}
-
-#mlh-trust-badge {
-    z-index: 1000;
 }
 #main {
     overflow: hidden;
@@ -60,7 +55,7 @@ object[data="img/roadcowshills.svg"] {
 object[data="img/cowandsquirrel.svg"] {
     width: 100%;
     height: auto;
-    bottom: 0%;
+    bottom: 0;
 }
 object[data="img/mountains.svg"] {
     top: 0;

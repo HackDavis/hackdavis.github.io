@@ -8,13 +8,17 @@ $(function(){
 })
 var controller = new ScrollMagic.Controller();
 
-var tween = new TimelineMax ()
+var tween = new TimelineMax()
 .add([
-  TweenMax.to(".img-absolute", 1, {top: "500px", ease: Linear.easeNone}),
+  TweenMax.to(".layer1", 1, {y: "+=40", ease: Linear.easeNone}),
+  TweenMax.to(".layer2", 1, {y: "+=75", ease: Linear.easeNone}),
+  TweenMax.to(".layer3", 0.75, {y: "+=100", ease: Linear.easeNone}),
+  TweenMax.to(".layer4", 0.6, {y: "-300", ease: Linear.easeNone}),
+  TweenMax.to(".logo", 1, {y: "+=150", ease: Linear.easeNone}),
 ]);
 
 // build scene
-var scene = new ScrollMagic.Scene({offset: 100, duration: $(window).width()})
+var scene = new ScrollMagic.Scene({offset: 0, duration: 400})
         .setTween(tween)
-        .addIndicators() // add indicators (requires plugin)
+        .addIndicators()
         .addTo(controller);

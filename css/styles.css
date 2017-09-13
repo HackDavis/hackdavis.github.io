@@ -10,13 +10,6 @@
     font-weight: bold;
     src: url('../fonts/futura/FuturaStd-Heavy.otf');
 }
-#text {
-    position: absolute;
-    z-index: 5;
-    bottom: 100px;
-    right: 100px;
-    color: white;
-}
 body {
     overflow-x: hidden;
     font-family: 'Futura Standard';
@@ -37,6 +30,13 @@ section:first-child {
 section:nth-child(2) {
     height: 1300px;
 }
+#text {
+    position: absolute;
+    z-index: 5;
+    bottom: 50px;
+    right: 100px;
+    color: white;
+}
 .img-absolute {
     position: absolute;
 }
@@ -48,9 +48,9 @@ img[src="img/logowhitewebsite.png"] {
     height: 20vw;
     left: 50%;
     margin-left: -10vw;
-    top: 40%;
+    top: 30%;
     margin-top: -10vw;
-    z-index: 5;
+    z-index: 4;
 }
 object[data="img/backgroundsky.svg"] {
     width: 100%;
@@ -61,14 +61,17 @@ object[data="img/roadcowshills.svg"] {
     top: 20%;
     min-height: 400px;
     min-width: 600px;
+    margin-left: -5px;
 }
 object[data="img/cowandsquirrel.svg"] {
     width: 100%;
     height: auto;
-    bottom: -10%;
+    bottom: -46%;
+    margin-left: -5px;
+    z-index:5;
 }
 object[data="img/mountains top.svg"] {
-    top: 15%;
+    top: 10%;
 }
 object[data="img/mountains.svg"] {
     top: 0;

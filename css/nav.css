@@ -6,7 +6,7 @@
     background: linear-gradient(to right, #494a86, #244a53);
     position: fixed;
     border-radius: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #nav-title {
@@ -22,8 +22,8 @@
     width: 10%;
     min-width: 60px;
     max-width: 100px;
-    z-index: 10;
     display: block;
+    z-index: 10;
 }
 
 /* div that contains the <a> navigation links */
@@ -35,7 +35,7 @@
     font-size: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
-    z-index: 20;
+    z-index: 10;
 }
 
 .navItem:hover {

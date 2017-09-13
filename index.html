@@ -48,29 +48,45 @@
     <!-- Main Content Container -->
     <div id="main">
       <section>
-        <img class="img-fluid" src="img/whitehdlogo.png">
-        <img class="img-fluid" src="img/backgroundsky.svg">
-        <img class="img-fluid" src="img/clouds.svg">
-        <img class="img-fluid" src="img/cowandsquirrel.svg">
+        <img class="img-fluid img-absolute z-10" src="img/logowhitewebsite.png">
+        <object class="img-absolute z-0" type="image/svg+xml" data="img/backgroundsky.svg"></object>
+        <object class="img-absolute z-1" type="image/svg+xml" data="img/clouds.svg"></object>
+        <object class="img-absolute z-2" type="image/svg+xml" data="img/mountains top.svg"></object>
+        <object class="img-absolute z-3" type="image/svg+xml" data="img/roadcowshills.svg"></object>
+        <object class="img-absolute z-4" type="image/svg+xml" data="img/cowandsquirrel.svg"></object>
       </section>
-      <section>
+      <div>
         <h1>What is HackDavis?</h1>
         <p>HackDavis is </p>
         <p>Dope</p>
-      </section>
+      </div>
       <section>
-        <img class="img-fluid" src="img/mountains.svg">
-        <img class="img-fluid" src="img/sunset_rise.svg">
-        <img class="img-fluid" src="img/tree layer1.svg">
-        <img class="img-fluid" src="img/tree layer2.svg">
-        <img class="img-fluid" src="img/tree layer3.svg">
+        <object class="img-absolute z-8" type="image/svg+xml" data="img/soilcave1.svg"></object>
+        <object class="img-absolute z-9" type="image/svg+xml" data="img/cave2.svg"></object>
+        <object class="img-absolute z-10" type="image/svg+xml" data="img/cave3.svg"></object>
+        <object class="img-absolute z-5" type="image/svg+xml" data="img/mountains.svg"></object>
+        <object class="img-absolute z-6" type="image/svg+xml" data="img/mountain 1.svg"></object>
+        <object class="img-absolute z-7" type="image/svg+xml" data="img/mountain 3.svg"></object>
+        <img class="img-absolute z-4" src="img/sunsetbottom.png">
+        <object class="img-absolute z-11" type="image/svg+xml" data="img/tree layer1.svg"></object>
+        <object class="img-absolute z-12" type="image/svg+xml" data="img/tree layer2.svg"></object>
+        <object class="img-absolute z-13" type="image/svg+xml" data="img/tree layer3.svg"></object>
       </section>
       <footer>
-        <img class="img-fluid" src="img/footer.svg">
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $("object").each(function(){
+          this.addEventListener("load", function(){
+            let drawing = this.contentDocument;
+            drawing.querySelector("svg").setAttribute("preserveAspectRatio", "none");
+          });
+        })
+      })
+    </script>
   </body>
 </html>

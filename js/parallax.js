@@ -1,11 +1,9 @@
-$(function(){
-  $("object").each(function(){
-    this.addEventListener("load", function(){
-      let drawing = this.contentDocument;
-      drawing.querySelector("svg").setAttribute("preserveAspectRatio", "none");
-    });
-  })
-})
+$("object").each(function(){
+  this.addEventListener("load", function(){
+    let drawing = this.contentDocument;
+    drawing.querySelector("svg").setAttribute("preserveAspectRatio", "none");
+  });
+});
 var controller = new ScrollMagic.Controller();
 
 var tween = new TimelineMax()
@@ -18,7 +16,7 @@ var tween = new TimelineMax()
 ]);
 
 // build scene
-var scene = new ScrollMagic.Scene({offset: 0, duration: 400})
+var scene = new ScrollMagic.Scene({offset: 0, duration: 0.53 * window.innerHeight})
         .setTween(tween)
         .addIndicators()
         .addTo(controller);

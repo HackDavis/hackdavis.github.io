@@ -66,6 +66,9 @@
     #nav {
       display: none;
     }
+    section:first-child {
+        margin-top: 0px !important;
+    }
     #mlh-trust-badge {
       margin-top: 0;
       content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")

@@ -8,15 +8,15 @@ var controller = new ScrollMagic.Controller();
 
 var tween = new TimelineMax()
 .add([
-  TweenMax.to(".layer1", 1, {y: "+=40", ease: Linear.easeNone}),
-  TweenMax.to(".layer2", 1, {y: "+=75", ease: Linear.easeNone}),
-  TweenMax.to(".layer3", 0.75, {y: "+=100", ease: Linear.easeNone}),
-  TweenMax.to(".layer4", 0.6, {y: "-300", ease: Linear.easeNone}),
-  TweenMax.to(".logo", 1, {y: "+=150", ease: Linear.easeNone}),
+  TweenMax.to(".layer1", 1, {y: "+=60", ease: Linear.easeNone}),
+  TweenMax.to(".layer2", 1, {y: "+=100", ease: Linear.easeNone}),
+  TweenMax.to(".layer3", 0.75, {y: "+=150", ease: Linear.easeNone}),
+  TweenMax.to(".layer4", 0.7, {y: "-300", ease: Linear.easeNone}),
+  TweenMax.to(".logo", 0.8, {y: "+=250", ease: Linear.easeNone}),
 ]);
 
 // build scene
-var scene = new ScrollMagic.Scene({offset: 0, duration: 0.53 * window.innerHeight})
+var scene = new ScrollMagic.Scene({offset: 0, duration: 300})
         .setTween(tween)
         .addIndicators()
         .addTo(controller);

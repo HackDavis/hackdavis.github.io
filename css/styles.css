@@ -32,7 +32,8 @@ section:nth-child(2) {
     height: 260vh;
 }
 footer {
-    background-color: 03141E;
+    background-color: #03141E;
+    z-index: 10;
 }
 #about-text {
   position: absolute;
@@ -61,6 +62,9 @@ footer {
 }
 object[data="img/clouds.svg"] {
     width:60%;
+}
+img[src="img/sunsetbottom.png"] {
+    z-index: -1;
 }
 img[src="img/logowhitewebsite.png"] {
     width:20vw;

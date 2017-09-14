@@ -1,9 +1,3 @@
-$("object").each(function(){
-  this.addEventListener("load", function(){
-    let drawing = this.contentDocument;
-    drawing.querySelector("svg").setAttribute("preserveAspectRatio", "none");
-  });
-});
 var controller = new ScrollMagic.Controller();
 
 var tween = new TimelineMax()

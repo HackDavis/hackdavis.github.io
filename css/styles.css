@@ -29,7 +29,7 @@ section:first-child {
     margin-bottom: calc(59.8vh - 301px);
 }
 section:nth-child(2) {
-    height: 260vh;
+    height: 280vh;
 }
 footer {
     background-color: #03141E;
@@ -65,6 +65,7 @@ object[data="img/clouds.svg"] {
 }
 img[src="img/sunsetbottom.png"] {
     z-index: -1;
+    width: 100%;
 }
 img[src="img/logowhitewebsite.png"] {
     width:20vw;
@@ -99,26 +100,48 @@ object[data="img/mountains top.svg"] {
     min-width: 900px;
 }
 object[data="img/soilcave1.svg"] {
-    top: 0;
-    z-index: 
+    top: -20px;
+    z-index: 4;
 }
 object[data="img/cave2.svg"] {
-    top: 0;
+    top: 10%;
+    right: -9%;
+    width: 60%;
+    z-index: 3;
+}
+object[data="img/cave3.svg"] {
+    top: 10%;
+    width: 60%;
+    right: 0;
+    z-index:2;
 }
 object[data="img/mountains.svg"] {
-    top: 0;
+    bottom: 20%;
+    width: 100%;
+    z-index:1;
 }
-object[data="img/sunset_rise.svg"] {
-    top: 0;
+object[data="img/mountain 1.svg"] {
+    bottom:20%;
+    width: 100%;
+    z-index:2;
+}
+object[data="img/mountain 3.svg"] {
+    bottom: 20%;
+    width: 100%;
+    margin-left: -10%;
+    z-index: 3;
 }
 object[data="img/tree layer1.svg"] {
     bottom: 0;
+    z-index:4;
 }
 object[data="img/tree layer2.svg"] {
     bottom: 0;
+    z-index:5;
 }
 object[data="img/tree layer3.svg"] {
     bottom: 0;
+    z-index:6;
 }
 @media (max-width: 1400px) {
     #main {

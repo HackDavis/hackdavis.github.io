@@ -30,12 +30,27 @@ section:first-child {
 section:nth-child(2) {
     height: 1300px;
 }
-#text {
-    position: absolute;
-    z-index: 5;
-    bottom: 50px;
-    right: 100px;
-    color: white;
+#about-text {
+  position: absolute;
+  z-index: 5;
+  bottom: -100px;
+  height: auto;
+  color: white;
+  width: 100%;
+}
+#about-text h1 {
+  font-size: 35px;
+  font-weight: bold;
+}
+#about-text p {
+  font-size: 23px;
+  padding-right: 100px;
+  padding-left: 50px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .img-absolute {
     position: absolute;

@@ -26,10 +26,13 @@ section {
 section:first-child {
     margin-top: 75px;
     height: 130vh;
-    margin-bottom: calc(59.8vh - 300px);
+    margin-bottom: calc(59.8vh - 301px);
 }
 section:nth-child(2) {
     height: 260vh;
+}
+footer {
+    background-color: 03141E;
 }
 #about-text {
   position: absolute;
@@ -91,6 +94,13 @@ object[data="img/mountains top.svg"] {
     width: 100%;
     min-width: 900px;
 }
+object[data="img/soilcave1.svg"] {
+    top: 0;
+    z-index: 
+}
+object[data="img/cave2.svg"] {
+    top: 0;
+}
 object[data="img/mountains.svg"] {
     top: 0;
 }
@@ -98,13 +108,13 @@ object[data="img/sunset_rise.svg"] {
     top: 0;
 }
 object[data="img/tree layer1.svg"] {
-    top: 0;
+    bottom: 0;
 }
 object[data="img/tree layer2.svg"] {
-    top: 0;
+    bottom: 0;
 }
 object[data="img/tree layer3.svg"] {
-    top: 0;
+    bottom: 0;
 }
 @media (max-width: 1400px) {
     #main {

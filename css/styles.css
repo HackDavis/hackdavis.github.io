@@ -77,6 +77,7 @@ object[data="img/clouds.svg"] {
     width:60%;
     height: 30%;
     min-width: 700px;
+    margin-top: -35px;
 }
 img[src="img/sunsetbottom.png"] {
     z-index: -1;
@@ -88,7 +89,7 @@ img[src="img/logowhitewebsite.png"] {
     min-width: 200px;
     left: 50%;
     margin-left: -10vw;
-    top: 30%;
+    top: 25%;
     margin-top: -10vw;
     z-index: 4;
 }
@@ -101,10 +102,10 @@ img[src="img/logowhitewebsite.png"] {
 object[data="img/backgroundsky.svg"] {
     width: 100%;
     height: 80%;
-    margin-top: -20vh;
+    margin-top: -32vh;
 }
 object[data="img/roadcowshills.svg"] {
-    top: 20%;
+    top: 5%;
     height: 60%;
     min-width: 900px;
     margin-left: -5px;
@@ -113,7 +114,7 @@ object[data="img/roadcowshills.svg"] {
 object[data="img/cowandsquirrel.svg"] {
     width: calc(100% + 5px);
     height: auto;
-    bottom: -46%;
+    bottom: -8%;
     margin-left: -5px;
     z-index:5;
 }
@@ -124,7 +125,7 @@ object[data="img/grass.svg"] {
     z-index:5;
 }
 object[data="img/mountains top.svg"] {
-    top: 10%;
+    top: 0;
     width: 100%;
     height: 60%;
     min-width: 1200px;

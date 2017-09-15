@@ -208,6 +208,7 @@ object[data="img/tree layer3.svg"] {
         height: 70%;
     }
     object[data="img/mountains top.svg"] {
+        top: 10%;
         height: 70%;
     }
     #about-text {

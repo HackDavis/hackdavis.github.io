@@ -23,12 +23,17 @@ section {
     position: relative;
     width: 100vw;
 }
-section:first-child {
+section:first-child, #main > div:first-of-type {
     margin-top: 75px;
     height: 130vh;
+    width: 100%;
     margin-bottom: calc(59.8vh - 301px);
 }
-section:nth-child(2) {
+#main > div:first-of-type {
+    position: absolute;
+    top: 0;
+}
+section:nth-of-type(2) {
     height: 280vh;
 }
 footer {
@@ -70,6 +75,8 @@ footer > h1:first-child {
 }
 object[data="img/clouds.svg"] {
     width:60%;
+    height: 30%;
+    min-width: 700px;
 }
 img[src="img/sunsetbottom.png"] {
     z-index: -1;
@@ -77,12 +84,19 @@ img[src="img/sunsetbottom.png"] {
 }
 img[src="img/logowhitewebsite.png"] {
     width:20vw;
-    height: 20vw;
+    height: auto;
+    min-width: 200px;
     left: 50%;
     margin-left: -10vw;
     top: 30%;
     margin-top: -10vw;
     z-index: 4;
+}
+@media (max-width: 1000px) {
+    img[src="img/logowhitewebsite.png"] {
+        margin-left: -100px;
+        margin-top: -100px;
+    }
 }
 object[data="img/backgroundsky.svg"] {
     width: 100%;
@@ -91,6 +105,7 @@ object[data="img/backgroundsky.svg"] {
 }
 object[data="img/roadcowshills.svg"] {
     top: 20%;
+    height: 60%;
     min-width: 900px;
     margin-left: -5px;
     width: calc(100% + 5px);
@@ -102,10 +117,17 @@ object[data="img/cowandsquirrel.svg"] {
     margin-left: -5px;
     z-index:5;
 }
+object[data="img/grass.svg"] {
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    z-index:5;
+}
 object[data="img/mountains top.svg"] {
     top: 10%;
     width: 100%;
-    min-width: 900px;
+    height: 60%;
+    min-width: 1200px;
 }
 object[data="img/soilcave1.svg"] {
     top: -20px;
@@ -164,5 +186,42 @@ object[data="img/tree layer3.svg"] {
 @media (max-width: 992px) {
     #about-text > .row {
         flex-wrap: wrap;
+    }
+}
+
+/* Mobile site */
+@media (max-width: 900px) {
+    #nav {
+      display: none;
+    }
+    section:first-child {
+        margin-top: 0px;
+        height: 500px;
+        margin-bottom: 0;
+    }
+    #mlh-trust-badge {
+      margin-top: 0;
+      content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
+    }
+    object[data="img/roadcowshills.svg"] {
+        top: 30%;
+        height: 70%;
+    }
+    object[data="img/mountains top.svg"] {
+        height: 70%;
+    }
+    #about-text {
+        position: static;
+        background: linear-gradient(to bottom, #8CB936 0%,#4D912B 50%,#8CB936 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        padding-bottom: 30px;
+        height: auto;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    #main > div:first-of-type {
+        position: static;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

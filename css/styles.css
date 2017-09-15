@@ -224,4 +224,7 @@ object[data="img/tree layer3.svg"] {
         margin-top: 0;
         margin-bottom: 0;
     }
+    img[src="img/logowhitewebsite.png"] {
+        top: 45%;
+    }
 }

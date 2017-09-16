@@ -189,13 +189,13 @@ object[data="img/tree layer3.svg"] {
 /* Portrait mode */
 @media (max-aspect-ratio: 1/1) {
     object[data="img/cowandsquirrel.svg"] {
-        bottom: 20%;
+        bottom: 25%;
     }
     object[data="img/roadcowshills.svg"], object[data="img/mountains top.svg"] {
         width: 200%;
     }
     section:first-child, #main > div:first-of-type {
-        margin-bottom: calc(-26vh + 25px);
+        margin-bottom: -32.5vh;
     }
     img[src="img/logowhitewebsite.png"] {
         width:30vw;
@@ -204,6 +204,10 @@ object[data="img/tree layer3.svg"] {
     }
     #about-text {
         bottom: 25%;
+        margin-bottom: 0;
+    }
+    #about-text h1 {
+        margin-top: 0;
     }
 }
 @media (max-width: 1450px) {

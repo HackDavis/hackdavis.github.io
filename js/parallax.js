@@ -24,7 +24,6 @@ function enableParallax() {
               .setTween(tween)
               .addIndicators()
               .addTo(controller);
-    }
   }
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
@@ -62,4 +61,7 @@ $(window).resize(function(event) {
 
 $("#clickAbout").click(function(){
   $("#about-text").velocity("scroll", {offset: -230, duration: 1500, easing:"easeInOutCubic"});
-})
+});
+$("#clickSponsors").click(function(){
+  $("footer").velocity("scroll", {offset: -100, duration: 1500, easing: "easeInOutCubic"});
+});

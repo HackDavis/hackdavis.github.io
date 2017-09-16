@@ -27,7 +27,7 @@ section:first-child, #main > div:first-of-type {
     margin-top: 75px;
     height: 130vh;
     width: 100%;
-    margin-bottom: calc(59.8vh - 301px);
+    margin-bottom: calc(10.4vh + 25px);
 }
 #main > div:first-of-type {
     position: absolute;
@@ -47,8 +47,8 @@ footer > h1:first-child {
 #about-text {
   position: absolute;
   z-index: 5;
-  bottom: -46%;
-  margin-bottom: 300px;
+  bottom: -8%;
+  margin-bottom: -100px;
   height: 26vw;
   color: white;
   width: 100%;

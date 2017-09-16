@@ -1,5 +1,6 @@
 function enableParallax() {
-  if(window.innerWidth > 700 && window.innerWidth > window.innerHeight) {
+  console.log(window.innerWidth);
+  if(window.innerWidth > 750 && window.innerWidth > window.innerHeight) {
     controller = new ScrollMagic.Controller();
 
     var tween = new TimelineMax()
@@ -19,7 +20,7 @@ function enableParallax() {
             .addTo(controller);
 
   }
-  else if(window.innerWidth <=700) {
+  else if(window.innerWidth <= 750) {
     //Change image in mobile site
     $("object[data='img/cowandsquirrel.svg']").attr("data", "img/grass.svg");
   }

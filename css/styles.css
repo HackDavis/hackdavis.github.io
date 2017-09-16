@@ -202,6 +202,7 @@ object[data="img/tree layer3.svg"] {
     }
     #mlh-trust-badge {
       margin-top: 0;
+      position: absolute;
       content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
     }
     object[data="img/roadcowshills.svg"] {
@@ -214,11 +215,15 @@ object[data="img/tree layer3.svg"] {
     }
     #about-text {
         position: static;
-        background: linear-gradient(to bottom, #8CB936 0%,#4D912B 50%,#8CB936 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to bottom, #8CB936 0%,#4D912B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         padding-bottom: 30px;
         height: auto;
         padding-top: 20px;
         margin-bottom: 0;
+    }
+    #about-text p {
+        padding-right: 15px;
+        padding-left: 15px;
     }
     #main > div:first-of-type {
         position: static;

@@ -1,4 +1,4 @@
-if(window.innerWidth > 900) {
+if(window.innerWidth > 700) {
   var controller = new ScrollMagic.Controller();
 
   var tween = new TimelineMax()

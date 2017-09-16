@@ -185,6 +185,17 @@ object[data="img/tree layer3.svg"] {
         bottom: 10%;
     }
 }
+@media (max-aspect-ratio: 1/1) {
+    object[data="img/cowandsquirrel.svg"] {
+        bottom: 20%;
+    }
+    section:first-child, #main > div:first-of-type {
+        margin-bottom: calc(-26vh + 25px);
+    }
+    #about-text {
+        bottom: 21%;
+    }
+}
 @media (max-width: 1450px) {
     #main {
         font-size: 20px;
@@ -202,7 +213,7 @@ object[data="img/tree layer3.svg"] {
 }
 
 /* Mobile site */
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     #nav {
       display: none;
     }

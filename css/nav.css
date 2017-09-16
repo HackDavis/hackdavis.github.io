@@ -10,6 +10,7 @@
 }
 
 #nav-title {
+    margin-top: 18px;
     color: #dcd4d0;
     display: inline-block;
     margin-left: 50px;
@@ -63,6 +64,10 @@
 
 /*For Tablets*/
  @media (max-width: 900px) {
+    #nav-title {
+        margin-left: 25px;
+        font-size: 32px;
+    }
    .navItem {
        font-size: 20px;
    }

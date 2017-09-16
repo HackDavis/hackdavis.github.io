@@ -37,12 +37,18 @@ section:nth-of-type(2) {
     height: 280vh;
 }
 footer {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
     background-color: #03141E;
     color: white;
     z-index: 10;
 }
 footer > h1:first-child {
     margin-top: 0;
+}
+footer img {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 #about-text {
   position: absolute;
@@ -187,7 +193,7 @@ object[data="img/tree layer3.svg"] {
     }
 }
 /* Portrait mode */
-@media (min-width: 700px) and (max-aspect-ratio: 1/1) {
+@media (min-width: 750px) and (max-aspect-ratio: 1/1) {
     object[data="img/cowandsquirrel.svg"] {
         bottom: 25%;
     }

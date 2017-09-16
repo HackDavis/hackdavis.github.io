@@ -1,6 +1,6 @@
 var controller;
 function enableParallax() {
-  if(window.innerWidth > 750 && window.innerWidth > window.innerHeight) {
+  if(window.innerWidth > 750 && window.innerWidth > window.innerHeight && !controller) {
     controller = new ScrollMagic.Controller();
 
     var tween = new TimelineMax()
@@ -18,12 +18,6 @@ function enableParallax() {
             .setTween(tween)
             .addIndicators()
             .addTo(controller);
-
-      // build scene
-      var scene = new ScrollMagic.Scene({offset: 0, duration: 600})
-              .setTween(tween)
-              .addIndicators()
-              .addTo(controller);
   }
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
@@ -45,7 +39,7 @@ $(window).resize(function(event) {
   else if(window.innerWidth > 750) {
     $("object[data='img/grass.svg']").attr("data", "img/cowandsquirrel.svg");
   }
-  if(window.innerHeight > window.innerWidth){
+  if(window.innerHeight > window.innerWidth || window.innerWidth <= 750){
     if(controller) {
       controller.destroy(true);
       controller = null;

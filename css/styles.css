@@ -174,6 +174,7 @@ object[data="img/tree layer3.svg"] {
     bottom: -5px;
     z-index:6;
 }
+/* Tablet Optimization */
 @media (max-aspect-ratio: 5/3) {
     object[data="img/cowandsquirrel.svg"] {
         bottom: 10%;
@@ -185,15 +186,24 @@ object[data="img/tree layer3.svg"] {
         bottom: 10%;
     }
 }
+/* Portrait mode */
 @media (max-aspect-ratio: 1/1) {
     object[data="img/cowandsquirrel.svg"] {
         bottom: 20%;
     }
+    object[data="img/roadcowshills.svg"], object[data="img/mountains top.svg"] {
+        width: 200%;
+    }
     section:first-child, #main > div:first-of-type {
         margin-bottom: calc(-26vh + 25px);
     }
+    img[src="img/logowhitewebsite.png"] {
+        width:30vw;
+        margin-left: -15vw;
+        margin-top: -15vw;
+    }
     #about-text {
-        bottom: 21%;
+        bottom: 25%;
     }
 }
 @media (max-width: 1450px) {

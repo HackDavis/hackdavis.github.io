@@ -249,6 +249,10 @@ object[data="img/tree layer3.svg"] {
         top: 10%;
         height: 70%;
     }
+    object[data="img/backgroundsky.svg"] {
+        margin-top: -18vw;
+        height: 120%;
+    }
     #about-text {
         position: static;
         background: linear-gradient(to bottom, #8CB936 0%,#4D912B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

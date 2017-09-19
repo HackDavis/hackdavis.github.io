@@ -184,7 +184,7 @@ object[data="img/middle cave.svg"] {
     z-index: 5;
     margin-left: -10px;
     margin-top: -10px;
-    width: calc(100% + 10px);
+    width: calc(100% + 20px);
     height: 100%;
 }
 object[data="img/middlecave background.svg"] {

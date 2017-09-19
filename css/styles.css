@@ -1,18 +1,18 @@
 @import "./nav.css";
 
 @font-face {
-    font-family: 'Futura Standard';
+    font-family: 'Futura Std';
     font-weight: normal;
     src: url('../fonts/futura/FuturaStd-Book.otf');
 }
 @font-face {
-    font-family: 'Futura Standard';
+    font-family: 'FuturaStd-Heavy';
     font-weight: bold;
     src: url('../fonts/futura/FuturaStd-Heavy.otf');
 }
 body {
     overflow-x: hidden;
-    font-family: 'Futura Standard';
+    font-family: 'Futura Std';
 }
 #main {
     overflow: hidden;
@@ -34,7 +34,11 @@ section:first-child, #main > div:first-of-type {
     top: 0;
 }
 section:nth-of-type(2) {
-    height: 1000px;
+    height: 150vh;
+    max-height: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
 }
 footer {
     padding-left: 50px !important;
@@ -64,7 +68,9 @@ footer img {
 }
 #about-text h1 {
   font-size: 1.52em;
-  font-weight: bold;
+}
+h1 {
+    font-family: 'FuturaStd-Heavy';
 }
 #about-text p {
   font-size: 1em;
@@ -143,9 +149,24 @@ object[data="img/soil.svg"] {
 }
 object[data="img/middle cave.svg"] {
     z-index: 5;
+    margin-left: -10px;
+    margin-top: -10px;
+    width: calc(100% + 10px);
+    height: 100%;
 }
 object[data="img/middlecave background.svg"] {
     z-index: 4;
+    width: 100%;
+    top: 30%;
+    height: 70%;
+}
+object[data="img/schedule.svg"] {
+    z-index: 6;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 35%;
+    max-width: 100%;
 }
 /* Tablet Optimization */
 @media (max-aspect-ratio: 5/3) {

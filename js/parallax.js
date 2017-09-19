@@ -21,7 +21,10 @@ function enableParallax() {
             .addIndicators()
             .addTo(controller);
 
-    var caveScene = new ScrollMagic.Scene({offset})
+    var caveScene = new ScrollMagic.Scene({triggerElement: '.caveBackground', duration: 1 * window.innerHeight})
+            .setTween(TweenMax.fromTo(".caveBackground", 1, {y: "-=200"}, {y: "+=400", ease: Linear.easeNone}))
+            .addIndicators()
+            .addTo(controller);
   }
   else if(window.innerWidth <= 750) {
     //Change image in mobile site

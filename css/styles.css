@@ -204,6 +204,7 @@ object[data="img/schedule.svg"] {
 object[data="img/spooky lantern.svg"] {
     width: 20%;
     right: 20%;
+    margin-right: -10%;
     top: 40%;
     z-index: 4;
 }

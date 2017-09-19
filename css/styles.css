@@ -35,7 +35,7 @@ section:first-child, #main > div:first-of-type {
 }
 section:nth-of-type(2) {
     height: 150vh;
-    max-height: 100vw;
+    max-height: 140vw;
     display: flex;
     justify-content: center;
     margin-bottom: -10px;
@@ -54,6 +54,26 @@ footer img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#apply-button {
+    display: none;
+    background: linear-gradient(to right, #494a86, #244a53);
+    border-bottom: 3px solid #3245F0;
+    border-right: 6px solid #3245F0;
+    border-top: none;
+    border-left: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.52em;
+    font-family: 'FuturaStd-Heavy';
+}
+#apply-button:hover {
+    cursor: pointer;
+}
+#apply-button > a {
+    color: white;
+    text-decoration: none;
+}
 #about-text {
   position: absolute;
   z-index: 7;
@@ -64,7 +84,9 @@ footer img {
   width: 100%;
   font-size: inherit;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #about-text h1 {
   font-size: 1.52em;
@@ -224,6 +246,9 @@ object[data="img/schedule.svg"] {
 @media (max-width: 750px) {
     #nav {
       display: none;
+    }
+    #apply-button {
+        display: block;
     }
     section:first-child {
         margin-top: 0px;

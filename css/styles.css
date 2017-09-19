@@ -231,3 +231,6 @@ object[data="img/spooky lantern.svg"] {
   text-decoration: none;
   color: #1287A8;
 }
+#FAQ a:hover {
+  opacity: 0.75;
+}

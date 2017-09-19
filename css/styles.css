@@ -55,7 +55,9 @@ footer {
 footer img {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
     height: auto;
 }
 .sponsor-heading {

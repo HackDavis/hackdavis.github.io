@@ -206,8 +206,7 @@ object[data="img/spooky lantern.svg"] {
 #schedule {
   color: white;
   z-index: 6;
-  margin-top: -2.5%;
-  font-size: 1.52em;
+  margin-top: -2.5vw;
 }
 #FAQ {
   background-color: black;

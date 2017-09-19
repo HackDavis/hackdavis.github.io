@@ -40,6 +40,9 @@ section:nth-of-type(2) {
     justify-content: center;
     margin-bottom: -10px;
 }
+section:nth-of-type(3) {
+    z-index: 4;
+}
 footer {
     padding-left: 50px !important;
     padding-right: 50px !important;
@@ -204,6 +207,7 @@ object[data="img/schedule.svg"] {
   background-color: black;
   color: white;
   font-family: 'Futura-Std';
+  z-index: 4;
 }
 #FAQ h1 {
   text-align: center;

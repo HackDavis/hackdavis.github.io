@@ -190,6 +190,12 @@ object[data="img/schedule.svg"] {
     height: 35%;
     max-width: 100%;
 }
+#schedule {
+  color: white;
+  z-index: 6;
+  margin-top: -2.5%;
+  font-size: 1.52em;
+}
 #FAQ {
   background-color: black;
   color: white;

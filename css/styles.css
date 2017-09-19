@@ -31,7 +31,7 @@ section:first-child, #main > div:first-of-type {
 }
 section:nth-of-type(3) {
     background-color: #2C2219;
-    margin-top: -1px;
+    margin-top: -15px;
     position: relative;
     z-index: 5;
 }

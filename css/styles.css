@@ -177,7 +177,7 @@ object[data="img/middle cave.svg"] {
     height: 100%;
 }
 object[data="img/middlecave background.svg"] {
-    z-index: 4;
+    z-index: 3;
     width: 100%;
     top: 30%;
     height: 70%;
@@ -189,6 +189,12 @@ object[data="img/schedule.svg"] {
     margin-right: 15px;
     height: 35%;
     max-width: 100%;
+}
+object[data="img/spooky lantern.svg"] {
+    width: 20%;
+    right: 20%;
+    top: 40%;
+    z-index: 4;
 }
 /* Tablet Optimization */
 @media (max-aspect-ratio: 5/3) {

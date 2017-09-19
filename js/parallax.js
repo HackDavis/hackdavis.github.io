@@ -19,6 +19,8 @@ function enableParallax() {
             .setTween(tween)
             .addIndicators()
             .addTo(controller);
+
+    var caveScene = new ScrollMagic.Scene({offset})
   }
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
@@ -44,7 +46,7 @@ $(window).resize(function(event) {
     if(controller) {
       controller.destroy(true);
       controller = null;
-      $('object .logo').each(function(){
+      $('object, .logo').each(function(){
         $(this).removeAttr('style');
       })
     }

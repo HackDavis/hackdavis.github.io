@@ -47,12 +47,16 @@ footer {
     color: white;
     z-index: 10;
 }
-footer > h1:first-child {
-    margin-top: 0;
-}
 footer img {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+}
+.sponsor-heading {
+  color: #95a3a6;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 #apply-button {
     display: none;

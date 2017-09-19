@@ -1,4 +1,5 @@
 var controller;
+
 function enableParallax() {
   if(window.innerWidth > 750 && window.innerWidth > window.innerHeight && !controller) {
     controller = new ScrollMagic.Controller();
@@ -56,9 +57,17 @@ $(window).resize(function(event) {
   }
 });
 
+/*Navbar links*/
+let duration = 1500;
 $("#clickAbout").click(function(){
-  $("#about-text").velocity("scroll", {offset: -230, duration: 1500, easing:"easeInOutCubic"});
+  $("#about-text").velocity("scroll", {offset: -230, duration: duration, easing:"easeInOutCubic"});
+});
+$("#clickSchedule").click(function(){
+  $("#schedule").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
 $("#clickSponsors").click(function(){
-  $("footer").velocity("scroll", {offset: -100, duration: 1500, easing: "easeInOutCubic"});
+  $("footer").velocity("scroll", {offset: -100, duration: duration, easing: "easeInOutCubic"});
+});
+$("#clickFAQ").click(function(){
+  $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });

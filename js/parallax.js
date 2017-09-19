@@ -1,4 +1,5 @@
 var controller;
+
 function enableParallax() {
   if(window.innerWidth > 750 && window.innerWidth > window.innerHeight && !controller) {
     controller = new ScrollMagic.Controller();

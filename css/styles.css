@@ -190,107 +190,25 @@ object[data="img/schedule.svg"] {
     height: 35%;
     max-width: 100%;
 }
-/* Tablet Optimization */
-@media (max-aspect-ratio: 5/3) {
-    object[data="img/cowandsquirrel.svg"] {
-        bottom: 10%;
-    }
-    section:first-child, #main > div:first-of-type {
-        margin-bottom: calc(-13vh + 100px);
-    }
-    #about-text {
-        bottom: 10%;
-    }
+#FAQ {
+  background-color: black;
+  color: white;
+  font-family: 'Futura-Std';
 }
-/* Portrait mode */
-@media (min-width: 750px) and (max-aspect-ratio: 1/1) {
-    object[data="img/cowandsquirrel.svg"] {
-        bottom: 25%;
-    }
-    object[data="img/roadcowshills.svg"], object[data="img/mountains top.svg"] {
-        width: 140vh;
-    }
-    section:first-child, #main > div:first-of-type {
-        margin-bottom: -32.5vh;
-    }
-    img[src="img/logowhitewebsite.png"] {
-        width:30vw;
-        margin-left: -15vw;
-        margin-top: -15vw;
-    }
-    #about-text {
-        bottom: 25%;
-        margin-bottom: 0;
-    }
-    #about-text h1 {
-        margin-top: 0;
-    }
+#FAQ h1 {
+  text-align: center;
+  font-size: 33px;
 }
-@media (max-width: 1450px) {
-    #main {
-        font-size: 20px;
-    }
+#FAQ h2 {
+  font-size: 25px;
+  font-family: 'FuturaStd-Heavy';
+  margin-left: 70px;
 }
-@media (max-width: 1250px) {
-    #main {
-        font-size: 16px;
-    }
+#FAQ p {
+  font-size: 18px;
+  margin: 20px 50px 20px 70px;
 }
-@media (max-width: 992px) {
-    #about-text > .row {
-        flex-wrap: wrap;
-    }
-}
-
-/* Mobile site */
-@media (max-width: 750px) {
-    #nav {
-      display: none;
-    }
-    #apply-button {
-        display: block;
-    }
-    section:first-child {
-        margin-top: 0px;
-        height: 500px;
-        margin-bottom: 0;
-    }
-    #mlh-trust-badge {
-      margin-top: 0;
-      position: absolute;
-      content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
-    }
-    object[data="img/roadcowshills.svg"] {
-        top: 30%;
-        height: 70%;
-    }
-    object[data="img/mountains top.svg"] {
-        top: 10%;
-        height: 70%;
-    }
-    object[data="img/backgroundsky.svg"] {
-        margin-top: -18vw;
-        height: 120%;
-    }
-    #about-text {
-        position: static;
-        background: linear-gradient(to bottom, #8CB936 0%,#4D912B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        padding-bottom: 30px;
-        height: auto;
-        padding-top: 20px;
-        margin-bottom: 0;
-    }
-    #about-text p {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    #main > div:first-of-type {
-        position: static;
-        height: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    img[src="img/logowhitewebsite.png"] {
-        top: 45%;
-    }
+#FAQ a {
+  text-decoration: none;
+  color: #1287A8;
 }

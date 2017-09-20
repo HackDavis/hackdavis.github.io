@@ -4,11 +4,11 @@
     top: 0px;
     min-height: 50px;
     background: linear-gradient(to right, #494a86, #244a53);
+    transition: all 1.5s;
     position: fixed;
     border-radius: 0;
     z-index: 10;
 }
-
 #nav-title {
     margin-top: 18px;
     color: #dcd4d0;

@@ -16,7 +16,7 @@ function enableParallax() {
     ]);
 
     // build scene
-    var scene = new ScrollMagic.Scene({offset: 0, duration: 600})
+    var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
             .setTween(tween)
             .addIndicators()
             .addTo(controller);
@@ -25,6 +25,23 @@ function enableParallax() {
             .setTween(TweenMax.fromTo(".caveBackground", 1, {y: "-=200"}, {y: "+=400", ease: Linear.easeNone}))
             .addIndicators()
             .addTo(controller);
+
+    //Underground nav color change
+    let nav = document.getElementById('nav');
+    var navColorChange = new ScrollMagic.Scene({triggerElement: "#soil", offset: 300, duration: 0})
+					.on("enter", function() {
+            //Dark Brown
+            nav.style.background = "#2c2219";
+					})
+          .on("leave", function() {
+            //Temporary middle color fades in
+            nav.style.background = "#374a6d";
+            setTimeout(function() {
+              nav.style.background = "";
+            }, 1500);
+					})
+					.addIndicators()
+					.addTo(controller);
   }
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
@@ -55,12 +72,12 @@ $(window).resize(function(event) {
       })
     }
   } else {
-    //In Landscape
+    //In Landscape so
     enableParallax();
   }
 });
 
-/*Navbar links*/
+/* Navbar links */
 let duration = 1500;
 $("#clickAbout").click(function(){
   $("#about-text").velocity("scroll", {offset: -230, duration: duration, easing:"easeInOutCubic"});

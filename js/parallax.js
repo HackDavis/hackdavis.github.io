@@ -12,7 +12,7 @@ function enableParallax() {
       TweenMax.to(".road", 1, {y: "+=450", ease: Linear.easeNone}),
       TweenMax.to(".cow", 1, {y: "+=100", ease: Linear.easeNone}),
       TweenMax.to(".logo", 1, {y: "+=550", ease: Linear.easeNone}),
-      TweenMax.from("object[data='img/soil.svg']", 1, {y: "-=100", ease: Linear.easeNone})
+      TweenMax.from("#soil", 1, {y: "-=100", ease: Linear.easeNone})
     ]);
 
     // build scene
@@ -38,7 +38,7 @@ function enableParallax() {
             nav.style.background = "#374a6d";
             setTimeout(function() {
               nav.style.background = "";
-            }, 1500);
+            }, 1000);
 					})
 					.addIndicators()
 					.addTo(controller);

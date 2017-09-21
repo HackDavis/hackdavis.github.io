@@ -91,3 +91,6 @@ $("#clickSponsors").click(function(){
 $("#clickFAQ").click(function(){
   $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
+$("#lantern").click(function(){
+  window.location.href = "./apply.html";
+});

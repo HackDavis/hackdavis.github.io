@@ -45,7 +45,7 @@ function enableParallax() {
             timeout = setTimeout(function() {
               nav.style.background = "";
             }, 1000);*/
-            $("#rearNav").toggleClass("opaque", false);            
+            $("#rearNav").toggleClass("opaque", false);
 					})
 					.addIndicators()
 					.addTo(controller);
@@ -98,6 +98,8 @@ $("#clickSponsors").click(function(){
 $("#clickFAQ").click(function(){
   $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
+
+/* Apply button */
 $("#lantern").click(function(){
   window.location.href = "./apply.html";
 });

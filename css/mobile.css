@@ -55,7 +55,7 @@
 
 /* Mobile site */
 @media (max-width: 750px) {
-    #nav {
+    #nav, #brownNav, #rearNav {
         display: none;
     }
     #apply-button {

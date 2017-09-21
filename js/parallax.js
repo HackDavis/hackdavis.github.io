@@ -28,15 +28,20 @@ function enableParallax() {
 
     //Underground nav color change
     let nav = document.getElementById('nav');
+    var timeout;
     var navColorChange = new ScrollMagic.Scene({triggerElement: "#soil", offset: 300, duration: 0})
 					.on("enter", function() {
             //Dark Brown
             nav.style.background = "#2c2219";
+            if(timeout) {
+              clearInterval(timeout);
+              timeout = null;
+            }
 					})
           .on("leave", function() {
             //Temporary middle color fades in
             nav.style.background = "#374a6d";
-            setTimeout(function() {
+            timeout = setTimeout(function() {
               nav.style.background = "";
             }, 1000);
 					})

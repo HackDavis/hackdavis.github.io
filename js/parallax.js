@@ -4,7 +4,7 @@ function enableParallax() {
   if(window.innerWidth > 750 && window.innerWidth > window.innerHeight && !controller) {
     controller = new ScrollMagic.Controller();
 
-    var tween = new TimelineMax()
+    var grassTween = new TimelineMax()
     .add([
       TweenMax.to(".clouds", 1, {y: "+=635", ease: Linear.easeNone}),
       TweenMax.to(".mountains", 1, {y: "+=700", ease: Linear.easeNone}),
@@ -17,34 +17,39 @@ function enableParallax() {
 
     // build scene
     var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
-            .setTween(tween)
+            .setTween(grassTween)
             .addIndicators()
             .addTo(controller);
 
+    /* TODO
+    var caveTween = new TimelineMax()
+    .add([
+
+    ]);
     var caveScene = new ScrollMagic.Scene({triggerElement: '.caveBackground', duration: 1 * window.innerHeight})
-            .setTween(TweenMax.fromTo(".caveBackground", 1, {y: "-=200"}, {y: "+=400", ease: Linear.easeNone}))
+            .setTween(caveTween)
+            .addIndicators()
+            .addTo(controller);
+    */
+
+    var lanternTween = new TimelineMax()
+    .add([
+        TweenMax.to("#lantern", 1, {y: "+=250", ease: Linear.easeNone}),
+        TweenMax.to("#lantern-img", 1, {y: "+=250", ease: Linear.easeNone})
+      ]);
+
+    var lanternFollow = new ScrollMagic.Scene({triggerElement: '#cave', offset: 300,duration: 300})
+            .setTween(lanternTween)
             .addIndicators()
             .addTo(controller);
 
     //Underground nav color change
     let nav = document.getElementById('nav');
-    var timeout;
     var navColorChange = new ScrollMagic.Scene({triggerElement: "#soil", offset: 300, duration: 0})
 					.on("enter", function() {
-            //Dark Brown
-            /*nav.style.background = "#2c2219";
-            if(timeout) {
-              clearInterval(timeout);
-              timeout = null;
-            }*/
             $("#rearNav").toggleClass("opaque", true);
 					})
           .on("leave", function() {
-            //Temporary middle color fades in
-           /* nav.style.background = "#374a6d";
-            timeout = setTimeout(function() {
-              nav.style.background = "";
-            }, 1000);*/
             $("#rearNav").toggleClass("opaque", false);
 					})
 					.addIndicators()
@@ -100,6 +105,6 @@ $("#clickFAQ").click(function(){
 });
 
 /* Apply button */
-$("#lantern").click(function(){
+$("#lantern-img").click(function(){
   window.location.href = "./apply.html";
 });

@@ -201,14 +201,14 @@ object[data="img/schedule.svg"] {
     height: 35%;
     max-width: 100%;
 }
-object[data="img/spooky lantern.svg"] {
+#lantern-img {
     z-index: 4;
 }
-#lantern, object[data="img/spooky lantern.svg"] {
+#lantern, #lantern-img {
     width: 15%;
     right: 30%;
     margin-right: -10%;
-    top: 25%;
+    top: 20%;
     position: absolute;
 }
 #lantern:hover {

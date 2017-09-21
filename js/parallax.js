@@ -32,18 +32,20 @@ function enableParallax() {
     var navColorChange = new ScrollMagic.Scene({triggerElement: "#soil", offset: 300, duration: 0})
 					.on("enter", function() {
             //Dark Brown
-            nav.style.background = "#2c2219";
+            /*nav.style.background = "#2c2219";
             if(timeout) {
               clearInterval(timeout);
               timeout = null;
-            }
+            }*/
+            $("#rearNav").toggleClass("opaque", true);
 					})
           .on("leave", function() {
             //Temporary middle color fades in
-            nav.style.background = "#374a6d";
+           /* nav.style.background = "#374a6d";
             timeout = setTimeout(function() {
               nav.style.background = "";
-            }, 1000);
+            }, 1000);*/
+            $("#rearNav").toggleClass("opaque", false);            
 					})
 					.addIndicators()
 					.addTo(controller);

@@ -1,13 +1,15 @@
-#nav {
+#nav, #rearNav, #brownNav {
     height: 75px;
     width: 100%;
     top: 0px;
     min-height: 50px;
-    background: linear-gradient(to right, #494a86, #244a53);
-    transition: all 1s;
+    background: transparent;
     position: fixed;
     border-radius: 0;
-    z-index: 10;
+    opacity: 1;
+}
+#rearNav.opaque {
+    opacity: 0;
 }
 #nav-title {
     margin-top: 18px;
@@ -15,7 +17,18 @@
     display: inline-block;
     margin-left: 50px;
 }
-
+#rearNav {
+    background: linear-gradient(to right, #494a86, #244a53);
+    transition: all 1s;    
+    z-index: 11;
+}
+#brownNav {
+    background: #2c2219; 
+    z-index: 10;
+}
+#nav {
+    z-index: 12;
+}
 #mlh-trust-badge {
     position: fixed;
     margin-top: 75px;

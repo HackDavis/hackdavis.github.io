@@ -62,6 +62,9 @@
 
 /* Mobile site */
 @media (max-width: 750px) {
+    #schedule {
+        margin-top: -12vw;
+    }
     #nav, #brownNav, #rearNav {
         display: none;
     }

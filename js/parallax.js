@@ -34,11 +34,11 @@ function enableParallax() {
 
     var lanternTween = new TimelineMax()
     .add([
-        TweenMax.to("#lantern", 1, {y: "+=250", ease: Linear.easeNone}),
-        TweenMax.to("#lantern-img", 1, {y: "+=250", ease: Linear.easeNone})
+        TweenMax.to("#lantern", 1, {y: "+=350", ease: Linear.easeNone}),
+        TweenMax.to("#lantern-img", 1, {y: "+=350", ease: Linear.easeNone})
       ]);
 
-    var lanternFollow = new ScrollMagic.Scene({triggerElement: '#cave', offset: 300,duration: 300})
+    var lanternFollow = new ScrollMagic.Scene({triggerElement: '#cave', offset: 200,duration: 500})
             .setTween(lanternTween)
             .addIndicators()
             .addTo(controller);

@@ -19,7 +19,8 @@
         width: 140vh;
     }
     object[data="img/roadcowshills.svg"] {
-        left: -30%;
+        left: 50%;
+        margin-left: -70vh;
     }
     section:first-child, #main > div:first-of-type {
         margin-bottom: -32.5vh;
@@ -30,11 +31,14 @@
         margin-top: -15vw;
     }
     #about-text {
-        bottom: 25%;
+        bottom: 25.5%;
         margin-bottom: 0;
     }
     #about-text h1 {
         margin-top: 0;
+    }
+    object[data="img/soil.svg"] {
+        margin-top: -5px;
     }
 }
 @media (max-width: 1450px) {
@@ -51,11 +55,17 @@
     #about-text > .row {
         flex-wrap: wrap;
     }
+    #about-text p {
+        padding-right: 50px;
+    }
 }
 
 /* Mobile site */
 @media (max-width: 750px) {
     #nav, #brownNav, #rearNav {
+        display: none;
+    }
+    #lantern, #lantern-img {
         display: none;
     }
     #apply-button {

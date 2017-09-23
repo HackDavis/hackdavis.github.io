@@ -171,7 +171,7 @@ object[data="img/mountains top.svg"] {
     min-width: 1200px;
 }
 object[data="img/soil.svg"] {
-    z-index: 6;
+    z-index: 7;
     margin-top: -20px;
     margin-bottom: -30px;
     margin-left: -5px;
@@ -180,17 +180,26 @@ object[data="img/soil.svg"] {
     position: relative;
 }
 object[data="img/middle cave.svg"] {
-    z-index: 5;
+    z-index: 6;
     margin-left: -10px;
     margin-top: -10px;
     width: calc(100% + 20px);
     height: 100%;
 }
-object[data="img/middlecave background.svg"] {
+.caveBackground {
     z-index: 3;
     width: 100%;
     top: 30%;
-    height: 70%;
+    height: 80%;
+}
+object[data="img/cavelayer2.svg"] {
+    z-index: 4;
+}
+object[data="img/cavelayer3.svg"] {
+    z-index: 3;
+}
+object[data="img/cavelayer4.svg"] {
+    z-index: 2;
 }
 object[data="img/schedule.svg"] {
     z-index: 6;
@@ -201,7 +210,7 @@ object[data="img/schedule.svg"] {
     max-width: 100%;
 }
 #lantern-img {
-    z-index: 4;
+    z-index: 5;
 }
 #lantern, #lantern-img {
     width: 15%;
@@ -220,7 +229,7 @@ object[data="img/schedule.svg"] {
 
 #schedule {
   color: white;
-  z-index: 6;
+  z-index: 8;
   margin-top: -2.5vw;
 }
 #FAQ {

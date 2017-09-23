@@ -21,18 +21,21 @@ function enableParallax() {
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
               .setTween(grassTween)
               .addIndicators()
+              .on('end', function(){
+                $("#mlh-trust-badge").toggle();
+              })
               .addTo(controller);
   
-      /* TODO
       var caveTween = new TimelineMax()
       .add([
-  
+        TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=150", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave3", 1, {y: "-=200"}, {y: "+=250", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave4", 1, {y: "-=300"}, {y: "+=350", ease: Linear.easeNone}),
       ]);
-      var caveScene = new ScrollMagic.Scene({triggerElement: '.caveBackground', duration: 1 * window.innerHeight})
+      var caveScene = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 50, duration: 1.5 * window.innerHeight})
               .setTween(caveTween)
               .addIndicators()
               .addTo(controller);
-      */
   
       var lanternTween = new TimelineMax()
       .add([
@@ -40,7 +43,7 @@ function enableParallax() {
           TweenMax.to("#lantern-img", 1, {y: "+=350", ease: Linear.easeNone})
         ]);
   
-      var lanternFollow = new ScrollMagic.Scene({triggerElement: '#cave', offset: 200,duration: 500})
+      var lanternFollow = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 500,duration: 500})
               .setTween(lanternTween)
               .addIndicators()
               .addTo(controller);

@@ -3,7 +3,7 @@ var state;
 function enableParallax() {
   if(window.innerWidth > 750 && !controller) {
     controller = new ScrollMagic.Controller();
-    state = "tablet";    
+    state = "tablet";
     if(window.innerWidth > window.innerHeight) {
       state = "full";
       var grassTween = new TimelineMax()
@@ -16,7 +16,7 @@ function enableParallax() {
         TweenMax.to(".logo", 1, {y: "+=550", ease: Linear.easeNone}),
         TweenMax.from("#soil", 1, {"margin-top": "-100px", ease: Linear.easeNone})
       ]);
-  
+
       // build scene
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
               .setTween(grassTween)
@@ -25,25 +25,25 @@ function enableParallax() {
                 $("#mlh-trust-badge").toggle();
               })
               .addTo(controller);
-  
+
       var caveTween = new TimelineMax()
       .add([
-        TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=150", ease: Linear.easeNone}),
-        TweenMax.fromTo("#cave3", 1, {y: "-=200"}, {y: "+=250", ease: Linear.easeNone}),
-        TweenMax.fromTo("#cave4", 1, {y: "-=300"}, {y: "+=350", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=250", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave3", 1, {y: "-=200"}, {y: "+=350", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave4", 1, {y: "-=300"}, {y: "+=450", ease: Linear.easeNone}),
       ]);
       var caveScene = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 50, duration: 1.5 * window.innerHeight})
               .setTween(caveTween)
               .addIndicators()
               .addTo(controller);
-  
+
       var lanternTween = new TimelineMax()
       .add([
-          TweenMax.to("#lantern", 1, {y: "+=350", ease: Linear.easeNone}),
-          TweenMax.to("#lantern-img", 1, {y: "+=350", ease: Linear.easeNone})
+          TweenMax.to("#lantern", 1, {y: "+=200", ease: Linear.easeNone}),
+          TweenMax.to("#lantern-img", 1, {y: "+=200", ease: Linear.easeNone})
         ]);
-  
-      var lanternFollow = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 500,duration: 500})
+
+      var lanternFollow = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 600, duration: 300})
               .setTween(lanternTween)
               .addIndicators()
               .addTo(controller);
@@ -89,7 +89,7 @@ $(window).resize(function(event) {
         $(this).removeAttr('style');
       })
     }
-    enableParallax();    
+    enableParallax();
   }
 });
 

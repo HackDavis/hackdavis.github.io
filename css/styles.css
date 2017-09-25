@@ -67,8 +67,8 @@ footer img {
 #apply-button {
     display: none;
     background: linear-gradient(to right, #494a86, #244a53);
-    border-bottom: 3px solid #3245F0;
-    border-right: 6px solid #3245F0;
+    border-bottom: 3px solid #727cde;
+    border-right: 6px solid #a3acff;
     border-top: none;
     border-left: none;
     padding: 5px;

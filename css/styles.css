@@ -139,18 +139,19 @@ img[src="img/logowhitewebsite.png"] {
         margin-top: -100px;
     }
 }
-object[data="img/backgroundsky.svg"] {
+img[src="img/sky.png"] {
     width: 100%;
     height: 80%;
     margin-top: -32vh;
 }
-object[data="img/roadcowshills.svg"] {
+/*
+img[src="img/mountains.png"] {
     top: 5%;
     height: 60%;
     min-width: 900px;
     margin-left: -5px;
     width: calc(100% + 5px);
-}
+}*/
 object[data="img/cowandsquirrel.svg"] {
     width: calc(100% + 5px);
     height: auto;
@@ -164,7 +165,7 @@ object[data="img/grass.svg"] {
     bottom: 0;
     z-index:5;
 }
-object[data="img/mountains top.svg"] {
+img[src="img/mountains.png"] {
     top: 0;
     width: 100%;
     height: 60%;

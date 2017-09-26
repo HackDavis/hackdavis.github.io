@@ -8,12 +8,12 @@ function enableParallax() {
       state = "full";
       var grassTween = new TimelineMax()
       .add([
-        TweenMax.to(".clouds", 1, {y: "+=635", ease: Linear.easeNone}),
-        TweenMax.to(".mountains", 1, {y: "+=700", ease: Linear.easeNone}),
-        TweenMax.to(".sky", 1, {y: "+=700", ease: Linear.easeNone}),
-        TweenMax.to(".road", 1, {y: "+=450", ease: Linear.easeNone}),
+        TweenMax.to(".clouds", 1, {y: "+=600", ease: Linear.easeNone}),
+        TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}),
+        TweenMax.to(".sky", 1, {y: "+=600", ease: Linear.easeNone}),
+        TweenMax.to(".road", 1, {y: "+=400", ease: Linear.easeNone}),
         TweenMax.to(".cow", 1, {y: "+=100", ease: Linear.easeNone}),
-        TweenMax.to(".logo", 1, {y: "+=550", ease: Linear.easeNone}),
+        TweenMax.to(".logo", 1, {y: "+=450", ease: Linear.easeNone}),
         TweenMax.from("#soil", 1, {"margin-top": "-100px", ease: Linear.easeNone})
       ]);
 

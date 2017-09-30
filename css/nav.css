@@ -19,11 +19,11 @@
 }
 #rearNav {
     background: linear-gradient(to right, #494a86, #244a53);
-    transition: all 1s;    
+    transition: all 1s;
     z-index: 11;
 }
 #brownNav {
-    background: #2c2219; 
+    background: #2c2219;
     z-index: 10;
     border-bottom: 1px solid #a2a2a2;
 }
@@ -61,7 +61,7 @@
 
 .navItem > a {
     color: white;
-    font-family: 'Futura Standard';
+    font-family: 'Futura Std';
     text-decoration: none;
 
     /* use em's to calculate line spacing from the font-size set on .navItem class

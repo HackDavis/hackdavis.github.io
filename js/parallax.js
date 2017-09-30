@@ -32,7 +32,7 @@ function enableParallax() {
         TweenMax.fromTo("#cave3", 1, {y: "-=200"}, {y: "+=350", ease: Linear.easeNone}),
         TweenMax.fromTo("#cave4", 1, {y: "-=300"}, {y: "+=450", ease: Linear.easeNone}),
       ]);
-      var caveScene = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 50, duration: 1.5 * window.innerHeight})
+      var caveScene = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 50, duration: 1.5 * window.innerHeight})
               .setTween(caveTween)
               .addIndicators()
               .addTo(controller);
@@ -43,14 +43,14 @@ function enableParallax() {
           TweenMax.to("#lantern-img", 1, {y: "+=200", ease: Linear.easeNone})
         ]);
 
-      var lanternFollow = new ScrollMagic.Scene({triggerElement: 'object[data="img/middle cave.svg"]', offset: 600, duration: 300})
+      var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
               .setTween(lanternTween)
               .addIndicators()
               .addTo(controller);
     }
     //Underground nav color change
     let nav = document.getElementById('nav');
-    var navColorChange = new ScrollMagic.Scene({triggerElement: "object[data='img/middle cave.svg']", offset: 300, duration: 0})
+    var navColorChange = new ScrollMagic.Scene({triggerElement: "img[src='img/front cave.png']", offset: 300, duration: 0})
 					.on("enter", function() {
             $("#rearNav").toggleClass("opaque", true);
 					})

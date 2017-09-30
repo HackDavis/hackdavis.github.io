@@ -117,7 +117,7 @@ h1 {
 .img-absolute {
     position: absolute;
 }
-object[data="img/clouds.svg"] {
+img[src="img/clouds.png"] {
     width:60%;
     height: 30%;
     min-width: 700px;
@@ -144,15 +144,19 @@ img[src="img/sky.png"] {
     height: 80%;
     margin-top: -32vh;
 }
-/*
 img[src="img/mountains.png"] {
     top: 5%;
     height: 60%;
     min-width: 900px;
-    margin-left: -5px;
-    width: calc(100% + 5px);
-}*/
-object[data="img/cowandsquirrel.svg"] {
+    width: 100%;
+}
+img[src="img/backhills.png"] {
+    top: 5%;
+    height: 60%;
+    min-width: 900px;
+    width: 100%;
+}
+img[src="img/front grass.png"] {
     width: calc(100% + 5px);
     height: auto;
     bottom: -8%;

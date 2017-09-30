@@ -50,7 +50,7 @@ function enableParallax() {
     }
     //Underground nav color change
     let nav = document.getElementById('nav');
-    var navColorChange = new ScrollMagic.Scene({triggerElement: "img[src='img/front cave.png']", offset: 300, duration: 0})
+    var navColorChange = new ScrollMagic.Scene({triggerElement: "img[src='img/front cave.png']", duration: 0})
 					.on("enter", function() {
             $("#rearNav").toggleClass("opaque", true);
 					})

@@ -11,7 +11,7 @@
 }
 body {
     overflow-x: hidden;
-    font-family: 'Futura-Std';
+    font-family: 'Futura Std';
 }
 #main {
     overflow: hidden;
@@ -235,7 +235,7 @@ object[data="img/schedule.svg"] {
 }
 #FAQ {
   color: white;
-  font-family: 'Futura-Std';
+  font-family: 'Futura Std';
   z-index: 4;
 }
 #FAQ h1 {

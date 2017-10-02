@@ -8,9 +8,9 @@ function enableParallax() {
       state = "full";
       var grassTween = new TimelineMax()
       .add([
-        TweenMax.to(".clouds", 1, {y: "+=600", ease: Linear.easeNone}),
-        TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}),
-        TweenMax.to(".sky", 1, {y: "+=600", ease: Linear.easeNone}),
+        //TweenMax.to(".clouds", 1, {y: "+=600", ease: Linear.easeNone}),
+        //TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}),
+        //TweenMax.to(".sky", 1, {y: "+=600", ease: Linear.easeNone}),
         TweenMax.to(".road", 1, {y: "+=400", ease: Linear.easeNone}),
         TweenMax.to(".cow", 1, {y: "+=100", ease: Linear.easeNone}),
         TweenMax.to(".logo", 1, {y: "+=450", ease: Linear.easeNone}),
@@ -28,9 +28,9 @@ function enableParallax() {
 
       var caveTween = new TimelineMax()
       .add([
-        TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=250", ease: Linear.easeNone}),
-        TweenMax.fromTo("#cave3", 1, {y: "-=200"}, {y: "+=350", ease: Linear.easeNone}),
-        TweenMax.fromTo("#cave4", 1, {y: "-=300"}, {y: "+=450", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=150", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave3", 1, {y: "-=200"}, {y: "+=250", ease: Linear.easeNone}),
+        TweenMax.fromTo("#cave4", 1, {y: "-=300"}, {y: "+=350", ease: Linear.easeNone}),
       ]);
       var caveScene = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 50, duration: 1.5 * window.innerHeight})
               .setTween(caveTween)

@@ -109,6 +109,6 @@ $("#clickFAQ").click(function(){
 });
 
 /* Apply button */
-$("#lantern-img").click(function(){
+$("#lantern").click(function(){
   window.location.href = "./apply.html";
 });

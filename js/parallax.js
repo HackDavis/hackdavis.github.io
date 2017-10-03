@@ -72,10 +72,10 @@ $(window).resize(function(event) {
   //In Portrait
   if(window.innerWidth <=750) {
     //Change image in mobile site
-    $("object[data='img/cowandsquirrel.svg']").attr("data", "img/grass.svg");
+    $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
   }
   else if(window.innerWidth > 750) {
-    $("object[data='img/grass.svg']").attr("data", "img/cowandsquirrel.svg");
+    $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
   }
   if((window.innerHeight > window.innerWidth && state == "full") || (window.innerWidth <= 750 && state != "mobile") || (window.innerWidth > window.innerHeight && window.innerWidth > 750 && state != "full")) {
     if(controller) {

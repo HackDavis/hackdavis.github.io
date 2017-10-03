@@ -1,4 +1,5 @@
 @import "./nav.css";
+@import "./buttons.css";
 @font-face {
     font-family: 'Futura Std';
     font-weight: normal;
@@ -193,7 +194,7 @@ img[src="img/front cave.png"] {
 }
 .cave {
     width: calc(100% + 10px);
-    margin-left: -5px;    
+    margin-left: -5px;
 }
 img[src="img/cave layer 2.png"] {
     z-index: 4;

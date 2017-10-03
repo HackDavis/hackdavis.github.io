@@ -26,7 +26,7 @@ section:first-child, #main > div:first-of-type {
     margin-top: 75px;
     height: 130vh;
     width: 100%;
-    margin-bottom: 10.4vh;
+    margin-bottom: calc(10.4vh + 100px);
 }
 section:nth-of-type(3) {
     background-color: #2C2219;
@@ -62,6 +62,7 @@ footer img {
 }
 .clouds, .sky {
   position: fixed;
+  z-index: -1;
 }
 .sponsor-heading {
   color: #95a3a6;
@@ -93,7 +94,7 @@ footer img {
   z-index: 7;
   bottom: -8%;
   height: 26vw;
-  margin-bottom: 10px;
+  margin-bottom: -90px;
   color: white;
   width: 100%;
   font-size: inherit;
@@ -101,6 +102,7 @@ footer img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 8;
 }
 #about-text h1 {
   font-size: 1.52em;
@@ -177,16 +179,6 @@ object[data="img/soil.svg"] {
     height: 25vw;
     position: relative;
 }
-.caveBackground {
-    z-index: 3;
-    top: 30%;
-    left: -10px;
-    height: 80%;
-}
-.cave {
-    width: calc(100% + 10px);
-    margin-left: -5px;    
-}
 img[src="img/front cave.png"] {
     z-index: 6;
     margin-top: -10px;
@@ -198,6 +190,10 @@ img[src="img/front cave.png"] {
     width: 100%;
     top: 30%;
     height: 80%;
+}
+.cave {
+    width: calc(100% + 10px);
+    margin-left: -5px;    
 }
 img[src="img/cave layer 2.png"] {
     z-index: 4;

@@ -44,6 +44,7 @@ section:nth-of-type(2) {
     display: flex;
     justify-content: center;
     margin-bottom: -10px;
+    flex-wrap: nowrap;
 }
 footer {
     padding-left: 50px !important;
@@ -61,6 +62,7 @@ footer img {
 }
 .clouds, .sky {
   position: fixed;
+  z-index: -1;
 }
 .sponsor-heading {
   color: #95a3a6;
@@ -91,8 +93,8 @@ footer img {
   position: absolute;
   z-index: 7;
   bottom: -8%;
-  margin-bottom: -100px;
   height: 26vw;
+  margin-bottom: -90px;
   color: white;
   width: 100%;
   font-size: inherit;
@@ -100,6 +102,7 @@ footer img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 8;
 }
 #about-text h1 {
   font-size: 1.52em;
@@ -109,8 +112,8 @@ h1 {
 }
 #about-text p {
   font-size: 1em;
-  padding-right: 100px;
-  padding-left: 50px;
+  padding-right: 4em;
+  padding-left: 2em;
 }
 #about-text > .row {
     display: flex;
@@ -124,6 +127,8 @@ img[src="img/clouds.png"] {
     width:60%;
     height: 30%;
     min-width: 700px;
+    margin-left: -5px;
+    margin-top: -35px;
 }
 img[src="img/logowhitewebsite.png"] {
     width:20vw;
@@ -152,7 +157,7 @@ img[src="img/front grass.png"] {
     margin-left: -5px;
     z-index:5;
 }
-object[data="img/grass.svg"] {
+img[src="img/grass.svg"] {
     width: 100%;
     height: 30%;
     bottom: 0;
@@ -176,17 +181,19 @@ object[data="img/soil.svg"] {
 }
 img[src="img/front cave.png"] {
     z-index: 6;
-    margin-left: -10px;
     margin-top: -10px;
-    width: calc(100% + 20px);
+    width: calc(100% + 10px);
     height: 100%;
 }
 .caveBackground {
     z-index: 3;
     width: 100%;
     top: 30%;
-    left: -10px;
     height: 80%;
+}
+.cave {
+    width: calc(100% + 10px);
+    margin-left: -5px;    
 }
 img[src="img/cave layer 2.png"] {
     z-index: 4;

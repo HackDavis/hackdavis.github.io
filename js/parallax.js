@@ -103,7 +103,7 @@ $("#clickFAQ").click(function(){
 });
 
 /* Apply button */
-$("#lantern").click(function(){
+$("#lantern,#apply-button").click(function(){
   $('html').css('overflow', 'hidden');
   $('#typeform').transition({top: 0});
 });

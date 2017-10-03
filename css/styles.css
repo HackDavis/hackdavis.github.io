@@ -274,3 +274,9 @@ iframe {
 #FAQ a:hover {
   opacity: 0.75;
 }
+address a:hover {
+  text-decoration: none;
+}
+address h2 {
+  font-size: 28px;
+}

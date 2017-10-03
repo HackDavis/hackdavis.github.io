@@ -110,5 +110,6 @@ $("#clickFAQ").click(function(){
 
 /* Apply button */
 $("#lantern").click(function(){
-  window.location.href = "./apply.html";
+  console.log('click')
+  $('#typeform').transition({top: 0});
 });

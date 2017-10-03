@@ -10,6 +10,12 @@
         bottom: 10%;
     }
 }
+@media (max-width: 1000px) {
+    img[src="img/logowhitewebsite.png"] {
+        margin-left: -100px;
+        margin-top: -100px;
+    }
+}
 /* Portrait mode */
 @media (min-width: 750px) and (max-aspect-ratio: 1/1) {
     object[data="img/cowandsquirrel.svg"] {

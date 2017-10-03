@@ -6,7 +6,7 @@ function enableParallax() {
     state = "tablet";
     if(window.innerWidth > window.innerHeight) {
       state = "full";
-      /*var grassTween = new TimelineMax()
+      var grassTween = new TimelineMax()
       .add([
         TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}),
         TweenMax.to(".road", 1, {y: "+=400", ease: Linear.easeNone}),
@@ -14,7 +14,7 @@ function enableParallax() {
         TweenMax.to(".logo", 1, {y: "+=500", ease: Linear.easeNone}),
         TweenMax.from("#soil", 1, {"margin-top": "-100px", ease: Linear.easeNone})
       ]);
-      */
+      
       // build scene
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
               .setTween(grassTween)
@@ -23,7 +23,7 @@ function enableParallax() {
                 $("#mlh-trust-badge").toggle();
               })
               .addTo(controller);
-      /*
+      
       var caveTween = new TimelineMax()
       .add([
         TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=150", ease: Linear.easeNone}),
@@ -43,7 +43,7 @@ function enableParallax() {
       var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
               .setTween(lanternTween)
               .addIndicators()
-              .addTo(controller);*/
+              .addTo(controller);
     }
     //Underground nav color change
     let nav = document.getElementById('nav');

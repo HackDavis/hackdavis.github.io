@@ -4,7 +4,7 @@
         bottom: 10%;
     }
     section:first-child, #main > div:first-of-type {
-        margin-bottom: -13vh;
+        margin-bottom: calc(-13vh + 100px);
     }
     #about-text {
         bottom: 10%;

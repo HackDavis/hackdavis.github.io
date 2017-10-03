@@ -18,7 +18,6 @@ function enableParallax() {
       // build scene
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
               .setTween(grassTween)
-              .addIndicators()
               .on('end', function(){
                 $("#mlh-trust-badge").toggle();
               })
@@ -32,7 +31,6 @@ function enableParallax() {
       ]);
       var caveScene = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 50, duration: 1.5 * window.innerHeight})
               .setTween(caveTween)
-              .addIndicators()
               .addTo(controller);
 
       var lanternTween = new TimelineMax()
@@ -43,7 +41,6 @@ function enableParallax() {
 
       var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
               .setTween(lanternTween)
-              .addIndicators()
               .addTo(controller);
     }
     //Underground nav color change
@@ -55,7 +52,6 @@ function enableParallax() {
           .on("leave", function() {
             $("#rearNav").toggleClass("opaque", false);
 					})
-					.addIndicators()
 					.addTo(controller);
   }
   else if(window.innerWidth <= 750) {

@@ -148,6 +148,7 @@ img[src="img/sky.png"] {
 img[src="img/backhills.png"] {
     top: 5%;
     height: 60%;
+    left: 0;
     min-width: 900px;
     width: 100%;
 }
@@ -157,6 +158,7 @@ img[src="img/front grass.png"] {
     bottom: -8%;
     margin-left: -5px;
     z-index:5;
+    left: 0;
 }
 img[src="img/grass.svg"] {
     width: 100%;

@@ -4,9 +4,12 @@
         bottom: 10%;
     }
     section:first-child, #main > div:first-of-type {
-        margin-bottom: calc(-13vh + 100px);
+        margin-bottom: -13vh;
     }
     #about-text {
+        bottom: 10%;
+    }
+    img[src="img/front grass.png"] {
         bottom: 10%;
     }
 }
@@ -18,13 +21,13 @@
 }
 /* Portrait mode */
 @media (min-width: 750px) and (max-aspect-ratio: 1/1) {
-    object[data="img/cowandsquirrel.svg"] {
+    img[src="img/front grass.png"] {
         bottom: 25%;
     }
-    object[data="img/roadcowshills.svg"], object[data="img/mountains top.svg"] {
+    img[src="img/backhills.png"], img[src="img/mountains.png"] {
         width: 140vh;
     }
-    object[data="img/roadcowshills.svg"] {
+    img[src="img/backhills.png"] {
         left: 50%;
         margin-left: -70vh;
     }
@@ -62,7 +65,10 @@
         flex-wrap: wrap;
     }
     #about-text p {
-        padding-right: 50px;
+        padding-right: 2em;
+    }
+    #about-text h1 {
+        margin-top: 0;
     }
 }
 
@@ -77,6 +83,9 @@
     #lantern, #lantern-img {
         display: none;
     }
+    #about-text h1 {
+        margin-top: 20px;
+    }
     #apply-button {
         display: block;
     }
@@ -90,19 +99,19 @@
       position: absolute;
       content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
     }
-    object[data="img/roadcowshills.svg"] {
+    img[src="img/backhills.png"] {
         top: 30%;
         height: 70%;
-        margin-left: -230px;
+        left: -20%;
     }
-    object[data="img/mountains top.svg"] {
+    img[src="img/mountains.png"] {
         top: 10%;
         height: 70%;
         left: -30%;
     }
-    object[data="img/backgroundsky.svg"] {
+    img[src="img/sky.png"] {
         margin-top: -18vw;
-        height: 120%;
+        height: 100%;
     }
     #about-text {
         position: static;
@@ -138,9 +147,9 @@
     }
 }
 
-/* Centering on iPhone 5 */
+/* Centering on iPhone 5
 @media (max-width: 330px){
-  object[data="img/roadcowshills.svg"] {
+  img[src="img/backhills.png"] {
       margin-left: -215px;
   }
-}
+} */

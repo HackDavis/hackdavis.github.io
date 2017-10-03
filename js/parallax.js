@@ -6,7 +6,7 @@ function enableParallax() {
     state = "tablet";
     if(window.innerWidth > window.innerHeight) {
       state = "full";
-      var grassTween = new TimelineMax()
+      /*var grassTween = new TimelineMax()
       .add([
         TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}),
         TweenMax.to(".road", 1, {y: "+=400", ease: Linear.easeNone}),
@@ -41,7 +41,8 @@ function enableParallax() {
 
       var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
               .setTween(lanternTween)
-              .addTo(controller);
+              .addIndicators()
+              .addTo(controller);*/
     }
     //Underground nav color change
     let nav = document.getElementById('nav');

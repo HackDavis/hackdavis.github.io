@@ -14,15 +14,16 @@ function enableParallax() {
         TweenMax.to(".logo", 1, {y: "+=500", ease: Linear.easeNone}),
         TweenMax.from("#soil", 1, {"margin-top": "-100px", ease: Linear.easeNone})
       ]);
-
+      */
       // build scene
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
               .setTween(grassTween)
+              .addIndicators()
               .on('end', function(){
                 $("#mlh-trust-badge").toggle();
               })
               .addTo(controller);
-
+      /*
       var caveTween = new TimelineMax()
       .add([
         TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=150", ease: Linear.easeNone}),
@@ -58,10 +59,10 @@ function enableParallax() {
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
     state = "mobile";
-    $("object[data='img/cowandsquirrel.svg']").attr("data", "img/grass.svg");
+    $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
   }
   else if(window.innerWidth > 750) {
-    $("object[data='img/grass.svg']").attr("data", "img/cowandsquirrel.svg");
+    $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
   }
 }
 enableParallax();

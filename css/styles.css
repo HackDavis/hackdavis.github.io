@@ -26,7 +26,7 @@ section:first-child, #main > div:first-of-type {
     margin-top: 75px;
     height: 130vh;
     width: 100%;
-    margin-bottom: calc(10.4vh + 100px);
+    margin-bottom: 10.4vh;
 }
 section:nth-of-type(3) {
     background-color: #2C2219;
@@ -44,6 +44,7 @@ section:nth-of-type(2) {
     display: flex;
     justify-content: center;
     margin-bottom: -10px;
+    flex-wrap: nowrap;
 }
 footer {
     padding-left: 50px !important;
@@ -91,7 +92,6 @@ footer img {
   position: absolute;
   z-index: 7;
   bottom: -8%;
-  margin-bottom: -100px;
   height: 26vw;
   color: white;
   width: 100%;
@@ -152,7 +152,7 @@ img[src="img/front grass.png"] {
     margin-left: -5px;
     z-index:5;
 }
-object[data="img/grass.svg"] {
+img[src="img/grass.svg"] {
     width: 100%;
     height: 30%;
     bottom: 0;
@@ -176,9 +176,8 @@ object[data="img/soil.svg"] {
 }
 img[src="img/front cave.png"] {
     z-index: 6;
-    margin-left: -10px;
     margin-top: -10px;
-    width: calc(100% + 20px);
+    width: calc(100% + 10px);
     height: 100%;
 }
 .caveBackground {

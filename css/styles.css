@@ -41,10 +41,7 @@ section:nth-of-type(3) {
 section:nth-of-type(2) {
     height: 150vh;
     max-height: 140vw;
-    display: flex;
-    justify-content: center;
     margin-bottom: -10px;
-    flex-wrap: nowrap;
 }
 footer {
     padding-left: 50px !important;
@@ -177,18 +174,20 @@ object[data="img/soil.svg"] {
     height: 25vw;
     position: relative;
 }
-img[src="img/front cave.png"] {
-    z-index: 6;
-    margin-top: -10px;
-    width: calc(100% + 10px);
-    height: 100%;
-}
 .caveBackground {
     z-index: 3;
-    width: 100%;
     top: 30%;
     left: -10px;
     height: 80%;
+}
+.cave {
+    width: calc(100% + 10px);
+    margin-left: -5px;    
+}
+img[src="img/front cave.png"] {
+    z-index: 6;
+    margin-top: -10px;
+    height: 100%;
 }
 img[src="img/cave layer 2.png"] {
     z-index: 4;
@@ -202,8 +201,8 @@ img[src="img/back cave 4.png"] {
 img[src="img/schedule.png"] {
     z-index: 6;
     margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
+    left: 50%;
+    margin-left: -35%;
     height: auto;
     width: 80%;
 }
@@ -242,6 +241,9 @@ iframe {
   color: white;
   z-index: 8;
   margin-top: -2.5vw;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 #FAQ {
   color: white;

@@ -60,9 +60,13 @@ function enableParallax() {
     //Change image in mobile site
     state = "mobile";
     $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
+    $("img[src='img/schedule.png']").hide();
+    $("#mobileschedule").show();
   }
   else if(window.innerWidth > 750) {
     $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
+    $("#mobileschedule").hide();
+    $("img[src='img/schedule.png]'").show();    
   }
 }
 enableParallax();
@@ -73,9 +77,13 @@ $(window).resize(function(event) {
   if(window.innerWidth <=750) {
     //Change image in mobile site
     $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
+    $("img[src='img/schedule.png']").hide();
+    $("#mobileschedule").show();    
   }
   else if(window.innerWidth > 750) {
     $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
+    $("#mobileschedule").hide();
+    $("img[src='img/schedule.png']").show();        
   }
   if((window.innerHeight > window.innerWidth && state == "full") || (window.innerWidth <= 750 && state != "mobile") || (window.innerWidth > window.innerHeight && window.innerWidth > 750 && state != "full")) {
     if(controller) {

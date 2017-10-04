@@ -92,7 +92,7 @@ footer img {
 }
 #about-text {
   position: absolute;
-  z-index: 7;
+  z-index: 9;
   bottom: -8%;
   height: 26vw;
   margin-bottom: -90px;
@@ -103,7 +103,6 @@ footer img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 8;
 }
 #about-text h1 {
   font-size: 1.52em;
@@ -174,7 +173,7 @@ img[src="img/mountains.png"] {
     min-width: 1200px;
 }
 object[data="img/soil.svg"] {
-    z-index: 7;
+    z-index: 8;
     margin-top: -20px;
     margin-bottom: -30px;
     margin-left: -5px;
@@ -208,12 +207,27 @@ img[src="img/back cave 4.png"] {
     z-index: 2;
 }
 img[src="img/schedule.png"] {
-    z-index: 6;
+    z-index: 7;
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
     height: auto;
     width: 80%;
+}
+#mobileschedule {
+    width: 100%;
+    height: 90vw;
+    display: none;
+    background-color: #392011; 
+    padding-left: 15px;   
+    padding-top: 30px; 
+    position: relative;
+    z-index: 7;
+}
+img[src="img/mobile schedule.png"] {
+    width: 100%;
+    height: auto;
+    top: 20px;
 }
 #lantern-img {
     z-index: 5;

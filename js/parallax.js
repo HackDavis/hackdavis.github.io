@@ -14,16 +14,15 @@ function enableParallax() {
         TweenMax.to(".logo", 1, {y: "+=500", ease: Linear.easeNone}),
         TweenMax.from("#soil", 1, {"margin-top": "-100px", ease: Linear.easeNone})
       ]);
-      
+
       // build scene
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
               .setTween(grassTween)
-              .addIndicators()
               .on('end', function(){
                 $("#mlh-trust-badge").toggle();
               })
               .addTo(controller);
-      
+
       var caveTween = new TimelineMax()
       .add([
         TweenMax.fromTo("#cave2", 1, {y: "-=100"}, {y: "+=150", ease: Linear.easeNone}),
@@ -42,7 +41,6 @@ function enableParallax() {
 
       var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
               .setTween(lanternTween)
-              .addIndicators()
               .addTo(controller);
     }
     //Underground nav color change
@@ -66,7 +64,7 @@ function enableParallax() {
   else if(window.innerWidth > 750) {
     $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
     $("#mobileschedule").hide();
-    $("img[src='img/schedule.png]'").show();    
+    $("img[src='img/schedule.png]'").show();
   }
 }
 enableParallax();
@@ -78,12 +76,12 @@ $(window).resize(function(event) {
     //Change image in mobile site
     $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
     $("img[src='img/schedule.png']").hide();
-    $("#mobileschedule").show();    
+    $("#mobileschedule").show();
   }
   else if(window.innerWidth > 750) {
     $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
     $("#mobileschedule").hide();
-    $("img[src='img/schedule.png']").show();        
+    $("img[src='img/schedule.png']").show();
   }
   if((window.innerHeight > window.innerWidth && state == "full") || (window.innerWidth <= 750 && state != "mobile") || (window.innerWidth > window.innerHeight && window.innerWidth > 750 && state != "full")) {
     if(controller) {

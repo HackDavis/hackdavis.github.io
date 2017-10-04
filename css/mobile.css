@@ -99,15 +99,35 @@
       position: absolute;
       content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
     }
+    .clouds, .sky {
+      position: absolute;
+      margin-top: 0 !important;
+    }
+    address h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .social-buttons {
+      position: relative;
+      float: none;
+      margin-top: -10px;
+      bottom: 20px;
+      right: 0;
+    }
+    .social-button {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
     img[src="img/backhills.png"] {
         top: 30%;
         height: 70%;
         left: -20%;
     }
     img[src="img/mountains.png"] {
-        top: 10%;
         height: 70%;
-        left: -30%;
+        margin-top: 15%;
+        margin-left: -20%;
     }
     img[src="img/sky.png"] {
         margin-top: -18vw;

@@ -122,7 +122,7 @@
     img[src="img/backhills.png"] {
         top: 30%;
         height: 70%;
-        left: -20%;
+        left: -33%;
     }
     img[src="img/mountains.png"] {
         height: 70%;
@@ -144,6 +144,8 @@
     #about-text p {
         padding-right: 15px;
         padding-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;  
     }
     #main > div:first-of-type {
         position: static;
@@ -167,9 +169,9 @@
     }
 }
 
-/* Centering on iPhone 5
-@media (max-width: 330px){
+/* Centering on thinner phones */
+@media (max-width: 400px){
   img[src="img/backhills.png"] {
-      margin-left: -215px;
+      left:-40%;
   }
-} */
+}

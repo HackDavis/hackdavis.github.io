@@ -96,7 +96,7 @@ $("#clickFAQ").click(function(){
 /* Apply button */
 $("#lantern,#apply-button").click(function(){
   $('html').css('overflow', 'hidden');
-  $("#close").transition({top: '20px'});  
+  $("#close").transition({top: '20px'});
   $('#typeform').transition({top: 0});
 });
 $("#close").click(function(){

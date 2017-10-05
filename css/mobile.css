@@ -12,6 +12,9 @@
     img[src="img/front grass.png"] {
         bottom: 10%;
     }
+    img[src="img/schedule.png"] {
+        width: 100%;
+    }
 }
 @media (max-width: 1000px) {
     img[src="img/logowhitewebsite.png"] {
@@ -122,16 +125,29 @@
     img[src="img/backhills.png"] {
         top: 30%;
         height: 70%;
+        width: 133%;
         left: -33%;
     }
     img[src="img/mountains.png"] {
         height: 70%;
-        margin-top: 15%;
+        margin-top: 70px;
         margin-left: -20%;
+    }
+    img[src="img/front grass.png"] {
+        display: none;
+    }
+    img[src="img/grass.svg"] {
+        display: block;
     }
     img[src="img/sky.png"] {
         margin-top: -18vw;
         height: 100%;
+    }
+    #mobileschedule {
+        display: block;
+    }
+    img[src="img/schedule.png"] {
+        display: none;
     }
     #about-text {
         position: static;
@@ -163,9 +179,6 @@
     #FAQ p {
       margin-right: 30px;
       margin-left: 30px;
-    }
-    img[src="img/schedule.png"] {
-        width: 100%;
     }
 }
 

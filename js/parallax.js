@@ -1,5 +1,7 @@
 var controller;
 var state;
+Waves.attach("#close", ['waves-circle']);
+Waves.init();
 function enableParallax() {
   if(window.innerWidth > 750 && !controller) {
     controller = new ScrollMagic.Controller();
@@ -57,14 +59,6 @@ function enableParallax() {
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
     state = "mobile";
-    $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
-    $("img[src='img/schedule.png']").hide();
-    $("#mobileschedule").show();
-  }
-  else if(window.innerWidth > 750) {
-    $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
-    $("#mobileschedule").hide();
-    $("img[src='img/schedule.png]'").show();
   }
 }
 enableParallax();
@@ -72,17 +66,6 @@ enableParallax();
 //Turns parallax off when switching orientation on tablet
 $(window).resize(function(event) {
   //In Portrait
-  if(window.innerWidth <=750) {
-    //Change image in mobile site
-    $("img[src='img/front grass.png']").attr("src", "img/grass.svg");
-    $("img[src='img/schedule.png']").hide();
-    $("#mobileschedule").show();
-  }
-  else if(window.innerWidth > 750) {
-    $("img[src='img/grass.svg']").attr("src", "img/front grass.png");
-    $("#mobileschedule").hide();
-    $("img[src='img/schedule.png']").show();
-  }
   if((window.innerHeight > window.innerWidth && state == "full") || (window.innerWidth <= 750 && state != "mobile") || (window.innerWidth > window.innerHeight && window.innerWidth > 750 && state != "full")) {
     if(controller) {
       controller.destroy(true);
@@ -113,5 +96,11 @@ $("#clickFAQ").click(function(){
 /* Apply button */
 $("#lantern,#apply-button").click(function(){
   $('html').css('overflow', 'hidden');
+  $("#close").transition({top: '20px'});  
   $('#typeform').transition({top: 0});
 });
+$("#close").click(function(){
+  $("#close").transition({top: "100%"});
+  $("#typeform").transition({top: "100%"});
+  $("html").removeAttr("style");
+})

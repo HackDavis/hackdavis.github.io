@@ -19,6 +19,13 @@ body {
     width: 100%;
     font-size: 23px;
 }
+#close {
+    display: block;
+    position: fixed;
+    right: 30px;
+    z-index: 100;
+    top: 100%;
+}
 section {
     position: relative;
     width: 100vw;
@@ -164,6 +171,7 @@ img[src="img/grass.svg"] {
     height: 30%;
     bottom: 0;
     z-index:5;
+    display: none;
 }
 img[src="img/mountains.png"] {
     transform: matrix(1, 0, 0, 1, 0, 0);

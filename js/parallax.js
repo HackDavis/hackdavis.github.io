@@ -92,19 +92,27 @@ $("#clickSponsors").click(function(){
 $("#clickFAQ").click(function(){
   $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
-
+var closeTimeout;
 /* Apply button */
 $("#lantern,#apply-button").click(function(){
+  if(closeTimeout)
+  {
+    clearInterval(closeTimeout);
+    closeTimeout = null;
+  }
   $("#typeform,#close").show();
   $('html').css('overflow', 'hidden');
-  $("#close").transition({top: '20px'});
+  $("#close").transition({top: '10px'});
   $('#typeform').transition({top: 0});
 });
 $("#close").click(function(){
   $("#close").transition({top: "100%"});
   $("#typeform").transition({top: "100%"});
   $("html").removeAttr("style");
-  setTimeout(function() {
+  if(closeTimeout) {
+    clearInterval(closeTimeout);
+  }
+  closeTimeout = setTimeout(function() {
     $("#typeform,#close").hide();
   }, 1000);
 })

@@ -27,6 +27,10 @@ body {
     top: 100%;
     color: #F37154;
 }
+#close > i {
+    width: 1em;
+    height: 1em;
+}
 section {
     position: relative;
     width: 100vw;

@@ -134,8 +134,9 @@
     }
     img[src="img/mountains.png"] {
         height: 70%;
-        margin-top: 70px;
+        margin-top: 10px;
         margin-left: -20%;
+        position: absolute;
     }
     img[src="img/front grass.png"] {
         display: none;

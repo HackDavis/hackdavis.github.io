@@ -90,6 +90,9 @@ $(window).resize(function(event) {
 
 /* Navbar links */
 let duration = 1500;
+$("#click2017").click(function(){
+  $(this).children()[0].click();
+})
 $("#clickAbout").click(function(){
   $("#about-text").velocity("scroll", {offset: -230, duration: duration, easing:"easeInOutCubic"});
 });

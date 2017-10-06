@@ -110,6 +110,10 @@
       text-align: center;
       margin-bottom: 30px;
     }
+    .sponsor-heading {
+        font-size: 30px;
+        margin-left: 0;
+    }
     .social-buttons {
       position: relative;
       float: none;

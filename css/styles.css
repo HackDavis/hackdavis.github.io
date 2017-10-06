@@ -75,9 +75,12 @@ footer img {
 }
 .sponsor-heading {
   color: #95a3a6;
-  margin-top: 75px;
-  margin-bottom: 25px;
-  margin-left: 50px;
+  margin-top: 4em;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+footer > .sponsor-heading:first-of-type {
+    margin-top: 2em;
 }
 #apply-button {
     display: none;

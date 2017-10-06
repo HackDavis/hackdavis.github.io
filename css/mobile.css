@@ -80,6 +80,9 @@
     #schedule {
         margin-top: -102vw;
     }
+    #close {
+        right: 20px;        
+    }
     #nav, #brownNav, #rearNav {
         display: none;
     }

@@ -87,7 +87,7 @@ $("#clickSchedule").click(function(){
   $("#schedule").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
 $("#clickSponsors").click(function(){
-  $("footer").velocity("scroll", {offset: -100, duration: duration, easing: "easeInOutCubic"});
+  $("footer").velocity("scroll", {offset: -50, duration: duration, easing: "easeInOutCubic"});
 });
 $("#clickFAQ").click(function(){
   $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});

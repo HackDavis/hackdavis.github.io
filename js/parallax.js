@@ -10,7 +10,7 @@ function enableParallax() {
       state = "full";
       var grassTween = new TimelineMax()
       .add([
-        TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}),
+        //TweenMax.to(".mountains", 1, {y: "+=550", ease: Linear.easeNone}), Fixed for now
         TweenMax.to(".road", 1, {y: "+=400", ease: Linear.easeNone}),
         TweenMax.to(".cow", 1, {y: "+=100", ease: Linear.easeNone}),
         TweenMax.to(".logo", 1, {y: "+=500", ease: Linear.easeNone}),
@@ -95,6 +95,7 @@ $("#clickFAQ").click(function(){
 
 /* Apply button */
 $("#lantern,#apply-button").click(function(){
+  $("#typeform,#close").show();
   $('html').css('overflow', 'hidden');
   $("#close").transition({top: '20px'});
   $('#typeform').transition({top: 0});
@@ -103,4 +104,7 @@ $("#close").click(function(){
   $("#close").transition({top: "100%"});
   $("#typeform").transition({top: "100%"});
   $("html").removeAttr("style");
+  setTimeout(function() {
+    $("#typeform,#close").hide();
+  }, 1000);
 })

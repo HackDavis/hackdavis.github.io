@@ -74,7 +74,7 @@ footer img {
     height: auto;
 }
 .clouds, .sky {
-  position: fixed;
+  position: absolute;
   z-index: -1;
 }
 .sponsor-heading {
@@ -115,7 +115,7 @@ footer > .sponsor-heading:first-of-type {
   z-index: 9;
   bottom: -8%;
   height: 26vw;
-  margin-bottom: -90px;
+  margin-bottom: 10px;
   color: white;
   width: 100%;
   font-size: inherit;
@@ -187,7 +187,7 @@ img[src="img/grass.svg"] {
     display: none;
 }
 img[src="img/mountains.png"] {
-    position: fixed;
+    position: absolute;
     top: 10%;
     width: 100%;
     height: 60%;
@@ -195,7 +195,7 @@ img[src="img/mountains.png"] {
 }
 object[data="img/soil.svg"] {
     z-index: 8;
-    margin-top: -20px;
+    margin-top: -120px;
     margin-bottom: -30px;
     margin-left: -5px;
     width: calc(100% + 5px);

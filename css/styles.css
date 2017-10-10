@@ -80,8 +80,8 @@ footer img {
 .sponsor-heading {
   color: #95a3a6;
   margin-top: 4em;
-  margin-left: 2em;
   margin-bottom: 1em;
+  text-align: center;
 }
 footer > .sponsor-heading:first-of-type {
     margin-top: 2em;

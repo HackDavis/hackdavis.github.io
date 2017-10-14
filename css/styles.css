@@ -216,7 +216,6 @@ img[src="img/front cave.png"] {
 }
 .cave {
     width: calc(100% + 10px);
-    margin-left: -5px;
 }
 img[src="img/cave layer 2.png"] {
     z-index: 4;
@@ -257,7 +256,7 @@ img[src="img/mobile schedule.png"] {
     width: 14%;
     right: 30%;
     margin-right: -10%;
-    top: 25%;
+    top: 35%;
     position: absolute;
 }
 #lantern:hover + #lantern-img {

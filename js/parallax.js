@@ -31,8 +31,11 @@ function enableParallax() {
       */
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
       //        .setTween(grassTween)
-              .on('end', function(){
-                $("#mlh-trust-badge").toggle();
+              .on('leave', function(){
+                $("#mlh-trust-badge").toggle(false);
+              })
+              .on('enter', function(){
+                $("#mlh-trust-badge").toggle(true);                
               })
               .addTo(controller);
       /*

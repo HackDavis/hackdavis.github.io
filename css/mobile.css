@@ -23,7 +23,7 @@
     }
 }
 /* Portrait mode */
-@media (min-width: 750px) and (max-aspect-ratio: 1/1) {
+@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
     img[src="img/front grass.png"] {
         bottom: 25%;
     }
@@ -76,7 +76,7 @@
 }
 
 /* Mobile site */
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     #schedule {
         margin-top: -102vw;
     }

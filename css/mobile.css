@@ -78,7 +78,7 @@
 /* Mobile site */
 @media (max-width: 768px) {
     #schedule {
-        margin-top: -102vw;
+        margin-top: -128vw;
     }
     #soil {
         margin-top: -40px;

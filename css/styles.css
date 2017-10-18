@@ -52,12 +52,14 @@ section:nth-of-type(3) {
     top: 0;
 }
 section:nth-of-type(2) {
-    height: 150vh;
+    height: 160vh;
     max-height: 140vw;
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-bottom: -10px;
     flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
 }
 section:nth-of-type(2) > img {
     vertical-align: baseline;
@@ -246,7 +248,7 @@ img[src="img/schedule.png"] {
 }
 #mobileschedule {
     width: 100%;
-    height: 95vw;
+    height: 115vw;
     display: none;
     background-color: #392011;
     padding-left: 15px;

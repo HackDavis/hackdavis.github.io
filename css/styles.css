@@ -52,12 +52,17 @@ section:nth-of-type(3) {
     top: 0;
 }
 section:nth-of-type(2) {
-    height: 150vh;
+    height: 160vh;
     max-height: 140vw;
     display: flex;
-    justify-content: center;
+    align-items: center;
     margin-bottom: -10px;
     flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+}
+section:nth-of-type(2) > img {
+    vertical-align: baseline;
 }
 footer {
     padding-left: 50px !important;
@@ -73,13 +78,19 @@ footer img {
     width: 100%;
     height: auto;
 }
+address {
+    margin-bottom: 0 !important;
+}
+address > h2 {
+    margin-bottom: 30px;
+}
 .clouds, .sky {
   position: absolute;
   z-index: -1;
 }
 .sponsor-heading {
   color: #95a3a6;
-  margin-top: 4em;
+  margin-top: 3em;
   margin-bottom: 1em;
   text-align: center;
 }
@@ -88,6 +99,7 @@ footer > .sponsor-heading:first-of-type {
 }
 #apply-button {
     display: none;
+    color: white !important;
     background: linear-gradient(to right, #494a86, #244a53);
     border-bottom: 3px solid #727cde;
     border-right: 6px solid #a3acff;
@@ -236,7 +248,7 @@ img[src="img/schedule.png"] {
 }
 #mobileschedule {
     width: 100%;
-    height: 90vw;
+    height: 115vw;
     display: none;
     background-color: #392011;
     padding-left: 15px;

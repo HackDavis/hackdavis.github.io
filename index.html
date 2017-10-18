@@ -15,7 +15,8 @@
     <meta property="og:url" content="http://hackdavis.io" />
 
     <!-- External libraries-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.css">
 
     <!--Favicon -->
@@ -35,13 +36,16 @@
     <!--NAVBAR-->
     <div id="rearNav"></div>
     <div id="brownNav"></div>
-    <nav id="nav" class="navbar">
-      <h1 id="nav-title">HACK<strong style="font-family: 'FuturaStd-Heavy'">DAVIS</strong></h1>
-      <div class="navItem" id="click2017"> <a rel="noopener" href="/2017" target="_blank"> 2017 Site </a> </div>
-      <div class="navItem" id="clickSponsors"> <a> Sponsors </a> </div>
-      <div class="navItem" id="clickFAQ"> <a> FAQ </a> </div>
-      <div class="navItem" id="clickSchedule"> <a> Schedule </a> </div>
-      <div class="navItem" id="clickAbout"> <a> About </a> </div>
+    <nav id="nav" class="navbar navbar-expand-md justify-content-between">
+      <h1 id="nav-title" class="navbar-brand">HACK<strong style="font-family: 'FuturaStd-Heavy'">DAVIS</strong></h1>
+      <div class="navbar-nav justify-content-center">
+        <div class="nav-item" id="clickAbout"> <a class="nav-link"> About </a> </div>
+        <div class="nav-item" id="clickSchedule"> <a class="nav-link"> Schedule </a> </div>        
+        <div class="nav-item" id="clickFAQ"> <a class="nav-link"> FAQ </a> </div>        
+        <div class="nav-item" id="clickSponsors"> <a class="nav-link"> Sponsors </a> </div>        
+        <div class="nav-item" id="click2017"> <a class="nav-link" rel="noopener" href="/2017" target="_blank"> 2017 Site </a> </div>        
+      </div>
+      
     </nav>
 
     <!-- MLH Trust Badge -->
@@ -100,7 +104,7 @@
           <h1>Frequently Asked Questions</h1>
           <br />
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <h2>What is a hackathon?</h2>
               <p>
                 A hackathon is where you turn your crazy ideas into real stuff.
@@ -117,7 +121,7 @@
                 and occasional messages about hackathons in line with the <a href="https://mlh.io/privacy" target="_blank">MLH Privacy Policy</a>.
               </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <h2>What can I build?</h2>
               <p>
                 You can build whatever your heart desires, whether its a web app, mobile app, hardware hack, or an open source tool.
@@ -131,7 +135,7 @@
                 web development, mobile development, and more.
               </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <h2>Why Social Good?</h2>
               <p>
                 We find that hackathons often don't result with projects as practical solutions to specific societal problems
@@ -148,7 +152,7 @@
         </div>
         <footer class="container-fluid">
           <h1 class="sponsor-heading">PREVIOUS SPONSORS</h1>
-          <div class="row">
+          <div class="row align-items-center">
             <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://developer.amazon.com/alexa"><img class="img-responsive" src="img/logos/amazon-alexa.png"></a>
             <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://citrisfoundry.org/"><img class="img-responsive" src="img/logos/citris.png" alt=""></a>
             <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.ibm.com/us-en/"><img class="img-responsive" src="img/logos/ibm.png" alt=""></a>
@@ -175,36 +179,37 @@
             <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.namecheap.com/"><img class="img-responsive" src="img/logos/namecheap.png" alt=""></a>
           </div>
           <h1 class="sponsor-heading">PARTNERS</h1>
-          <div class="row">
-              <a class="col-lg-2 col-md-3 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1" href="http://moringaschool.com/"><img class="img-responsive" src="img/logos/moringa.png" alt=""></a>
-              <a class="col-lg-2 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" href="https:/mlh.io/"><img class="img-responsive" src="img/logos/mlh-logo-white.png" alt=""></a>
-              <a class="col-lg-2 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1" href="http://www.communitywatercenter.org/"><img class="img-responsive" src="img/logos/CWC.png" alt=""></a>
+          <div class="row justify-content-center">
+              <a class="col-lg-2 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1" href="http://moringaschool.com/"><img class="img-responsive" src="img/logos/moringa.png" alt=""></a>
+              <a class="col-lg-2 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" href="https:/mlh.io/"><img class="img-responsive" src="img/logos/mlh-logo-white.png" alt=""></a>
+              <a class="col-lg-2 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1" href="http://www.communitywatercenter.org/"><img class="img-responsive" src="img/logos/CWC.png" alt=""></a>
               <div class="clearfix visible-md-block"></div>
-              <a class="col-md-3 col-lg-offset-0 col-md-offset-3 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" href="http://engineering.ucdavis.edu/"><img class="img-responsive" src="img/logos/collegeofengineering_white.png" alt=""></a>
+              <a class="col-md-4 col-lg-offset-0 col-md-offset-3 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" href="http://engineering.ucdavis.edu/"><img class="img-responsive" src="img/logos/collegeofengineering_white.png" alt=""></a>
               <div class="clearfix visible-sm-block"></div>
-              <a class="col-lg-2 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1" href="http://www.cs.ucdavis.edu/"><img class="img-responsive" src="img/logos/CSDavis.png" alt=""></a>
+              <a class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1" href="http://www.cs.ucdavis.edu/"><img class="img-responsive" src="img/logos/CSDavis.png" alt=""></a>
           </div>
           <h1 class="sponsor-heading">NONPROFITS</h1>
-          <div class="row">
+          <div class="row justify-content-center">
               <a class="col-sm-2 col-xs-10 col-xs-offset-1 col-sm-offset-2" href="http://gamersgift.org/"><img class="img-responsive" src="img/logos/gamer-gift.png" alt=""></a>
               <a class="col-sm-3 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://societyofwomenengineers.swe.org/"><img class="img-responsive" src="img/logos/swe-logo.png"></a>
               <a class="col-sm-3 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://northerncaliforniaeducationfoundation.com/"><img class="img-responsive" src="img/logos/norcal-edu-foundation.png" alt=""></a>
           </div>
           <br />
-          <address class="row">
+          <address class="d-flex flex-sm-row justify-content-start flex-column">
             <h2>Contact us: <a href="mailto:hello@hackdavis.io">hello@hackdavis.io</a></h2>
-          </address>
-          <div class="social-buttons">
-            <a href="https://www.facebook.com/HackDavis/" class="social-button facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://twitter.com/hack_davis?lang=en" class="social-button twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.instagram.com/hackdavis/" class="social-button instagram"><i class="fa fa-instagram"></i></a>
-          </div>
+            <div class="social-buttons ml-0 ml-sm-auto align-self-center">
+                <a href="https://www.facebook.com/HackDavis/" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/hack_davis?lang=en" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/hackdavis/" class="social-button instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+          </address>    
         </footer>
       </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>

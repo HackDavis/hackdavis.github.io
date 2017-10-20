@@ -5,10 +5,10 @@ var path = require('path');
 var striptags = require('striptags');
 var S = require('string');
 const {JSDOM} = require('jsdom');
-const {API, token} = require('./token.js');
+const {API, token, id} = require('./token.js');
 var options = {
     method: 'GET',
-    url: `https://trello.com/1/lists/59e58ddca136caefee69a45f/cards?key=${API}&token=${token}`
+    url: `https://trello.com/1/lists/${id}/cards?key=${API}&token=${token}`
 }
 var source = JSON.parse(fs.readFileSync(path.resolve(__dirname, "initial_map.json"), {encoding: 'utf-8'}));
 var table = {previous_sponsors: [], partners:[], nonprofits:[]};

@@ -5,7 +5,7 @@ const {JSDOM} = require('jsdom');
 const dom = new JSDOM(document);
 var index = dom.window;
 var $ = require('jquery')(index);
-var table = JSON.parse(fs.readFileSync(path.resolve(__dirname, "initial_map.json"), {encoding: 'utf-8'}));
+var table = JSON.parse(fs.readFileSync(path.resolve(__dirname, "generate_map.json"), {encoding: 'utf-8'}));
 
 var row = index.document.createElement("div");
 row.setAttribute("class", "row justify-content-center");

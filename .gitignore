@@ -60,3 +60,4 @@ npm-debug.log
 # VirtualBox Files  #
 #####################
 *.ova
+scripts/token.js

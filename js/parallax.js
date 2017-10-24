@@ -12,6 +12,7 @@ if(sUsrAg.indexOf("Chrome") > -1) {
 }
 Waves.attach("#close", ['waves-circle']);
 Waves.init();
+var s = skrollr.init();
 function enableParallax() {
   if(window.innerWidth > 750 && !controller) {
     controller = new ScrollMagic.Controller();

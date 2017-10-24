@@ -54,13 +54,13 @@
     <!-- Main Content Container -->
     <div id="main">
       <section>
-        <img class="img-fluid img-absolute logo" src="img/logowhitewebsite.png">
+        <img class="img-fluid img-absolute logo" src="img/logowhitewebsite.png" data-600="transform: 'translateY(500px)'">
         <img class="sky" src="img/sky.png">
         <img class="clouds" src="img/clouds.png">
-        <img class="mountains" src="img/mountains.png">
-        <img class="img-absolute road" src="img/backhills.png">
-        <img class="img-absolute cow" src="img/front grass.png">
-        <img class="img-absolute cow" src="img/grass.svg">
+        <img class="mountains" src="img/mountains.png" data-0="transform: translateY(0px)" data-600="transform: 'translateY(550px)'">
+        <img class="img-absolute road" src="img/backhills.png" data-0="transform: translateY(0px)" data-600="transform: 'translateY(400px)'">
+        <img class="img-absolute cow" src="img/front grass.png" data-0="transform: translateY(0px)" data-600="transform: 'translateY(100px)'">
+        <img class="img-absolute cow" src="img/grass.svg" data-0="transform: translateY(0px)" data-600="transform: 'translateY(100px)'">
       </section>
       <div>
         <div id="about-text" class="container-fluid">
@@ -83,7 +83,7 @@
           </div>
         </div>
       </div>
-      <object id="soil" type="image/svg+xml" data="img/soil.svg"></object>
+      <object id="soil" type="image/svg+xml" data="img/soil.svg" data-600="margin-top: -100px"></object>
       <div id="mobileschedule">
         <img class="img-absolute" src="img/mobile schedule.png">
       </div>
@@ -218,6 +218,7 @@
     <script src="https://use.fontawesome.com/f85de223f0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
-    <script src="js/parallax.js?v=2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>s
+    <script src="js/parallax.js?v=3"></script>
   </body>
 </html>

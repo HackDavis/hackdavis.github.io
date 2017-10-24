@@ -4,7 +4,7 @@ var async = require('async');
 var path = require('path');
 var striptags = require('striptags');
 var S = require('string');
-const {JSDOM} = require('jsdom');
+const cheerio = require('cheerio');
 const {API, token, id} = require('./token.js');
 var options = {
     method: 'GET',
@@ -28,8 +28,8 @@ function getSrc(name, callback) {
 }
 function getHref(name, callback) {
     request("https://google.com/search?q="+name, function(error, response, body) {
-        var doc = new JSDOM(body).window.document;
-        callback(null, S(striptags(doc.querySelector('cite').innerHTML)).ensureLeft("https://").s);
+        var doc = cheerio.load(body);
+        callback(null, S(striptags(doc("cite").first().text())).ensureLeft("https://").s);
     });
 }
 function getObjectForName(name, key, array, callback) {

@@ -56,7 +56,7 @@ for(let sponsor of table.partners) {
     $("footer > div.row:nth-child(4)").append(tag);
 }
 
-for(let sponsor of table.nonprofts) {
+for(let sponsor of table.nonprofits) {
     let tag = index.document.createElement("a");
     tag.setAttribute("class", "col-sm-2 col-xs-10");
     tag.setAttribute("href", sponsor.href);

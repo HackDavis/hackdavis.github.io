@@ -13,6 +13,7 @@ if(sUsrAg.indexOf("Chrome") > -1) {
 Waves.attach("#close", ['waves-circle']);
 Waves.init();
 var s = skrollr.init();
+/*
 function enableParallax() {
   if(window.innerWidth > 750 && !controller) {
     controller = new ScrollMagic.Controller();
@@ -29,7 +30,7 @@ function enableParallax() {
       ]);
 
       // build scene
-      */
+      
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
       //        .setTween(grassTween)
               .on('leave', function(){
@@ -59,7 +60,7 @@ function enableParallax() {
       var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
               .setTween(lanternTween)
               .addTo(controller);
-      */
+      
     }
     //Underground nav color change
     let nav = document.getElementById('nav');

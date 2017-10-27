@@ -155,14 +155,17 @@ footer > .sponsor-heading:first-of-type {
 .img-absolute {
     position: absolute;
 }
-img[src="img/clouds.png"] {
+
+/* Parallax */
+img.clouds {
     width:60%;
     height: 30%;
     min-width: 700px;
     margin-left: -5px;
     margin-top: -35px;
 }
-img[src="img/logowhitewebsite.png"] {
+
+img.logo {
     width:20vw;
     height: auto;
     min-width: 200px;
@@ -172,18 +175,21 @@ img[src="img/logowhitewebsite.png"] {
     margin-top: -10vw;
     z-index: 4;
 }
-img[src="img/sky.png"] {
+
+img.sky {
     width: 100%;
     height: 80%;
 }
-img[src="img/backhills.png"] {
+
+img.backhills {
     top: 5%;
     height: 60%;
     left: 0;
     min-width: 900px;
     width: 100%;
 }
-img[src="img/front-grass.png"] {
+
+img.front-grass {
     width: calc(100% + 5px);
     height: auto;
     bottom: -8%;
@@ -191,20 +197,23 @@ img[src="img/front-grass.png"] {
     z-index:5;
     left: 0;
 }
-img[src="img/grass.svg"] {
+
+img.grass {
     width: 100%;
     height: 30%;
     bottom: 0;
     z-index:5;
     display: none;
 }
-img[src="img/mountains.png"] {
+
+img.mountains {
     position: absolute;
     top: 10%;
     width: 100%;
     height: 60%;
     min-width: 1200px;
 }
+
 object[data="img/soil.svg"] {
     z-index: 8;
     margin-top: -120px;

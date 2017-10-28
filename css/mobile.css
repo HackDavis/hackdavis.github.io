@@ -84,7 +84,7 @@
         margin-top: -40px;
     }
     #close {
-        right: 20px;        
+        right: 20px;
     }
     #nav, #brownNav, #rearNav {
         display: none;
@@ -108,7 +108,7 @@
       position: absolute;
       content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
     }
-    .clouds, .sky {
+    #clouds, #sky {
       position: absolute;
       margin-top: 0 !important;
     }
@@ -150,7 +150,7 @@
     img[src="img/grass.svg"] {
         display: block;
     }
-    img[src="img/sky.png"] {
+    img#sky {
         margin-top: -18vw;
         height: 100%;
     }
@@ -172,7 +172,7 @@
         padding-right: 15px;
         padding-left: 15px;
         margin-top: 15px;
-        margin-bottom: 15px;  
+        margin-bottom: 15px;
     }
     #main > div:first-of-type {
         position: static;

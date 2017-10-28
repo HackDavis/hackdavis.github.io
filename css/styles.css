@@ -84,7 +84,7 @@ address {
 address > h2 {
     margin-bottom: 30px;
 }
-.clouds, .sky {
+#clouds, #sky {
   position: absolute;
   z-index: -1;
 }
@@ -155,7 +155,7 @@ footer > .sponsor-heading:first-of-type {
 .img-absolute {
     position: absolute;
 }
-img[src="img/clouds.png"] {
+img#clouds {
     width:60%;
     height: 30%;
     min-width: 700px;
@@ -172,7 +172,7 @@ img[src="img/logowhitewebsite.png"] {
     margin-top: -10vw;
     z-index: 4;
 }
-img[src="img/sky.png"] {
+img#sky {
     width: 100%;
     height: 80%;
 }

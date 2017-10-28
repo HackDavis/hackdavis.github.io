@@ -198,7 +198,7 @@ img[src="img/grass.svg"] {
     z-index:5;
     display: none;
 }
-img[src="img/mountains.png"] {
+img#mountains {
     position: absolute;
     top: 10%;
     width: 100%;

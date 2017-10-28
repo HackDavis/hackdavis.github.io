@@ -27,7 +27,7 @@
     img[src="img/front-grass.png"] {
         bottom: 25%;
     }
-    img[src="img/backhills.png"], img[src="img/mountains.png"] {
+    img[src="img/backhills.png"], img#mountains {
         width: 140vh;
     }
     img[src="img/backhills.png"] {
@@ -138,7 +138,7 @@
         width: 133%;
         left: -33%;
     }
-    img[src="img/mountains.png"] {
+    img#mountains {
         height: 70%;
         margin-top: 10px;
         margin-left: -20%;

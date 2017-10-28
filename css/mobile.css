@@ -9,7 +9,7 @@
     #about-text {
         bottom: 10%;
     }
-    img[src="img/front-grass.png"] {
+    img#front-grass {
         bottom: 10%;
     }
     img[src="img/schedule.png"] {
@@ -24,7 +24,7 @@
 }
 /* Portrait mode */
 @media (min-width: 768px) and (max-aspect-ratio: 1/1) {
-    img[src="img/front-grass.png"] {
+    img#front-grass {
         bottom: 25%;
     }
     img[src="img/backhills.png"], img#mountains {
@@ -144,7 +144,7 @@
         margin-left: -20%;
         position: absolute;
     }
-    img[src="img/front-grass.png"] {
+    img#front-grass {
         display: none;
     }
     img[src="img/grass.svg"] {

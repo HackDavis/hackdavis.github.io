@@ -183,7 +183,7 @@ img[src="img/backhills.png"] {
     min-width: 900px;
     width: 100%;
 }
-img[src="img/front-grass.png"] {
+img#front-grass {
     width: calc(100% + 5px);
     height: auto;
     bottom: -8%;

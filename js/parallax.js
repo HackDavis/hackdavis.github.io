@@ -94,46 +94,56 @@ $(window).resize(function(event) {
 });
 
 /* Navbar links */
-let duration = 1500;
-$("#click2017").click(function(){
-  $(this).children()[0].click();
+
+let duration = 1500
+$('#click2017').click(function(){
+  $(this).children()[0].click()
 })
-$("#clickAbout").click(function(){
-  $("#about-text").velocity("scroll", {offset: -230, duration: duration, easing:"easeInOutCubic"});
-});
-$("#clickSchedule").click(function(){
-  $("#schedule").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
-});
-$("#clickSponsors").click(function(){
-  $("footer").velocity("scroll", {offset: -50, duration: duration, easing: "easeInOutCubic"});
-});
-$("#clickFAQ").click(function(){
-  $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
-});
-var closeTimeout;
+
+$('#clickAbout').click(function(){
+  $('#about-text').velocity('scroll', {offset: -230, duration: duration, easing:'easeInOutCubic'})
+})
+
+$('#clickSchedule').click(function(){
+  $('#schedule').velocity('scroll', {offset: -150, duration: duration, easing: 'easeInOutCubic'})
+})
+
+$('#clickSponsors').click(function(){
+  $('footer').velocity('scroll', {offset: -50, duration: duration, easing: 'easeInOutCubic'})
+})
+
+$('#clickFAQ').click(function(){
+  $('#FAQ').velocity('scroll', {offset: -150, duration: duration, easing: 'easeInOutCubic'})
+})
+
+var closeTimeout
 /* Apply button */
-$("#lantern,#apply-button").click(function(){
+$('#lantern,#apply-button').click(function(){
   if(window.innerWidth <= 750 && sBrowser == 'Mozilla Firefox') {
-    window.location.href="./apply.html";
+    window.location.href='./apply.html'
   }
-  if(closeTimeout)
-  {
-    clearInterval(closeTimeout);
-    closeTimeout = null;
-  }
-  $("#typeform,#close").show();
-  $('html').css('overflow', 'hidden');
-  $("#close").transition({top: '10px'});
-  $('#typeform').transition({top: 0});
-});
-$("#close").click(function(){
-  $("#close").transition({top: "100%"});
-  $("#typeform").transition({top: "100%"});
-  $("html").removeAttr("style");
+
   if(closeTimeout) {
-    clearInterval(closeTimeout);
+    clearInterval(closeTimeout)
+    closeTimeout = null
   }
+
+  $('#typeform,#close').show()
+  $('html').css('overflow', 'hidden')
+  $('#close').transition({top: '10px'})
+  $('#typeform').transition({top: 0})
+})
+$('#close').click(function(){
+  $('#close').transition({top: '100%'})
+  $('#typeform').transition({top: '100%'})
+  $('html').removeAttr('style')
+
+  if(closeTimeout) {
+    clearInterval(closeTimeout)
+  }
+
   closeTimeout = setTimeout(function() {
-    $("#typeform,#close").hide();
-  }, 1000);
+    $('#typeform,#close').hide()
+  }, 1000)
+
 })

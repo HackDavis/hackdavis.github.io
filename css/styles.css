@@ -183,7 +183,7 @@ img[src="img/backhills.png"] {
     min-width: 900px;
     width: 100%;
 }
-img[src="img/front grass.png"] {
+img[src="img/front-grass.png"] {
     width: calc(100% + 5px);
     height: auto;
     bottom: -8%;
@@ -214,7 +214,7 @@ object[data="img/soil.svg"] {
     height: 25vw;
     position: relative;
 }
-img[src="img/front cave.png"] {
+img[src="img/front-cave.png"] {
     z-index: 6;
     margin-top: -10px;
     width: calc(100% + 10px);
@@ -229,13 +229,13 @@ img[src="img/front cave.png"] {
 .cave {
     width: calc(100% + 10px);
 }
-img[src="img/cave layer 2.png"] {
+img[src="img/cave-layer-2.png"] {
     z-index: 4;
 }
-img[src="img/cave layer 3.png"] {
+img[src="img/cave-layer-3.png"] {
     z-index: 3;
 }
-img[src="img/back cave 4.png"] {
+img[src="img/back-cave-4.png"] {
     z-index: 2;
 }
 img[src="img/schedule.png"] {
@@ -256,7 +256,7 @@ img[src="img/schedule.png"] {
     position: relative;
     z-index: 7;
 }
-img[src="img/mobile schedule.png"] {
+img[src="img/mobile-schedule.png"] {
     width: 100%;
     height: auto;
     top: 20px;

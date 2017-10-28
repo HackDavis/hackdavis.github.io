@@ -162,7 +162,7 @@ img#clouds {
     margin-left: -5px;
     margin-top: -35px;
 }
-img[src="img/logowhitewebsite.png"] {
+img#logo {
     width:20vw;
     height: auto;
     min-width: 200px;

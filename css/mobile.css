@@ -17,7 +17,7 @@
     }
 }
 @media (max-width: 1000px) {
-    img[src="img/logowhitewebsite.png"] {
+    img#logo {
         margin-left: -100px;
         margin-top: -100px;
     }
@@ -37,7 +37,7 @@
     section:first-child, #main > div:first-of-type {
         margin-bottom: -32.5vh;
     }
-    img[src="img/logowhitewebsite.png"] {
+    img#logo {
         width:30vw;
         margin-left: -15vw;
         margin-top: -15vw;
@@ -180,7 +180,7 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-    img[src="img/logowhitewebsite.png"] {
+    img#logo {
         top: 45%;
     }
     #FAQ h2 {

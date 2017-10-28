@@ -147,7 +147,7 @@
     img#front-grass {
         display: none;
     }
-    img[src="img/grass.svg"] {
+    img#grass {
         display: block;
     }
     img#sky {

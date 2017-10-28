@@ -229,13 +229,13 @@ img#cave1 {
 .cave {
     width: calc(100% + 10px);
 }
-img[src="img/cave-layer-2.png"] {
+img#cave2 {
     z-index: 4;
 }
-img[src="img/cave-layer-3.png"] {
+img#cave3 {
     z-index: 3;
 }
-img[src="img/back-cave-4.png"] {
+img#cave4 {
     z-index: 2;
 }
 img[src="img/schedule.png"] {

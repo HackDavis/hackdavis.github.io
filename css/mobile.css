@@ -27,10 +27,10 @@
     img#front-grass {
         bottom: 25%;
     }
-    img[src="img/backhills.png"], img#mountains {
+    img#backhills, img#mountains {
         width: 140vh;
     }
-    img[src="img/backhills.png"] {
+    img#backhills {
         left: 50%;
         margin-left: -70vh;
     }
@@ -132,7 +132,7 @@
       height: 40px;
       line-height: 40px;
     }
-    img[src="img/backhills.png"] {
+    img#backhills {
         top: 30%;
         height: 70%;
         width: 133%;
@@ -195,7 +195,7 @@
 
 /* Centering on thinner phones */
 @media (max-width: 400px){
-  img[src="img/backhills.png"] {
+  img#backhills {
       left:-40%;
   }
 }

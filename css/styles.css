@@ -176,7 +176,7 @@ img#sky {
     width: 100%;
     height: 80%;
 }
-img[src="img/backhills.png"] {
+img#backhills {
     top: 5%;
     height: 60%;
     left: 0;

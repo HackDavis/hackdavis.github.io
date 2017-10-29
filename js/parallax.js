@@ -3,7 +3,21 @@ var state;
 var handlers = new Map();
 
 handlers.set("full", function(event){
-  
+  var top = $(window).scrollTop();
+  if(top >= 0 && top < 600) {
+    var mountainsTranslate = top * 550/600;
+    var roadTranslate = top * 400/600;
+    var cowTranslate = top * 100/600;
+    var logoTranslate = top * 500/600;
+    var soilTranslate = top * -100/600;
+    window.requestAnimationFrame(function(){
+      $("#mountains").css("transform", `translateY(${mountainsTranslate}px)`);
+      $("#backhills").css("transform", `translateY(${roadTranslate}px)`);
+      $("#front-grass").css("transform", `translateY(${cowTranslate}px)`);
+      $("#logo").css("transform", `translateY(${logoTranslate}px)`);
+      $("#soil").css("margin-top", `${soilTranslate}px`);
+    });    
+  }
 });
 handlers.set("mobile", function(event){
 });
@@ -84,9 +98,7 @@ function enableParallax() {
     //Change image in mobile site
     state = "mobile";
   }
-  controller = $(window).scroll(function(event){
-    console.log(event);
-  });
+  controller = $(window).scroll(handlers.get(state));
 }
 enableParallax();
 

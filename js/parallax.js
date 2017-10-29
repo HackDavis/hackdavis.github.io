@@ -1,5 +1,15 @@
 var controller;
 var state;
+var handlers = new Map();
+
+handlers.set("full", function(event){
+  
+});
+handlers.set("mobile", function(event){
+});
+handlers.set("tablet", function(event){
+});
+
 var sBrowser, sUsrAg = navigator.userAgent;
 if(sUsrAg.indexOf("Chrome") > -1) {
   sBrowser = "Google Chrome";
@@ -14,7 +24,6 @@ Waves.attach("#close", ['waves-circle']);
 Waves.init();
 function enableParallax() {
   if(window.innerWidth > 750 && !controller) {
-    controller = new ScrollMagic.Controller();
     state = "tablet";
     if(window.innerWidth > window.innerHeight) {
       state = "full";
@@ -28,7 +37,7 @@ function enableParallax() {
       ]);
 
       // build scene
-      */
+      
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
       //        .setTween(grassTween)
               .on('leave', function(){
@@ -37,7 +46,7 @@ function enableParallax() {
               .on('enter', function(){
                 $("#mlh-trust-badge").toggle(true);                
               })
-              .addTo(controller);
+              .addTo(controller); 
       /*
       var caveTween = new TimelineMax()
       .add([
@@ -61,7 +70,7 @@ function enableParallax() {
       */
     }
     //Underground nav color change
-    let nav = document.getElementById('nav');
+    /*let nav = document.getElementById('nav');
     var navColorChange = new ScrollMagic.Scene({triggerElement: "#cave1", duration: 0})
 					.on("enter", function() {
             $("#rearNav").toggleClass("opaque", true);
@@ -69,12 +78,15 @@ function enableParallax() {
           .on("leave", function() {
             $("#rearNav").toggleClass("opaque", false);
 					})
-					.addTo(controller);
+					.addTo(controller);*/
   }
   else if(window.innerWidth <= 750) {
     //Change image in mobile site
     state = "mobile";
   }
+  controller = $(window).scroll(function(event){
+    console.log(event);
+  });
 }
 enableParallax();
 
@@ -83,7 +95,7 @@ $(window).resize(function(event) {
   //In Portrait
   if((window.innerHeight > window.innerWidth && state == "full") || (window.innerWidth <= 750 && state != "mobile") || (window.innerWidth > window.innerHeight && window.innerWidth > 750 && state != "full")) {
     if(controller) {
-      controller.destroy(true);
+      $(window).off("scroll");
       controller = null;
       $('object, .logo').each(function(){
         $(this).removeAttr('style');

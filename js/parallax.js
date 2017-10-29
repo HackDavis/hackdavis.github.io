@@ -1,9 +1,18 @@
 var controller;
 var state;
 var handlers = new Map();
-
+var caveTrigger;
+$(function(){
+  caveTrigger = $("#cave1").position().top;  
+})
 handlers.set("full", function(event){
   var top = $(window).scrollTop();
+  if(top > caveTrigger) {
+    var change = $("#rearnav").hasClass("opaque");
+  }
+  else if(top < caveTrigger) {
+    var change = !$("#rearnav").hasClass("opaque");    
+  }
   if(top >= 0 && top < 600) {
     var mountainsTranslate = top * 550/600;
     var roadTranslate = top * 400/600;
@@ -11,11 +20,14 @@ handlers.set("full", function(event){
     var logoTranslate = top * 500/600;
     var soilTranslate = top * -100/600;
     window.requestAnimationFrame(function(){
+      if(change) {
+        $("#rearnav").toggleClass("opaque");
+      }
       $("#mountains").css("transform", `translateY(${mountainsTranslate}px)`);
       $("#backhills").css("transform", `translateY(${roadTranslate}px)`);
       $("#front-grass").css("transform", `translateY(${cowTranslate}px)`);
       $("#logo").css("transform", `translateY(${logoTranslate}px)`);
-      $("#soil").css("margin-top", `${soilTranslate}px`);
+      //$("#soil").css("margin-top", `${soilTranslate}px`);
     });    
   }
 });

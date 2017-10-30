@@ -3,15 +3,16 @@ var state;
 var handlers = new Map();
 var caveTrigger;
 $(function(){
-  caveTrigger = $("#cave1").position().top;  
+  caveTrigger = $("#cave1").offset().top;  
 })
 handlers.set("full", function(event){
-  var top = $(window).scrollTop();
-  if(top > caveTrigger) {
-    var change = $("#rearnav").hasClass("opaque");
+  var top = window.pageYOffset;
+  var change;
+  if(top > caveTrigger - 100) {
+      var change = !$("#rearNav").hasClass("opaque");
   }
-  else if(top < caveTrigger) {
-    var change = !$("#rearnav").hasClass("opaque");    
+  else if(top < caveTrigger - 100) {
+    var change = $("#rearNav").hasClass("opaque");    
   }
   if(top >= 0 && top < 600) {
     var mountainsTranslate = top * 550/600;
@@ -19,16 +20,18 @@ handlers.set("full", function(event){
     var cowTranslate = top * 100/600;
     var logoTranslate = top * 500/600;
     var soilTranslate = top * -100/600;
+  }
+  if(change || mountainsTranslate) {
     window.requestAnimationFrame(function(){
       if(change) {
-        $("#rearnav").toggleClass("opaque");
+        $("#rearNav").toggleClass("opaque");
       }
       $("#mountains").css("transform", `translateY(${mountainsTranslate}px)`);
       $("#backhills").css("transform", `translateY(${roadTranslate}px)`);
       $("#front-grass").css("transform", `translateY(${cowTranslate}px)`);
       $("#logo").css("transform", `translateY(${logoTranslate}px)`);
       //$("#soil").css("margin-top", `${soilTranslate}px`);
-    });    
+    });
   }
 });
 handlers.set("mobile", function(event){
@@ -111,6 +114,7 @@ function enableParallax() {
     state = "mobile";
   }
   controller = $(window).scroll(handlers.get(state));
+  handlers.get(state)();
 }
 enableParallax();
 
@@ -159,12 +163,12 @@ $("#lantern,#apply-button").click(function(){
   }
   $("#typeform,#close").show();
   $('html').css('overflow', 'hidden');
-  $("#close").transition({top: '10px'});
-  $('#typeform').transition({top: 0});
+  $("#close").velocity({top: '10px'});
+  $('#typeform').velocity({top: 0});
 });
 $("#close").click(function(){
-  $("#close").transition({top: "100%"});
-  $("#typeform").transition({top: "100%"});
+  $("#close").velocity({top: "100%"});
+  $("#typeform").velocity({top: "100%"});
   $("html").removeAttr("style");
   if(closeTimeout) {
     clearInterval(closeTimeout);

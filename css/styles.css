@@ -26,6 +26,7 @@ body {
     z-index: 100;
     top: 100%;
     color: #F37154;
+    transform: translateY("100%");
 }
 #close > i {
     width: 1em;

@@ -150,30 +150,21 @@ $("#clickSponsors").click(function(){
 $("#clickFAQ").click(function(){
   $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
-var closeTimeout;
 /* Apply button */
 $("#lantern,#apply-button").click(function(){
   if(window.innerWidth <= 750 && sBrowser == 'Mozilla Firefox') {
     window.location.href="./apply.html";
   }
-  if(closeTimeout)
-  {
-    clearInterval(closeTimeout);
-    closeTimeout = null;
-  }
-  $("#typeform,#close").show();
   $('html').css('overflow', 'hidden');
-  $("#close").velocity({top: '10px'});
-  $('#typeform').velocity({top: 0});
+  $("#close").toggleClass("hidden");
+  $("#typeform").toggleClass("hidden");
+  //$("#close").velocity({top: '10px'});
+  //$('#typeform').velocity({top: 0});
 });
 $("#close").click(function(){
-  $("#close").velocity({top: "100%"});
-  $("#typeform").velocity({top: "100%"});
+  //$("#close").velocity({top: "100%"});
+  //$("#typeform").velocity({top: "100%"});
+  $("#close").toggleClass("hidden");  
+  $("#typeform").toggleClass("hidden");  
   $("html").removeAttr("style");
-  if(closeTimeout) {
-    clearInterval(closeTimeout);
-  }
-  closeTimeout = setTimeout(function() {
-    $("#typeform,#close").hide();
-  }, 1000);
 })

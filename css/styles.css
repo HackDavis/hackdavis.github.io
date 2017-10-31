@@ -172,11 +172,12 @@ img#logo {
     min-width: 200px;
     left: 50%;
     margin-left: -10vw;
-    top: 23%;
+    top: 22%;
     margin-top: -10vw;
     z-index: 4;
 }
 h2#subheading {
+  font-family: 'Inconsolata', monospace;
   text-align: center;
   font-size: 1.9rem;
   color: white;

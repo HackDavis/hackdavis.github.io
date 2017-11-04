@@ -8,6 +8,7 @@
     }
     #about-text {
         bottom: 10%;
+        height: auto;
     }
     img#front-grass {
         bottom: 10%;
@@ -23,7 +24,7 @@
     }
 }
 /* Portrait mode */
-@media (min-width: 768px) and (max-aspect-ratio: 1/1) {
+@media (min-width: 760px) and (max-aspect-ratio: 1/1) {
     img#front-grass {
         bottom: 25%;
     }
@@ -41,9 +42,13 @@
         width:30vw;
         margin-left: -15vw;
         margin-top: -15vw;
+        top: 27%;
+    }
+    #apply-button {
+      top: -30px;
     }
     #about-text {
-        bottom: 25.5%;
+        bottom: 24.5%;
         margin-bottom: 0;
     }
     #about-text h1 {
@@ -51,6 +56,12 @@
     }
     object[data="img/soil.svg"] {
         margin-top: -5px;
+    }
+    /*Avoids overflow of text in thinner tablets*/
+    @media (max-width: 900px){
+      #about-text p {
+          font-size: 0.8em;
+      }
     }
 }
 @media (max-width: 1450px) {
@@ -76,7 +87,7 @@
 }
 
 /* Mobile site */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     #schedule {
         margin-top: -128vw;
     }

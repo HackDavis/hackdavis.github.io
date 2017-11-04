@@ -35,7 +35,7 @@ function enableParallax() {
                 $("#mlh-trust-badge").toggle(false);
               })
               .on('enter', function(){
-                $("#mlh-trust-badge").toggle(true);                
+                $("#mlh-trust-badge").toggle(true);
               })
               .addTo(controller);
       /*

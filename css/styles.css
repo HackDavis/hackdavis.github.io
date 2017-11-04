@@ -98,7 +98,7 @@ footer > .sponsor-heading:first-of-type {
     margin-top: 2em;
 }
 /*Desktop and Tablet Apply Button*/
-@media(min-width: 768px){
+@media(min-width: 760px){
   #apply-button {
       display: block;
       width: 230px;
@@ -243,13 +243,13 @@ img#cave1 {
     width: calc(100% + 10px);
 }
 img#cave2 {
-    z-index: 4;
+    z-index: 5;
 }
 img#cave3 {
-    z-index: 3;
+    z-index: 4;
 }
 img#cave4 {
-    z-index: 2;
+    z-index: 3;
 }
 img#schedule-image {
     z-index: 7;

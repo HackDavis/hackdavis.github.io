@@ -111,6 +111,7 @@ footer > .sponsor-heading:first-of-type {
       border-radius: 30px;
       color: white;
       transition: all 0.5s;
+      transition-timing-function: ease-in-out;
   }
   #apply-button:focus {
       outline: 0;

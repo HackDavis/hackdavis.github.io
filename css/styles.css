@@ -104,7 +104,7 @@ footer > .sponsor-heading:first-of-type {
       width: 230px;
       height: 60px;
       position: relative;
-      top: -70px;
+      top: -55px;
       background: transparent;
       border: .2rem solid;
       border-color: rgba(255, 255, 255, 0.75);
@@ -130,7 +130,7 @@ footer > .sponsor-heading:first-of-type {
 #about-text {
   position: absolute;
   z-index: 9;
-  bottom: -8%;
+  bottom: -5%;
   height: 26vw;
   margin-bottom: 10px;
   color: white;

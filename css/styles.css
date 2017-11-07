@@ -284,15 +284,13 @@ img#mobile-schedule-image {
     margin-right: -10%;
     top: 35%;
     position: absolute;
+    transition: 0.1s transform ease-in;
 }
 #lantern:hover + #lantern-img {
     transform: scale(1.1, 1.1);
     -moz-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
     -webkit-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
     filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
-}
-#lantern:hover {
-    cursor: pointer;
 }
 #lantern {
     z-index: 6;

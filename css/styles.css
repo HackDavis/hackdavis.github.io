@@ -275,6 +275,29 @@ img#mobile-schedule-image {
     height: auto;
     top: 20px;
 }
+#lantern-img {
+    z-index: 5;
+}
+#lantern, #lantern-img {
+    width: 14%;
+    right: 30%;
+    margin-right: -10%;
+    top: 35%;
+    position: absolute;
+}
+#lantern:hover + #lantern-img {
+    transform: scale(1.1, 1.1);
+    -moz-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+    -webkit-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+    filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+}
+#lantern:hover {
+    cursor: pointer;
+}
+#lantern {
+    z-index: 6;
+    height: 50%;
+}
 iframe {
     z-index: 15;
     width: 100%;

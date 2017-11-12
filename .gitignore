@@ -8,7 +8,8 @@
 *.o
 *.out
 *.so
-
+.vscode/*
+.vscode*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -59,3 +60,4 @@ npm-debug.log
 # VirtualBox Files  #
 #####################
 *.ova
+scripts/token.js

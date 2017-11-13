@@ -99,29 +99,29 @@ footer > .sponsor-heading:first-of-type {
 }
 /*Desktop and Tablet Apply Button*/
 @media(min-width: 760px){
-  #apply-button {
-      display: block;
-      width: 230px;
-      height: 60px;
-      position: relative;
-      top: -55px;
-      background: transparent;
-      border: .2rem solid;
-      border-color: rgba(255, 255, 255, 0.75);
-      border-radius: 30px;
-      color: white;
-      transition: all 0.5s;
-      transition-timing-function: ease-in-out;
-  }
-  #apply-button:focus {
-      outline: 0;
-  }
-  #apply-button:hover {
-      cursor: pointer;
-      background-color: white;
-      border-color: white;
-      color: #52749d;
-  }
+    .round-white-button {
+        background: transparent;
+        border: .2rem solid;
+        border-color: rgba(255, 255, 255, 0.75);
+        border-radius: 30px;
+        color: white;
+        transition: all 0.5s;
+        transition-timing-function: ease-in-out;
+        width: 10em;
+        height: 60px;
+        display: block;
+        position: relative;
+        top: -55px;
+    }
+    .round-white-button:focus {
+        outline: 0;
+    }
+    .round-white-button:hover {
+        cursor: pointer;
+        background-color: white;
+        border-color: white;
+        color: #52749d;
+    }
 }
 /* Avoids issues on mobile */
 #close, #typeform {
@@ -328,14 +328,13 @@ iframe {
   margin: 20px 50px 20px 56px;
 }
 #FAQ a {
-  text-decoration: none;
   color: #1287A8;
 }
 #FAQ a:hover {
   opacity: 0.75;
 }
-address a:hover {
-  text-decoration: none;
+.no-decorate, .no-decorate:hover {
+    text-decoration: none;
 }
 address h2 {
   font-size: 28px;

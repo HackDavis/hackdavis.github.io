@@ -25,7 +25,7 @@ row = index.document.createElement("div");
 row.setAttribute("class", "row align-items-center");
 heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
-heading.innerHTML = "PREVIOUS SPONSORS";
+heading.innerHTML = "SPONSORS";
 $("footer").prepend(row);
 $("footer").prepend(heading);
 let count = 0;

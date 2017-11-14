@@ -6,25 +6,50 @@
 		},
 		{
 			"src": "",
-			"href": "https://www.noosayoghurt.com/"
+			"href": "https://cloud.google.com/"
 		},
 		{
 			"src": "",
-			"href": "https://www.varian.com/?multilink=switch"
+			"href": "https://get.tech/"
+		},
+		{
+			"src": "",
+			"href": "https://www.noosayoghurt.com/fan-club"
+		},
+		{
+			"src": "",
+			"href": "https://IndieWire"
+		},
+		{
+			"src": "",
+			"href": "https://www.takescoop.com/"
+		},
+		{
+			"src": "",
+			"href": "https://www.stickermule.com/"
 		},
 		{
 			"src": "/img/logos/citris.png",
 			"href": "https://citris-uc.org/"
 		},
 		{
-			"src": "",
-			"href": "https://Slate Magazine"
+			"src": "/img/logos/clifbar.png",
+			"href": "https://www.clifbar.com/EnergyBar/Flavors"
 		},
 		{
 			"src": "",
-			"href": "https://www.clifbar.com/EnergyBar/Flavors"
+			"href": "https://www.centene.com/"
+		},
+		{
+			"src": "",
+			"href": "https://www.varian.com/?multilink=switch"
 		}
 	],
-	"partners": [],
+	"partners": [
+		{
+			"src": "",
+			"href": "https://www.cs.usc.edu/"
+		}
+	],
 	"nonprofits": []
 }

@@ -48,17 +48,16 @@ function enableParallax() {
       var caveScene = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 50, duration: 1.5 * window.innerHeight})
               .setTween(caveTween)
               .addTo(controller);
-
+      */
       var lanternTween = new TimelineMax()
       .add([
           TweenMax.to("#lantern", 1, {y: "+=200", ease: Linear.easeNone}),
           TweenMax.to("#lantern-img", 1, {y: "+=200", ease: Linear.easeNone})
         ]);
 
-      var lanternFollow = new ScrollMagic.Scene({triggerElement: 'img[src="img/front cave.png"]', offset: 600, duration: 300})
+      var lanternFollow = new ScrollMagic.Scene({triggerElement: '#cave1', offset: 800, duration: 300})
               .setTween(lanternTween)
               .addTo(controller);
-      */
     }
     //Underground nav color change
     let nav = document.getElementById('nav');

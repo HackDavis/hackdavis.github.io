@@ -29,8 +29,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- User Stlesheets -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css?v=6">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css?v=6">
+    <link rel="stylesheet" type="text/css" href="css/styles.css?v=7">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css?v=7">
   </head>
   <body>
 
@@ -67,12 +67,12 @@
       <div>
         <div id="about-text" class="container-fluid">
           <div class='row'>
-            <div class="col col-md-6 d-flex justify-content-center">
-                <button class="round-white-button" id="apply-button">APPLY</button> 
+            <div class="col d-flex justify-content-center">
+                <button class="round-button white-button landing-button" id="apply-button">APPLY</button> 
             </div>
-            <div class="col-md-6">
-              <a href="mailto:sponsors@hackdavis.io" class="no-decorate"><button class="round-white-button">SPONSOR US</button></a>
-            </div>
+            <!-- <div class="col-md-6">
+              <a href="mailto:sponsors@hackdavis.io" class="no-decorate"><button class="round-button landing-button white-button">SPONSOR US</button></a>
+            </div> -->
           </div>
           <div class="row">
             <h1 class="col-md-4 text-center">What is HackDavis?</h1>
@@ -160,33 +160,54 @@
           </div>
         </div>
         <footer class="container-fluid">
-            <h1 class="sponsor-heading">PREVIOUS SPONSORS</h1>
-            <div class="row align-items-center">
-              <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://developer.amazon.com/alexa"><img class="img-responsive" src="img/logos/amazon-alexa.png"></a>
-              <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://citrisfoundry.org/"><img class="img-responsive" src="img/logos/citris.png" alt=""></a>
-              <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.ibm.com/us-en/"><img class="img-responsive" src="img/logos/ibm.png" alt=""></a>
-              <div class="clearfix visible-md-block visible-lg-block"></div>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://rapidapi.com/"><img class="img-responsive" src="img/logos/rapid-api.png" alt=""></a>
-              <div class="clearfix visible-sm-block"></div>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.makeschool.com/"><img class="img-responsive" src="img/logos/makeschool.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0" href="https://www.wolframalpha.com/"><img class="img-responsive" src="img/logos/wolfram.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.zillow.com/"><img class="img-responsive" src="img/logos/zillow.png" alt=""></a>
+          <h1 class="sponsor-heading">PREVIOUS SPONSORS</h1>
+          <div class="row align-items-center">
+            <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://developer.amazon.com/alexa"><img class="img-responsive" src="img/logos/amazon-alexa.png"></a>
+            <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://citrisfoundry.org/"><img class="img-responsive" src="img/logos/citris.png" alt=""></a>
+            <a class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.ibm.com/us-en/"><img class="img-responsive" src="img/logos/ibm.png" alt=""></a>
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://rapidapi.com/"><img class="img-responsive" src="img/logos/rapid-api.png" alt=""></a>
+            <div class="clearfix visible-sm-block"></div>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.makeschool.com/"><img class="img-responsive" src="img/logos/makeschool.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0" href="https://www.wolframalpha.com/"><img class="img-responsive" src="img/logos/wolfram.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.zillow.com/"><img class="img-responsive" src="img/logos/zillow.png" alt=""></a>
+            <div class="clearfix visible-md-block"></div>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.splunk.com/"><img class="img-responsive" src="img/logos/splunk_white.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.servicenow.com/"><img class="img-responsive" src="img/logos/servicenow.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://ctrl.com/eng/index.aspx"><img class="img-responsive" src="img/logos/ctrl.png" alt=""></a>
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.drakontas.com/"><img class="img-responsive" src="img/logos/drakontas.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.facebook.com/"><img class="img-responsive" src="img/logos/facebook.png" alt=""></a>
+            <div class="clearfix visible-sm-block"></div>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://lmgtfy.com/?q=google"><img class="img-responsive" src="img/logos/google.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://github.com/"><img class="img-responsive" src="img/logos/github-logo.png" alt=""></a>
+            <div class="clearfix visible-lg-block visible-sm-block"></div>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.osisoft.com/"><img class="img-responsive" src="img/logos/OSIsoftLogo_White.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://www.clifbar.com/"><img class="img-responsive" src="img/logos/clif-bar.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://mandtvr.com/"><img class="img-responsive" src="img/logos/mandtvr.png" alt=""></a>
+            <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.namecheap.com/"><img class="img-responsive" src="img/logos/namecheap.png" alt=""></a>
+          </div>
+          <div class="row">
+            <a class="col d-flex justify-content-center no-decorate" href="mailto:sponsors@hackdavis.io">
+              <button id="sponsor-button" class="round-button white-button">Sponsor Us!</button>
+            </a>
+          </div>
+          <h1 class="sponsor-heading">PARTNERS</h1>
+          <div class="row justify-content-center">
+              <a class="col-lg-2 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1" href="http://moringaschool.com/"><img class="img-responsive" src="img/logos/moringa.png" alt=""></a>
+              <a class="col-lg-2 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" href="https:/mlh.io/"><img class="img-responsive" src="img/logos/mlh-logo-white.png" alt=""></a>
+              <a class="col-lg-2 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1" href="http://www.communitywatercenter.org/"><img class="img-responsive" src="img/logos/CWC.png" alt=""></a>
               <div class="clearfix visible-md-block"></div>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.splunk.com/"><img class="img-responsive" src="img/logos/splunk_white.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.servicenow.com/"><img class="img-responsive" src="img/logos/servicenow.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://ctrl.com/eng/index.aspx"><img class="img-responsive" src="img/logos/ctrl.png" alt=""></a>
-              <div class="clearfix visible-md-block visible-lg-block"></div>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.drakontas.com/"><img class="img-responsive" src="img/logos/drakontas.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.facebook.com/"><img class="img-responsive" src="img/logos/facebook.png" alt=""></a>
+              <a class="col-md-4 col-lg-offset-0 col-md-offset-3 col-sm-4 col-sm-offset-0 col-xs-10 col-xs-offset-1" href="http://engineering.ucdavis.edu/"><img class="img-responsive" src="img/logos/collegeofengineering_white.png" alt=""></a>
               <div class="clearfix visible-sm-block"></div>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://lmgtfy.com/?q=google"><img class="img-responsive" src="img/logos/google.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://github.com/"><img class="img-responsive" src="img/logos/github-logo.png" alt=""></a>
-              <div class="clearfix visible-lg-block visible-sm-block"></div>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.osisoft.com/"><img class="img-responsive" src="img/logos/OSIsoftLogo_White.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://www.clifbar.com/"><img class="img-responsive" src="img/logos/clif-bar.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://mandtvr.com/"><img class="img-responsive" src="img/logos/mandtvr.png" alt=""></a>
-              <a class="col-lg-3 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="https://www.namecheap.com/"><img class="img-responsive" src="img/logos/namecheap.png" alt=""></a>
-            </div>
+              <a class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1" href="http://www.cs.ucdavis.edu/"><img class="img-responsive" src="img/logos/CSDavis.png" alt=""></a>
+          </div>
+          <h1 class="sponsor-heading">NONPROFITS</h1>
+          <div class="row justify-content-center">
+              <a class="col-sm-2 col-xs-10 col-xs-offset-1 col-sm-offset-2" href="http://gamersgift.org/"><img class="img-responsive" src="img/logos/gamer-gift.png" alt=""></a>
+              <a class="col-sm-3 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://societyofwomenengineers.swe.org/"><img class="img-responsive" src="img/logos/swe-logo.png"></a>
+              <a class="col-sm-3 col-xs-10 col-xs-offset-1 col-sm-offset-0" href="http://northerncaliforniaeducationfoundation.com/"><img class="img-responsive" src="img/logos/norcal-edu-foundation.png" alt=""></a>
+          </div>
           <br />
           <address class="d-flex flex-sm-row justify-content-start flex-column">
             <h2>Contact us: <a class="no-decorate" href="mailto:team@hackdavis.io">team@hackdavis.io</a></h2>
@@ -211,6 +232,6 @@
     <script src="https://use.fontawesome.com/f85de223f0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.5/waves.min.js"></script>
     <script src="js/jquery.transit.min.js"></script>
-    <script src="js/parallax.js?v=1"></script>
+    <script src="js/parallax.js?v=2"></script>
   </body>
 </html>

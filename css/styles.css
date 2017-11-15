@@ -99,25 +99,37 @@ footer > .sponsor-heading:first-of-type {
 }
 /*Desktop and Tablet Apply Button*/
 @media(min-width: 760px){
-    .round-white-button {
+    .white-button {
+        border-color: rgba(255, 255, 255, 0.75); 
+        color: white;        
+    }
+    #sponsor-button {
+        width: 12em;
+        margin-top: 50px;
+        margin-bottom: -20px;
+    }
+    .round-button {
         background: transparent;
         border: .2rem solid;
-        border-color: rgba(255, 255, 255, 0.75);
         border-radius: 30px;
-        color: white;
         transition: all 0.5s;
         transition-timing-function: ease-in-out;
         width: 10em;
         height: 60px;
         display: block;
+    }
+    .landing-button {
         position: relative;
         top: -55px;
     }
-    .round-white-button:focus {
+    .white-button:focus {
         outline: 0;
     }
-    .round-white-button:hover {
+    .round-button:hover {
         cursor: pointer;
+        text-decoration: none;
+    }
+    .white-button:hover {
         background-color: white;
         border-color: white;
         color: #52749d;

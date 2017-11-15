@@ -42,7 +42,7 @@ section:first-child, #main > div:first-of-type {
     margin-bottom: calc(10.4vh + 100px);
 }
 section:nth-of-type(3) {
-    background-color: #2C2219;
+    background-color: #281C12;
     margin-top: -15px;
     position: relative;
     z-index: 7;

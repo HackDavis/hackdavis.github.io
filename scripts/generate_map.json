@@ -1,6 +1,11 @@
 {
 	"previous_sponsors": [
 		{
+			"href": "https://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris"
+		},
+		{
 			"src": "/img/logos/svgporn-stickermule.png",
 			"href": "https://www.stickermule.com/uses/laptop-stickers"
 		},
@@ -11,10 +16,6 @@
 		{
 			"src": "/img/logos/clifbar.png",
 			"href": "https://www.clifbar.com/EnergyBar/Flavors"
-		},
-		{
-			"src": "/img/logos/citris-ucdavis.png",
-			"href": "https://citris-uc.org/"
 		}
 	],
 	"partners": [],

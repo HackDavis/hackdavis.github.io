@@ -54,7 +54,7 @@ function getObjectForName(card, key, array, callback) {
             if(item.name.indexOf(card.name) != -1)
             {
                 array.push(item);
-                return;
+                return callback(null);
             }
         }
     }

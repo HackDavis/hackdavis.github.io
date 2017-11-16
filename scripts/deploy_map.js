@@ -11,59 +11,71 @@ var row = index.document.createElement("div");
 row.setAttribute("class", "row justify-content-center");
 var heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
-heading.innerHTML = "NONPROFITS";
-$("footer").prepend(row);
-$("footer").prepend(heading);
-row = index.document.createElement("div");
-row.setAttribute("class", "row justify-content-center");
-heading = index.document.createElement("h1");
-heading.setAttribute("class", "sponsor-heading");
-heading.innerHTML = "PARTNERS";
-$("footer").prepend(row);
-$("footer").prepend(heading);
+if(table.nonprofits.length > 0){
+    heading.innerHTML = "NONPROFITS";
+    $("footer").prepend(row);
+    $("footer").prepend(heading);
+}
 row = index.document.createElement("div");
 row.setAttribute("class", "row align-items-center");
 heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
-heading.innerHTML = "SPONSORS";
-$("footer").prepend(row);
-$("footer").prepend(heading);
+if(table.partners.length > 0){
+    heading.innerHTML = "PARTNERS";
+    $("footer").prepend(row); 
+    $("footer").prepend(heading);    
+}
+row = index.document.createElement("div");
+row.setAttribute("class", "row align-items-center");
+heading = index.document.createElement("h1");
+heading.setAttribute("class", "sponsor-heading");
+if(table.previous_sponsors.length > 0){
+    heading.innerHTML = "SPONSORS";
+    $("footer").prepend(row);
+    $("footer").prepend(heading);    
+}
 let count = 0;
 for(let sponsor of table.previous_sponsors) {
-    let tag = index.document.createElement("a");
+    if(sponsor.src) {
+        let tag = index.document.createElement("a");
 
-    if(count < 3) {
-        tag.setAttribute("class", "col-lg-4 col-md-4 col-sm-6 col-xs-10");
-        count++;
+        /*if(count < 3) {
+            tag.setAttribute("class", "col-lg-4 col-md-4 col-sm-6 col-xs-10");
+            count++;
+        }
+        else*/
+            tag.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 col-xs-10");
+
+        tag.setAttribute("href", sponsor.href);
+        let image = index.document.createElement("img");
+        image.setAttribute("src", sponsor.src);
+        tag.appendChild(image);
+        $("footer > div.row:nth-child(2)").append(tag);
     }
-    else
-        tag.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 col-xs-10");
-
-    tag.setAttribute("href", sponsor.href);
-    let image = index.document.createElement("img");
-    image.setAttribute("src", sponsor.src);
-    tag.appendChild(image);
-    $("footer > div.row:nth-child(2)").append(tag);
 }
 
 for(let sponsor of table.partners) {
-    let tag = index.document.createElement("a");
-    tag.setAttribute("class", "col-lg-2 col-md-4 col-sm-4 col-xs-10");
-    tag.setAttribute("href", sponsor.href);
-    let image = index.document.createElement("img");
-    image.setAttribute("src", sponsor.src);
-    tag.appendChild(image);
-    $("footer > div.row:nth-child(4)").append(tag);
+    if(sponsor.src) {
+        let tag = index.document.createElement("a");
+        tag.setAttribute("class", "col-lg-2 col-md-4 col-sm-4 col-xs-10");
+        tag.setAttribute("href", sponsor.href);
+        let image = index.document.createElement("img");
+        image.setAttribute("src", sponsor.src);
+        tag.appendChild(image);
+        $("footer > div.row:nth-child(4)").append(tag);                                         
+    }
 }
 
 for(let sponsor of table.nonprofits) {
-    let tag = index.document.createElement("a");
-    tag.setAttribute("class", "col-sm-2 col-xs-10");
-    tag.setAttribute("href", sponsor.href);
-    let image = index.document.createElement("img");
-    image.setAttribute("src", sponsor.src);
-    tag.appendChild(image);
-    $("footer > div.row:nth-child(6)").append(tag);
+    if(sponsor.src) {
+        let tag = index.document.createElement("a");
+        tag.setAttribute("class", "col-sm-2 col-xs-10");
+        tag.setAttribute("href", sponsor.href);
+        let image = index.document.createElement("img");
+        image.setAttribute("src", sponsor.src);
+        tag.appendChild(image);
+        $("footer > div.row:nth-child(6)").append(tag);
+    }
 }
 
 fs.writeFileSync(path.resolve(__dirname, "../index.html"), dom.serialize());

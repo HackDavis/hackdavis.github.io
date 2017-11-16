@@ -1,55 +1,22 @@
 {
 	"previous_sponsors": [
 		{
-			"src": "",
-			"href": "https://genability.com/"
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers"
 		},
 		{
-			"src": "",
-			"href": "https://cloud.google.com/"
-		},
-		{
-			"src": "",
-			"href": "https://get.tech/"
-		},
-		{
-			"src": "",
-			"href": "https://www.noosayoghurt.com/fan-club"
-		},
-		{
-			"src": "",
-			"href": "https://IndieWire"
-		},
-		{
-			"src": "",
-			"href": "https://www.takescoop.com/"
-		},
-		{
-			"src": "",
-			"href": "https://www.stickermule.com/"
-		},
-		{
-			"src": "/img/logos/citris.png",
-			"href": "https://citris-uc.org/"
+			"src": "/img/logos/tech.png",
+			"href": "https://get.tech"
 		},
 		{
 			"src": "/img/logos/clifbar.png",
 			"href": "https://www.clifbar.com/EnergyBar/Flavors"
 		},
 		{
-			"src": "",
-			"href": "https://www.centene.com/"
-		},
-		{
-			"src": "",
-			"href": "https://www.varian.com/?multilink=switch"
+			"src": "/img/logos/citris.png",
+			"href": "https://citris-uc.org/"
 		}
 	],
-	"partners": [
-		{
-			"src": "",
-			"href": "https://www.cs.usc.edu/"
-		}
-	],
+	"partners": [],
 	"nonprofits": []
 }

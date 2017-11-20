@@ -76,15 +76,13 @@
     padding-left: 0.67em;
     padding-right: 0.67em;
     line-height: 40px;
+    pointer-events: none;
 }
 
 /*First link in nav bar*/
 .nav-item:last-child {
    margin-right: 20px;
  }
-.nav-item:last-child:hover {
-    background-color: initial;
-}
 /*For Tablets*/
  @media (max-width: 900px) {
     #nav-title {

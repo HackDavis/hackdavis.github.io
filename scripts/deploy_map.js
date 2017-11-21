@@ -17,7 +17,7 @@ if(table.nonprofits.length > 0){
     $("footer").prepend(heading);
 }
 row = index.document.createElement("div");
-row.setAttribute("class", "row align-items-center");
+row.setAttribute("class", "row justify-content-center");
 heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
 if(table.partners.length > 0){
@@ -26,7 +26,7 @@ if(table.partners.length > 0){
     $("footer").prepend(heading);    
 }
 row = index.document.createElement("div");
-row.setAttribute("class", "row align-items-center");
+row.setAttribute("class", "row justify-content-center align-items-center");
 heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
 if(table.previous_sponsors.length > 0){

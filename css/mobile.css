@@ -120,6 +120,9 @@
         font-size: 1.52em;
         font-family: 'FuturaStd-Heavy';
     }
+    #sponsor-button {
+      display: none;
+    }
     #about-text button:not(#apply-button) {
         display: none;
     }

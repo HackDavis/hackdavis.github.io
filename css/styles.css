@@ -100,8 +100,8 @@ footer > .sponsor-heading:first-of-type {
 /*Desktop and Tablet Apply Button*/
 @media(min-width: 760px){
     .white-button {
-        border-color: rgba(255, 255, 255, 0.75); 
-        color: white;        
+        border-color: rgba(255, 255, 255, 0.75);
+        color: white;
     }
     #sponsor-button {
         width: 12em;
@@ -142,7 +142,7 @@ footer > .sponsor-heading:first-of-type {
 #about-text {
   position: absolute;
   z-index: 9;
-  bottom: -5%;
+  bottom: -6%;
   height: 26vw;
   margin-bottom: 10px;
   color: white;
@@ -315,7 +315,7 @@ img#mobile-schedule-image {
     position: absolute;
     animation-name: blink;
     animation-duration: 3s;
-    animation-iteration-count: infinite;    
+    animation-iteration-count: infinite;
 }
 #lantern {
     z-index: 6;

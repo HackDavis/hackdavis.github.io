@@ -25,6 +25,17 @@ if(table.partners.length > 0){
     $("footer").prepend(row); 
     $("footer").prepend(heading);    
 }
+let buttonDiv = index.document.createElement("div");
+let atag = index.document.createElement("a");
+atag.setAttribute("class", "col d-flex justify-content-center no-decorate");
+atag.setAttribute("href", "mailto:sponsorship@hackdavis.io");
+let button = index.document.createElement("button");
+button.setAttribute("id", "sponsor-button");
+button.setAttribute("class", "round-button white-button");
+button.innerHTML = "Sponsor Us!";
+$(atag).prepend(button);
+$(buttonDiv).prepend(atag);
+$("footer").prepend(buttonDiv);
 row = index.document.createElement("div");
 row.setAttribute("class", "row justify-content-center align-items-center");
 heading = index.document.createElement("h1");
@@ -62,7 +73,7 @@ for(let sponsor of table.partners) {
         let image = index.document.createElement("img");
         image.setAttribute("src", sponsor.src);
         tag.appendChild(image);
-        $("footer > div.row:nth-child(4)").append(tag);                                         
+        $("footer > div.row:nth-child(5)").append(tag);                                         
     }
 }
 

@@ -1,23 +1,32 @@
 {
 	"previous_sponsors": [
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers"
-		},
-		{
-			"src": "/img/logos/tech.png",
-			"href": "https://http://get.tech"
-		},
-		{
 			"href": "http://citrisfoundry.org/",
 			"src": "img/logos/citris-ucdavis.png",
 			"name": "citris"
 		},
 		{
+			"src": "/img/logos/tech.png",
+			"href": "http://get.tech"
+		},
+		{
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers"
+		},
+		{
 			"src": "/img/logos/clifbar.png",
-			"href": "https://www.clifbar.com/EnergyBar/Flavors"
+			"href": "http://www.clifbar.com/EnergyBar/Flavors"
 		}
 	],
-	"partners": [],
+	"partners": [
+		{
+			"src": "/img/logos/deptofcs.png",
+			"href": "https://twitter.com/hashtag/deptofcs"
+		},
+		{
+			"src": "/img/logos/collegeofengineering_white.png",
+			"href": "http://engineering.ucdavis.edu/"
+		}
+	],
 	"nonprofits": []
 }

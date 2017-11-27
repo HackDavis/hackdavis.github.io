@@ -117,6 +117,10 @@ footer > .sponsor-heading:first-of-type {
         width: 10em;
         height: 60px;
         display: block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 3em;
+        padding-right: 3em;
     }
     .landing-button {
         position: relative;

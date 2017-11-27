@@ -38,11 +38,18 @@ function getSrc(card, callback) {
 function getHref(card, callback) {
     if(card.desc.includes("link:")) {
         let sub = card.desc.slice(card.desc.indexOf("link: ") + 6);
-        return callback(null, S(sub.slice(0, sub.indexOf(" "))).ensureLeft("https://").s);
+        let string = S(sub.slice(0, sub.indexOf(" ")));
+        var href;
+        if(string.contains("https://")) href = string.s;
+        else href = string.ensureLeft("http://").s;
+        return callback(null, href);
     }
     request("https://google.com/search?q="+card.name, function(error, response, body) {
         var doc = cheerio.load(body);
-        var href = S(striptags(doc("cite").first().text())).ensureLeft("https://").s;
+        let string = S(striptags(doc("cite").first().text()));
+        var href;
+        if(string.contains("https://")) href = string.s;
+        else href = string.ensureLeft("http://").s;
         callback(error, href);
     });
 }
@@ -50,7 +57,7 @@ function getObjectForName(card, key, array, callback) {
     var object = {};
     for(let item of source[key]) {
         if(item.name) {
-            item.name = item.name.replace(' ', "").toLowerCase();
+            item.name = item.name.split(' ').join('').toLowerCase();
             if(item.name.indexOf(card.name) != -1)
             {
                 array.push(item);
@@ -67,7 +74,7 @@ function getObjectForName(card, key, array, callback) {
 function parseList(error, response, body, call) {
     body = JSON.parse(body);
     async.each(body, function(card, callback) {
-        card.name = card.name.replace(" ","").toLowerCase();
+        card.name = card.name.split(' ').join('').toLowerCase();
         console.log(card.name);     
         if(card.labels.length > 0) {
             for(let label of card.labels) {

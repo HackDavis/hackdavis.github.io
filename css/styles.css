@@ -98,7 +98,7 @@ footer > .sponsor-heading:first-of-type {
     margin-top: 2em;
 }
 /*Desktop and Tablet Apply Button*/
-@media(min-width: 760px){
+@media(min-width: 762px){
     .white-button {
         border-color: rgba(255, 255, 255, 0.75);
         color: white;
@@ -124,7 +124,7 @@ footer > .sponsor-heading:first-of-type {
     }
     .landing-button {
         position: relative;
-        top: -55px;
+        top: -1.39em;
     }
     .white-button:focus {
         outline: 0;

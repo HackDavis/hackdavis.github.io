@@ -112,7 +112,7 @@ $("#clickFAQ").click(function(){
 var closeTimeout;
 /* Apply button */
 $("#lantern,#apply-button").click(function(){
-  if(window.innerWidth <= 750 && sBrowser == 'Mozilla Firefox') {
+  if(window.innerWidth <= 750) {
     window.location.href="./apply.html";
   }
   $('html').css('overflow', 'hidden');

@@ -29,7 +29,7 @@ body {
     transition: all 0.5s ease-in;
     transform: translateY(0px);
 }
-#close.hidden, #typeform.hidden {
+#close.hid, #typeform.hid {
     transform: translateY(120vh);    
 }
 #close > i {
@@ -64,7 +64,7 @@ section:nth-of-type(2) {
     margin-bottom: -10px;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-content: center;
+    align-content: space-between;
 }
 section:nth-of-type(2) > img {
     vertical-align: baseline;
@@ -248,7 +248,6 @@ object[data="img/soil.svg"] {
 img#cave1 {
     z-index: 6;
     margin-top: -10px;
-    width: calc(100% + 10px);
     height: 100%;
 }
 .caveBackground {

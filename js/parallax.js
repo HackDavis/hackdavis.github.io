@@ -115,16 +115,17 @@ $("#lantern,#apply-button").click(function(){
   if(window.innerWidth <= 750) {
     window.location.href="./apply.html";
   }
-  $('html').css('overflow', 'hidden');
-  $("#close").toggleClass("hidden");
-  $("#typeform").toggleClass("hidden");
+  //$('html').css('overflow', 'hidden');
+  $("#close").toggleClass("hid");
+  $("#typeform").toggleClass("hid");
+  $("#typeform").focus();
   //$("#close").velocity({top: '10px'});
   //$('#typeform').velocity({top: 0});
 });
 $("#close").click(function(){
   //$("#close").velocity({top: "100%"});
   //$("#typeform").velocity({top: "100%"});
-  $("#close").toggleClass("hidden");  
-  $("#typeform").toggleClass("hidden");  
+  $("#close").toggleClass("hid");  
+  $("#typeform").toggleClass("hid");
   $("html").removeAttr("style");
 })

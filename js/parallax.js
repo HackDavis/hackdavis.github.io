@@ -115,7 +115,7 @@ $("#lantern,#apply-button").click(function(){
   if(window.innerWidth <= 750) {
     window.location.href="./apply.html";
   }
-  //$('html').css('overflow', 'hidden');
+  $('html').css('overflow', 'hidden');
   $("#close").toggleClass("hid");
   $("#typeform").toggleClass("hid");
   $("#typeform").focus();

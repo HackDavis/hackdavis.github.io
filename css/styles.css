@@ -60,7 +60,6 @@ section:nth-of-type(2) {
     height: 160vh;
     max-height: 140vw;
     display: flex;
-    align-items: center;
     margin-bottom: -10px;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -258,6 +257,7 @@ img#cave1 {
 }
 .cave {
     width: calc(100% + 10px);
+    margin-left: -5px;
 }
 img#cave2 {
     z-index: 5;
@@ -270,9 +270,9 @@ img#cave4 {
 }
 img#schedule-image {
     z-index: 7;
+    left: 50%;
+    margin-left: -40%;
     margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
     height: auto;
     width: 80%;
 }
@@ -284,6 +284,7 @@ img#schedule-image {
     padding-left: 15px;
     padding-top: 30px;
     position: relative;
+    align-self: center;
     z-index: 7;
 }
 img#mobile-schedule-image {
@@ -338,6 +339,7 @@ iframe {
   color: white;
   z-index: 8;
   margin-top: -2.5vw;
+  text-align: center;
 }
 #FAQ {
   color: white;

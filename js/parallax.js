@@ -111,28 +111,20 @@ $("#clickFAQ").click(function(){
 });
 var closeTimeout;
 /* Apply button */
-$("#apply-button").click(function(){
-  if(window.innerWidth <= 750) {
+$("#lantern,#apply-button").click(function(){
+  if(window.innerWidth <= 750 && sBrowser == 'Mozilla Firefox') {
     window.location.href="./apply.html";
   }
-  if(closeTimeout)
-  {
-    clearInterval(closeTimeout);
-    closeTimeout = null;
-  }
-  $("#typeform,#close").show();
   $('html').css('overflow', 'hidden');
-  $("#close").transition({top: '10px'});
-  $('#typeform').transition({top: 0});
+  $("#close").toggleClass("hidden");
+  $("#typeform").toggleClass("hidden");
+  //$("#close").velocity({top: '10px'});
+  //$('#typeform').velocity({top: 0});
 });
 $("#close").click(function(){
-  $("#close").transition({top: "100%"});
-  $("#typeform").transition({top: "100%"});
+  //$("#close").velocity({top: "100%"});
+  //$("#typeform").velocity({top: "100%"});
+  $("#close").toggleClass("hidden");  
+  $("#typeform").toggleClass("hidden");  
   $("html").removeAttr("style");
-  if(closeTimeout) {
-    clearInterval(closeTimeout);
-  }
-  closeTimeout = setTimeout(function() {
-    $("#typeform,#close").hide();
-  }, 1000);
 })

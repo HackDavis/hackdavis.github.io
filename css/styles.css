@@ -24,13 +24,13 @@ body {
     position: fixed;
     right: 30px;
     z-index: 100;
-    top: 0;
+    top: 120vh;
     color: #F37154;
     transition: all 0.5s ease-in;
-    transform: translateY(0px);
+    transform: translateY(-120vh);
 }
 #close.hid, #typeform.hid {
-    transform: translateY(120vh);    
+    transform: translateY(0);    
 }
 #close > i {
     width: 1em;
@@ -331,7 +331,8 @@ iframe {
     width: 100%;
     height: 100%;
     left: 0px;
-    top: 0;
+    top: 120vh;
+    transform: translateY(-120vh);
     position: fixed;
     transition: all 0.5s ease-in;    
 }

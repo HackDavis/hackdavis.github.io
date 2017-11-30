@@ -1,11 +1,6 @@
 {
 	"previous_sponsors": [
 		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar"
-		},
-		{
 			"src": "/img/logos/svgporn-stickermule.png",
 			"href": "https://www.stickermule.com/uses/laptop-stickers"
 		},
@@ -19,8 +14,17 @@
 			"href": "http://get.tech"
 		},
 		{
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar"
+		},
+		{
 			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
 			"href": "https://balsamiq.com/"
+		},
+		{
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngnoback.png",
+			"href": "https://www.varian.com/?multilink=switch"
 		},
 		{
 			"src": "/img/logos/osisoftlogo_white.png",
@@ -28,7 +32,7 @@
 		},
 		{
 			"src": "/img/logos/logomono-intel-mono.png",
-			"href": "http://www.intel.com"
+			"href": "http://www.intel.com/Upgrade"
 		}
 	],
 	"partners": [
@@ -38,7 +42,7 @@
 		},
 		{
 			"src": "/img/logos/collegeofengineering_white.png",
-			"href": "http://engineering.ucdavis.edu"
+			"href": "http://engineering.ucdavis.edu/"
 		}
 	],
 	"nonprofits": []

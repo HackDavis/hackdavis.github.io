@@ -1,6 +1,11 @@
 {
 	"previous_sponsors": [
 		{
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar"
+		},
+		{
 			"src": "/img/logos/svgporn-stickermule.png",
 			"href": "https://www.stickermule.com/uses/laptop-stickers"
 		},
@@ -18,26 +23,22 @@
 			"href": "https://balsamiq.com/"
 		},
 		{
-			"src": "/img/logos/logomono-intel-mono.png",
-			"href": "http://www.intel.com"
-		},
-		{
-			"src": "/img/logos/clifbar.png",
-			"href": "http://www.clifbar.com/EnergyBar/Flavors"
-		},
-		{
 			"src": "/img/logos/osisoftlogo_white.png",
 			"href": "https://www.osisoft.com/"
+		},
+		{
+			"src": "/img/logos/logomono-intel-mono.png",
+			"href": "http://www.intel.com"
 		}
 	],
 	"partners": [
 		{
 			"src": "/img/logos/deptofcs.png",
-			"href": "http://www.cs.ucdavis.edu/"
+			"href": "https://www.cs.ucdavis.edu"
 		},
 		{
 			"src": "/img/logos/collegeofengineering_white.png",
-			"href": "http://engineering.ucdavis.edu/"
+			"href": "http://engineering.ucdavis.edu"
 		}
 	],
 	"nonprofits": []

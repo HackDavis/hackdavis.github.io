@@ -31,7 +31,8 @@
 		},
 		{
 			"href": "https://www.splunk.com/",
-			"src": "img/logos/splunk_white.png"
+			"src": "img/logos/splunk_white.png",
+			"name": "splunk"
 		},
 		{
 			"href": "https://www.servicenow.com/",
@@ -63,7 +64,8 @@
 		},
 		{
 			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clif-bar.png"
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar"
 		},
 		{
 			"href": "http://mandtvr.com/",

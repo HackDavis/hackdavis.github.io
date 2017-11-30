@@ -1,6 +1,11 @@
 {
 	"previous_sponsors": [
 		{
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar"
+		},
+		{
 			"src": "/img/logos/svgporn-stickermule.png",
 			"href": "https://www.stickermule.com/uses/laptop-stickers"
 		},
@@ -14,25 +19,20 @@
 			"href": "http://get.tech"
 		},
 		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar"
-		},
-		{
 			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
 			"href": "https://balsamiq.com/"
 		},
 		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngnoback.png",
+			"src": "/img/logos/logomono-intel-mono.png",
+			"href": "http://www.intel.com"
+		},
+		{
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
 			"href": "https://www.varian.com/?multilink=switch"
 		},
 		{
-			"src": "/img/logos/osisoftlogo_white.png",
+			"src": "/img/logos/OSIsoftLogo_White.png",
 			"href": "https://www.osisoft.com/"
-		},
-		{
-			"src": "/img/logos/logomono-intel-mono.png",
-			"href": "http://www.intel.com/Upgrade"
 		}
 	],
 	"partners": [

@@ -25,8 +25,8 @@ var files = fs.readdirSync(path.resolve(__dirname, "../img/logos"));
 function getSrc(card, callback) {
     card.name = card.name.replace('.', '');
     for(let file of files) {
-        file = file.replace(" ", "").toLowerCase();
-        if(file.indexOf(card.name) != -1)
+	let f = file.replace(" ", "").toLowerCase();
+        if(f.indexOf(card.name) != -1)
         {
             var ret = "/img/logos/" + file;
             callback(null, ret);

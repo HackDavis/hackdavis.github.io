@@ -68,7 +68,7 @@ for(let sponsor of table.previous_sponsors) {
 for(let sponsor of table.partners) {
     if(sponsor.src) {
         let tag = index.document.createElement("a");
-        tag.setAttribute("class", "col-lg-2 col-md-4 col-sm-4 col-xs-10");
+        tag.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 col-xs-10");
         tag.setAttribute("href", sponsor.href);
         let image = index.document.createElement("img");
         image.setAttribute("src", sponsor.src);

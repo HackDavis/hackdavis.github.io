@@ -363,7 +363,7 @@ iframe {
 #FAQ a {
   color: #1287A8;
 }
-#FAQ a:hover {
+#FAQ a:hover > img {
   opacity: 0.75;
 }
 .no-decorate, .no-decorate:hover {

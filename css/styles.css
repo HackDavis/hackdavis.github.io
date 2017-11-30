@@ -69,10 +69,7 @@ section:nth-of-type(2) > img {
     vertical-align: baseline;
 }
 footer {
-    padding-left: 50px !important;
-    padding-right: 50px !important;
     color: white;
-    z-index: 10;
 }
 footer img {
     margin-top: 20px;
@@ -94,12 +91,9 @@ address > h2 {
 }
 .sponsor-heading {
   color: #95a3a6;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 1em;
   text-align: center;
-}
-footer > .sponsor-heading:first-of-type {
-    margin-top: 2em;
 }
 /*Desktop and Tablet Apply Button*/
 @media(min-width: 762px){
@@ -110,7 +104,7 @@ footer > .sponsor-heading:first-of-type {
     #sponsor-button {
         width: 12em;
         margin-top: 50px;
-        margin-bottom: -20px;
+        margin-bottom: 20px;
     }
     .round-button {
         background: transparent;
@@ -369,6 +363,6 @@ iframe {
 .no-decorate, .no-decorate:hover {
     text-decoration: none;
 }
-address h2 {
+#FAQ address h2 {
   font-size: 28px;
 }

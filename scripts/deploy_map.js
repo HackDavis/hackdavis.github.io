@@ -8,7 +8,7 @@ var $ = require('jquery')(index);
 var table = JSON.parse(fs.readFileSync(path.resolve(__dirname, "generate_map.json"), {encoding: 'utf-8'}));
 
 var row = index.document.createElement("div");
-row.setAttribute("class", "row justify-content-center");
+row.setAttribute("class", "row justify-content-center px-5");
 var heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
 if(table.nonprofits.length > 0){
@@ -17,7 +17,7 @@ if(table.nonprofits.length > 0){
     $("footer").prepend(heading);
 }
 row = index.document.createElement("div");
-row.setAttribute("class", "row justify-content-center");
+row.setAttribute("class", "row justify-content-center px-5");
 heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
 if(table.partners.length > 0){
@@ -37,7 +37,7 @@ $(atag).prepend(button);
 $(buttonDiv).prepend(atag);
 $("footer").prepend(buttonDiv);
 row = index.document.createElement("div");
-row.setAttribute("class", "row justify-content-center align-items-center");
+row.setAttribute("class", "row justify-content-center align-items-center px-5");
 heading = index.document.createElement("h1");
 heading.setAttribute("class", "sponsor-heading");
 if(table.previous_sponsors.length > 0){

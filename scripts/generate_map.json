@@ -1,6 +1,10 @@
 {
 	"previous_sponsors": [
 		{
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers"
+		},
+		{
 			"href": "http://citrisfoundry.org/",
 			"src": "img/logos/citris-ucdavis.png",
 			"name": "citris"
@@ -10,18 +14,26 @@
 			"href": "http://get.tech"
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers"
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/"
+		},
+		{
+			"src": "/img/logos/logomono-intel-mono.png",
+			"href": "http://www.intel.com"
 		},
 		{
 			"src": "/img/logos/clifbar.png",
 			"href": "http://www.clifbar.com/EnergyBar/Flavors"
+		},
+		{
+			"src": "/img/logos/osisoftlogo_white.png",
+			"href": "https://www.osisoft.com/"
 		}
 	],
 	"partners": [
 		{
 			"src": "/img/logos/deptofcs.png",
-			"href": "https://twitter.com/hashtag/deptofcs"
+			"href": "http://www.cs.ucdavis.edu/"
 		},
 		{
 			"src": "/img/logos/collegeofengineering_white.png",

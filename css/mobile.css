@@ -14,8 +14,8 @@
         bottom: 10%;
     }
     img#schedule-image {
-        margin-left: -50%;
-        width: 100%;
+        margin-left: -45%;
+        width: 90%;
     }
 }
 @media (max-width: 1000px) {

@@ -20,6 +20,16 @@ var optionsMoney = {
 }
 
 var source = JSON.parse(fs.readFileSync(path.resolve(__dirname, "initial_map.json"), {encoding: 'utf-8'}));
+source.previous_sponsors = source.previous_sponsors.filter(function(val){
+    if(val.name) return true;
+});
+source.partners = source.partners.filter(function(val){
+    if(val.name) return true;
+});
+source.nonprofits = source.nonprofits.filter(function(val){
+    if(val.name) return true;
+});
+
 var table = {previous_sponsors: [], partners:[], nonprofits:[]};
 var files = fs.readdirSync(path.resolve(__dirname, "../img/logos"));
 function getSrc(card, callback) {
@@ -38,7 +48,7 @@ function getSrc(card, callback) {
 function getHref(card, callback) {
     if(card.desc.includes("link:")) {
         let sub = card.desc.slice(card.desc.indexOf("link: ") + 6);
-        let string = S(sub.slice(0, sub.indexOf(" ")));
+        let string = S(sub.slice(0, sub.indexOf("\n")));
         var href;
         if(string.contains("https://")) href = string.s;
         else href = string.ensureLeft("http://").s;
@@ -55,19 +65,26 @@ function getHref(card, callback) {
 }
 function getObjectForName(card, key, array, callback) {
     var object = {};
+    var amount = null;
     for(let item of source[key]) {
-        if(item.name) {
-            item.name = item.name.split(' ').join('').toLowerCase();
-            if(item.name.indexOf(card.name) != -1)
-            {
-                array.push(item);
-                return callback(null);
-            }
+        item.name = item.name.split(' ').join('').toLowerCase();
+        if(item.name.indexOf(card.name) != -1)
+        {
+            array.push(item);
+            return callback(null);
         }
     }
+    if(card.desc.includes("amount:")) {
+        let sub = card.desc.slice(card.desc.indexOf("amount: ") + 8);
+        let string = sub.indexOf("\n") != -1 ? sub.slice(0, sub.indexOf("\n")) : sub;
+        amount = Number(string);
+    }
     async.applyEach([getSrc, getHref], card, function(err, results){
-        if(results[0] && results[1])
-            array.push({src: results[0], href: results[1]});
+        if(results[0] && results[1]) {
+            let obj = {src: results[0], href: results[1]};
+            if(amount) obj.amount = amount;
+            array.push(obj);
+        }
         callback(err);
     });
 }
@@ -102,5 +119,10 @@ async.parallel([
     if(err)
         console.error(err);
     console.log("done");
+    table.previous_sponsors.sort(function(a, b){
+        a.amount = a.amount || -1;
+        b.amount = b.amount || -1;
+        return b.amount - a.amount;
+    })
     fs.writeFileSync(path.join(__dirname, "generate_map.json"), JSON.stringify(table, null, '\t'));
 });

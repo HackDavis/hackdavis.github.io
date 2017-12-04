@@ -95,8 +95,14 @@ address > h2 {
   margin-bottom: 1em;
   text-align: center;
 }
+.button-margin {
+    margin-top: 0;
+}
 /*Desktop and Tablet Apply Button*/
 @media(min-width: 762px){
+    .button-margin {
+        margin-top: -2em;
+    }
     .white-button {
         border-color: rgba(255, 255, 255, 0.75);
         color: white;
@@ -166,6 +172,7 @@ address > h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 .img-absolute {
     position: absolute;

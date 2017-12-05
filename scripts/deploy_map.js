@@ -46,7 +46,7 @@ if(table.previous_sponsors.length > 0){
     $("footer").prepend(heading);    
 }
 let count = 0;
-for(let sponsor of table.previous_sponsors) {
+for(let [i, sponsor] of table.previous_sponsors.entries()) {
     if(sponsor.src) {
         let tag = index.document.createElement("a");
 
@@ -55,7 +55,9 @@ for(let sponsor of table.previous_sponsors) {
             count++;
         }
         else*/
-            tag.setAttribute("class", "col-lg-3 col-md-4 col-sm-6 col-xs-10");
+        if(i < 2 && sponsor.amount >= 3000) tag.setAttribute("class", "col-sm-5 col-xs-10");
+        else if(sponsor.amount >= 1500) tag.setAttribute("class", "col-md-4 col-xs-10")
+        else tag.setAttribute("class", "col-md-2 col-xs-4");
 
         tag.setAttribute("href", sponsor.href);
         let image = index.document.createElement("img");

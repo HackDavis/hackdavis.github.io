@@ -6,13 +6,18 @@
 			"amount": 7000
 		},
 		{
+			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png",
+			"href": "http://cloud.google.com/",
+			"amount": 5000
+		},
+		{
 			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
 			"href": "https://www.centene.com/",
 			"amount": 4000
 		},
 		{
 			"src": "/img/logos/OSIsoftLogo_White.png",
-			"href": "https://www.osisoft.com/",
+			"href": "http://www.itvizion.com/osisoft-pi-af",
 			"amount": 2500
 		},
 		{
@@ -37,8 +42,8 @@
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"src": "/img/logos/tech.png",
+			"href": "http://get.tech",
 			"amount": -1
 		},
 		{
@@ -48,8 +53,8 @@
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/tech.png",
-			"href": "http://get.tech",
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
 			"amount": -1
 		}
 	],

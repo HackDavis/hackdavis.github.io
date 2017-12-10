@@ -17,17 +17,18 @@
 		},
 		{
 			"src": "/img/logos/OSIsoftLogo_White.png",
-			"href": "http://www.itvizion.com/osisoft-pi-af",
+			"href": "https://www.osisoft.com/",
 			"amount": 2500
+		},
+		{
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris",
+			"amount": 1500
 		},
 		{
 			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
 			"href": "https://balsamiq.com/",
-			"amount": 1500
-		},
-		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
 			"amount": 1500
 		},
 		{
@@ -36,10 +37,9 @@
 			"amount": 1500
 		},
 		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar",
-			"amount": -1
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
+			"amount": 1500
 		},
 		{
 			"src": "/img/logos/tech.png",
@@ -47,14 +47,14 @@
 			"amount": -1
 		},
 		{
-			"href": "http://citrisfoundry.org/",
-			"src": "img/logos/citris-ucdavis.png",
-			"name": "citris",
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
 			"amount": -1
 		}
 	],

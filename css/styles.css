@@ -365,6 +365,8 @@ iframe {
 }
 #FAQ a {
   color: #1287A8;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 #FAQ a:hover > img {
   opacity: 0.75;

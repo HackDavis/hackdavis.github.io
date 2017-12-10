@@ -66,18 +66,19 @@ function getHref(card, callback) {
 function getObjectForName(card, key, array, callback) {
     var object = {};
     var amount = null;
-    for(let item of source[key]) {
-        item.name = item.name.split(' ').join('').toLowerCase();
-        if(item.name.indexOf(card.name) != -1)
-        {
-            array.push(item);
-            return callback(null);
-        }
-    }
     if(card.desc.includes("amount:")) {
         let sub = card.desc.slice(card.desc.indexOf("amount: ") + 8);
         let string = sub.indexOf("\n") != -1 ? sub.slice(0, sub.indexOf("\n")) : sub;
         amount = Number(string);
+    }
+    for(let item of source[key]) {
+        item.name = item.name.split(' ').join('').toLowerCase();
+        if(item.name.indexOf(card.name) != -1)
+        {
+            item.amount = amount;
+            array.push(item);
+            return callback(null);
+        }
     }
     async.applyEach([getSrc, getHref], card, function(err, results){
         if(results[0] && results[1]) {

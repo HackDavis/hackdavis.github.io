@@ -130,6 +130,12 @@
         padding-right: 10px;
         font-size: 1.52em;
         font-family: 'FuturaStd-Heavy';
+        border-radius: 0px;
+        position: static;
+        top:0;
+        margin-top: 0;
+        min-width: 0;
+        min-height: 0;
     }
     #sponsor-button {
       display: none;

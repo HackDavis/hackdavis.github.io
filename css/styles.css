@@ -101,49 +101,47 @@ address > h2 {
     margin-top: 0;
 }
 /*Desktop and Tablet Apply Button*/
-@media(min-width: 762px){
-    .button-margin {
-        margin-top: -2em;
-    }
-    .white-button {
-        border-color: rgba(255, 255, 255, 0.75);
-        color: white;
-    }
-    #sponsor-button {
-        width: 12em;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-    .round-button {
-        background: transparent;
-        border: .2rem solid;
-        border-radius: 30px;
-        transition: all 0.5s;
-        transition-timing-function: ease-in-out;
-        width: 10em;
-        height: 60px;
-        display: block;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        padding-left: 3em;
-        padding-right: 3em;
-    }
-    .landing-button {
-        position: relative;
-        top: -2em;
-    }
-    .white-button:focus {
-        outline: 0;
-    }
-    .round-button:hover {
-        cursor: pointer;
-        text-decoration: none;
-    }
-    .white-button:hover {
-        background-color: white;
-        border-color: white;
-        color: #52749d;
-    }
+.button-margin {
+    margin-top: -2em;
+}
+.white-button {
+    border-color: rgba(255, 255, 255, 0.75);
+    color: white;
+}
+#sponsor-button {
+    width: 12em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.round-button {
+    background: transparent;
+    border: .2rem solid;
+    border-radius: 30px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+    min-width: 10em;
+    min-height: 60px;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.landing-button {
+    position: relative;
+    top: -2em;
+}
+.white-button:focus {
+    outline: 0;
+}
+.round-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.white-button:hover {
+    background-color: white;
+    border-color: white;
+    color: #52749d;
 }
 #about-text {
   position: absolute;

@@ -99,6 +99,9 @@
 
 /* Mobile site */
 @media (max-width: 762px) {
+    .button-margin {
+        margin-top: 0;
+    }
     #schedule {
         margin-top: -128vw;
     }

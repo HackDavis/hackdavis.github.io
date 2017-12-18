@@ -14,6 +14,7 @@
   position: absolute;
   float: right;
   bottom: 30px;
+  min-width: 240px;
   right: 50px; }
 
 .social-button {

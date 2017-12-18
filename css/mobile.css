@@ -99,6 +99,9 @@
 
 /* Mobile site */
 @media (max-width: 762px) {
+    .ml-xs-auto {
+        margin-left: auto !important;
+    }
     .button-margin {
         margin-top: 0;
     }

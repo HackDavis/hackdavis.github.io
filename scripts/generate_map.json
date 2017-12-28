@@ -26,19 +26,23 @@
 			"amount": 2500
 		},
 		{
+			"src": "/img/logos/JoyRun Logo White.png",
+			"href": "http://joyrun.com/",
+			"amount": 2500
+		},
+		{
 			"src": "/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png",
 			"href": "http://www.att.com/",
 			"amount": 2000
 		},
 		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
 			"amount": 1500
 		},
 		{
-			"href": "http://citrisfoundry.org/",
-			"src": "img/logos/citris-ucdavis.png",
-			"name": "citris",
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
 			"amount": 1500
 		},
 		{
@@ -47,8 +51,9 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
-			"href": "https://balsamiq.com/",
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris",
 			"amount": 1500
 		},
 		{

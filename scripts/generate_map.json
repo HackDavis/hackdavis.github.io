@@ -26,8 +26,13 @@
 			"amount": 2500
 		},
 		{
-			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
-			"href": "https://balsamiq.com/",
+			"src": "/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png",
+			"href": "http://www.att.com/",
+			"amount": 2000
+		},
+		{
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
 			"amount": 1500
 		},
 		{
@@ -37,24 +42,24 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
-			"amount": 1500
-		},
-		{
 			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
 			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers",
-			"amount": -1
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
+			"amount": 1500
 		},
 		{
 			"href": "http://www.clifbar.com/",
 			"src": "img/logos/clifbar.png",
 			"name": "clifbar",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
 			"amount": -1
 		},
 		{

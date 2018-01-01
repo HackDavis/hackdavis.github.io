@@ -11,14 +11,19 @@
 			"amount": 5000
 		},
 		{
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
+			"amount": 4000
+		},
+		{
 			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
 			"href": "https://home.kpmg.com/us/en/home.html",
 			"amount": 4000
 		},
 		{
-			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
-			"href": "https://www.centene.com/",
-			"amount": 4000
+			"src": "/img/logos/JoyRun Logo White.png",
+			"href": "http://joyrun.com/",
+			"amount": 3500
 		},
 		{
 			"src": "/img/logos/OSIsoftLogo_White.png",
@@ -26,9 +31,13 @@
 			"amount": 2500
 		},
 		{
-			"href": "http://citrisfoundry.org/",
-			"src": "img/logos/citris-ucdavis.png",
-			"name": "citris",
+			"src": "/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png",
+			"href": "http://www.att.com/",
+			"amount": 2000
+		},
+		{
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
 			"amount": 1500
 		},
 		{
@@ -37,8 +46,9 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
-			"href": "https://balsamiq.com/",
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris",
 			"amount": 1500
 		},
 		{
@@ -73,6 +83,15 @@
 			"src": "/img/logos/collegeofengineering_white.png",
 			"href": "http://engineering.ucdavis.edu",
 			"amount": 2000
+		},
+		{
+			"src": "/img/logos/GlobalAffairs_wm_all_white.png",
+			"href": "https://globalaffairs.ucdavis.edu/",
+			"amount": 2500
+		},
+		{
+			"src": "/img/logos/ucdavisgsm.png",
+			"href": "http://gsm.ucdavis.edu/"
 		}
 	],
 	"nonprofits": []

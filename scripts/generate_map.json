@@ -11,13 +11,13 @@
 			"amount": 5000
 		},
 		{
-			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
-			"href": "https://www.centene.com/",
+			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
+			"href": "https://home.kpmg.com/us/en/home.html",
 			"amount": 4000
 		},
 		{
-			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
-			"href": "https://home.kpmg.com/us/en/home.html",
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
 			"amount": 4000
 		},
 		{
@@ -41,6 +41,11 @@
 			"amount": 1500
 		},
 		{
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
+			"amount": 1500
+		},
+		{
 			"src": "/img/logos/scoop_logo_white_rgb.png",
 			"href": "https://www.takescoop.com/",
 			"amount": 1500
@@ -52,19 +57,14 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
-			"href": "https://www.varian.com/?multilink=switch",
-			"amount": 1500
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
+			"amount": -1
 		},
 		{
 			"src": "/img/logos/svgporn-stickermule.png",
 			"href": "https://www.stickermule.com/uses/laptop-stickers",
-			"amount": -1
-		},
-		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar",
 			"amount": -1
 		},
 		{

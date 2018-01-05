@@ -57,6 +57,11 @@
 			"amount": 1500
 		},
 		{
+			"src": "/img/logos/linode-logo_standard_dark_medium.png",
+			"href": "https://linode.com",
+			"amount": 1000
+		},
+		{
 			"href": "http://www.clifbar.com/",
 			"src": "img/logos/clifbar.png",
 			"name": "clifbar",

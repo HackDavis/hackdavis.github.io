@@ -57,7 +57,7 @@ for(let [i, sponsor] of table.previous_sponsors.entries()) {
         else*/
         if(i < 2) tag.setAttribute("class", "col-lg-10 col-xs-10");
         else if(sponsor.amount >= 4000) tag.setAttribute("class", "col-sm-6 col-xs-10");
-        else if(sponsor.amount >= 1500) tag.setAttribute("class", "col-md-4 col-xs-10")
+        else if(sponsor.amount >= 1000) tag.setAttribute("class", "col-md-4 col-xs-10")
         else tag.setAttribute("class", "col-md-2 col-xs-4");
 
         tag.setAttribute("href", sponsor.href);

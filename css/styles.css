@@ -30,7 +30,7 @@ body {
     transform: translateY(-120vh);
 }
 #close.hid, #typeform.hid {
-    transform: translateY(0);    
+    transform: translateY(0);
 }
 #close > i {
     width: 1em;
@@ -164,7 +164,7 @@ address > h2 {
     font-family: 'FuturaStd-Heavy';
 }
 #about-text p {
-  font-size: 1em;
+  font-size: 0.9em;
   padding-right: 4em;
   padding-left: 2em;
 }
@@ -335,7 +335,7 @@ iframe {
     top: 120vh;
     transform: translateY(-120vh);
     position: fixed;
-    transition: all 0.5s ease-in;    
+    transition: all 0.5s ease-in;
 }
 #schedule {
   color: white;

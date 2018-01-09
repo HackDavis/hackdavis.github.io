@@ -11,13 +11,13 @@
 			"amount": 5000
 		},
 		{
-			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
-			"href": "https://home.kpmg.com/us/en/home.html",
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
 			"amount": 4000
 		},
 		{
-			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
-			"href": "https://www.centene.com/",
+			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
+			"href": "https://home.kpmg.com/us/en/home.html",
 			"amount": 4000
 		},
 		{
@@ -36,13 +36,13 @@
 			"amount": 2000
 		},
 		{
-			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
-			"href": "https://balsamiq.com/",
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
-			"href": "https://www.varian.com/?multilink=switch",
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
 			"amount": 1500
 		},
 		{
@@ -62,14 +62,14 @@
 			"amount": 1000
 		},
 		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar",
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
 			"amount": -1
 		},
 		{
@@ -93,6 +93,10 @@
 			"src": "/img/logos/GlobalAffairs_wm_all_white.png",
 			"href": "https://globalaffairs.ucdavis.edu/",
 			"amount": 2500
+		},
+		{
+			"src": "/img/logos/CollegeOfLettersAndScience_long_BlueGold (2).png",
+			"href": "https://ls.ucdavis.edu"
 		},
 		{
 			"src": "/img/logos/ucdavisgsm.png",

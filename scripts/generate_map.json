@@ -11,6 +11,11 @@
 			"amount": 5000
 		},
 		{
+			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
+			"href": "http://www.keysight.com/",
+			"amount": 5000
+		},
+		{
 			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
 			"href": "https://home.kpmg.com/us/en/home.html",
 			"amount": 4000
@@ -36,14 +41,8 @@
 			"amount": 2000
 		},
 		{
-			"href": "http://citrisfoundry.org/",
-			"src": "img/logos/citris-ucdavis.png",
-			"name": "citris",
-			"amount": 1500
-		},
-		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
-			"href": "https://www.varian.com/?multilink=switch",
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
 			"amount": 1500
 		},
 		{
@@ -52,8 +51,14 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
-			"href": "https://balsamiq.com/",
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris",
+			"amount": 1500
+		},
+		{
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
 		},
 		{

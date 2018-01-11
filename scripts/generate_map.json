@@ -46,13 +46,13 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
-			"href": "https://www.varian.com/?multilink=switch",
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
 			"amount": 1500
 		},
 		{
@@ -109,18 +109,22 @@
 			"href": "https://ls.ucdavis.edu"
 		},
 		{
-			"src": "/img/logos/ucdavisgsm.png",
-			"href": "http://gsm.ucdavis.edu/"
-		},
-		{
 			"src": "/img/logos/thredup.png",
 			"href": "http://www.thredup.com/"
+		},
+		{
+			"src": "/img/logos/ucdavisgsm.png",
+			"href": "http://gsm.ucdavis.edu/"
 		}
 	],
 	"nonprofits": [
 		{
 			"src": "/img/logos/habitatforhumanity.png",
 			"href": "http://habitatgreatersac.org/"
+		},
+		{
+			"src": "/img/logos/Beyond12_logo_PMS.png",
+			"href": "https://beyond12.org/"
 		},
 		{
 			"src": "/img/logos/gamersgift.png",

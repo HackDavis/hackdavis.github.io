@@ -88,7 +88,7 @@ for(let sponsor of table.nonprofits) {
         let image = index.document.createElement("img");
         image.setAttribute("src", sponsor.src);
         tag.appendChild(image);
-        $("footer > div.row:nth-child(6)").append(tag);
+        $("footer > div.row:nth-child(7)").append(tag);
     }
 }
 

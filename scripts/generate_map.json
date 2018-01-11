@@ -6,13 +6,13 @@
 			"amount": 7000
 		},
 		{
-			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png",
-			"href": "http://cloud.google.com/",
+			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
+			"href": "http://www.keysight.com/",
 			"amount": 5000
 		},
 		{
-			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
-			"href": "http://www.keysight.com/",
+			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png",
+			"href": "http://cloud.google.com/",
 			"amount": 5000
 		},
 		{
@@ -46,13 +46,13 @@
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
-			"href": "https://www.varian.com/?multilink=switch",
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
 			"amount": 1500
 		},
 		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
 		},
 		{
@@ -109,12 +109,12 @@
 			"href": "https://ls.ucdavis.edu"
 		},
 		{
-			"src": "/img/logos/thredup.png",
-			"href": "http://www.thredup.com/"
-		},
-		{
 			"src": "/img/logos/ucdavisgsm.png",
 			"href": "http://gsm.ucdavis.edu/"
+		},
+		{
+			"src": "/img/logos/thredup.png",
+			"href": "http://www.thredup.com/"
 		}
 	],
 	"nonprofits": [
@@ -124,7 +124,7 @@
 		},
 		{
 			"src": "/img/logos/gamersgift.png",
-			"href": "http://www.gamersgift.org/"
+			"href": "http://gamersgift.org/"
 		}
 	]
 }

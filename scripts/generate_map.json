@@ -6,23 +6,23 @@
 			"amount": 7000
 		},
 		{
-			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
-			"href": "http://www.keysight.com/",
-			"amount": 5000
-		},
-		{
 			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png",
 			"href": "http://cloud.google.com/",
 			"amount": 5000
 		},
 		{
-			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
-			"href": "https://www.centene.com/",
-			"amount": 4000
+			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
+			"href": "http://www.keysight.com/",
+			"amount": 5000
 		},
 		{
 			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
 			"href": "https://home.kpmg.com/us/en/home.html",
+			"amount": 4000
+		},
+		{
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
 			"amount": 4000
 		},
 		{
@@ -37,17 +37,18 @@
 		},
 		{
 			"src": "/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png",
-			"href": "http://www.att.com/",
+			"href": "http://www.att.com",
 			"amount": 2000
-		},
-		{
-			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
-			"href": "https://balsamiq.com/",
-			"amount": 1500
 		},
 		{
 			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
 			"href": "https://www.varian.com/?multilink=switch",
+			"amount": 1500
+		},
+		{
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris",
 			"amount": 1500
 		},
 		{
@@ -56,9 +57,8 @@
 			"amount": 1500
 		},
 		{
-			"href": "http://citrisfoundry.org/",
-			"src": "img/logos/citris-ucdavis.png",
-			"name": "citris",
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
 			"amount": 1500
 		},
 		{
@@ -72,14 +72,14 @@
 			"amount": -1
 		},
 		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar",
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
 			"amount": -1
 		},
 		{
@@ -128,7 +128,7 @@
 		},
 		{
 			"src": "/img/logos/gamersgift.png",
-			"href": "http://gamersgift.org/"
+			"href": "http://www.gamersgift.org/"
 		}
 	]
 }

@@ -16,13 +16,13 @@
 			"amount": 5000
 		},
 		{
-			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
-			"href": "https://www.centene.com/",
+			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
+			"href": "https://home.kpmg.com/us/en/home.html",
 			"amount": 4000
 		},
 		{
-			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
-			"href": "https://home.kpmg.com/us/en/home.html",
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
 			"amount": 4000
 		},
 		{
@@ -67,7 +67,7 @@
 			"amount": 1000
 		},
 		{
-			"src": "/img/logos/Empirically - Main Logo #1.png",
+			"src": "/img/logos/Empirically-Main-Logo.png",
 			"href": "http://empirically.co",
 			"amount": -1
 		},
@@ -128,12 +128,12 @@
 			"href": "http://habitatgreatersac.org/"
 		},
 		{
-			"src": "/img/logos/Beyond12_logo_PMS.png",
-			"href": "https://beyond12.org/"
-		},
-		{
 			"src": "/img/logos/saveourselves.png",
 			"href": "http://save-ourselves.org/"
+		},
+		{
+			"src": "/img/logos/Beyond12_logo_PMS.png",
+			"href": "https://beyond12.org/"
 		}
 	]
 }

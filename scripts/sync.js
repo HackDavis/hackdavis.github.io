@@ -96,7 +96,7 @@ function parseList(error, response, body, call) {
         console.log(card.name);     
         if(card.labels.length > 0) {
             for(let label of card.labels) {
-                if(label.name == "Nonprofit") {
+                if(label.name == "Non-Profit") {
                     getObjectForName(card, "nonprofits", table.nonprofits, callback);
                 }
                 else if(label.name == "Partner") {

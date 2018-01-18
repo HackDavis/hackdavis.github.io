@@ -94,6 +94,9 @@ $(window).resize(function(event) {
 
 /* Navbar links */
 let duration = 1500;
+$("#clickLive").click(function(){
+  $(this).children()[0].click();
+})
 $("#click2017").click(function(){
   $(this).children()[0].click();
 })
@@ -125,7 +128,7 @@ $("#lantern,#apply-button").click(function(){
 $("#close").click(function(){
   //$("#close").velocity({top: "100%"});
   //$("#typeform").velocity({top: "100%"});
-  $("#close").toggleClass("hid");  
+  $("#close").toggleClass("hid");
   $("#typeform").toggleClass("hid");
   $("html").removeAttr("style");
 })

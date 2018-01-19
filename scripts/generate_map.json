@@ -46,6 +46,11 @@
 			"amount": 1500
 		},
 		{
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
+			"amount": 1500
+		},
+		{
 			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
 			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
@@ -54,11 +59,6 @@
 			"href": "http://citrisfoundry.org/",
 			"src": "img/logos/citris-ucdavis.png",
 			"name": "citris",
-			"amount": 1500
-		},
-		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
 			"amount": 1500
 		},
 		{
@@ -72,14 +72,13 @@
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/svgporn-stickermule.png",
-			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"src": "/img/logos/genability.png",
+			"href": "http://genability.com/",
 			"amount": -1
 		},
 		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar",
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
 			"amount": -1
 		},
 		{
@@ -88,8 +87,9 @@
 			"amount": -1
 		},
 		{
-			"src": "/img/logos/genability.png",
-			"href": "http://genability.com/",
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
 			"amount": -1
 		},
 		{
@@ -123,12 +123,12 @@
 			"href": "https://iet.ucdavis.edu"
 		},
 		{
-			"src": "/img/logos/thredup.png",
-			"href": "http://www.thredup.com/"
-		},
-		{
 			"src": "/img/logos/ucdavisgsm.png",
 			"href": "http://gsm.ucdavis.edu/"
+		},
+		{
+			"src": "/img/logos/thredup.png",
+			"href": "http://www.thredup.com/"
 		}
 	],
 	"nonprofits": [
@@ -137,12 +137,12 @@
 			"href": "http://habitatgreatersac.org/"
 		},
 		{
-			"src": "/img/logos/saveourselves.png",
-			"href": "http://save-ourselves.org/"
-		},
-		{
 			"src": "/img/logos/Beyond12_logo_PMS.png",
 			"href": "https://beyond12.org/"
+		},
+		{
+			"src": "/img/logos/saveourselves.png",
+			"href": "http://save-ourselves.org/"
 		}
 	]
 }

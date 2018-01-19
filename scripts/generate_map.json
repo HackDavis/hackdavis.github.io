@@ -6,23 +6,23 @@
 			"amount": 7000
 		},
 		{
-			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
-			"href": "http://www.keysight.com/",
-			"amount": 5000
-		},
-		{
 			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png",
 			"href": "http://cloud.google.com/",
 			"amount": 5000
 		},
 		{
-			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
-			"href": "https://www.centene.com/",
-			"amount": 4000
+			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
+			"href": "http://www.keysight.com/",
+			"amount": 5000
 		},
 		{
 			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
 			"href": "https://home.kpmg.com/us/en/home.html",
+			"amount": 4000
+		},
+		{
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
 			"amount": 4000
 		},
 		{
@@ -41,18 +41,13 @@
 			"amount": 2000
 		},
 		{
-			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
-			"href": "https://www.varian.com/?multilink=switch",
-			"amount": 1500
-		},
-		{
-			"src": "/img/logos/scoop_logo_white_rgb.png",
-			"href": "https://www.takescoop.com/",
-			"amount": 1500
-		},
-		{
 			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
 			"href": "https://balsamiq.com/",
+			"amount": 1500
+		},
+		{
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
 			"amount": 1500
 		},
 		{
@@ -62,20 +57,14 @@
 			"amount": 1500
 		},
 		{
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
+			"amount": 1500
+		},
+		{
 			"src": "/img/logos/linode-logo_standard_dark_medium.png",
 			"href": "https://linode.com",
 			"amount": 1000
-		},
-		{
-			"src": "/img/logos/Empirically-Main-Logo.png",
-			"href": "http://empirically.co",
-			"amount": -1
-		},
-		{
-			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar",
-			"amount": -1
 		},
 		{
 			"src": "/img/logos/StickerYou_Web_Logo_Flat_DarkBackground.png",
@@ -85,6 +74,22 @@
 		{
 			"src": "/img/logos/svgporn-stickermule.png",
 			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"amount": -1
+		},
+		{
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/Empirically-Main-Logo.png",
+			"href": "http://empirically.co",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/genability.png",
+			"href": "http://genability.com/",
 			"amount": -1
 		},
 		{
@@ -118,12 +123,12 @@
 			"href": "https://iet.ucdavis.edu"
 		},
 		{
-			"src": "/img/logos/ucdavisgsm.png",
-			"href": "http://gsm.ucdavis.edu/"
-		},
-		{
 			"src": "/img/logos/thredup.png",
 			"href": "http://www.thredup.com/"
+		},
+		{
+			"src": "/img/logos/ucdavisgsm.png",
+			"href": "http://gsm.ucdavis.edu/"
 		}
 	],
 	"nonprofits": [
@@ -132,12 +137,12 @@
 			"href": "http://habitatgreatersac.org/"
 		},
 		{
-			"src": "/img/logos/Beyond12_logo_PMS.png",
-			"href": "https://beyond12.org/"
-		},
-		{
 			"src": "/img/logos/saveourselves.png",
 			"href": "http://save-ourselves.org/"
+		},
+		{
+			"src": "/img/logos/Beyond12_logo_PMS.png",
+			"href": "https://beyond12.org/"
 		}
 	]
 }

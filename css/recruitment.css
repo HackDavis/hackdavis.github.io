@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Futura Std';
+    font-weight: normal;
+    src: url('../fonts/futura/FuturaStd-Book.otf');
+}
+@font-face {
+    font-family: 'FuturaStd-Heavy';
+    font-weight: bold;
+    src: url('../fonts/futura/FuturaStd-Heavy.otf');
+}
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Futura Std';
+}
+#logo-container {
+  max-width: 400px;
+}
+#logo-container > img {
+  max-width: 100%;
+}
+.social-buttons {
+  bottom: initial;
+}
+#nav {
+  position: sticky;
+  border-bottom: 1px solid #a2a2a2;
+}
+#nav-title {
+  color: white;
+}
+.nav-item:hover {
+  background-color: white;
+  color: black;
+}
+#main {
+  padding-top: 1em;
+}

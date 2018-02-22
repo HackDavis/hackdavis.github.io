@@ -23,6 +23,41 @@ $size: 50px;
 	}
 }
 
+.round-button {
+    background: transparent;
+    border: .2rem solid;
+    border-radius: 30px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+    min-width: 10em;
+    min-height: 60px;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.landing-button {
+    position: relative;
+    top: -2em;
+}
+.white-button {
+    border-color: rgba(255, 255, 255, 0.75);
+    color: white;
+}
+.white-button:focus {
+    outline: 0;
+}
+.round-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.white-button:hover {
+    background-color: white;
+    border-color: white;
+    color: #52749d;
+}
+
 .social-buttons {
 	height: $size;
 	margin: auto;

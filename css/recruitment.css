@@ -14,10 +14,12 @@ body{
   font-family: 'Futura Std';
 }
 #logo-container {
-  max-width: 400px;
+  width: 50%;
+  text-align: center;
 }
 #logo-container > img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
 }
 .social-buttons {
   bottom: initial;
@@ -25,6 +27,7 @@ body{
 #nav {
   position: sticky;
   border-bottom: 1px solid #a2a2a2;
+  background-color: black;
 }
 #nav-title {
   color: white;
@@ -35,4 +38,57 @@ body{
 }
 #main {
   padding-top: 1em;
+}
+section.roles {
+  background-color: white;
+  color: black;
+  clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% calc(100% - 3vw),
+    0 100%
+  );
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+section.roles ul {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+section.roles ul > li {
+  padding-left: 0.5em;
+  padding-bottom: 0.5em;
+}
+section.roles > .container > h1:first-child {
+  border-bottom: 3px solid black;
+  width: 4em;
+  margin-bottom: 1em;
+  padding-bottom: 0.12em;
+}
+section:first-of-type {
+  /*height: 100vh;*/
+  background-image: url('/img/team2.jpeg');
+  background-size: cover;
+  background-position: 50% 10%;
+  opacity: 0.9;
+}
+section:first-of-type .container > h1 {
+  margin-bottom: 0.25em;
+}
+.social-buttons {
+  position: static;
+  margin: initial;
+  margin-top: 1em;
+}
+
+@media (max-width: 576px){
+  #nav {
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  section.roles {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
 }

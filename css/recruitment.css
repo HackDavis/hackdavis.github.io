@@ -91,7 +91,7 @@ section:first-of-type .container > :last-child {
     padding-top: 5rem;
   }
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (max-width: 576px){
@@ -100,6 +100,9 @@ section:first-of-type .container > :last-child {
   }
   html {
     font-size: 12px;
+  }
+  html {
+    font-size: 14px;
   }
 }
 .no-decorate, .no-decorate:hover {

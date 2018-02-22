@@ -19,6 +19,9 @@
   padding-bottom: 0.5em;
   padding-left: 3em;
   padding-right: 3em; }
+  .round-button:hover {
+    cursor: pointer;
+    text-decoration: none; }
 
 .landing-button {
   position: relative;
@@ -27,18 +30,21 @@
 .white-button {
   border-color: rgba(255, 255, 255, 0.75);
   color: white; }
-
-.white-button:focus {
-  outline: 0; }
-
-.round-button:hover {
-  cursor: pointer;
-  text-decoration: none; }
-
-.white-button:hover {
-  background-color: white;
-  border-color: white;
-  color: #52749d; }
+  .white-button:focus {
+    outline: 0; }
+  .white-button:hover {
+    background-color: white;
+    border-color: white;
+    color: #52749d; }
+  .white-button.invert {
+    background-color: white;
+    color: #52749d;
+    outline: 0; }
+    .white-button.invert:hover {
+      background-color: transparent;
+      color: white; }
+    .white-button.invert:focus {
+      outline: 1; }
 
 .social-buttons {
   height: 50px;

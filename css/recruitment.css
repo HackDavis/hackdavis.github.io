@@ -89,13 +89,16 @@ section:first-of-type .container > :last-child {
     display: none;
   }
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 @media (max-width: 768px){
   section.roles {
     padding-bottom: 5rem;
     padding-top: 5rem;
+  }
+  html {
+    font-size: 14px;
   }
 }
 .no-decorate, .no-decorate:hover {

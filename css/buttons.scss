@@ -1,6 +1,6 @@
 //animations
 $transition: all 0.35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
-
+$blueText: #52749d;
 //social media colors
 $colors: (
 	"facebook": "#3B5998",
@@ -36,6 +36,10 @@ $size: 50px;
     padding-bottom: 0.5em;
     padding-left: 3em;
 	padding-right: 3em;
+	&:hover {
+		cursor: pointer;
+		text-decoration: none;
+	}
 }
 .landing-button {
     position: relative;
@@ -43,20 +47,31 @@ $size: 50px;
 }
 .white-button {
     border-color: rgba(255, 255, 255, 0.75);
-    color: white;
+	color: white;
+	&:focus {
+		outline: 0;
+	}
+	&:hover {
+		background-color: white;
+		border-color: white;
+		color: $blueText;
+	}
+	&.invert {
+		background-color: white;
+		color: $blueText;
+		outline: 0;
+		&:hover {
+			background-color: transparent;
+			color: white;
+		}
+		&:focus {
+			outline: 1;
+		}
+		
+	}	
 }
-.white-button:focus {
-    outline: 0;
-}
-.round-button:hover {
-    cursor: pointer;
-    text-decoration: none;
-}
-.white-button:hover {
-    background-color: white;
-    border-color: white;
-    color: #52749d;
-}
+
+
 
 .social-buttons {
 	height: $size;

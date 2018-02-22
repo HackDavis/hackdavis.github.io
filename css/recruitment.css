@@ -12,6 +12,7 @@ body{
   background-color: black;
   color: white;
   font-family: 'Futura Std';
+  overflow-x: hidden;
 }
 #logo-container {
   width: 50%;
@@ -86,6 +87,9 @@ section:first-of-type .container > :last-child {
 @media (max-width: 576px){
   #nav {
     display: none;
+  }
+  html {
+    font-size: 14px;
   }
 }
 @media (max-width: 768px){

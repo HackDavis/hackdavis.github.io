@@ -71,9 +71,11 @@ section:first-of-type {
   background-size: cover;
   background-position: 50% 10%;
   opacity: 0.9;
+  margin-bottom: -3vw;
 }
 section:first-of-type .container > h1 {
-  margin-bottom: 0.25em;
+  margin-bottom: 3vw;
+  padding-bottom: 0.25em;
 }
 .social-buttons {
   position: static;

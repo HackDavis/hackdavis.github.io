@@ -16,6 +16,7 @@ body{
 #logo-container {
   width: 50%;
   text-align: center;
+  opacity: 0.9;
 }
 #logo-container > img {
   width: 100%;
@@ -70,10 +71,9 @@ section:first-of-type {
   background-image: url('/img/team2.jpeg');
   background-size: cover;
   background-position: 50% 10%;
-  opacity: 0.9;
   margin-bottom: -3vw;
 }
-section:first-of-type .container > h1 {
+section:first-of-type .container > :last-child {
   margin-bottom: 3vw;
   padding-bottom: 0.25em;
 }
@@ -93,4 +93,7 @@ section:first-of-type .container > h1 {
     padding-bottom: 5rem;
     padding-top: 5rem;
   }
+}
+.no-decorate, .no-decorate:hover {
+  text-decoration: none;
 }

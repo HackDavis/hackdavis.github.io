@@ -38,7 +38,7 @@ body{
   background-color: white;
   color: black;
 }
-#main {
+#main .logo-container{
   padding-top: 1em;
 }
 .slant-right {

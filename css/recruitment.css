@@ -41,17 +41,34 @@ body{
 #main {
   padding-top: 1em;
 }
-section.roles {
-  background-color: white;
-  color: black;
+.slant-right {
   clip-path: polygon(
     0 0,
     100% 3vw,
     100% calc(100% - 3vw),
     0 100%
   );
-  padding-top: 8rem;
+}
+.slant-left {
+  clip-path: polygon(
+    0 3vw,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+}
+.slant-left, .slant-right {
+  padding-top: calc(8rem + 3vw);
   padding-bottom: 8rem;
+}
+section:nth-child(even) {
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+section:nth-child(odd) {
+  background-color: white;
+  color: black;
 }
 section.roles ul {
   margin-top: 1em;
@@ -61,10 +78,12 @@ section.roles ul > li {
   padding-left: 0.5em;
   padding-bottom: 0.5em;
 }
-section.roles > .container > h1:first-child {
-  border-bottom: 3px solid black;
-  width: 4em;
+section h1:first-child {
   margin-bottom: 1em;
+}
+section.roles > .container > h1:first-child {
+  border-bottom: 3px solid;
+  width: 4em;
   padding-bottom: 0.12em;
 }
 section:first-of-type {
@@ -73,6 +92,8 @@ section:first-of-type {
   background-size: cover;
   background-position: 50% 10%;
   margin-bottom: -3vw;
+  padding-bottom: 3vw;
+  color: white;
 }
 section:first-of-type .container > :last-child {
   margin-bottom: 3vw;
@@ -86,9 +107,9 @@ section:first-of-type .container > :last-child {
 
 
 @media (max-width: 768px){
-  section.roles {
+  .slant-left, .slant-right {
+    padding-top: calc(5rem + 3vw);
     padding-bottom: 5rem;
-    padding-top: 5rem;
   }
   html {
     font-size: 12px;

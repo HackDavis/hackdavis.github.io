@@ -36,6 +36,7 @@
       <h1 id="nav-title" class="navbar-brand">HACK<strong style="font-family: 'FuturaStd-Heavy'">DAVIS</strong></h1>
       <div class="navbar-nav justify-content-center">
         <div class="nav-item" id="clickAbout"> <a class="nav-link"> About </a> </div>
+        <div class="nav-item" id="clickRoles"> <a class="nav-link"> Roles </a> </div>
         <div class="nav-item" id="clickSponsors"> <a class="nav-link"> Sponsors </a> </div>
         <div class="nav-item" id="click2017"> <a class="nav-link" rel="noopener" href="/event.html"> Event Site </a> </div>
       </div>
@@ -52,7 +53,7 @@
           <a href="https://hackdavis.typeform.com/to/Nb6XVZ" class="no-decorate"><button class="round-button white-button invert">Apply for HackDavis 2019!</button></a>
         </div>
       </section>
-      <section class="slant-left">
+      <section id="about-section" class="slant-left">
         <div class="container">
           <h1>Hackathons are our passion</h1>
           <p>Learn to be part of the fastest growing event on the UC Davis campus. We are a group of people who are committed to putting on UC Davis' largest student-organized event every year. 
@@ -166,9 +167,14 @@
       gtag('config', 'UA-109906061-1');
     </script>
     <script>
-      $("#clickAbout").click(function() {
+      $("#clickRoles").click(function() {
         document.querySelector('section.roles').scrollIntoView({ 
           behavior: 'smooth' 
+        });
+      })
+      $("#clickAbout").click(function() {
+        document.querySelector('#about-section').scrollIntoView({
+          behavior: 'smooth'
         });
       });
       $("#clickSponsors").click(function() {

@@ -29,6 +29,8 @@ function enableParallax() {
 
       // build scene
       */
+
+      // hide the trust badge
       var grassScene = new ScrollMagic.Scene({offset: 0, duration: 600})
       //        .setTween(grassTween)
               .on('leave', function(){
@@ -113,8 +115,8 @@ $("#clickFAQ").click(function(){
   $("#FAQ").velocity("scroll", {offset: -150, duration: duration, easing: "easeInOutCubic"});
 });
 var closeTimeout;
-/* Apply button */
 
+/* Typeform class toggling */
 $("#close").click(function(){
   //$("#close").velocity({top: "100%"});
   //$("#typeform").velocity({top: "100%"});

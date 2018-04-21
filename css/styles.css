@@ -28,10 +28,10 @@ body {
     top: 120vh;
     color: #F37154;
     transition: all 0.5s ease-in;
-    transform: translateY(-120vh);
+    transform: translateY(-120vh); /* use translate to animate in */
 }
 #close.hid, #typeform.hid {
-    transform: translateY(0);
+    transform: translateY(0);  /* typeform is positioned top: 120vh */
 }
 #close > i {
     width: 1em;
@@ -45,7 +45,8 @@ section:first-child, #main > div:first-of-type {
     margin-top: 75px;
     height: 130vh;
     width: 100%;
-    margin-bottom: calc(10.4vh + 100px);
+    margin-bottom: calc(10.4vh + 100px); 
+    /* img#front-grass is positioned -8% from the bottom of this element. 8% * 130vh = 10.4vh */
 }
 section:nth-of-type(3) {
     background-color: #281C12;

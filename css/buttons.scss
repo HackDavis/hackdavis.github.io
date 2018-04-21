@@ -120,6 +120,7 @@ $size: 50px;
 		transition: $transition;
 	}
 
+	// generate colors for each button
 	@each $class,$color in $colors {
 
 		&.#{$class} {

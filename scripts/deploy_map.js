@@ -1,12 +1,17 @@
 const fs = require('fs');
 var path = require('path');
+
+// read in template into jquery
 var document = fs.readFileSync(path.resolve(__dirname, "../template.html"), {encoding: 'utf-8'});
 const {JSDOM} = require('jsdom');
 const dom = new JSDOM(document);
 var index = dom.window;
 var $ = require('jquery')(index);
+
+// read in sponsors metadata
 var table = JSON.parse(fs.readFileSync(path.resolve(__dirname, "generate_map.json"), {encoding: 'utf-8'}));
 
+// create empty containing div for each of: sponsors, nonprofits, and partners, and prepend in reverse order
 var row = index.document.createElement("div");
 row.setAttribute("class", "row justify-content-center px-5");
 var heading = index.document.createElement("h1");
@@ -25,6 +30,8 @@ if(table.partners.length > 0){
     $("footer").prepend(row); 
     $("footer").prepend(heading);    
 }
+
+// add sponsor us button and append
 let buttonDiv = index.document.createElement("div");
 let atag = index.document.createElement("a");
 atag.setAttribute("class", "col d-flex justify-content-center no-decorate");
@@ -36,6 +43,8 @@ button.innerHTML = "Sponsor Us!";
 $(atag).prepend(button);
 $(buttonDiv).prepend(atag);
 $("footer").prepend(buttonDiv);
+
+
 row = index.document.createElement("div");
 row.setAttribute("class", "row justify-content-center align-items-center px-5");
 heading = index.document.createElement("h1");
@@ -45,8 +54,10 @@ if(table.previous_sponsors.length > 0){
     $("footer").prepend(row);
     $("footer").prepend(heading);    
 }
+
+// populate each container div
 let count = 0;
-for(let [i, sponsor] of table.previous_sponsors.entries()) {
+for(let [i, sponsor] of table.previous_sponsors.entries()) { // use index to isolate first two elements on their own row
     if(sponsor.src) {
         let tag = index.document.createElement("a");
 
@@ -64,7 +75,7 @@ for(let [i, sponsor] of table.previous_sponsors.entries()) {
         let image = index.document.createElement("img");
         image.setAttribute("src", sponsor.src);
         tag.appendChild(image);
-        $("footer > div.row:nth-child(2)").append(tag);
+        $("footer > div.row:nth-child(2)").append(tag); // this should have been an ID
     }
 }
 

@@ -32,6 +32,7 @@ source.nonprofits = source.nonprofits.filter(function(val){
 
 var table = {previous_sponsors: [], partners:[], nonprofits:[]};
 var files = fs.readdirSync(path.resolve(__dirname, "../img/logos"));
+
 function getSrc(card, callback) {
     card.name = card.name.replace('.', '');
     for(let file of files) {
@@ -63,14 +64,19 @@ function getHref(card, callback) {
         callback(error, href);
     });
 }
+
 function getObjectForName(card, key, array, callback) {
-    var object = {};
+    var object = {}; // object storing data associated with each card
     var amount = null;
+
+    // include the amount within the object
     if(card.desc.includes("amount:")) {
         let sub = card.desc.slice(card.desc.indexOf("amount: ") + 8);
         let string = sub.indexOf("\n") != -1 ? sub.slice(0, sub.indexOf("\n")) : sub;
         amount = Number(string);
     }
+
+    // look over every object in the source map to see if the data already existed on the old page
     for(let item of source[key]) {
         item.name = item.name.split(' ').join('').toLowerCase();
         if(item.name.indexOf(card.name) != -1)
@@ -80,6 +86,8 @@ function getObjectForName(card, key, array, callback) {
             return callback(null);
         }
     }
+
+    // asynchronously grab the src and link for each sponsor card and push the result to the array
     async.applyEach([getSrc, getHref], card, function(err, results){
         if(results[0] && results[1]) {
             let obj = {src: results[0], href: results[1]};
@@ -91,10 +99,16 @@ function getObjectForName(card, key, array, callback) {
 }
 function parseList(error, response, body, call) {
     body = JSON.parse(body);
+
+    // Asynchronously process each card
     async.each(body, function(card, callback) {
         card.name = card.name.split(' ').join('').toLowerCase();
         console.log(card.name);     
         if(card.labels.length > 0) {
+
+            // process labels for Non-Profit and "Parterns", or else if there is no label it is a generic sponsor
+            // each label passes its own key and array argument to the getObjectForName function
+            // Could have done this using pattern matching, to a curried function for each key
             for(let label of card.labels) {
                 if(label.name == "Non-Profit") {
                     getObjectForName(card, "nonprofits", table.nonprofits, callback);
@@ -120,7 +134,7 @@ async.parallel([
     if(err)
         console.error(err);
     console.log("done");
-    table.previous_sponsors.sort(function(a, b){
+    table.previous_sponsors.sort(function(a, b){ // custom comparator because some cards do not have an amount
         a.amount = a.amount || -1;
         b.amount = b.amount || -1;
         return b.amount - a.amount;

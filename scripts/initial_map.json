@@ -1,115 +1,82 @@
 {
 	"previous_sponsors": [
 		{
-			"href": "https://developer.amazon.com/alexa",
-			"src": "img/logos/amazon-alexa.png"
+			"href": "https://www.intel.com",
+			"src": "/img/logos/logomono-intel-mono.png"
 		},
 		{
-			"href": "http://citrisfoundry.org/",
-			"src": "img/logos/citris-ucdavis.png",
-			"name": "citris"
+			"href": "http://cloud.google.com/",
+			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png"
 		},
 		{
-			"href": "https://www.ibm.com/us-en/",
-			"src": "img/logos/ibm.png"
+			"href": "http://www.keysight.com/",
+			"src": "/img/logos/Keysight_Signature_Pref_Color.png"
 		},
 		{
-			"href": "https://rapidapi.com/",
-			"src": "img/logos/rapid-api.png"
+			"href": "https://home.kpmg.com/us/en/home.html",
+			"src": "/img/logos/KPMG_NoCP_RGB_279.png"
 		},
 		{
-			"href": "https://www.makeschool.com/",
-			"src": "img/logos/makeschool.png"
+			"href": "https://www.centene.com/",
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png"
 		},
 		{
-			"href": "https://www.wolframalpha.com/",
-			"src": "img/logos/wolfram.png"
-		},
-		{
-			"href": "https://www.zillow.com/",
-			"src": "img/logos/zillow.png"
-		},
-		{
-			"href": "https://www.splunk.com/",
-			"src": "img/logos/splunk_white.png",
-			"name": "splunk"
-		},
-		{
-			"href": "https://www.servicenow.com/",
-			"src": "img/logos/servicenow.png"
-		},
-		{
-			"href": "http://ctrl.com/eng/index.aspx",
-			"src": "img/logos/ctrl.png"
-		},
-		{
-			"href": "https://www.drakontas.com/",
-			"src": "img/logos/drakontas.png"
-		},
-		{
-			"href": "https://www.facebook.com/",
-			"src": "img/logos/facebook.png"
-		},
-		{
-			"href": "http://lmgtfy.com/?q=google",
-			"src": "img/logos/google.png"
-		},
-		{
-			"href": "https://github.com/",
-			"src": "img/logos/github-logo.png"
+			"href": "http://joyrun.com/",
+			"src": "/img/logos/JoyRun Logo White.png"
 		},
 		{
 			"href": "https://www.osisoft.com/",
-			"src": "img/logos/OSIsoftLogo_White.png"
+			"src": "/img/logos/OSIsoftLogo_White.png"
+		},
+		{
+			"href": "http://www.att.com/",
+			"src": "/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png"
+		},
+		{
+			"href": "https://balsamiq.com/",
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png"
+		},
+		{
+			"href": "https://www.takescoop.com/",
+			"src": "/img/logos/scoop_logo_white_rgb.png"
+		},
+		{
+			"href": "https://www.varian.com/?multilink=switch",
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png"
+		},
+		{
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png"
+		},
+		{
+			"href": "https://linode.com",
+			"src": "/img/logos/linode-logo_standard_dark_medium.png"
+		},
+		{
+			"href": "https://www.stickeryou.com/products/roll-labels/627",
+			"src": "/img/logos/StickerYou_Web_Logo_Flat_DarkBackground.png"
+		},
+		{
+			"href": "http://genability.com/",
+			"src": "/img/logos/genability.png"
+		},
+		{
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"src": "/img/logos/svgporn-stickermule.png"
+		},
+		{
+			"href": "http://empirically.co",
+			"src": "/img/logos/Empirically-Main-Logo.png"
 		},
 		{
 			"href": "http://www.clifbar.com/",
-			"src": "img/logos/clifbar.png",
-			"name": "clifbar"
+			"src": "img/logos/clifbar.png"
 		},
 		{
-			"href": "http://mandtvr.com/",
-			"src": "img/logos/mandtvr.png"
-		},
-		{
-			"href": "https://www.namecheap.com/",
-			"src": "img/logos/namecheap.png"
+			"href": "http://get.tech/",
+			"src": "/img/logos/tech.png"
 		}
 	],
-	"partners": [
-		{
-			"href": "http://moringaschool.com/",
-			"src": "img/logos/moringa.png"
-		},
-		{
-			"href": "https:/mlh.io/",
-			"src": "img/logos/mlh-logo-white.png"
-		},
-		{
-			"href": "http://www.communitywatercenter.org/",
-			"src": "img/logos/CWC.png"
-		},
-		{
-			"href": "http://engineering.ucdavis.edu/",
-			"src": "img/logos/collegeofengineering_white.png"
-		},
-		{
-			"href": "http://www.cs.ucdavis.edu/",
-			"src": "img/logos/CSDavis.png"
-		}
-	],
-	"nonprofits": [
-		{
-			"href": "http://gamersgift.org/",
-			"src": "img/logos/gamer-gift.png"
-		},
-		{
-			"href": "http://societyofwomenengineers.swe.org/",
-			"src": "img/logos/swe-logo.png"
-		},
-		{
-			"href": "http://northerncaliforniaeducationfoundation.com/",
-			"src": "img/logos/norcal-edu-foundation.png"
-		}
-	]
+	"partners": [],
+	"nonprofts": []
 }

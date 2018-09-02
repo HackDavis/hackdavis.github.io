@@ -1,0 +1,113 @@
+#background {
+	background-image: url(SVG/Night%20Stars.svg);
+	/* Full height */
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#city {
+	margin-bottom: -5px;
+}
+
+#center {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+a.button3 {
+	display: flex;
+	flex-direction: column;
+	width: 22%;
+	height: 3%;
+	display: inline-block;
+	padding: 0.4em 1.2em;
+	border-radius: 0.7em;
+	box-sizing: border-box;
+	background-color: #D0F7F6;
+	text-align: center;
+	transition: all 0.2s;
+	color: #16404D;
+	margin-bottom: 1%;
+	font-family: 'Montserrat';
+}
+
+a.button3:hover {}
+
+.logo {
+	padding-top: 4%;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-text {
+	font-family: "Montserrat";
+	color: #D0F7F6;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	font-size: 16px;
+}
+
+.svgOne {
+	position: absolute;
+}
+
+.svgTwo {
+	position: absolute;
+}
+
+.mobile-bottom{
+display: none;	
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		margin-top: -25px;
+	}
+	.logo {
+		padding-top: 25%;
+		width: 47%;
+	}
+	#city {
+		width: 100%;
+		height: 100%;
+	}
+	.center-text {
+		color: #D0F7F6;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		text-align: center;
+	}
+	a.button3 {
+		font-size: 13px;
+		width: 66%;
+		height: 20%;
+		display: inline-block;
+		margin-bottom: 3%;
+		border-radius: 0.7em;
+		box-sizing: border-box;
+		background-color: #D0F7F6;
+		text-align: center;
+		transition: all 0.2s;
+		color: #16404D
+	}
+	a::after {
+		text-decoration: none;
+	}
+	svg {
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%
+	}
+	.center {
+		margin-bottom: 15%;
+	}
+}

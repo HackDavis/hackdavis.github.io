@@ -1,6 +1,9 @@
 body {
 	margin: 0;
 }
+html {
+	font-size: 16px;
+}
 #background {
 	background-image: url(SVG/Night%20Stars.svg);
 	/* Full height */
@@ -8,23 +11,31 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
+	z-index: -1;
+	overflow: hidden;
 }
 
 #city {
 	margin-bottom: -3.7px;
 	margin-left: -1px;
+	position: relative;
+	z-index: 0;
 }
 
-#center {
-	width: 100%;
-	height: 100%;
+#light {
 	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -15%;
+	width: 30%;
+	height: 100%;
 }
 
 a.button3 {
 	display: flex;
 	flex-direction: column;
-	width: 22%;
+	width: 16rem;
 	height: 3%;
 	display: inline-block;
 	padding: 0.4em 1.2em;
@@ -44,13 +55,23 @@ a.button3:hover {}
 
 .logo {
 	padding-top: 4%;
+	width: 16%;
 }
+
+.brand-name {
+	font-family: "Montserrat";
+	color: white;
+	font-weight: 400;
+}
+
 
 .center {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: 2;
 }
 
 .center-text {
@@ -58,7 +79,6 @@ a.button3:hover {}
 	color: #D0F7F6;
 	margin-top: 2%;
 	margin-bottom: 3%;
-	font-size: 16px;
 }
 
 .svgOne {
@@ -70,10 +90,17 @@ a.button3:hover {}
 }
 
 .mobile-bottom{
-display: none;	
+	display: none;	
+	width: 600px;
+	margin-left: -300px;
+	position: relative;
+	left: 50%;
 }
 
 @media screen and (max-width: 600px) {
+	html {
+		font-size: 14px;
+	}
 	body {
 		margin-top: -25px;
 	}
@@ -81,9 +108,12 @@ display: none;
 		padding-top: 25%;
 		width: 47%;
 	}
-	#city {
-		width: 100%;
-		height: 100%;
+	#light {
+		width: 70%;
+		margin-left: -35%;
+	}
+	#city { 
+		display: none;
 	}
 	.center-text {
 		color: #D0F7F6;
@@ -92,8 +122,6 @@ display: none;
 		text-align: center;
 	}
 	a.button3 {
-		font-size: 13px;
-		width: 66%;
 		height: 20%;
 		display: inline-block;
 		margin-bottom: 3%;
@@ -107,13 +135,12 @@ display: none;
 	a::after {
 		text-decoration: none;
 	}
-	svg {
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%
-	}
+
 	.center {
 		margin-bottom: 15%;
+	}
+	.mobile-bottom {
+		display: block;
+		margin-bottom: -5px;
 	}
 }

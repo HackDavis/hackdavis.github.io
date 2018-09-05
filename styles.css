@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+}
+html {
+	font-size: 16px;
+}
+#background {
+	background-image: url(SVG/Night%20Stars.svg);
+	/* Full height */
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+
+#city {
+	margin-bottom: -3.7px;
+	margin-left: -1px;
+	margin-top: -15vw;
+}
+
+#light {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -19%;
+	width: 38%;
+	height: 100%;
+}
+
+a.button3 {
+	display: flex;
+	flex-direction: column;
+	width: 16rem;
+	height: 3%;
+	display: inline-block;
+	padding: 0.4em 1.2em;
+	border-radius: 0.7em;
+	box-sizing: border-box;
+	background-color: #D0F7F6;
+	text-align: center;
+	transition: all 0.2s;
+	color: #16404D;
+	margin-bottom: 1%;
+	font-family: 'Montserrat';
+	text-decoration: none;
+	padding: 0.7rem;
+}
+
+a.button3:hover {}
+
+.logo {
+	padding-top: 4%;
+	width: 16%;
+}
+
+.brand-name {
+	font-family: "Montserrat";
+	color: white;
+	font-weight: 400;
+}
+
+
+.center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.center-text {
+	font-family: "Montserrat";
+	color: #D0F7F6;
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+
+.svgOne {
+	position: absolute;
+}
+
+.svgTwo {
+	position: absolute;
+}
+
+.mobile-bottom{
+	display: none;	
+	width: 768px;
+	margin-left: -384px;
+	position: relative;
+	left: 50%;
+}
+
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+	body {
+		margin-top: -25px;
+	}
+	.logo {
+		padding-top: 15%;
+		width: 47%;
+	}
+	#light {
+		width: 70%;
+		margin-left: -35%;
+	}
+	#city { 
+		display: none;
+	}
+	.center-text {
+		color: #D0F7F6;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+	a.button3 {
+		height: 20%;
+		display: inline-block;
+		margin-bottom: 3%;
+		border-radius: 0.7em;
+		box-sizing: border-box;
+		background-color: #D0F7F6;
+		text-align: center;
+		transition: all 0.2s;
+		color: #16404D
+	}
+	a::after {
+		text-decoration: none;
+	}
+
+	.mobile-bottom {
+		display: block;
+		margin-bottom: -5px;
+	}
+}

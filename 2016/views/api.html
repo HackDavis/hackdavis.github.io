@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HackDavis APIs </title>
+	<link rel="stylesheet" type="text/css" href="../api/api.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="../../js/grid.js"></script>
+	<script type="text/javascript" src="../live.js" ></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Prizes for HackDavis 2016">
+	<meta name="keywords" content="HackDavis, hackdavis, hackathon, hack, davis, UC Davis, University of California, Davis, Computer Science, apis, api">
+
+</head>
+<body>
+	
+	<ul id="menu">
+		<a href="../"> <li> LIVE </li> </a>
+		<a href="../api"> <li> APIs </li> </a>
+		<a href="../hardware"> <li> HARDWARE </li> </a>
+		<a href="../prize"> <li> PRIZES </li> </a>
+		<a href="../schedule"> <li> TECH TALKS </li> </a>
+		<a href="http://hackdavis.devpost.com"> <li> DEVPOST </li> </a>
+	</ul>
+
+	<div id="container">
+
+<!-- 		<div id="yellowbar">
+			<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
+			<a href="live.html">
+				<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
+			</a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a href="api.html">
+				<img id="api" src="../img/symbols/api_white.png" height="30px">
+			</a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a href="hardware.html">
+				<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
+			</a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a href="prize.html">
+				<img id="prize" src="../img/symbols/prize_white.png" height="30px">
+			</a>
+			
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a href="schedule.html">
+				<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
+			</a>
+
+			<div class="label" id="devpost-label"> devpost </div>
+			<a href="http://hackdavis.devpost.com">
+				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
+			</a>
+		</div> -->
+
+		<div id="yellowbar">
+			<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
+			<a href="../">
+				<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
+			</a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a href="../api">
+				<img id="api" src="../img/symbols/api_white.png" height="30px">
+			</a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a href="../hardware">
+				<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
+			</a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a href="../prize">
+				<img id="prize" src="../img/symbols/prize_white.png" height="30px">
+			</a>
+			
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a href="../schedule">
+				<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
+			</a>
+
+			<div class="label" id="devpost-label"> devpost </div>
+			<a href="http://hackdavis.devpost.com">
+				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
+			</a>
+		</div>
+
+		<div id="hamburger" class="menu-closed">
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+		</div>
+
+		<div id="title"> API TOOLS </div>
+		<div id="bluebar"></div>
+
+		<div class="grid"> </div>
+
+	</div>
+
+</body>
+<script>
+	var open = false;
+
+	$(document).ready(function() {
+
+		$(".menu-closed").click(function(){
+
+			if (open == false){
+				$("#menu").css("opacity", 1);
+				$("#container").animate({left: '40%'});
+				open = true;
+			}
+			else {
+				$("#container").animate({left: '0%'});
+				setTimeout(function() { $("#menu").css("opacity", 0); }, 2000);
+				open = false;
+			}
+
+		});
+	});
+
+	var apis = [
+	{
+		"name": "SYNAPTICS",
+		"heading": "Touchpad and Fingerprint hardware",
+		"desc": "Synaptics technology addresses both sides of user-experience by enabling precision input; customized gestures; single-touch device wake-up, and more. <br><br>Check out <a target='_blank' href=\"http://www.synaptics.com/\">www.synaptics.com</a> and reach out to mentors!"
+	},
+	{
+		"name": "AMAZON ALEXA",
+		"heading": "Amazon Alexa on Amazon Echoes",
+		"desc": "Alexa, the voice service that powers Amazon Echo, provides capabilities, or skills, that enable customers to interact with devices in a more intuitive way using voice.<br><br>Check out the <a target='_blank' href=\"https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit\">developer guide</a>."
+	},
+	{
+		"name": "CISCO",
+		"heading": "Cisco Spark for Developers",
+		"desc": "Spark lets conversations flow between messages, video calls and real-time whiteboarding sessions. No other API brings together collaboration into a single unified platform.<br><br>Check out the <a target='_blank' href=\"https://developer.ciscospark.com/getting-started.html\">developer guide</a>."
+	},
+	{
+		"name": "IBM",
+		"heading": "Bluemix and Watson",
+		"desc": "Bluemix is the cloud platform powered by the world’s most popular open source projects. Discover how language, vision, speech and data APIs from Watson Developer Cloud can help you solve complex problems.<br><br> Check out the <a target='_blank' href=\"http://www.ibm.com/cloud-computing/bluemix/\">developer guide.</a>"
+	},
+	{
+       "name": "California Health and Human Services Agency",
+       "heading": "<br>CHHS Open Data Portal",
+       "desc": "<br>State’s most valuable assets: non-confidential health and human services data. The data are categorized as: Diseases and Conditions, Facilities and Services, Healthcare, Workforce, Environment, and Demographics.<br><br> Check out the <a target='_blank' href=\"https://chhs.data.ca.gov/\"> data website. </a>"
+	},
+	{
+		"name": "GovOps",
+		"heading": "CA Green Gov Open Data Portal",
+		"desc": " Environmental data from various California Government entities.  The data are categorized as: Water, Transportation, Recycling, Fleet, Economy & Demographics, Buildings, and Grants & Contracts of Environmentally Preferable Products.<br><br> Check out the <a target='_blank' href=\"https://greengov.data.ca.gov/\"> data website</a>, powered by <a href=\"https://dev.socrata.com/\">Socrata.</a>"
+	}
+	]
+
+	populateGrid(apis)
+</script>
+</html>

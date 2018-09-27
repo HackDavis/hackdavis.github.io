@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HackDavis Live 2016</title>
+	<link rel="stylesheet" type="text/css" href="../live.css">
+	<link rel='shortcut icon' type='image/x-icon' href='../favicon.png'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="../live.js" ></script>
+
+	<!-- meta data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="HackDavis Live 2016">
+	<meta name="keywords" content="HackDavis, hackdavis, hackathon, hack, davis, UC Davis, University of California, Davis, Computer Science, live, event, countdown, feed">
+
+</head>
+<body>
+	<ul id="menu">
+		<a href="../"> <li> LIVE </li> </a>
+		<a href="../api"> <li> APIs </li> </a>
+		<a href="../hardware"> <li> HARDWARE </li> </a>
+		<a href="../prize"> <li> PRIZES </li> </a>
+		<a href="../schedule"> <li> TECH TALKS </li> </a>
+		<a href="http://hackdavis.devpost.com"> <li> DEVPOST </li> </a>
+	</ul>
+
+	<div id="container">
+		<div id="yellowbar">
+			<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
+			<a href="../">
+				<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
+			</a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a href="../api">
+				<img id="api" src="../img/symbols/api_white.png" height="30px">
+			</a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a href="../hardware">
+				<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
+			</a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a href="../prize">
+				<img id="prize" src="../img/symbols/prize_white.png" height="30px">
+			</a>
+			
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a href="../schedule">
+				<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
+			</a>
+
+			<div class="label" id="devpost-label"> devpost </div>
+			<a href="http://hackdavis.devpost.com">
+				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
+			</a>
+		</div>
+
+		<div id="hamburger" class="menu-closed">
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+		</div>
+
+		<div id="title"> WELCOME TO HACKDAVIS LIVE </div>
+		<div id="bluebar"></div>
+
+		<div id="left-col">
+			<div id="countdown">
+				<div id="cd-title"> countdown </div>
+				<div id="cd-box"> 
+					<div class="time-ele"> 
+						<p id="days"> 0 </p> 
+						<p id="label"> days </p> 
+					</div>
+					<div class="time-ele"> 
+						<p id="hours"> 0 </p> 
+						<p id="label"> hours </p> 
+					</div>
+					<div class="time-ele"> 
+						<p id="min"> 0 </p> 
+						<p id="label"> min </p> 
+					</div>
+					<div class="time-ele"> 
+						<p id="sec"> 0 </p> 
+						<p id="label"> sec </p> 
+					</div>
+				</div>
+			</div>
+			<div id="more">
+				<div id="more-title"> more </div>
+				<div id="more-box"> 
+					<div class="link-ele">
+						<a href="../api"> <img src="../img/symbols/api_symbol.png" height="40px"> </a>
+						<p id="label"> <a href="../api"> APIs </a> </p>
+					</div>
+					<div class="link-ele">
+						<a href="../hardware"> <img src="../img/symbols/hardware_symbol.png" height="40px"> </a>
+						<p id="label"> <a href="../hardware"> hardware </a> </p>
+					</div>
+					<div class="link-ele">
+						<a href="../prize"> <img src="../img/symbols/prize_symbol.png" height="40px"> </a>
+						<p id="label"> <a href="../prize"> prizes </a> </p>
+					</div>
+					<div class="link-ele">
+						<a href="../schedule"> <img src="../img/symbols/workshop_symbol.png" height="40px"> </a>
+						<p id="label"> <a id="tta" href="../schedule"> tech talks </a> </p>
+					</div>
+					<div class="link-ele">
+						<a href="http://hackdavis.devpost.com"> <img src="../img/symbols/devpost_symbol.png" height="35px"> </a>
+						<p id="label"> <a href="http://hackdavis.devpost.com"> devpost </a> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="right-col">
+			<div id="anouncement">
+				<div id="an-title"> live feed </div>
+				<div id="an-box">
+					<a class="twitter-timeline" href="https://twitter.com/HackDavis2016" data-widget-id="726498483243388928">Tweets by @HackDavis2016</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+	//Twitter Object
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+	//Google Analytics Object
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-71850598-2', 'auto');
+	  ga('send', 'pageview');
+
+	$(".menu-closed").click(function(){
+
+		if (open == false){
+			$("#menu").css("opacity", 1);
+			$("#container").animate({left: '40%'});
+			$("#container").css("position", "fixed");
+			open = true;
+		}
+		else {
+			$("#container").animate({left: '0%'});
+			setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+			$("#container").css("position", "absolute");
+			open = false;
+		}
+
+	});
+
+</script>
+
+</html>

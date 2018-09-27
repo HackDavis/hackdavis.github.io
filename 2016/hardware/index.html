@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HackDavis Hardware</title>
+	<link rel="stylesheet" type="text/css" href="hardware.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.png'/>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script> 
+	<script type="text/javascript" src="../live.js" ></script>
+
+	<!-- meta data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Hardware for HackDavis 2016">
+	<meta name="keywords" content="HackDavis, hackdavis, hackathon, hack, davis, UC Davis, University of California, Davis, Computer Science, hardware">
+
+</head>
+<body>	
+
+	<ul id="menu">
+		<a href="../"> <li> LIVE </li> </a>
+		<a href="../api"> <li> APIs </li> </a>
+		<a href="../hardware"> <li> HARDWARE </li> </a>
+		<a href="../prize"> <li> PRIZES </li> </a>
+		<a href="../schedule"> <li> TECH TALKS </li> </a>
+		<a href="http://hackdavis.devpost.com"> <li> DEVPOST </li> </a>
+	</ul>
+
+	<div id="container">
+
+		<div id="yellowbar">
+			<div class="label" id="logo-label" style="height: 40px; line-height: 40px;"> LIVE </div>
+			<a href="../">
+				<img id="logo" src="../img/symbols/hackdavis-whitelogo.png" height="40px">	
+			</a>
+
+			<div class="label" id="api-label"> APIs </div>
+			<a href="../api">
+				<img id="api" src="../img/symbols/api_white.png" height="30px">
+			</a>
+
+			<div class="label" id="hardware-label"> hardware </div>
+			<a href="../hardware">
+				<img id="hardware" src="../img/symbols/hardware_white.png" height="25px">
+			</a>
+
+			<div class="label" id="prize-label"> prizes </div>
+			<a href="../prize">
+				<img id="prize" src="../img/symbols/prize_white.png" height="30px">
+			</a>
+			
+			<div class="label" id="workshop-label"> tech talks </div>
+			<a href="../schedule">
+				<img id="workshop" src="../img/symbols/workshop_white.png" height="25px">
+			</a>
+
+			<div class="label" id="devpost-label"> devpost </div>
+			<a href="http://hackdavis.devpost.com">
+				<img id="devpost" src="../img/symbols/devpost_white.png" height="25px">
+			</a>
+		</div>
+
+		<div id="hamburger" class="menu-closed">
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+			<div class="line" style="height:8px; background-color: white;"> </div>
+			<div class="line" style="height:8px; background-color: #F1C83A; border-radius: 5px;"> </div>
+		</div>
+		
+		<div id="title"> HARDWARE </div>
+		<div id="bluebar"></div>
+
+		<div id="content">
+			To check out a hardware item, first visit <a href="http://hardware.mlh.io/events/hackdavis" target='_blank'> hardware.mlh.io/events/hackdavis </a> and sign in or create an account at the top right of the page. Once you have done that, create and submit a request for the hardware you would like to borrow during the event. Finally, go up to the MLH Hardware Lab located at Meeting Room 2. You will be able to rent out any piece of hardware from the lab by exchanging your government ID, and when you return the hardware at the end of the hackathon, your ID will be given back to you. <br><br> Here's what you can check out from the lab:
+
+			<ul id="items">
+				<li> 11 Fingerprint sensors </li>
+				<li> 9 Large Touchscreens </li>
+				<li> 8x Amazon Echoes </li>
+				<li> 4x Alienware 13 </li>
+				<li> 6x	Arduino Uno </li>
+				<li> 6x	Arduino 101 </li>
+				<li> 10x Base Shield </li>
+				<li> 4x	Dell Monitor </li>
+				<li> 2x	Dell XPS 13 (Ubuntu) </li>
+				<li> 2x	Dell XPS 13 (Windows) </li>
+				<li> 3x	Fire Phone </li>
+				<li> 1x	Grove Starter Kit </li>
+				<li> 10x Intel Edison </li>
+				<li> 10x Leap Motion </li>
+				<li> 3x	Muse Headband </li>
+				<li> 21x Myos </li>
+				<li> 1x	Nest Cam </li>
+				<li> 1x	Nest Thermostat Kit </li>
+				<li> 12x Oculus Rift DK2 </li>
+				<li> 15x Pebble </li>
+				<li> 5x	Pebble Time Steel </li>
+				<li> 10x Spark Core </li>
+			</ul>
+
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var open = false;
+
+	$(document).ready(function() {
+
+		$(".menu-closed").click(function(){
+
+			if (open == false){
+				$("#menu").css("opacity", 1);
+				$("#container").animate({left: '40%'});
+				$("#container").css("position", "fixed");
+
+				// $("#container").css("overflow-y", "hidden");
+				// $("#container").css("overflow-x", "hidden");
+				open = true;
+			}
+			else {
+				$("#container").animate({left: '0%'});
+				setTimeout(function() { $("#menu").css("opacity", 0); }, 1000);
+
+				$("#container").css("position", "absolute");
+
+				// $("#container").css("overflow-y", "auto");
+				// $("#container").css("overflow-x", "auto");
+				open = false;
+			}
+
+		});
+	});
+
+</script>
+</html>

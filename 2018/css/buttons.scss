@@ -1,0 +1,103 @@
+//animations
+$transition: all 0.35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
+
+//social media colors
+$colors: (
+	"facebook": "#3B5998",
+	"twitter": "#3CF",
+	"instagram": "#3f729b",
+	"medium": "#000000"
+);
+
+//button size
+$size: 50px;
+
+* {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	box-sizing: inherit;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+.social-buttons {
+	height: $size;
+	margin: auto;
+	font-size: 0;
+	text-align: center;
+	position: absolute;
+	float: right;
+	bottom: 30px;
+	right: 50px;
+	min-width: 240px;
+}
+
+.social-button {
+	display: inline-block;
+	background-color: #fff;
+	width: $size;
+	height: $size;
+	line-height: $size;
+	margin: 0 10px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	//overflow bug fix
+	opacity: .99;
+	border-radius: 28%;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,.05);
+	transition: $transition;
+
+	&:before {
+		content: '';
+		background-color: #000;
+		width: 120%;
+		height: 120%;
+		position: absolute;
+		top: 90%;
+		left: -110%;
+		transform: rotate(45deg);
+		transition: $transition;
+	}
+
+	.fa {
+		font-size: 38px;
+		vertical-align: middle;
+		transform: scale(.8);
+		transition: $transition;
+	}
+
+	@each $class,$color in $colors {
+
+		&.#{$class} {
+
+			&:before {
+				background-color: #{$color};
+			}
+
+			.fa {
+				color: #{$color};
+			}
+		}
+	}
+
+	&:hover {
+
+		&:before {
+			top: -10%;
+			left: -10%;
+		}
+
+		.fa {
+			color: #fff;
+			transform: scale(1);
+		}
+	}
+
+	&:focus {
+		opacity: .85;
+	}
+}

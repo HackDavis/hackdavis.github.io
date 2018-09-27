@@ -1,0 +1,380 @@
+@import "./nav.css";
+@import "./buttons.css";
+@font-face {
+    font-family: 'Futura Std';
+    font-weight: normal;
+    src: url('../fonts/futura/FuturaStd-Book.otf');
+}
+@font-face {
+    font-family: 'FuturaStd-Heavy';
+    font-weight: bold;
+    src: url('../fonts/futura/FuturaStd-Heavy.otf');
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Futura Std';
+}
+#main {
+    overflow: hidden;
+    width: 100%;
+    font-size: 23px;
+}
+#close {
+    display: block;
+    position: fixed;
+    right: 30px;
+    z-index: 100;
+    top: 120vh;
+    color: #F37154;
+    transition: all 0.5s ease-in;
+    transform: translateY(-120vh);
+}
+#close.hid, #typeform.hid {
+    transform: translateY(0);
+}
+#close > i {
+    width: 1em;
+    height: 1em;
+}
+section {
+    position: relative;
+    width: 100vw;
+}
+section:first-child, #main > div:first-of-type {
+    margin-top: 75px;
+    height: 130vh;
+    width: 100%;
+    margin-bottom: calc(10.4vh + 100px);
+}
+section:nth-of-type(3) {
+    background-color: #281C12;
+    margin-top: -15px;
+    position: relative;
+    z-index: 7;
+}
+#main > div:first-of-type {
+    position: absolute;
+    top: 0;
+}
+section:nth-of-type(2) {
+    height: 160vh;
+    max-height: 140vw;
+    display: flex;
+    margin-bottom: -10px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: space-between;
+}
+section:nth-of-type(2) > img {
+    vertical-align: baseline;
+}
+footer {
+    color: white;
+}
+footer img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 180px;
+}
+footer a:first-of-type img{
+    max-height: 250px;
+}
+address {
+    margin-bottom: 0 !important;
+}
+address > h2 {
+    margin-bottom: 30px;
+}
+#clouds, #sky {
+  position: absolute;
+  z-index: -1;
+}
+.sponsor-heading {
+  color: #95a3a6;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+/*Desktop and Tablet Apply Button*/
+.button-margin {
+    margin-top: -2em;
+}
+.white-button {
+    border-color: rgba(255, 255, 255, 0.75);
+    color: white;
+}
+#sponsor-button {
+    width: 12em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.round-button {
+    background: transparent;
+    border: .2rem solid;
+    border-radius: 30px;
+    transition: all 0.5s;
+    transition-timing-function: ease-in-out;
+    min-width: 10em;
+    min-height: 60px;
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+.landing-button {
+    position: relative;
+    top: -2em;
+}
+.white-button:focus {
+    outline: 0;
+}
+.round-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.white-button:hover {
+    background-color: white;
+    border-color: white;
+    color: #52749d;
+}
+#about-text {
+  position: absolute;
+  z-index: 9;
+  bottom: -6%;
+  height: 26vw;
+  margin-bottom: 10px;
+  color: white;
+  width: 100%;
+  font-size: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about-text h1 {
+  font-size: 1.52em;
+}
+#main h1 {
+    font-family: 'FuturaStd-Heavy';
+}
+#about-text p {
+  font-size: 0.9em;
+  padding-right: 4em;
+  padding-left: 2em;
+}
+#about-text > .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.img-absolute {
+    position: absolute;
+}
+img#clouds {
+    width:60%;
+    height: 30%;
+    min-width: 700px;
+    margin-left: -5px;
+    margin-top: -35px;
+}
+img#logo {
+    width:20vw;
+    height: auto;
+    min-width: 200px;
+    left: 50%;
+    margin-left: -10vw;
+    top: 22%;
+    margin-top: -10vw;
+    z-index: 4;
+}
+h2#subheading {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 1.9rem;
+  color: white;
+  top: 38%;
+  position: relative;
+  z-index: 6;
+}
+img#sky {
+    width: 100%;
+    height: 80%;
+}
+img#backhills {
+    top: 5%;
+    height: 60%;
+    left: 0;
+    min-width: 900px;
+    width: 100%;
+}
+img#front-grass {
+    width: calc(100% + 5px);
+    height: auto;
+    bottom: -8%;
+    margin-left: -5px;
+    z-index:5;
+    left: 0;
+}
+img#grass {
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    z-index:5;
+    display: none;
+}
+img#mountains {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 60%;
+    min-width: 1200px;
+}
+object[data="img/soil.svg"] {
+    z-index: 8;
+    margin-top: -120px;
+    margin-bottom: -30px;
+    margin-left: -5px;
+    width: calc(100% + 5px);
+    height: 25vw;
+    position: relative;
+}
+img#cave1 {
+    z-index: 6;
+    margin-top: -10px;
+    height: 100%;
+}
+.caveBackground {
+    z-index: 3;
+    width: 100%;
+    top: 30%;
+    height: 80%;
+}
+.cave {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+}
+img#cave2 {
+    z-index: 5;
+}
+img#cave3 {
+    z-index: 4;
+}
+img#cave4 {
+    z-index: 3;
+}
+img#schedule-image {
+    z-index: 7;
+    left: 50%;
+    margin-left: -40%;
+    margin-top: 20px;
+    height: auto;
+    width: 80%;
+}
+#mobile-schedule {
+    width: 100%;
+    height: 115vw;
+    display: none;
+    background-color: #392011;
+    padding-left: 15px;
+    padding-top: 30px;
+    position: relative;
+    align-self: center;
+    z-index: 7;
+}
+img#mobile-schedule-image {
+    width: 100%;
+    height: auto;
+    top: 20px;
+}
+@keyframes blink{
+    0% {
+        -moz-filter: none;
+        -webkit-filter: none;
+        filter: none
+    }
+    10%{
+        -moz-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+        -webkit-filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+        filter: drop-shadow(0px 0px 14px rgb(200, 200, 0));
+    }
+    100% {
+        -moz-filter: none;
+        -webkit-filter: none;
+        filter: none
+    }
+}
+#lantern-img {
+    z-index: 5;
+}
+#lantern, #lantern-img {
+    width: 14%;
+    right: 30%;
+    margin-right: -10%;
+    top: 35%;
+    position: absolute;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#lantern {
+    z-index: 6;
+    height: 50%;
+}
+iframe {
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 120vh;
+    transform: translateY(-120vh);
+    position: fixed;
+    transition: all 0.5s ease-in;
+}
+#schedule {
+  color: white;
+  z-index: 8;
+  margin-top: -2.5vw;
+  text-align: center;
+}
+#FAQ {
+  color: white;
+  font-family: 'Futura Std';
+  z-index: 4;
+}
+#FAQ h1 {
+  text-align: center;
+  font-size: 33px;
+}
+#FAQ h2 {
+  font-size: 25px;
+  font-family: 'FuturaStd-Heavy';
+  margin-left: 60px;
+}
+#FAQ p {
+  font-size: 17px;
+  margin: 20px 50px 20px 56px;
+}
+#FAQ a {
+  color: #1287A8;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#FAQ a:hover > img {
+  opacity: 0.75;
+}
+.no-decorate, .no-decorate:hover {
+    text-decoration: none;
+}
+#FAQ address h2 {
+  font-size: 28px;
+}
+img[src="/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png"] {
+    max-height: 250px;
+}

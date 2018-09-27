@@ -1,0 +1,115 @@
+{
+	"previous_sponsors": [
+		{
+			"href": "https://developer.amazon.com/alexa",
+			"src": "img/logos/amazon-alexa.png"
+		},
+		{
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris"
+		},
+		{
+			"href": "https://www.ibm.com/us-en/",
+			"src": "img/logos/ibm.png"
+		},
+		{
+			"href": "https://rapidapi.com/",
+			"src": "img/logos/rapid-api.png"
+		},
+		{
+			"href": "https://www.makeschool.com/",
+			"src": "img/logos/makeschool.png"
+		},
+		{
+			"href": "https://www.wolframalpha.com/",
+			"src": "img/logos/wolfram.png"
+		},
+		{
+			"href": "https://www.zillow.com/",
+			"src": "img/logos/zillow.png"
+		},
+		{
+			"href": "https://www.splunk.com/",
+			"src": "img/logos/splunk_white.png",
+			"name": "splunk"
+		},
+		{
+			"href": "https://www.servicenow.com/",
+			"src": "img/logos/servicenow.png"
+		},
+		{
+			"href": "http://ctrl.com/eng/index.aspx",
+			"src": "img/logos/ctrl.png"
+		},
+		{
+			"href": "https://www.drakontas.com/",
+			"src": "img/logos/drakontas.png"
+		},
+		{
+			"href": "https://www.facebook.com/",
+			"src": "img/logos/facebook.png"
+		},
+		{
+			"href": "http://lmgtfy.com/?q=google",
+			"src": "img/logos/google.png"
+		},
+		{
+			"href": "https://github.com/",
+			"src": "img/logos/github-logo.png"
+		},
+		{
+			"href": "https://www.osisoft.com/",
+			"src": "img/logos/OSIsoftLogo_White.png"
+		},
+		{
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar"
+		},
+		{
+			"href": "http://mandtvr.com/",
+			"src": "img/logos/mandtvr.png"
+		},
+		{
+			"href": "https://www.namecheap.com/",
+			"src": "img/logos/namecheap.png"
+		}
+	],
+	"partners": [
+		{
+			"href": "http://moringaschool.com/",
+			"src": "img/logos/moringa.png"
+		},
+		{
+			"href": "https:/mlh.io/",
+			"src": "img/logos/mlh-logo-white.png"
+		},
+		{
+			"href": "http://www.communitywatercenter.org/",
+			"src": "img/logos/CWC.png"
+		},
+		{
+			"href": "http://engineering.ucdavis.edu/",
+			"src": "img/logos/collegeofengineering_white.png"
+		},
+		{
+			"href": "http://www.cs.ucdavis.edu/",
+			"src": "img/logos/CSDavis.png"
+		}
+	],
+	"nonprofits": [
+		{
+			"href": "http://gamersgift.org/",
+			"src": "img/logos/gamer-gift.png"
+		},
+		{
+			"href": "http://societyofwomenengineers.swe.org/",
+			"src": "img/logos/swe-logo.png"
+		},
+		{
+			"href": "http://northerncaliforniaeducationfoundation.com/",
+			"src": "img/logos/norcal-edu-foundation.png"
+		}
+	]
+}

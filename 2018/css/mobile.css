@@ -1,0 +1,259 @@
+/* Tablet Optimization */
+@media (max-aspect-ratio: 5/3) {
+    object[data="img/cowandsquirrel.svg"] {
+        bottom: 10%;
+    }
+    section:first-child, #main > div:first-of-type {
+        margin-bottom: calc(-13vh + 100px);
+    }
+    #about-text {
+        bottom: 10%;
+        height: auto;
+    }
+    img#front-grass {
+        bottom: 10%;
+    }
+    img#schedule-image {
+        margin-left: -45%;
+        width: 90%;
+    }
+}
+@media (max-width: 1000px) {
+    img#logo {
+        margin-left: -100px;
+        margin-top: -100px;
+    }
+}
+/* Portrait mode */
+@media (min-width: 762px) and (max-aspect-ratio: 1/1) {
+    img#front-grass {
+        bottom: 25%;
+    }
+    img#backhills, img#mountains {
+        width: 140vh;
+    }
+    img#backhills {
+        left: 50%;
+        margin-left: -70vh;
+    }
+    section:first-child, #main > div:first-of-type {
+        margin-bottom: -32.5vh;
+    }
+    img#logo {
+        width:30vw;
+        margin-left: -15vw;
+        margin-top: -15vw;
+        top: 27%;
+    }
+    #apply-button {
+      top: -30px;
+    }
+    #about-text {
+        bottom: 24.5%;
+        margin-bottom: 0;
+    }
+    #about-text h1 {
+        margin-top: 0;
+    }
+    object[data="img/soil.svg"] {
+        margin-top: -5px;
+    }
+    /*Avoids overflow of text in thinner tablets*/
+    @media (max-width: 900px){
+      #about-text p {
+          font-size: 0.8em;
+      }
+    }
+}
+@media (max-width: 1450px) {
+    #main {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1250px) {
+    #main {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1120px) {
+    #main {
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px) {
+    #main {
+        font-size: 14px;
+    }
+}
+@media (max-width: 992px) {
+    #about-text > .row {
+        flex-wrap: wrap;
+    }
+    #about-text p {
+        padding-right: 2em;
+    }
+    #about-text h1 {
+        margin-top: 0;
+    }
+}
+
+/* Mobile site */
+@media (max-width: 762px) {
+    .ml-xs-auto {
+        margin-left: auto !important;
+    }
+    .button-margin {
+        margin-top: 0;
+    }
+    #schedule {
+        margin-top: -128vw;
+    }
+    #soil {
+        margin-top: -40px;
+    }
+    #close {
+        right: 20px;
+    }
+    #nav, #brownNav, #rearNav {
+        display: none;
+    }
+    #lantern, #lantern-img {
+        display: none;
+    }
+    #about-text h1 {
+        margin-top: 20px;
+    }
+    #apply-button {
+        display: block;
+        color: white !important;
+        background: linear-gradient(to right, #494a86, #244a53);
+        border-bottom: 3px solid #727cde;
+        border-right: 6px solid #a3acff;
+        border-top: none;
+        border-left: none;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.52em;
+        font-family: 'FuturaStd-Heavy';
+        border-radius: 0px;
+        position: static;
+        top:0;
+        margin-top: 0;
+        min-width: 0;
+        min-height: 0;
+    }
+    #sponsor-button {
+      display: none;
+    }
+    #about-text button:not(#apply-button) {
+        display: none;
+    }
+    h2#subheading {
+      display: none;
+    }
+    section:first-child {
+        margin-top: 0px;
+        height: 500px;
+        margin-bottom: 0;
+    }
+    #mlh-trust-badge {
+      margin-top: 0;
+      position: absolute;
+      content: url("https://s3.amazonaws.com/logged-assets/trust-badge/2018/blue.svg")
+    }
+    #clouds, #sky {
+      position: absolute;
+      margin-top: 0 !important;
+    }
+    address h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .sponsor-heading {
+        font-size: 30px;
+        margin-left: 0;
+    }
+    .social-buttons {
+      position: relative;
+      float: none;
+      margin-top: 10px;
+      bottom: 20px;
+      right: 0;
+    }
+    .social-button {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+    }
+    footer img {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    img#backhills {
+        top: 30%;
+        height: 70%;
+        width: 133%;
+        left: -33%;
+    }
+    img#mountains {
+        height: 70%;
+        margin-top: 10px;
+        margin-left: -20%;
+        position: absolute;
+    }
+    img#front-grass {
+        display: none;
+    }
+    img#grass {
+        display: block;
+    }
+    img#sky {
+        margin-top: -18vw;
+        height: 100%;
+    }
+    #mobile-schedule {
+        display: block;
+    }
+    img#schedule-image {
+        display: none;
+    }
+    #about-text {
+        position: static;
+        background: linear-gradient(to bottom, #8CB936 0%,#4D912B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        padding-bottom: 30px;
+        height: auto;
+        padding-top: 20px;
+        margin-bottom: 0;
+    }
+    #about-text p {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #main > div:first-of-type {
+        position: static;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    img#logo {
+        top: 45%;
+    }
+    #FAQ h2 {
+      margin-left: 0;
+      text-align: center;
+    }
+    #FAQ p {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+}
+
+/* Centering on thinner phones */
+@media (max-width: 400px){
+  img#backhills {
+      left:-40%;
+  }
+}

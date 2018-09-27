@@ -1,0 +1,148 @@
+{
+	"previous_sponsors": [
+		{
+			"src": "/img/logos/logomono-intel-mono.png",
+			"href": "https://www.intel.com",
+			"amount": 7000
+		},
+		{
+			"src": "/img/logos/googlecloud_logo_horizontal_rgb.png",
+			"href": "http://cloud.google.com/",
+			"amount": 5000
+		},
+		{
+			"src": "/img/logos/Keysight_Signature_Pref_Color.png",
+			"href": "http://www.keysight.com/",
+			"amount": 5000
+		},
+		{
+			"src": "/img/logos/KPMG_NoCP_RGB_279.png",
+			"href": "https://home.kpmg.com/us/en/home.html",
+			"amount": 4000
+		},
+		{
+			"src": "/img/logos/500px-CenteneCorporation_Logo.svg.png",
+			"href": "https://www.centene.com/",
+			"amount": 4000
+		},
+		{
+			"src": "/img/logos/JoyRun Logo White.png",
+			"href": "http://joyrun.com/",
+			"amount": 3500
+		},
+		{
+			"src": "/img/logos/OSIsoftLogo_White.png",
+			"href": "https://www.osisoft.com/",
+			"amount": 2500
+		},
+		{
+			"src": "/img/logos/2017 LOGO att_vt_lkp_rgb_pos.png",
+			"href": "http://www.att.com/",
+			"amount": 2000
+		},
+		{
+			"src": "/img/logos/balsamiq-logo-noborder-screen.png",
+			"href": "https://balsamiq.com/",
+			"amount": 1500
+		},
+		{
+			"src": "/img/logos/scoop_logo_white_rgb.png",
+			"href": "https://www.takescoop.com/",
+			"amount": 1500
+		},
+		{
+			"src": "/img/logos/varian_lg_1cs_blk_pos_pngNoBack.png",
+			"href": "https://www.varian.com/?multilink=switch",
+			"amount": 1500
+		},
+		{
+			"href": "http://citrisfoundry.org/",
+			"src": "img/logos/citris-ucdavis.png",
+			"name": "citris",
+			"amount": 1500
+		},
+		{
+			"src": "/img/logos/linode-logo_standard_dark_medium.png",
+			"href": "https://linode.com",
+			"amount": 1000
+		},
+		{
+			"src": "/img/logos/StickerYou_Web_Logo_Flat_DarkBackground.png",
+			"href": "https://www.stickeryou.com/products/roll-labels/627",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/genability.png",
+			"href": "http://genability.com/",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/svgporn-stickermule.png",
+			"href": "https://www.stickermule.com/uses/laptop-stickers",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/Empirically-Main-Logo.png",
+			"href": "http://empirically.co",
+			"amount": -1
+		},
+		{
+			"href": "http://www.clifbar.com/",
+			"src": "img/logos/clifbar.png",
+			"name": "clifbar",
+			"amount": -1
+		},
+		{
+			"src": "/img/logos/tech.png",
+			"href": "http://get.tech/",
+			"amount": -2
+		}
+	],
+	"partners": [
+		{
+			"src": "/img/logos/deptofcs.png",
+			"href": "http://http//www.cs.ucdavis.edu",
+			"amount": 6000
+		},
+		{
+			"src": "/img/logos/collegeofengineering_white.png",
+			"href": "http://engineering.ucdavis.edu",
+			"amount": 2000
+		},
+		{
+			"src": "/img/logos/GlobalAffairs_wm_all_white.png",
+			"href": "https://globalaffairs.ucdavis.edu/",
+			"amount": 2500
+		},
+		{
+			"src": "/img/logos/CollegeOfLettersAndScience_long_BlueGold (2).png",
+			"href": "https://ls.ucdavis.edu"
+		},
+		{
+			"src": "/img/logos/IET_logo.png",
+			"href": "https://iet.ucdavis.edu"
+		},
+		{
+			"src": "/img/logos/ucdavisgsm.png",
+			"href": "http://gsm.ucdavis.edu/"
+		},
+		{
+			"src": "/img/logos/thredup.png",
+			"href": "http://www.thredup.com/"
+		}
+	],
+	"nonprofits": [
+		{
+			"src": "/img/logos/habitatforhumanity.png",
+			"href": "http://habitatgreatersac.org/"
+		},
+		{
+			"src": "/img/logos/Beyond12_logo_PMS.png",
+			"href": "https://beyond12.org/"
+		},
+		{
+			"src": "/img/logos/saveourselves.png",
+			"href": "http://save-ourselves.org/"
+		}
+	]
+}
